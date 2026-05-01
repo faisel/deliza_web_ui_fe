@@ -29,7 +29,7 @@ function OffcanvasMenu({ isOpen, onClose }: OffcanvasMenuProps) {
                 {/* Desktop Sidebar */}
                 <div className="rts-sidebar-menu-desktop">
                     <Link className="logo-1" href="/">
-                        <img className="logo" src="/assets/images/logo/01.svg" alt="finbiz_logo" />
+                        <img className="logo deliza-logo" src="/assets/images/logo/deliza_web_b.png" alt="Deliza" />
                     </Link>
                     <div className="body d-none d-xl-block">
                         <p className="disc">

@@ -17,7 +17,7 @@ import BackToTop from "../home-1/BackToTop";
 export default function HomePage() {
   return (
     <>
-      <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+      <HeaderOne logoSrc="/assets/images/logo/deliza_web_b.png" logoAlt="Deliza" />
       <BannerOne />
       <AboutOne />
       <ServicesOne />

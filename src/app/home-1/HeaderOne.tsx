@@ -106,7 +106,7 @@ function HeaderOne({
                                 <div className="header-main-one-wrapper">
                                     <div className="thumbnail">
                                         <Link href={`/${locale}`}>
-                                            <img src={logoSrc} alt={logoAlt} />
+                                            <img className="deliza-logo" src={logoSrc} alt={logoAlt} />
                                         </Link>
                                     </div>
                                     <div className="main-header">
@@ -285,12 +285,6 @@ function HeaderOne({
                                         </div>
                                         <div className="button-area">
                                             <LanguageSwitcher className="ml--10" />
-                                            <Link
-                                                href={localizePath("/contact", locale)}
-                                                className="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn"
-                                            >
-                                                {t.common.buttons.getQuote}
-                                            </Link>
                                             <button id='menu-btn'
                                                 className="menu-btn menu ml--20 ml_sm--5"
                                                 onClick={() => setIsOffcanvasOpen(true)}
