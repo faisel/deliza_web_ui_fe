@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { useTranslation } from "@/i18n/useTranslation";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -16,6 +17,8 @@ type AboutOneProps = {
 };
 
 function AboutOne({ id }: AboutOneProps) {
+  const { messages } = useTranslation();
+  const t = messages.home.about;
   const odometerRefs = useRef<OdometerElement[]>([]);
   const splitRef = useRef<HTMLHeadingElement>(null);
 
@@ -113,36 +116,28 @@ function AboutOne({ id }: AboutOneProps) {
                   </span>
                   +
                 </h2>
-                <span>Year of experience</span>
+                <span>{t.yearsExperience}</span>
               </div>
             </div>
           </div>
           <div className="col-lg-6 mt_sm--80 mt_md--80">
             <div className="about-inner-content-two">
               <div className="title-style-two left">
-                <span className="bg-content">About Us</span>
-                <span className="pre">More About Us</span>
+                <span className="bg-content">{t.chip}</span>
+                <span className="pre">{t.pre}</span>
                 <h2 className="title rts-text-anime-style-1" ref={splitRef}>
-                  Empowering You to Feel <br /> Your Best Every Day
+                  {t.title[0]} <br /> {t.title[1]}
                 </h2>
               </div>
               <div className="about-between-wrapper">
-                <p className="disc">
-                  Porttitor ornare fermentum aliquam pharetra ut facilisis gravida risus suscipit. dui feugiat fusce conubia ridiculus tristique parturient natoque vulputate risu.
-                </p>
+                <p className="disc">{t.description}</p>
                 <div className="check-wrapper-area">
-                  <div className="single-check">
-                    <i className="fa-solid fa-circle-check" />
-                    <p>24/7 Call Services Avilable</p>
-                  </div>
-                  <div className="single-check">
-                    <i className="fa-solid fa-circle-check" />
-                    <p>Great Skilled Consultant</p>
-                  </div>
-                  <div className="single-check">
-                    <i className="fa-solid fa-circle-check" />
-                    <p>Expert Team Members</p>
-                  </div>
+                  {t.checks.map((check, i) => (
+                    <div className="single-check" key={i}>
+                      <i className="fa-solid fa-circle-check" />
+                      <p>{check}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
               <div className="call-and-sign-area two">
@@ -151,9 +146,9 @@ function AboutOne({ id }: AboutOneProps) {
                     <i className="fa-sharp fa-solid fa-phone-volume" />
                   </div>
                   <div className="information">
-                    <span>Call us anytime</span>
-                    <a href="/">
-                      <h6 className="title">+256 56778.5678</h6>
+                    <span>{t.callUsAnytime}</span>
+                    <a href={`tel:${t.phone.replace(/\s+/g, "")}`}>
+                      <h6 className="title">{t.phone}</h6>
                     </a>
                   </div>
                 </div>

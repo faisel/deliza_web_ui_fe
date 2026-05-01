@@ -1,35 +1,38 @@
-import React from 'react'
+"use client";
+import { useTranslation } from "@/i18n/useTranslation";
 
 function AppointmentOne() {
+    const { messages } = useTranslation();
+    const t = messages.home.appointment;
+
     return (
         <>
-            {/* appoinment areas tart */}
             <div className="appoinment-area-start rts-section-gapBottom">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-7">
                             <div className="appoinment-wrapper-one-start">
                                 <div className="title-style-two mb--40 left">
-                                    <span className="bg-content">Hello</span>
-                                    <span className="pre">Make An Appointment</span>
-                                    <h2 className="title">Request a free quote</h2>
+                                    <span className="bg-content">{t.chip}</span>
+                                    <span className="pre">{t.pre}</span>
+                                    <h2 className="title">{t.title}</h2>
                                 </div>
                                 <form action="#">
                                     <div className="single-input-wrapper">
                                         <div className="single-input">
-                                            <input type="text" placeholder="Your Name" />
+                                            <input type="text" placeholder={t.fields.name} />
                                         </div>
                                         <div className="single-input">
-                                            <input type="text" placeholder="Number" />
+                                            <input type="text" placeholder={t.fields.phone} />
                                         </div>
                                     </div>
                                     <div className="single-input">
-                                        <input type="email" placeholder="Your Email" />
+                                        <input type="email" placeholder={t.fields.email} />
                                     </div>
                                     <div className="single-input mb--30">
-                                        <textarea placeholder="Type Your Message" defaultValue={""} />
+                                        <textarea placeholder={t.fields.message} defaultValue={""} />
                                     </div>
-                                    <button className="rts-btn btn-primary">Submit Message</button>
+                                    <button className="rts-btn btn-primary" type="submit">{messages.common.buttons.submitMessage}</button>
                                 </form>
                             </div>
                         </div>
@@ -45,9 +48,7 @@ function AppointmentOne() {
                     </div>
                 </div>
             </div>
-            {/* appoinment areas end */}
         </>
-
     )
 }
 

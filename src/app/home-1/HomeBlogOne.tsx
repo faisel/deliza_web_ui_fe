@@ -1,50 +1,16 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import { useTranslation } from "@/i18n/useTranslation";
+import { localizePath } from "@/i18n/routing";
 
-const blogs = [
-  {
-    img: "/assets/images/blog/01.webp",
-    category: "Business Solution",
-    author: "David Dolean",
-    title: "Building a Brand That from Market Leaders",
-    link: "blog-details",
-  },
-  {
-    img: "/assets/images/blog/02.webp",
-    category: "Business Solution",
-    author: "David Dolean",
-    title: "Transforming Your Best Of Approach to Business",
-    link: "blog-details",
-  },
-  {
-    img: "/assets/images/blog/03.webp",
-    category: "Business Solution",
-    author: "David Dolean",
-    title: "The quick settle tips of the new ages exist",
-    link: "blog-details",
-  },
-  {
-    img: "/assets/images/blog/01.webp",
-    category: "Business Solution",
-    author: "David Dolean",
-    title: "Building a Brand That from Market Leaders",
-    link: "blog-details",
-  },
-  {
-    img: "/assets/images/blog/02.webp",
-    category: "Business Solution",
-    author: "David Dolean",
-    title: "Transforming Your Best Of Approach to Business",
-    link: "blog-details",
-  },
-  {
-    img: "/assets/images/blog/03.webp",
-    category: "Business Solution",
-    author: "David Dolean",
-    title: "The quick settle tips of the new ages exist",
-    link: "blog-details",
-  },
+const blogImages = [
+  "/assets/images/blog/01.webp",
+  "/assets/images/blog/02.webp",
+  "/assets/images/blog/03.webp",
+  "/assets/images/blog/01.webp",
+  "/assets/images/blog/02.webp",
+  "/assets/images/blog/03.webp",
 ];
 
 interface HomeBlogOneProps {
@@ -54,15 +20,19 @@ interface HomeBlogOneProps {
 }
 
 function HomeBlogOne({ className = "", titleClassName = "" , id=""}: HomeBlogOneProps) {
+  const { locale, messages } = useTranslation();
+  const t = messages.home.blog;
+  const detailHref = localizePath("/blog/liliput-settle-tips-of-the-new-ages-exist", locale);
+
   return (
     <div id={id} className={`rts-blog-area ${className}`}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <div className={`center ${titleClassName}`}>
-              <span className="bg-content">Blog</span>
-              <span className="pre">Blog &amp; News</span>
-              <h2 className="title">Recent blog post</h2>
+              <span className="bg-content">{t.chip}</span>
+              <span className="pre">{t.pre}</span>
+              <h2 className="title">{t.title}</h2>
             </div>
           </div>
         </div>
@@ -88,18 +58,18 @@ function HomeBlogOne({ className = "", titleClassName = "" , id=""}: HomeBlogOne
               }}
               className="mySwiper-blog-one"
             >
-              {blogs.map((blog, index) => (
+              {t.posts.map((blog, index) => (
                 <SwiperSlide key={index}>
                   <div className="single-blog-area-one">
                     <p>
-                      {blog.category} / <span>by {blog.author}</span>
+                      {blog.category} / <span>{messages.common.by} {blog.author}</span>
                     </p>
-                    <a href={blog.link}>
+                    <a href={detailHref}>
                       <h4 className="title">{blog.title}</h4>
                     </a>
                     <div className="bottom-details">
-                      <a href={blog.link} className="thumbnail">
-                        <img loading="lazy" src={blog.img} alt="blog-area" />
+                      <a href={detailHref} className="thumbnail">
+                        <img loading="lazy" src={blogImages[index] ?? blogImages[0]} alt="blog-area" />
                       </a>
                     </div>
                   </div>

@@ -4,12 +4,16 @@ import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import AOS from "aos";
+import { useTranslation } from "@/i18n/useTranslation";
+import { localizePath } from "@/i18n/routing";
 
 interface BusinessGoalOneProps {
   className?: string;
 }
 
 const BusinessGoalOne = ({ className = "" }: BusinessGoalOneProps) => {
+  const { locale, messages } = useTranslation();
+  const t = messages.home.businessGoal;
   const splitRef = useRef<HTMLHeadingElement>(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -74,14 +78,14 @@ const BusinessGoalOne = ({ className = "" }: BusinessGoalOneProps) => {
             <div className="col-lg-6">
               <div className="consultancy-style-one">
                 <div className="title-style-two mb--40 left">
-                  <span className="bg-content">Business Goal</span>
-                  <span className="pre">JUST A CONSULTANCY</span>
+                  <span className="bg-content">{t.chip}</span>
+                  <span className="pre">{t.pre}</span>
                   <h2
                     className="title rts-text-anime-style-1"
                     ref={splitRef}
                   >
-                    We know how to manage <br />
-                    business globally
+                    {t.title[0]} <br />
+                    {t.title[1]}
                   </h2>
                 </div>
 
@@ -89,8 +93,8 @@ const BusinessGoalOne = ({ className = "" }: BusinessGoalOneProps) => {
                   className="button-wrapper mt--40"
                   data-aos="fade-up"
                 >
-                  <a href="/contact" className="rts-btn btn-primary">
-                    Contact Us
+                  <a href={localizePath("/contact", locale)} className="rts-btn btn-primary">
+                    {messages.common.buttons.contactUs}
                   </a>
 
                   <div className="vedio-icone">

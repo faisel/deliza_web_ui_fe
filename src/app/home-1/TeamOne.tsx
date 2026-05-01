@@ -1,33 +1,15 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+import { useTranslation } from "@/i18n/useTranslation";
+import { localizePath } from "@/i18n/routing";
 
-const teamMembers = [
-  {
-    img: "/assets/images/team/04.webp",
-    name: "Archer Graham",
-    role: "Founder",
-  },
-  {
-    img: "/assets/images/team/05.webp",
-    name: "Amelia Clover",
-    role: "Co-Founder",
-  },
-  {
-    img: "/assets/images/team/06.webp",
-    name: "Beckett Hayden",
-    role: "Deputy Manager",
-  },
-  {
-    img: "/assets/images/team/07.webp",
-    name: "Julian Wyat",
-    role: "Finance Manager",
-  },
-  {
-    img: "/assets/images/team/07.webp",
-    name: "Julian Wyat",
-    role: "Finance Manager",
-  },
+const teamImages = [
+  "/assets/images/team/04.webp",
+  "/assets/images/team/05.webp",
+  "/assets/images/team/06.webp",
+  "/assets/images/team/07.webp",
+  "/assets/images/team/07.webp",
 ];
 
 interface TeamOneProps {
@@ -35,14 +17,18 @@ interface TeamOneProps {
 }
 
 function TeamOne({className}: TeamOneProps) {
+  const { locale, messages } = useTranslation();
+  const t = messages.home.team;
+  const detailsHref = localizePath("/team-details", locale);
+
   return (
     <div className={`rts-team-area rts-section-gapBottom pt--40 ${className}`}>
       <div className="container">
         <div className="row">
           <div className="title-style-two center">
-            <span className="bg-content">Members</span>
-            <span className="pre">Expert Members</span>
-            <h2 className="title rts-text-anime-style-1">Professionals Team</h2>
+            <span className="bg-content">{t.chip}</span>
+            <span className="pre">{t.pre}</span>
+            <h2 className="title rts-text-anime-style-1">{t.title}</h2>
           </div>
         </div>
         <div className="row">
@@ -67,12 +53,12 @@ function TeamOne({className}: TeamOneProps) {
               className="mySwiperh1_team pt--50 pb--80"
               dir="ltr"
             >
-              {teamMembers.map((member, index) => (
+              {t.members.map((member, index) => (
                 <SwiperSlide key={index}>
                   <div className="team-single-one-start">
                     <div className="team-image-area">
-                      <a href="/team-details">
-                        <img loading="lazy" src={member.img} alt={member.name} />
+                      <a href={detailsHref}>
+                        <img loading="lazy" src={teamImages[index] ?? teamImages[0]} alt={member.name} />
                         <div className="team-social">
                           <div className="main">
                             <i className="fa fa-plus" />
@@ -86,7 +72,7 @@ function TeamOne({className}: TeamOneProps) {
                       </a>
                     </div>
                     <div className="single-details">
-                      <a href="/team-details">
+                      <a href={detailsHref}>
                         <h5 className="title">{member.name}</h5>
                       </a>
                       <p>{member.role}</p>

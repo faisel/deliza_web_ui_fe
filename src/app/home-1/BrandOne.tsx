@@ -1,13 +1,17 @@
+"use client";
+import { useTranslation } from "@/i18n/useTranslation";
+
+const clients = [
+  "/assets/images/client/1.webp",
+  "/assets/images/client/2.webp",
+  "/assets/images/client/3.webp",
+  "/assets/images/client/4.webp",
+  "/assets/images/client/5.webp",
+  "/assets/images/client/6.webp",
+];
 
 function BrandOne() {
-  const clients = [
-    "/assets/images/client/1.webp",
-    "/assets/images/client/2.webp",
-    "/assets/images/client/3.webp",
-    "/assets/images/client/4.webp",
-    "/assets/images/client/5.webp",
-    "/assets/images/client/6.webp",
-  ];
+  const { messages } = useTranslation();
 
   return (
     <div className="rts-trusted-client rts-section-gapBottom">
@@ -15,7 +19,7 @@ function BrandOne() {
         <div className="row">
           <div className="col-12">
             <div className="title-area-client-client text-center">
-              <p className="client-title">Our Trusted Clients</p>
+              <p className="client-title">{messages.home.brands.title}</p>
             </div>
           </div>
         </div>
@@ -26,7 +30,7 @@ function BrandOne() {
                 key={index}
                 href="#"
                 data-aos="fade-up"
-                data-aos-delay={index * 100} // 0.1s, 0.2s, etc.
+                data-aos-delay={index * 100}
                 data-aos-duration="1200"
               >
                 <img src={src} alt={`business_deliza ${index + 1}`} />

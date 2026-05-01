@@ -1,13 +1,18 @@
-import React from "react";
+"use client";
+import { useTranslation } from "@/i18n/useTranslation";
+import { localizePath } from "@/i18n/routing";
 
 type FooterOneProps = {
   id?: string;
 };
 
 function FooterOne({ id }: FooterOneProps) {
+  const { locale, messages } = useTranslation();
+  const f = messages.footer;
+  const contactHref = localizePath("/contact", locale);
+
   return (
     <>
-      {/* rts footer two area wrapper */}
       <div className="rts-footer-area footer-two mt-dec-footer-map bg-footer-two bg_image">
         <div className="container">
           <div className="row">
@@ -28,7 +33,7 @@ function FooterOne({ id }: FooterOneProps) {
                   </div>
                   <div className="col-lg-5">
                     <div className="map-information-2-footer">
-                      <h5 className="title-main">Contact Us</h5>
+                      <h5 className="title-main">{f.contact.title}</h5>
                       <img
                         loading="lazy"
                         src="/assets/images/footer/02.svg"
@@ -41,9 +46,9 @@ function FooterOne({ id }: FooterOneProps) {
                             <i className="fa-solid fa-phone" />
                           </div>
                           <div className="information-wrapper">
-                            <span>Call Us 24/7</span>
-                            <a href="tel:+25621452156">
-                              <h6 className="title">(+256) 2145.2156</h6>
+                            <span>{f.contact.callUs}</span>
+                            <a href={`tel:${f.contact.phone.replace(/\s+/g, "")}`}>
+                              <h6 className="title">{f.contact.phone}</h6>
                             </a>
                           </div>
                         </div>
@@ -52,9 +57,9 @@ function FooterOne({ id }: FooterOneProps) {
                             <i className="fa-regular fa-envelope" />
                           </div>
                           <div className="information-wrapper">
-                            <span>Work with us</span>
-                            <a href="mailto:info@deliza.com">
-                              <h6 className="title">info@deliza.com</h6>
+                            <span>{f.contact.workWithUs}</span>
+                            <a href={`mailto:${f.contact.email}`}>
+                              <h6 className="title">{f.contact.email}</h6>
                             </a>
                           </div>
                         </div>
@@ -63,9 +68,9 @@ function FooterOne({ id }: FooterOneProps) {
                             <i className="fa-sharp fa-solid fa-location-dot" />
                           </div>
                           <div className="information-wrapper">
-                            <span>Our Location</span>
+                            <span>{f.contact.ourLocation}</span>
                             <a href="#">
-                              <h6 className="title">125 Town, United State</h6>
+                              <h6 className="title">{f.contact.location}</h6>
                             </a>
                           </div>
                         </div>
@@ -79,12 +84,11 @@ function FooterOne({ id }: FooterOneProps) {
         </div>
 
         <div className="container bg-shape-f1">
-          {/* rts footer area */}
           <div className="row pt--120 pt_sm--80 pb--80 pb_sm--40">
             <div className="col-xl-4 col-md-6 col-sm-12 col-12">
               <div className="footer-one-single-wized mid-bg">
                 <div className="wized-title">
-                  <h5 className="title">Opening Hours</h5>
+                  <h5 className="title">{f.hours.title}</h5>
                   <img
                     loading="lazy"
                     src="/assets/images/footer/01.svg"
@@ -93,19 +97,19 @@ function FooterOne({ id }: FooterOneProps) {
                 </div>
                 <div className="opening-time-inner">
                   <div className="single-opening">
-                    <p className="day">Week Days</p>
-                    <p className="time">09.00 - 24:00</p>
+                    <p className="day">{f.hours.weekdays}</p>
+                    <p className="time">{f.hours.weekdaysTime}</p>
                   </div>
                   <div className="single-opening">
-                    <p className="day">Saturday</p>
-                    <p className="time">08:00 - 03.00</p>
+                    <p className="day">{f.hours.saturday}</p>
+                    <p className="time">{f.hours.saturdayTime}</p>
                   </div>
                   <div className="single-opening mb--30 mb_sm--10">
-                    <p className="day">Sunday</p>
-                    <p className="time">Day Off</p>
+                    <p className="day">{f.hours.sunday}</p>
+                    <p className="time">{f.hours.dayOff}</p>
                   </div>
-                  <a href="#" className="rts-btn btn-primary btn-white">
-                    Contact Us
+                  <a href={contactHref} className="rts-btn btn-primary btn-white">
+                    {messages.common.buttons.contactUs}
                   </a>
                 </div>
               </div>
@@ -114,7 +118,7 @@ function FooterOne({ id }: FooterOneProps) {
             <div className="col-xl-4 col-md-6 col-sm-12 col-12 pl--50 pl_sm--15">
               <div className="footer-one-single-wized">
                 <div className="wized-title">
-                  <h5 className="title">Quick Links</h5>
+                  <h5 className="title">{f.quickLinks.title}</h5>
                   <img
                     loading="lazy"
                     src="/assets/images/footer/01.svg"
@@ -123,53 +127,22 @@ function FooterOne({ id }: FooterOneProps) {
                 </div>
                 <div className="quick-link-inner">
                   <ul className="links">
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-arrow-right" /> Forum Support
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-arrow-right" /> Help &amp; FAQ
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-arrow-right" /> Contact Us
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-arrow-right" /> Pricing &amp; Plans
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-arrow-right" /> Cookie Policy
-                      </a>
-                    </li>
+                    {f.quickLinks.items.slice(0, 5).map((label, i) => (
+                      <li key={i}>
+                        <a href="#">
+                          <i className="fa fa-arrow-right" /> {label}
+                        </a>
+                      </li>
+                    ))}
                   </ul>
                   <ul className="links margin-left-70">
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-arrow-right" /> About Us
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-arrow-right" /> My Account
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-arrow-right" /> Our Company
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa fa-arrow-right" /> Service
-                      </a>
-                    </li>
+                    {f.quickLinks.items.slice(5).map((label, i) => (
+                      <li key={i}>
+                        <a href="#">
+                          <i className="fa fa-arrow-right" /> {label}
+                        </a>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -178,7 +151,7 @@ function FooterOne({ id }: FooterOneProps) {
             <div className="col-xl-4 col-md-6 col-sm-12 col-12">
               <div className="footer-one-single-wized margin-left-65">
                 <div className="wized-title">
-                  <h5 className="title">Get Updates</h5>
+                  <h5 className="title">{f.updates.title}</h5>
                   <img
                     loading="lazy"
                     src="/assets/images/footer/01.svg"
@@ -187,23 +160,20 @@ function FooterOne({ id }: FooterOneProps) {
                 </div>
                 <div className="body">
                   <div className="update-wrapper">
-                    <p className="disc">
-                      Sign up for our latest news &amp; articles. We won’t give you
-                      spam mails.
-                    </p>
+                    <p className="disc">{f.updates.description}</p>
                     <form className="email-footer-area">
                       <input
                         type="email"
-                        placeholder="Enter Email Address"
+                        placeholder={f.updates.placeholder}
                         required
                       />
-                      <button type="submit" title="Subscribe">
+                      <button type="submit" title={messages.common.buttons.subscribe}>
                         <i className="fas fa-location-arrow" />
                       </button>
                     </form>
                     <div className="note-area">
                       <p>
-                        <span>Note:</span> We do not publish your email
+                        <span>{f.updates.noteLabel}</span> {f.updates.note}
                       </p>
                     </div>
                   </div>
@@ -213,21 +183,18 @@ function FooterOne({ id }: FooterOneProps) {
           </div>
         </div>
 
-        {/* copyright area start */}
         <div className="rts-copyright-area">
           <div className="container">
             <div className="row">
               <div className="col-12">
                 <div className="text-center">
-                  <p>Deliza - Copyright . All rights reserved.</p>
+                  <p>{f.copyright}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* copyright area end */}
       </div>
-      {/* rts footer two area wrapper end */}
     </>
   );
 }

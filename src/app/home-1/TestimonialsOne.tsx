@@ -4,29 +4,18 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useTranslation } from "@/i18n/useTranslation";
 
-const testimonials = [
-  {
-    img: "/assets/images/testimonials/01.webp",
-    text: "I can't recommend The Gourmet Haven enough. It's a place for special occasions, date nights, or whenever you're in the mood for a culinary adventure. The combination of exceptional.",
-    name: "William Henry",
-    designation: "Designer at Vertex Agency",
-  },
-  {
-    img: "/assets/images/testimonials/01.webp",
-    text: "I can't recommend The Gourmet Haven enough. It's a place for special occasions, date nights, or whenever you're in the mood for a culinary adventure. The combination of exceptional.",
-    name: "William Henry",
-    designation: "Designer at Vertex Agency",
-  },
-  {
-    img: "/assets/images/testimonials/01.webp",
-    text: "I can't recommend The Gourmet Haven enough. It's a place for special occasions, date nights, or whenever you're in the mood for a culinary adventure. The combination of exceptional.",
-    name: "William Henry",
-    designation: "Designer at Vertex Agency",
-  },
+const testimonialImages = [
+  "/assets/images/testimonials/01.webp",
+  "/assets/images/testimonials/01.webp",
+  "/assets/images/testimonials/01.webp",
 ];
 
 function TestimonialsOne() {
+  const { messages } = useTranslation();
+  const t = messages.home.testimonials;
+
   return (
     <div className="rts-client-review-area rts-section-gapBottom">
       <div className="container">
@@ -34,9 +23,9 @@ function TestimonialsOne() {
           <div className="col-lg-12">
             <div className="title-area-between-wrapper">
               <div className="title-style-two mb--40 left">
-                <span className="bg-content">Review</span>
-                <span className="pre">Our Testimonial</span>
-                <h2 className="title">Our Client Reviews</h2>
+                <span className="bg-content">{t.chip}</span>
+                <span className="pre">{t.pre}</span>
+                <h2 className="title">{t.title}</h2>
               </div>
               <div className="pagination-wrapper">
                 <div className="swiper-pagination-fraction" />
@@ -72,11 +61,11 @@ function TestimonialsOne() {
               className="mySwiper-testimonials-dmeo-2"
               dir="ltr"
             >
-              {testimonials.map((item, index) => (
+              {t.items.map((item, index) => (
                 <SwiperSlide key={index}>
                   <div className="testimonials-main-wrapper-two">
                     <div className="left-thumbnail">
-                      <img loading="lazy" src={item.img} alt="testimonials" />
+                      <img loading="lazy" src={testimonialImages[index] ?? testimonialImages[0]} alt="testimonials" />
                     </div>
                     <div className="right-content-testimonials">
                       <p className="disc">{item.text}</p>

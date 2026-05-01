@@ -2,6 +2,9 @@
 import { useState, useEffect } from 'react';
 import Link from "next/link";
 import OffcanvasMenu from './OffcanvasMenu';
+import { useTranslation } from '@/i18n/useTranslation';
+import { localizePath } from '@/i18n/routing';
+import { LanguageSwitcher } from '@/i18n/LanguageSwitcher';
 
 interface HeaderOneProps {
     className?: string;
@@ -14,9 +17,10 @@ function HeaderOne({
     logoSrc = "",
     logoAlt = "",
 }: HeaderOneProps) {
+    const { locale, messages } = useTranslation();
     const [isSticky, setIsSticky] = useState(false);
     const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
-    const [isSearchOpen, setIsSearchOpen] = useState(false);
+
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 150) {
@@ -27,12 +31,13 @@ function HeaderOne({
         };
 
         window.addEventListener('scroll', handleScroll);
-
-        // Clean up the event listener on component unmount
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const t = messages;
+
     return (
         <>
             <header className={`header-one header--sticky ${isSticky ? 'sticky' : ''} ${className}`}>
@@ -43,27 +48,27 @@ function HeaderOne({
                                 <div className="header-top-one-wrapper">
                                     <div className="left">
                                         <div className="mail">
-                                            <a href="mailto:webmaster@example.com">
+                                            <a href={`mailto:${t.header.topbar.email}`}>
                                                 <i className="fa fa-envelope" />
-                                                support@deliza.com
+                                                {t.header.topbar.email}
                                             </a>
                                         </div>
                                         <div className="working-time">
                                             <p>
-                                                <i className="fa fa-clock" /> Working: 8.00am - 5.00pm
+                                                <i className="fa fa-clock" /> {t.header.topbar.workingHours}
                                             </p>
                                         </div>
                                     </div>
                                     <div className="right">
                                         <ul className="top-nav">
                                             <li>
-                                                <Link href="/blog-list">Company news</Link>
+                                                <Link href={localizePath("/blog-list", locale)}>{t.header.topNav.companyNews}</Link>
                                             </li>
                                             <li>
-                                                <Link href="/faq">Faq</Link>
+                                                <Link href={localizePath("/faq", locale)}>{t.header.topNav.faq}</Link>
                                             </li>
                                             <li>
-                                                <Link href="/contact">Contact</Link>
+                                                <Link href={localizePath("/contact", locale)}>{t.header.topNav.contact}</Link>
                                             </li>
                                         </ul>
                                         <ul className="social-wrapper-one">
@@ -100,7 +105,7 @@ function HeaderOne({
                             <div className="col-lg-12">
                                 <div className="header-main-one-wrapper">
                                     <div className="thumbnail">
-                                        <Link href="/">
+                                        <Link href={`/${locale}`}>
                                             <img src={logoSrc} alt={logoAlt} />
                                         </Link>
                                     </div>
@@ -108,7 +113,7 @@ function HeaderOne({
                                         <div className="nav-area">
                                             <ul className="">
                                                 <li className="main-nav has-dropdown mega-menu project-a-after">
-                                                    <a href="#">Home</a>
+                                                    <a href="#">{t.header.nav.home}</a>
                                                     <div className="rts-mega-menu with-home-demos">
                                                         <div className="wrapper">
                                                             <div className="container">
@@ -127,10 +132,9 @@ function HeaderOne({
 
                                                                                 {group.items.map((item, index) => (
                                                                                     <li key={index}>
-                                                                                        <Link href={item.href}>
+                                                                                        <Link href={localizePath(item.href, locale)}>
                                                                                             <i className="fa-sharp fa-solid fa-chevron-right" />
                                                                                             {item.label}
-
                                                                                         </Link>
                                                                                     </li>
                                                                                 ))}
@@ -145,7 +149,7 @@ function HeaderOne({
                                                     </div>
                                                 </li>
                                                 <li className="main-nav has-dropdown mega-menu">
-                                                    <a href="#">Pages</a>
+                                                    <a href="#">{t.header.nav.pages}</a>
                                                     <div className="rts-mega-menu">
                                                         <div className="wrapper">
                                                             <div className="container">
@@ -157,7 +161,7 @@ function HeaderOne({
 
                                                                                 {col.map((item, i) => (
                                                                                     <li key={i}>
-                                                                                        <Link href={item.link}>
+                                                                                        <Link href={localizePath(item.link, locale)}>
                                                                                             <i className="fa-sharp fa-solid fa-chevron-right" />
                                                                                             {item.label}
                                                                                             {item.badge && (
@@ -177,19 +181,18 @@ function HeaderOne({
                                                     </div>
                                                 </li>
                                                 <li className="main-nav has-dropdown mega-menu">
-                                                    <a href="#">Service</a>
+                                                    <a href="#">{t.header.nav.service}</a>
                                                     <div className="rts-mega-menu service-mega-menu-style">
                                                         <div className="wrapper">
                                                             <div className="container">
                                                                 <div className="row g-5">
 
-                                                                    {/* LEFT 2 COLUMNS */}
                                                                     {serviceMenuData.map((column, colIndex) => (
                                                                         <div className="col-lg-4" key={colIndex}>
                                                                             <ul className="mega-menu-item parent-nav">
                                                                                 {column.items.map((item, i) => (
                                                                                     <li key={i}>
-                                                                                        <Link href={item.link} className={item.extraClass || ""}>
+                                                                                        <Link href={localizePath(item.link, locale)} className={item.extraClass || ""}>
                                                                                             <div className="single-service-menu">
 
                                                                                                 {item.icon && (
@@ -211,7 +214,6 @@ function HeaderOne({
                                                                         </div>
                                                                     ))}
 
-                                                                    {/* RIGHT SIDE IMAGE */}
                                                                     <div className="col-lg-4">
                                                                         <div className="menu-thumb pl--20">
                                                                             <img src={serviceMenuThumb} alt="service banner" />
@@ -224,7 +226,7 @@ function HeaderOne({
                                                     </div>
                                                 </li>
                                                 <li className="main-nav has-dropdown mega-menu">
-                                                    <a href="#">Project</a>
+                                                    <a href="#">{t.header.nav.project}</a>
                                                     <div className="rts-mega-menu">
                                                         <div className="wrapper">
                                                             <div className="container">
@@ -234,7 +236,6 @@ function HeaderOne({
                                                                         <div className="col-lg-3" key={colIndex}>
                                                                             <ul className="mega-menu-item with-list parent-nav">
 
-                                                                                {/* Column Title */}
                                                                                 <li className="hega-menu-head-wrapper">
                                                                                     <p className="hega-menu-head">
                                                                                         <i className="fa-regular fa-folder-open" />
@@ -242,10 +243,9 @@ function HeaderOne({
                                                                                     </p>
                                                                                 </li>
 
-                                                                                {/* Column Links */}
                                                                                 {col.items.map((item, index) => (
                                                                                     <li key={index}>
-                                                                                        <Link href={item.link}>
+                                                                                        <Link href={localizePath(item.link, locale)}>
                                                                                             <i className="fa-sharp fa-solid fa-chevron-right" />
                                                                                             {item.label}
                                                                                         </Link>
@@ -261,46 +261,40 @@ function HeaderOne({
                                                     </div>
                                                 </li>
                                                 <li className="main-nav has-dropdown project-a-after">
-                                                    <a href="#">Blog</a>
+                                                    <a href="#">{t.header.nav.blog}</a>
                                                     <ul className="submenu parent-nav">
                                                         {blogMenuData.map((item, index) => (
                                                             <li key={index}>
-                                                                <Link href={item.link}>{item.label}</Link>
+                                                                <Link href={localizePath(item.link, locale)}>{item.label}</Link>
                                                             </li>
                                                         ))}
                                                     </ul>
                                                 </li>
                                                 <li className="main-nav has-dropdown project-a-after">
-                                                    <a href="#">Contact</a>
+                                                    <a href="#">{t.header.nav.contact}</a>
                                                     <ul className="submenu parent-nav">
                                                         <li>
-                                                            <Link href="/contact">Contact</Link>
+                                                            <Link href={localizePath("/contact", locale)}>{t.header.nav.contact}</Link>
                                                         </li>
                                                         <li>
-                                                            <Link href="/contact-2">Contact 2</Link>
+                                                            <Link href={localizePath("/contact-2", locale)}>{t.header.nav.contact} 2</Link>
                                                         </li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div className="button-area">
-                                            <button
-                                                className="search"
-                                                id="search"
-                                                aria-label="Search"
-                                                onClick={() => setIsSearchOpen(true)}
-                                            >
-                                                <i className="fa fa-search" />
-                                            </button>
+                                            <LanguageSwitcher className="ml--10" />
                                             <Link
-                                                href="/contact"
+                                                href={localizePath("/contact", locale)}
                                                 className="rts-btn btn-primary ml--20 ml_sm--5 header-one-btn quote-btn"
                                             >
-                                                Get Quote
+                                                {t.common.buttons.getQuote}
                                             </Link>
                                             <button id='menu-btn'
                                                 className="menu-btn menu ml--20 ml_sm--5"
                                                 onClick={() => setIsOffcanvasOpen(true)}
+                                                aria-label="Open menu"
                                             >
                                                 <img
                                                     className="menu-light"
@@ -317,40 +311,13 @@ function HeaderOne({
                 </div>
             </header>
             <OffcanvasMenu isOpen={isOffcanvasOpen} onClose={() => setIsOffcanvasOpen(false)} />
-            <div className={`search-input-area ${isSearchOpen ? "show" : ""}`}>
-                <div className="container">
-                    <div className="search-input-inner">
-                        <div className="input-div">
-                            <input
-                                className="search-input autocomplete"
-                                type="text"
-                                placeholder="Search by keyword or #"
-                            />
-                            <button>
-                                <i className="fa fa-search" />
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Close Icon */}
-                <div
-                    id="close"
-                    className="search-close-icon"
-                    onClick={() => setIsSearchOpen(false)}
-                >
-                    <i className="fa fa-times" />
-                </div>
-            </div>
             <div
                 id="anywhere-home"
-                className={isOffcanvasOpen || isSearchOpen ? "bgshow" : ""}
+                className={isOffcanvasOpen ? "bgshow" : ""}
                 onClick={() => {
                     setIsOffcanvasOpen(false);
-                    setIsSearchOpen(false);
                 }}
             >
-
             </div>
         </>
     )
@@ -368,7 +335,7 @@ export const megaMenuData = [
             { href: "/home-5", label: "Finance Demo" }
         ]
     },
-    
+
     {
         title: "Multi Page",
         items: [
@@ -390,7 +357,7 @@ export const megaMenuData = [
             { href: "/onepage-five", label: "Finance Demo" }
         ]
     },
-    
+
     {
         title: "One Page",
         items: [
@@ -404,7 +371,6 @@ export const megaMenuData = [
 ];
 
 const pagesMenuData = [
-    // Column 1
     [
         { label: "About Company", link: "/about" },
         { label: "Service", link: "/service" },
@@ -415,8 +381,6 @@ const pagesMenuData = [
         { label: "Gallery", link: "/gallery" },
         { label: "Pricing Comparison", link: "/pricing-comparison", badge: "New" },
     ],
-
-    // Column 2
     [
         { label: "Team Details", link: "/team-details" },
         { label: "Pricing", link: "/pricing" },
@@ -426,8 +390,6 @@ const pagesMenuData = [
         { label: "Contact", link: "/contact" },
         { label: "404", link: "/404" },
     ],
-
-    // Column 3
     [
         { label: "Blog Details", link: "/blog/liliput-settle-tips-of-the-new-ages-exist" },
         { label: "Faq's", link: "/faq" },
@@ -436,8 +398,6 @@ const pagesMenuData = [
         { label: "Partners", link: "/partners" },
         { label: "Contact 2", link: "/contact-2" },
     ],
-
-    // Column 4
     [
         { label: "Shop", link: "/shop" },
         { label: "Shop Details", link: "/shop-single" },
@@ -470,7 +430,6 @@ const serviceMenuData = [
             },
         ],
     },
-
     {
         items: [
             {
@@ -543,7 +502,6 @@ const blogMenuData = [
     { link: "/blog/liliput-settle-tips-of-the-new-ages-exist", label: "Blog Details" },
 ];
 
-// Right-side banner image
 const serviceMenuThumb = "/assets/images/banner/24.webp";
 
 export default HeaderOne

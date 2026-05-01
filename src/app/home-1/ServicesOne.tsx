@@ -4,21 +4,31 @@ import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+import { useTranslation } from "@/i18n/useTranslation";
+import { localizePath } from "@/i18n/routing";
 
 type ServicesOneProps = {
   id?: string;
 };
 
+const serviceIcons = [
+  "/assets/images/service/icons/01.svg",
+  "/assets/images/service/icons/02.svg",
+  "/assets/images/service/icons/03.svg",
+  "/assets/images/service/icons/01.svg",
+  "/assets/images/service/icons/01.svg",
+];
+
 function ServicesOne({ id }: ServicesOneProps) {
+    const { locale, messages } = useTranslation();
+    const t = messages.home.services;
     const splitRef = useRef<HTMLHeadingElement>(null);
 
-  // SplitText animation
   useEffect(() => {
     if (!splitRef.current) return;
 
     const element = splitRef.current;
 
-    // Reset previous animation if exists
     if ((element as any).animation) {
       (element as any).animation.progress(1).kill();
       (element as any).split.revert();
@@ -45,19 +55,21 @@ function ServicesOne({ id }: ServicesOneProps) {
       ease: "back.out(1.7)",
       stagger: 0.02,
     });
-  }, []);
+  }, [t.title]);
+
+    const detailsHref = localizePath("/service-details", locale);
+
     return (
         <>
-            {/* rts service area start */}
             <div id={id} className="rts-service-area pt--40 pb--60">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="title-style-two center">
-                                <span className="bg-content">Services</span>
-                                <span className="pre">our Service</span>
+                                <span className="bg-content">{t.chip}</span>
+                                <span className="pre">{t.pre}</span>
                                 <h2 className="title rts-text-anime-style-1" ref={splitRef}>
-                                    High Quality Services
+                                    {t.title}
                                 </h2>
                             </div>
                         </div>
@@ -90,126 +102,28 @@ function ServicesOne({ id }: ServicesOneProps) {
                                                     0: { slidesPerView: 1 },
                                                 }}
                                                 className="mySwiper-service-1"
-                                                >
-                                                <SwiperSlide>
-                                                    <div className="single-service-signle-wrapper">
-                                                        <div className="icons">
-                                                            <img
-                                                                loading="lazy"
-                                                                src="/assets/images/service/icons/01.svg"
-                                                                alt="service"
-                                                            />
+                                            >
+                                                {t.items.map((item, index) => (
+                                                    <SwiperSlide key={index}>
+                                                        <div className="single-service-signle-wrapper">
+                                                            <div className="icons">
+                                                                <img
+                                                                    loading="lazy"
+                                                                    src={serviceIcons[index] ?? serviceIcons[0]}
+                                                                    alt="service"
+                                                                />
+                                                            </div>
+                                                            <div className="information">
+                                                                <h5 className="title">{item.title}</h5>
+                                                                <p className="disc">{item.description}</p>
+                                                                <a href={detailsHref} className="arrow-right">
+                                                                    <i className="fa-sharp fa-solid fa-arrow-right" />
+                                                                    <span>{messages.common.buttons.readMore}</span>
+                                                                </a>
+                                                            </div>
                                                         </div>
-                                                        <div className="information">
-                                                            <h5 className="title">Business Planning</h5>
-                                                            <p className="disc">
-                                                                Sagitis himos pulvinar morb socis laoreet posuere
-                                                                enim non auctor etiam pretium libero
-                                                            </p>
-                                                            <a
-                                                                href="/service-details"
-                                                                className="arrow-right"
-                                                            >
-                                                                <i className="fa-sharp fa-solid fa-arrow-right" />
-                                                                <span>Read More</span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </SwiperSlide>
-                                                <SwiperSlide>
-                                                    <div className="single-service-signle-wrapper">
-                                                        <div className="icons">
-                                                            <img
-                                                                loading="lazy"
-                                                                src="/assets/images/service/icons/02.svg"
-                                                                alt="service"
-                                                            />
-                                                        </div>
-                                                        <div className="information">
-                                                            <h5 className="title">Process Development</h5>
-                                                            <p className="disc">
-                                                                Sagitis himos pulvinar morb socis laoreet posuere
-                                                                enim non auctor etiam pretium libero
-                                                            </p>
-                                                            <a
-                                                                href="/service-details"
-                                                                className="arrow-right"
-                                                            >
-                                                                <i className="fa-sharp fa-solid fa-arrow-right" />
-                                                                <span>Read More</span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </SwiperSlide>
-                                                <SwiperSlide>
-                                                    <div className="single-service-signle-wrapper">
-                                                        <div className="icons">
-                                                            <img
-                                                                loading="lazy"
-                                                                src="/assets/images/service/icons/03.svg"
-                                                                alt="service"
-                                                            />
-                                                        </div>
-                                                        <div className="information">
-                                                            <h5 className="title">Strategy &amp; Planning</h5>
-                                                            <p className="disc">
-                                                                Sagitis himos pulvinar morb socis laoreet posuere
-                                                                enim non auctor etiam pretium libero
-                                                            </p>
-                                                            <a
-                                                                href="/service-details"
-                                                                className="arrow-right"
-                                                            >
-                                                                <i className="fa-sharp fa-solid fa-arrow-right" />
-                                                                <span>Read More</span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </SwiperSlide>
-                                                <SwiperSlide>
-                                                    <div className="single-service-signle-wrapper">
-                                                        <div className="icons">
-                                                            <img
-                                                                loading="lazy"
-                                                                src="/assets/images/service/icons/01.svg"
-                                                                alt="service"
-                                                            />
-                                                        </div>
-                                                        <div className="information">
-                                                            <h5 className="title">Business Goal</h5>
-                                                            <p className="disc">
-                                                                Sagitis himos pulvinar morb socis laoreet posuere
-                                                                enim non auctor etiam pretium libero
-                                                            </p>
-                                                            <a href="#" className="arrow-right">
-                                                                <i className="fa-sharp fa-solid fa-arrow-right" />
-                                                                <span>Read More</span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </SwiperSlide>
-                                                <SwiperSlide>
-                                                    <div className="single-service-signle-wrapper">
-                                                        <div className="icons">
-                                                            <img
-                                                                loading="lazy"
-                                                                src="/assets/images/service/icons/01.svg"
-                                                                alt="service"
-                                                            />
-                                                        </div>
-                                                        <div className="information">
-                                                            <h5 className="title">Business Goal</h5>
-                                                            <p className="disc">
-                                                                Sagitis himos pulvinar morb socis laoreet posuere
-                                                                enim non auctor etiam pretium libero
-                                                            </p>
-                                                            <a href="#" className="arrow-right">
-                                                                <i className="fa-sharp fa-solid fa-arrow-right" />
-                                                                <span>Read More</span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </SwiperSlide>
+                                                    </SwiperSlide>
+                                                ))}
                                                 <div className="swiper-pagination" />
                                             </Swiper>
                                         </div>
@@ -220,9 +134,7 @@ function ServicesOne({ id }: ServicesOneProps) {
                     </div>
                 </div>
             </div>
-            {/* rts service area end */}
         </>
-
     )
 }
 
