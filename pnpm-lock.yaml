@@ -14,14 +14,11 @@ importers:
       bootstrap:
         specifier: ^5.3.8
         version: 5.3.8(@popperjs/core@2.11.8)
-      eslint-config-next:
-        specifier: ^16.2.0
-        version: 16.2.4(@typescript-eslint/parser@8.59.1(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3)
       gsap:
         specifier: ^3.13.0
         version: 3.15.0
       next:
-        specifier: ^16.0.7
+        specifier: 16.2.4
         version: 16.2.4(@babel/core@7.29.0)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       nodemailer:
         specifier: ^7.0.12
@@ -30,10 +27,10 @@ importers:
         specifier: ^0.4.8
         version: 0.4.8
       react:
-        specifier: ^19.2.3
+        specifier: 19.2.5
         version: 19.2.5
       react-dom:
-        specifier: ^19.2.3
+        specifier: 19.2.5
         version: 19.2.5(react@19.2.5)
       react-modal:
         specifier: ^3.16.3
@@ -48,9 +45,6 @@ importers:
         specifier: ^3.28.0
         version: 3.31.0(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
     devDependencies:
-      '@types/gsap':
-        specifier: ^1.20.2
-        version: 1.20.2
       '@types/node':
         specifier: ^20
         version: 20.19.39
@@ -69,6 +63,9 @@ importers:
       eslint:
         specifier: ^9
         version: 9.39.4
+      eslint-config-next:
+        specifier: 16.2.4
+        version: 16.2.4(@typescript-eslint/parser@8.59.1(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3)
       typescript:
         specifier: ^5
         version: 5.9.3
@@ -449,9 +446,6 @@ packages:
 
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
-
-  '@types/gsap@1.20.2':
-    resolution: {integrity: sha512-i9nUsnS32+VTgoX5IlaCYukJpCoB3c6h3bZvO67aIRdb3z8NFTWgeUDpQutLyb1ujowp6nw37qLQNvEowqq8yw==}
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
@@ -2220,8 +2214,6 @@ snapshots:
     optional: true
 
   '@types/estree@1.0.8': {}
-
-  '@types/gsap@1.20.2': {}
 
   '@types/json-schema@7.0.15': {}
 
