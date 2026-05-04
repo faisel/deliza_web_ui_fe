@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import Link from "next/link";
+import Link from "@/i18n/LocalizedLink";
 
 gsap.registerPlugin(SplitText, ScrollTrigger); 
 // 👇 odometer element type

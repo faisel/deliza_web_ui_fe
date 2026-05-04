@@ -1,18 +1,16 @@
 "use client";
 
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import type { Locale } from "./config";
 
 /**
- * Keeps `<html lang>` in sync with the active locale on client-side navigation.
- * The initial value is set by an inline script in the root layout's <head>
- * before hydration, so this runs only when the user navigates between locales.
+ * Aligns `<html lang>` with the active `[locale]` segment after mount.
+ * Do not set `lang` from an inline head script: it runs before React hydrates
+ * and causes a mismatch when the URL locale differs from `defaultLocale`.
  */
 export function HtmlLangSync({ locale }: { locale: Locale }) {
-  useEffect(() => {
-    if (document.documentElement.lang !== locale) {
-      document.documentElement.lang = locale;
-    }
+  useLayoutEffect(() => {
+    document.documentElement.lang = locale;
   }, [locale]);
   return null;
 }

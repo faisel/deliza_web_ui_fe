@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/i18n/LocalizedLink";
 import { defaultLocale } from "@/i18n/config";
 
 const target = `/${defaultLocale}/`;

@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import AOS from "aos";
-import Link from "next/link";
+import Link from "@/i18n/LocalizedLink";
 
 gsap.registerPlugin(ScrollTrigger);
 

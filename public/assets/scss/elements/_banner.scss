@@ -43,7 +43,7 @@
         }
 
         .pre-title {
-            color: #1C2539;
+            color: var(--color-heading-1);
             text-transform: uppercase;
             font-size: 16px;
             margin-bottom: 10px;
@@ -85,7 +85,7 @@
             font-size: 18px;
             line-height: 28px;
             font-weight: 400;
-            color: #1C2539;
+            color: var(--color-heading-1);
         }
     }
 
@@ -260,7 +260,7 @@
         }
 
         span.in {
-            -webkit-text-stroke-color: #1C2539;
+            -webkit-text-stroke-color: var(--color-heading-1);
             -webkit-text-stroke: 1px;
             -webkit-text-fill-color: transparent;
             display: inline;
@@ -305,7 +305,7 @@
     max-width: 1754px;
     margin: auto;
     height: 850px;
-    background: #F2F2F2;
+    background: var(--color-light);
     display: flex;
     align-items: center;
     position: relative;
@@ -364,7 +364,7 @@
 
     .banner-inner-conten {
         .pre {
-            color: #5D666F;
+            color: var(--color-gray);
             font-size: 22px;
             font-weight: 500;
         }
@@ -501,7 +501,7 @@
         i {
             font-size: 25px;
             transition: .3s;
-            color: #1C2539;
+            color: var(--color-heading-1);
         }
 
         &::after {
@@ -653,7 +653,7 @@
         p.pre {
             font-size: 18px;
             text-transform: uppercase;
-            color: #5D666F;
+            color: var(--color-gray);
             margin-bottom: 28px;
 
             span {
@@ -1193,7 +1193,7 @@
         p {
             margin-bottom: 0;
             font-size: 16px;
-            color: #5D666F;
+            color: var(--color-gray);
         }
     }
 
@@ -1221,7 +1221,7 @@
     p.disc {
         font-size: 18px;
         line-height: 1.5;
-        color: #5D666F;
+        color: var(--color-gray);
         max-width: 56%;
 
         @media #{$sm-layout} {
@@ -1239,7 +1239,7 @@
 }
 
 .rts-banner-area-9 {
-    background: #F2F2F2;
+    background: var(--color-light);
     height: 850px;
     display: flex;
     align-items: center;
@@ -1260,14 +1260,14 @@
 
     span.pre {
         text-transform: uppercase;
-        color: #1C2539;
+        color: var(--color-heading-1);
         display: block;
         margin-bottom: 12px;
     }
 
     p.disc {
         font-size: 18px;
-        color: #5D666F;
+        color: var(--color-gray);
         line-height: 1.7;
     }
 
@@ -1324,7 +1324,7 @@
 
 
 .easy-contact-left-funfacts-8 {
-    background: #20282D;
+    background: var(--color-primary);
     padding: 89px 66px;
     border-radius: 10px;
     margin-right: -40px;
@@ -1362,10 +1362,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #F2F2F2;
+            background: var(--color-light);
 
             i {
-                color: #20282D;
+                color: var(--color-primary);
             }
         }
 
@@ -1399,7 +1399,7 @@
 
     .single-counter-wrapper-8 {
         padding: 35px 45px;
-        background: #F2F2F2;
+        background: var(--color-light);
         margin-bottom: 50px;
         border-radius: 10px;
         text-align: center;
@@ -1425,7 +1425,7 @@
             margin-bottom: 0;
             text-transform: uppercase;
             font-size: 16px;
-            color: #1C2539;
+            color: var(--color-heading-1);
             font-weight: 700;
         }
 
@@ -1701,7 +1701,7 @@
         align-content: center;
         gap: 10px;
         font-size: 20px;
-        color: #1C2539;
+        color: var(--color-heading-1);
         margin-bottom: 10px;
     }
 
@@ -1728,7 +1728,7 @@
     .button-wrapper {
         .btn-border {
             border-color: var(--color-primary);
-            color: #1C2539;
+            color: var(--color-heading-1);
 
             &::before {
                 background: var(--color-primary);
@@ -1772,7 +1772,7 @@
         }
 
         span {
-            color: #5D666F;
+            color: var(--color-gray);
             font-size: 22px;
             font-weight: 500;
         }
@@ -1970,7 +1970,7 @@
 
     .button-wrapper .btn-border {
         border-color: var(--color-primary);
-        color: #1C2539;
+        color: var(--color-heading-1);
 
         &::before {
             background: var(--color-primary);
@@ -2095,7 +2095,7 @@
         }
 
         p {
-            color: #5D666F;
+            color: var(--color-gray);
             font-size: 18px;
             font-weight: 500;
             margin-bottom: 20px;

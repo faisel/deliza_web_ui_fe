@@ -1,11 +1,10 @@
 /* ========= Forms Styles ========= */
 input,
-button,
 select,
 textarea {
-    background: transparent;
-    border: 1px solid var(--color-border);
-    transition: all 0.4s ease-out 0s;
+    background: var(--color-white);
+    border: var(--border-width) solid var(--color-border);
+    transition: border-color var(--transition), box-shadow var(--transition);
     color: var(--color-body);
     width: 100%;
 
@@ -13,7 +12,12 @@ textarea {
     &:active {
         outline: none;
         border-color: var(--color-primary);
+        box-shadow: var(--focus-ring);
     }
+}
+
+button {
+    font-family: inherit;
 }
 
 button,
@@ -24,8 +28,8 @@ button,
 }
 
 input {
-    height: 40px;
-    padding: 0 15px;
+    min-height: 44px;
+    padding: 0 16px;
 }
 
 // select {
@@ -50,18 +54,19 @@ input[type="number"],
 input[type="tel"],
 textarea {
     font-size: var(--font-size-b2);
-    font-weight: 400;
+    font-weight: var(--p-regular);
+    font-family: var(--font-primary);
+    min-height: 44px;
     height: auto;
-    line-height: 28px;
-    background: transparent;
+    line-height: var(--line-height-b2);
+    background: var(--color-white);
     -webkit-box-shadow: none;
     box-shadow: none;
-    padding: 0 20px;
+    padding: 12px 16px;
     outline: none;
     border: var(--border-width) solid var(--color-border);
-    border-radius: var(--radius);
+    border-radius: var(--radius-input);
 
-    /* -- Placeholder -- */
     &::placeholder {
         color: var(--body-color);
         /* Firefox */
@@ -126,6 +131,7 @@ textarea {
 
     &:focus {
         border-color: var(--color-primary);
+        box-shadow: var(--focus-ring);
     }
 }
 
@@ -170,7 +176,7 @@ input[type="radio"] {
             left: 0;
             width: 15px;
             height: 15px;
-            background-color: #5d5d7e;
+            background-color: var(--color-gray);
             border-radius: 2px;
             transition: all .3s;
             border-radius: 2px;
@@ -230,67 +236,79 @@ input[type="radio"] {
     margin-bottom: 20px;
 
     label {
-        margin-bottom: 6px;
-        font-size: 14px;
-        line-height: 22px;
-        font-weight: 500;
+        margin-bottom: 8px;
+        font-size: var(--font-size-b4);
+        line-height: var(--line-height-b4);
+        font-weight: var(--p-medium);
     }
 
     input {
-        border: 0 none;
-        border-radius: 4px;
-        height: 50px;
+        border-radius: var(--radius-input);
+        min-height: 44px;
+        height: 44px;
         font-size: var(--font-size-b2);
         transition: var(--transition);
-        padding: 0 20px;
-        background-color: var(--color-lightest);
-        border: 1px solid transparent;
-        transition: var(--transition);
+        padding: 0 16px;
+        font-family: var(--font-primary);
+        background-color: var(--color-white);
+        border: 1px solid var(--color-border);
+        color: var(--color-body);
 
         &:focus {
             border-color: var(--color-primary);
-            box-shadow: none;
+            box-shadow: var(--focus-ring);
         }
     }
 
     textarea {
         min-height: 160px;
-        border: 0 none;
-        border-radius: 4px;
+        border-radius: var(--radius-input);
         resize: none;
-        padding: 15px;
+        padding: 16px;
         font-size: var(--font-size-b2);
+        font-family: var(--font-primary);
         transition: var(--transition);
-        background-color: var(--color-lightest);
-        border: 1px solid transparent;
+        background-color: var(--color-white);
+        border: 1px solid var(--color-border);
+        color: var(--color-body);
+        line-height: var(--line-height-b2);
 
         &:focus {
             border-color: var(--color-primary);
+            box-shadow: var(--focus-ring);
         }
     }
 }
 
 input[type="submit"] {
     width: auto;
-    padding: 0 30px;
-    border-radius: 500px;
+    padding: 21px 28px;
+    border-radius: var(--radius);
     display: inline-block;
-    font-weight: 500;
-    transition: 0.3s;
-    height: 60px;
+    transition: var(--transition);
+    min-height: 44px;
     background: var(--color-primary);
     color: var(--color-white);
-    font-weight: var(--p-medium);
+    font-weight: var(--p-bold);
     font-size: var(--font-size-b2);
-    line-height: var(--line-height-b3);
-    height: 50px;
-    border: 2px solid var(--color-primary);
-    transition: var(--transition);
+    line-height: var(--line-height-b2);
+    font-family: var(--font-primary);
+    border: 1px solid var(--color-primary);
+    cursor: pointer;
 
-    &:hover {
-        background: transparent;
-        color: var(--color-primary);
-        transform: translateY(-5px);
+    &:hover:not(:disabled) {
+        background: var(--color-hover-burgundy);
+        border-color: var(--color-hover-burgundy);
+        color: var(--color-white);
     }
 
+    &:active:not(:disabled) {
+        opacity: 0.85;
+    }
+
+    &:disabled {
+        background: var(--color-gray);
+        border-color: var(--color-gray);
+        cursor: not-allowed;
+    }
 }

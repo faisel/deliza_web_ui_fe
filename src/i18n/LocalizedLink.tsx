@@ -19,3 +19,5 @@ export function LocalizedLink({ href, children, ...rest }: LocalizedLinkProps) {
     </Link>
   );
 }
+
+export default LocalizedLink;

@@ -1,38 +1,52 @@
 :root {
 
-    // themes color
-    --color-primary: #20282D;
-    --color-secondary: #1F1F25;
-    --color-blue: #0b4df5;
-    --color-sky: #82b440;
+    // Brand — Caminada-inspired hospitality
+    --color-primary: #480F0E;
+    --color-secondary: #000000;
+    --color-blue: #480F0E;
+    --color-sky: #FDEBE8;
 
-    // body color
-    --color-body: #5D666F;
+    --color-body: #000000;
+    --color-heading: #000000;
+    --color-heading-1: #000000;
+    --color-title: #000000;
+    --color-heading-dark: #000000;
 
-    // title color
-    --color-heading-1: #1C2539;
-    --color-title: #141416;
-    --color-heading-dark: #141416;
+    --transition: 0.3s;
 
-    --transition: .3s;
+    // Surfaces
+    --color-page-bg: #FDEBE8;
+    --bg-dark-1: #2A0A09;
 
-    // bg colo
-    --bg-dark-1: #1E1E20;
+    --color-white: #FFFFFF;
+    --color-light: #FAFAFA;
+    --color-gray: #A9A9A9;
+    --color-gray-2: #FEFEFE;
+    --color-border: #A9A9A9;
+    --color-lighter: #FAFAFA;
+    --color-lightest: #FFFFFF;
+    --body-color: #A9A9A9;
 
-    --color-white: #fff;
+    --color-hover-burgundy: #2A0A09;
 
-    --color-border: #DDD8F9;
     --border-width: 1px;
     --radius: 10px;
+    --radius-input: 0;
 
-    // notify Colors
+    // Imagery
+    --image-overlay: rgba(0, 0, 0, 0.3);
+    --image-overlay-hover: rgba(0, 0, 0, 0.5);
+
+    // Focus & emphasis
+    --focus-ring: 0 0 0 3px rgba(72, 15, 14, 0.1);
+
+    // Semantic (keep success; danger aligned to brand where acceptable)
     --color-success: #3EB75E;
-    --color-danger: #FF0003;
+    --color-danger: #480F0E;
     --color-warning: #FF8F3C;
     --color-info: #1BA2DB;
 
-
-    //Social icon colors
+    // Social icon colors
     --color-facebook: #3B5997;
     --color-twitter: #1BA1F2;
     --color-youtube: #ED4141;
@@ -43,7 +57,6 @@
     --color-twitch: #6441A3;
     --color-discord: #7289da;
 
-
     // Font weight
     --p-light: 300;
     --p-regular: 400;
@@ -53,7 +66,6 @@
     --p-extra-bold: 800;
     --p-black: 900;
 
-    // Font weight
     --s-light: 300;
     --s-regular: 400;
     --s-medium: 500;
@@ -62,31 +74,21 @@
     --s-extra-bold: 800;
     --s-black: 900;
 
+    // Font family (kumlien-pro optional; Open Sans loaded for secondary)
+    --font-primary: kumlien-pro, Georgia, "Times New Roman", serif;
+    --font-secondary: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    --font-3: "Font Awesome 6 Free", "Font Awesome 6 Pro", fontawesome;
 
-
-    //transition easing
-    --transition: 0.3s;
-
-
-    // Font Family
-    --font-primary: "Red Hat Display", serif;
-    --font-secondary: "DM Sans", serif;
-    --font-3: 'fontawesome';
-    //Fonts Size
+    // Type scale (original template sizes)
     --font-size-b1: 16px;
-
-    --font-size-b2: 15px;
-    --font-size-b3: 22px;
-
-
-    //Line Height
     --line-height-b1: 26px;
-
+    --font-size-b2: 15px;
     --line-height-b2: 26px;
+    --font-size-b3: 22px;
     --line-height-b3: 1.7;
+    --font-size-b4: 13px;
+    --line-height-b4: 22px;
 
-
-    // Heading Font
     --h1: 60px;
     --h2: 48px;
     --h3: 30px;
@@ -94,6 +96,12 @@
     --h5: 24px;
     --h6: 18px;
 
+    // Section rhythm (4px grid)
+    --section-pad-x-desktop: 48px;
+    --section-pad-y-desktop: 48px;
+    --section-pad-x-mobile: 16px;
+    --section-pad-y-mobile: 24px;
+    --hero-pad-y: 132px;
 }
 
 // Layouts Variation

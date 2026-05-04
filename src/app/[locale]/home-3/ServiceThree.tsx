@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Link from "next/link";
+import Link from "@/i18n/LocalizedLink";
 
 import ScrollTrigger from "gsap/ScrollTrigger";
 

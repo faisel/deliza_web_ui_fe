@@ -9,12 +9,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import Script from "next/script";
-import { defaultLocale, locales } from "@/i18n/config";
+import { defaultLocale } from "@/i18n/config";
 import { I18nProvider } from "@/i18n/I18nProvider";
-
-const setLangFromUrl = `(function(){try{var s=location.pathname.split('/').filter(Boolean)[0];if([${locales
-  .map((l) => `'${l}'`)
-  .join(",")}].indexOf(s)>-1){document.documentElement.lang=s;}}catch(e){}})();`;
 
 export const metadata: Metadata = {
   title: "Deliza – Business Consulting",
@@ -51,7 +47,6 @@ export default function RootLayout({
   return (
     <html lang={defaultLocale} suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: setLangFromUrl }} />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"

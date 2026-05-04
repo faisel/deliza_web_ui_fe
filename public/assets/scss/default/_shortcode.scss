@@ -466,7 +466,7 @@ textarea:-ms-input-placeholder {
 }
 
 [data-overlay]:before {
-    background: var(--color-primary);
+    background: #000000;
 }
 
 [data-black-overlay]:before {
@@ -483,5 +483,29 @@ textarea:-ms-input-placeholder {
     [data-black-overlay="#{$i}"]:before,
     [data-white-overlay="#{$i}"]:before {
         opacity: #{$i * 0.10};
+    }
+}
+
+/* Hospitality badges — use with existing typography utilities */
+.deliza-badge {
+    display: inline-block;
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-b4);
+    line-height: var(--line-height-b4);
+    border-radius: var(--radius);
+    font-weight: var(--p-medium);
+
+    &--primary {
+        background: var(--color-primary);
+        color: var(--color-white);
+        padding: 4px 12px;
+        border: 1px solid var(--color-primary);
+    }
+
+    &--neutral {
+        background: var(--color-light);
+        color: var(--color-heading-1);
+        padding: 4px 12px;
+        border: 1px solid var(--color-border);
     }
 }

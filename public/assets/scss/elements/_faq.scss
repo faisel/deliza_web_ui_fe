@@ -48,7 +48,7 @@
 
                 &[aria-expanded="true"] {
                     background: #fff;
-                    color: #1C2539;
+                    color: var(--color-heading-1);
 
                     &::after {
                         filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(242deg) brightness(109%) contrast(108%);
@@ -62,7 +62,7 @@
                     transition-delay: 0s;
                     padding: 25px 30px 30px 30px;
                     font-size: 16px;
-                    color: #5D666F;
+                    color: var(--color-gray);
                 }
             }
 
@@ -85,7 +85,7 @@
 .faq-wrapper-inner-page {
     .accordion-item {
         margin-bottom: 30px;
-        background: #F2F2F2;
+        background: var(--color-light);
         border: 1px solid #E3E0E6;
         box-shadow: 0px 7px 18px rgba(24, 16, 16, 0.05);
         border-radius: 6px;
@@ -102,7 +102,7 @@
                 border: none;
                 box-shadow: none;
                 font-size: 18px;
-                color: #1C2539;
+                color: var(--color-heading-1);
                 background: transparent;
                 font-weight: 700;
                 @media #{$sm-layout} {

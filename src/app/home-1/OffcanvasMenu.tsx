@@ -1,6 +1,8 @@
 "use client";
-import Link from "next/link";
-import { useState } from "react";
+import Link from "@/i18n/LocalizedLink";
+import { useTranslation } from "@/i18n/useTranslation";
+import { localizePath } from "@/i18n/routing";
+import { mainNavItems } from "./HeaderOne";
 
 interface OffcanvasMenuProps {
     isOpen: boolean;
@@ -8,11 +10,8 @@ interface OffcanvasMenuProps {
 }
 
 function OffcanvasMenu({ isOpen, onClose }: OffcanvasMenuProps) {
-    const [activeMenu, setActiveMenu] = useState<number | null>(null);
-
-    const toggleMenu = (index: number) => {
-        setActiveMenu(activeMenu === index ? null : index);
-    };
+    const { locale, messages } = useTranslation();
+    const lp = (path: string) => localizePath(path, locale);
 
     return (
         <>
@@ -28,7 +27,7 @@ function OffcanvasMenu({ isOpen, onClose }: OffcanvasMenuProps) {
 
                 {/* Desktop Sidebar */}
                 <div className="rts-sidebar-menu-desktop">
-                    <Link className="logo-1" href="/">
+                    <Link className="logo-1" href={lp("/")}>
                         <img className="logo deliza-logo" src="/assets/images/logo/deliza_web_b.png" alt="Deliza" />
                     </Link>
                     <div className="body d-none d-xl-block">
@@ -59,108 +58,13 @@ function OffcanvasMenu({ isOpen, onClose }: OffcanvasMenuProps) {
                 <div className="mobile-menu d-block d-xl-none">
                     <nav className="nav-main mainmenu-nav mt--30">
                         <ul className="mainmenu" id="mobile-menu-active">
-
-                            {/* Demos */}
-                            <li className="has-droupdown">
-                                <button onClick={() => toggleMenu(0)} className="main" aria-expanded={activeMenu === 0}>
-                                    Demos
-                                </button>
-                                <ul className="submenu" style={{ height: activeMenu === 0 ? "auto" : "0", overflow: "hidden" }}>
-                                    <li><Link href="/">Business One</Link></li>
-                                    <li><Link href="/home-2">Business Two</Link></li>
-                                    <li><Link href="/home-3">Business Three</Link></li>
-                                    <li><Link href="/home-4">Business Four</Link></li>
-                                    <li><Link href="/home-5">Finance Demo</Link></li>
-                                    <li><Link href="/home-6">Marketing agency</Link></li>
-                                    <li><Link href="/home-7">Business agency</Link></li>
-                                    <li><Link href="/home-8">Business Management</Link></li>
-                                    <li><Link href="/home-9">Insurance Home</Link></li>
-                                    <li><Link href="/home-10">Business Website</Link></li>
-                                </ul>
-                            </li>
-
-                            {/* Onepage */}
-                            <li className="has-droupdown">
-                                <button onClick={() => toggleMenu(1)} className="main" aria-expanded={activeMenu === 1}>
-                                    Onepage
-                                </button>
-                                <ul className="submenu" style={{ height: activeMenu === 1 ? "auto" : "0", overflow: "hidden" }}>
-                                    {Array.from({ length: 10 }).map((_, i) => (
-                                        <li key={i}><Link href={`/onepage-${i + 1}`}>Onepage {i + 1}</Link></li>
-                                    ))}
-                                </ul>
-                            </li>
-
-                            {/* Pages */}
-                            <li className="has-droupdown">
-                                <button onClick={() => toggleMenu(2)} className="main" aria-expanded={activeMenu === 2}>
-                                    Pages
-                                </button>
-                                <ul className="submenu" style={{ height: activeMenu === 2 ? "auto" : "0", overflow: "hidden" }}>
-                                    <li><Link href="/about">About Company</Link></li>
-                                    <li><Link href="/service">Service</Link></li>
-                                    <li><Link href="/service-details">Service Details</Link></li>
-                                    <li><Link href="/pricing">Pricing</Link></li>
-                                    <li><Link href="/history">Our History</Link></li>
-                                    <li><Link href="/blog-list">Blog List</Link></li>
-                                    <li><Link href="/faq">FAQ's</Link></li>
-                                    <li><Link href="/career">Career</Link></li>
-                                </ul>
-                            </li>
-
-                            {/* Services */}
-                            <li className="has-droupdown">
-                                <button onClick={() => toggleMenu(3)} className="main" aria-expanded={activeMenu === 3}>
-                                    Services
-                                </button>
-                                <ul className="submenu" style={{ height: activeMenu === 3 ? "auto" : "0", overflow: "hidden" }}>
-                                    {Array.from({ length: 5 }).map((_, i) => (
-                                        <li key={i}><Link href={`/service-details-${i + 1}`}>Service Details {i + 1}</Link></li>
-                                    ))}
-                                </ul>
-                            </li>
-
-                            {/* Projects */}
-                            <li className="has-droupdown">
-                                <button onClick={() => toggleMenu(4)} className="main" aria-expanded={activeMenu === 4}>
-                                    Projects
-                                </button>
-                                <ul className="submenu" style={{ height: activeMenu === 4 ? "auto" : "0", overflow: "hidden" }}>
-                                    <li><Link href="/project">Project</Link></li>
-                                    <li><Link href="/project-slider">Project Slider</Link></li>
-                                    <li><Link href="/project-grid">Project Grid</Link></li>
-                                    <li><Link href="/project-card-slider">Project Card Slider</Link></li>
-                                </ul>
-                            </li>
-
-                            {/* Shop */}
-                            <li className="has-droupdown">
-                                <button onClick={() => toggleMenu(5)} className="main" aria-expanded={activeMenu === 5}>
-                                    Shop Pages
-                                </button>
-                                <ul className="submenu" style={{ height: activeMenu === 5 ? "auto" : "0", overflow: "hidden" }}>
-                                    <li><Link href="/shop">Shop</Link></li>
-                                    <li><Link href="/shop-single">Shop Details</Link></li>
-                                    <li><Link href="/account">Account</Link></li>
-                                </ul>
-                            </li>
-
-                            {/* Blog */}
-                            <li className="has-droupdown">
-                                <button onClick={() => toggleMenu(6)} className="main" aria-expanded={activeMenu === 6}>
-                                    Blog
-                                </button>
-                                <ul className="submenu" style={{ height: activeMenu === 6 ? "auto" : "0", overflow: "hidden" }}>
-                                    <li><Link href="/blog">Blog</Link></li>
-                                    <li><Link href="/blog/liliput-settle-tips-of-the-new-ages-exist">Blog Details</Link></li>
-                                </ul>
-                            </li>
-
-                            {/* Contact */}
-                            <li>
-                                <Link href="/contact" className="main">Contact Us</Link>
-                            </li>
-
+                            {mainNavItems.map((item) => (
+                                <li key={item.key}>
+                                    <Link href={lp(item.href)} className="main">
+                                        {messages.header.nav[item.key]}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </nav>
 

@@ -9,7 +9,7 @@
     h3 {
         font-size: 62px;
         margin-bottom: 70px;
-        color: #141416;
+        color: var(--color-title);
 
         @media #{$large-mobile} {
             font-size: 44px;

@@ -23,7 +23,7 @@
 
     .progress {
         height: 40px;
-        background: linear-gradient(90deg, #20282d29 0%, #f2f2f205 100%);
+        background: linear-gradient(90deg, var(--color-primary)29 0%, var(--color-light)05 100%);
         opacity: 1;
         border-radius: 40px;
         background-color: transparent;
@@ -191,7 +191,7 @@
             align-items: center;
             gap: 30px;
             position: relative;
-            background: #20282D;
+            background: var(--color-primary);
             padding: 20px 42px;
             border-radius: 10px;
             @media #{$large-mobile} {
@@ -247,7 +247,7 @@
                 font-size: 16px;
                 font-weight: 600;
                 text-transform: uppercase;
-                color: #5D666F;
+                color: var(--color-gray);
             }
         }
     }
@@ -274,7 +274,7 @@
     p.disc {
         margin-bottom: 0;
         font-weight: 400;
-        color: #5D666F;
+        color: var(--color-gray);
     }
 
     svg.radial-progress circle.bar--animated {

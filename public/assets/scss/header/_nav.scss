@@ -24,8 +24,8 @@
             padding: 0;
 
             a {
-                color: #111032;
-                font-weight: 600 !important;
+                color: var(--color-heading-1);
+                font-weight: var(--p-regular) !important;
             }
         }
     }
@@ -74,7 +74,7 @@ header.header-five {
     top: 51%;
     transform: translateY(-50%);
     font-weight: 400;
-    color: #1C2539;
+    color: var(--color-heading-1);
     font-family: "Font Awesome 6 Pro";
     font-weight: 300;
     font-size: 14px;
@@ -87,7 +87,7 @@ header.header-five {
     top: 53%;
     transform: translateY(-50%);
     font-weight: 400;
-    color: #1C2539;
+    color: var(--color-heading-1);
     font-family: "Font Awesome 6 Pro";
     font-weight: 300;
     font-size: 14px;
@@ -99,7 +99,18 @@ header.header-five {
 }
 
 header .main-nav>a {
-    color: #1C2539 !important;
+    color: var(--color-heading-1) !important;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: var(--p-regular) !important;
+    font-family: var(--font-primary);
+    text-decoration: none;
+    transition: color var(--transition);
+
+    &:hover,
+    &.active {
+        color: var(--color-primary) !important;
+    }
 }
 
 header.header-two {
@@ -132,13 +143,14 @@ header.header-five {
     position: relative;
 
     span {
-        padding: 3px 9px;
-        border-radius: 33px;
-        background: var(--color-sky);
-        color: #fff;
+        padding: 4px 12px;
+        border-radius: var(--radius);
+        background: var(--color-primary);
+        color: var(--color-white);
         line-height: 1;
-        font-size: 14px;
-        transition: .3s;
+        font-size: var(--font-size-b4);
+        font-weight: var(--p-medium);
+        transition: var(--transition);
     }
     &:hover{
         span{

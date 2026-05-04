@@ -61,11 +61,11 @@
                         width: 40px;
                         background: #F6F6F6;
                         border-radius: 50%;
-                        color: #1C2539;
+                        color: var(--color-heading-1);
                         transition: .4s;
 
                         &:hover {
-                            background: #1C2539;
+                            background: var(--color-heading-1);
                             color: #fff;
                         }
                     }
@@ -466,7 +466,7 @@
     }
 
     .title-area span {
-        color: #5D666F;
+        color: var(--color-gray);
         font-weight: 500;
         font-size: 16px;
     }
@@ -476,7 +476,7 @@
         font-size: 16px;
         line-height: 26px;
         margin-bottom: 33px;
-        color: #5D666F;
+        color: var(--color-gray);
     }
 
     .team-details-support-wrapper {
@@ -504,7 +504,7 @@
 
             span {
                 margin-bottom: 5px;
-                color: #5D666F;
+                color: var(--color-gray);
                 font-size: 16px;
                 font-weight: 400;
             }

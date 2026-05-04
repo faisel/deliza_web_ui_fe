@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
-import Link from "next/link";
+import Link from "@/i18n/LocalizedLink";
 import OffcanvasMenuOnepage from '../../home-1/OffcanvasMenuOnepage';
 
 function OnepageHeaderFour() {

@@ -6,7 +6,7 @@ section.main-wrapper-sticky {
     }
 
     .sticky-statement {
-        background: #F2F2F2;
+        background: var(--color-light);
         padding: 43px;
         display: flex;
         align-items: center;
@@ -54,7 +54,7 @@ section.main-wrapper-sticky {
 
                 i {
 
-                    color: #1C2539;
+                    color: var(--color-heading-1);
                 }
             }
         }
@@ -123,7 +123,7 @@ section.main-wrapper-sticky {
             .arrow {
                 height: 62px;
                 width: 62px;
-                background: #20282D;
+                background: var(--color-primary);
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -176,7 +176,7 @@ section.main-wrapper-sticky {
 
         p.disc {
             line-height: 1.5;
-            color: #5D666F;
+            color: var(--color-gray);
             margin-bottom: 25px;
         }
 
@@ -184,7 +184,7 @@ section.main-wrapper-sticky {
             display: flex;
             align-items: center;
             gap: 9px;
-            color: #1C2539;
+            color: var(--color-heading-1);
 
             i {
                 height: 40px;
@@ -194,7 +194,7 @@ section.main-wrapper-sticky {
                 justify-content: center;
                 background: #fff;
                 border-radius: 50%;
-                color: #1C2539;
+                color: var(--color-heading-1);
                 box-shadow: 0px 9px 18px rgba(24, 16, 16, 0.05);
 
             }
@@ -216,7 +216,7 @@ section.main-wrapper-sticky {
 
             .arrow-right {
                 i {
-                    background: #20282D;
+                    background: var(--color-primary);
                     color: #fff;
                 }
             }
@@ -267,7 +267,7 @@ section.main-wrapper-sticky {
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #F2F2F2;
+            background: var(--color-light);
             margin: auto;
             margin-bottom: 25px;
             clip-path: polygon(0.167% 0.175%, 99.833% 0.175%, 99.833% 86.41%, 93.226% 92.322%, 93.225% 92.322%, 84.772% 99.825%, 0.167% 99.825%, 0.167% 0.175%);
@@ -276,7 +276,7 @@ section.main-wrapper-sticky {
         .title {
             font-size: 22px;
             font-weight: 700;
-            color: #1C2539;
+            color: var(--color-heading-1);
             margin-bottom: 17px;
         }
 
@@ -286,7 +286,7 @@ section.main-wrapper-sticky {
         }
 
         a.read-more {
-            color: #5D666F;
+            color: var(--color-gray);
             font-weight: 700;
             display: flex;
             align-items: center;
@@ -325,7 +325,7 @@ section.main-wrapper-sticky {
 }
 
 .service-single-main-wrapper-five {
-    background: #F2F2F2;
+    background: var(--color-light);
     padding: 40px;
     border-radius: 10px;
     text-align: center;
@@ -427,14 +427,14 @@ section.main-wrapper-sticky {
     .left-icon-number {
         height: 61px;
         min-width: 61px;
-        background: #F2F2F2;
+        background: var(--color-light);
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 10px;
         font-weight: 700;
         font-size: 30px;
-        color: #20282D;
+        color: var(--color-primary);
     }
 
     .inner-content {
@@ -483,7 +483,7 @@ section.main-wrapper-sticky .sticky-statement.narrow {
     justify-content: space-between;
     padding: 28px 30px;
     border-radius: 50px;
-    background: #20282D;
+    background: var(--color-primary);
     position: relative;
 
     @media #{$md-layout} {
@@ -772,7 +772,7 @@ br {
             }
 
             p {
-                color: #5D666F;
+                color: var(--color-gray);
             }
 
             * {
@@ -874,7 +874,7 @@ br {
             .icon {
                 height: 60px;
                 min-width: 60px;
-                background: #F2F2F2;
+                background: var(--color-light);
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
@@ -928,7 +928,7 @@ br {
 
 
 .rts-single-wized {
-    background: #20282D;
+    background: var(--color-primary);
     border-radius: 15px;
     padding: 40px;
     margin-bottom: 40px;
@@ -954,7 +954,7 @@ br {
     }
 
     &.download {
-        background: #1C2539;
+        background: var(--color-heading-1);
 
         .title {
             color: #fff;
@@ -1004,7 +1004,7 @@ br {
     }
 
     &.contact {
-        background: #1C2539;
+        background: var(--color-heading-1);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1171,7 +1171,7 @@ br {
                 margin-bottom: 0;
                 font-size: 16px;
                 font-weight: 600;
-                color: #1C2539;
+                color: var(--color-heading-1);
                 line-height: 26px;
                 margin-top: 5px;
                 transition: .3s;
@@ -1264,7 +1264,7 @@ br {
             border-radius: 5px;
             margin-right: 10px;
             margin-bottom: 10px;
-            color: #1C2539;
+            color: var(--color-heading-1);
             font-size: 14px;
             font-weight: 500;
             transition: .3s;
@@ -1320,7 +1320,7 @@ br {
 
         .title {
             font-size: 48px;
-            color: #1C2539;
+            color: var(--color-heading-1);
             margin-bottom: 0;
 
             @media #{$sm-layout} {
@@ -1335,7 +1335,7 @@ br {
 
     .rts-btn {
         border: 1px solid #999999;
-        color: #1C2539;
+        color: var(--color-heading-1);
 
         &::before {
             background: var(--color-primary);
@@ -1348,7 +1348,7 @@ br {
 }
 
 .banner-service-wrapper-bg {
-    background: #F2F2F2;
+    background: var(--color-light);
 }
 
 .single-service-hr {
@@ -1370,7 +1370,7 @@ br {
             height: 85px;
             width: 85px;
             margin: auto;
-            background: #F2F2F2;
+            background: var(--color-light);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1446,7 +1446,7 @@ br {
 }
 
 .bg_color-dark-1 {
-    background: #20282D;
+    background: var(--color-primary);
     position: relative;
     z-index: 1;
 
@@ -1537,7 +1537,7 @@ br {
 
 .counter-main-wrapper-inner-seo {
     padding: 74px 55px;
-    background: #F2F2F2;
+    background: var(--color-light);
     border: 1px solid #E9EDF2;
     border-radius: 10px;
 
@@ -1576,7 +1576,7 @@ br {
         margin-bottom: 15px;
     }
     .read-more{
-        color: #5D666F;
+        color: var(--color-gray);
         font-weight: 600;
         display: flex;
         align-items: center;

@@ -292,13 +292,13 @@
                 border-radius: 15px;
                 background: #F6F6F6;
                 font-size: 16px;
-                color: #5D666F;
+                color: var(--color-gray);
                 border: none;
                 padding: 15px;
             }
         }
         label{
-            color: #20282D;
+            color: var(--color-primary);
             font-size: 18px;
             margin-bottom: 7px;
             margin-top: 25px;
@@ -312,7 +312,7 @@
             background: #F6F6F6;
             border: none;
             font-size: 16px;
-                color: #5D666F;
+                color: var(--color-gray);
         }
         textarea{
             border: none;

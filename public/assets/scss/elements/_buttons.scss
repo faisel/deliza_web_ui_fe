@@ -1,23 +1,47 @@
 .rts-btn {
-    height: 55px;
+    min-height: 44px;
     max-width: max-content;
-    padding: 13px 29px;
-    border: none;
+    padding: 21px 28px;
     box-shadow: none;
     min-width: max-content;
-    border-radius: 15px;
-    transition: 800ms;
-    font-weight: 600;
+    border-radius: var(--radius);
+    transition: color var(--transition), background var(--transition), border-color var(--transition),
+        opacity var(--transition);
+    font-weight: var(--p-bold);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-b2);
+    line-height: var(--line-height-b2);
+    background: transparent;
+    color: var(--color-heading-1);
+    border: 1px solid transparent;
+    cursor: pointer;
 
     @media #{$large-mobile} {
-        height: 47px;
-        padding: 13px 20px;
+        padding: 17px 24px;
+        min-height: 44px;
         display: flex !important;
         align-items: center !important;
     }
 
+    &:disabled,
+    &.disabled {
+        background: var(--color-gray) !important;
+        border-color: var(--color-gray) !important;
+        color: var(--color-white) !important;
+        cursor: not-allowed;
+        opacity: 1;
+    }
+
+    &.rts-btn--lg {
+        min-height: 68px;
+        padding: 24px 32px;
+    }
+
     &.btn-primary {
         background: var(--color-primary);
+        color: var(--color-white);
+        border: 1px solid var(--color-primary);
+        font-weight: var(--p-bold);
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -25,65 +49,63 @@
         position: relative;
         z-index: 1;
 
-        &::before {
-            content: "";
-            position: absolute;
-            -webkit-transition-duration: 800ms;
-            transition-duration: 800ms;
-            width: 200%;
-            height: 200%;
-            top: 110%;
-            left: 50%;
-            background: #F2F2F2;
-            -webkit-transform: translateX(-50%);
-            -moz-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-            -o-transform: translateX(-50%);
-            transform: translateX(-50%);
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -o-border-radius: 50%;
-            -ms-border-radius: 50%;
-            border-radius: 50%;
-            z-index: -1;
+        &:hover:not(:disabled) {
+            background: var(--color-hover-burgundy);
+            border-color: var(--color-hover-burgundy);
+            color: var(--color-white);
         }
 
-        &:hover {
-            background: #F2F2F2;
-            color: var(--color-primary);
-
-            &::before {
-                top: -40%;
-            }
+        &:active:not(:disabled) {
+            opacity: 0.85;
         }
 
         &.btn-white {
-            background: #F2F2F2;
-            color: #20282D;
+            background: var(--color-gray-2);
+            color: var(--color-primary);
+            border-color: var(--color-primary);
 
-            &::before {
+            &:hover:not(:disabled) {
                 background: var(--color-primary);
-            }
-
-            &:hover {
-                background: var(--color-primary);
-                color: #F2F2F2;
-
-                &::before {
-                    top: -40%;
-                }
+                border-color: var(--color-primary);
+                color: var(--color-white);
             }
         }
     }
 
     &.btn-border {
         background: transparent;
-        border: 1px solid #E9ECF1;
+        border: 1px solid var(--color-border);
+        color: var(--color-heading-1);
+        font-weight: var(--p-medium);
+
+        &:hover:not(:disabled) {
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+        }
     }
 
+    &.btn-on-dark {
+        background: transparent;
+        border: 1px solid var(--color-white);
+        color: var(--color-white);
+        font-weight: var(--p-bold);
+
+        &:hover:not(:disabled) {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--color-white);
+            color: var(--color-white);
+        }
+    }
 
     &:focus {
-        border: none;
+        outline: none;
+        box-shadow: var(--focus-ring);
+    }
+
+    &.btn-ghost,
+    &.btn-ghost:focus {
+        border-color: transparent;
         box-shadow: none;
+        background: transparent;
     }
 }

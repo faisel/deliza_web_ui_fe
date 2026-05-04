@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import Link from "@/i18n/LocalizedLink";
 import { useState } from "react";
 
 interface OffcanvasMenuOnepageProps {

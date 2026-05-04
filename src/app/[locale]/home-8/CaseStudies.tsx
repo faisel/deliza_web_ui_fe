@@ -6,7 +6,7 @@ import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import Link from "next/link";
+import Link from "@/i18n/LocalizedLink";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 

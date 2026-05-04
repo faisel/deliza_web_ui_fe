@@ -40,10 +40,11 @@ const it: Messages = {
     },
     nav: {
       home: "Home",
-      pages: "Pagine",
-      service: "Servizi",
-      project: "Progetti",
-      blog: "Blog",
+      brands: "Marchi",
+      products: "Servizi",
+      investment: "Consulenza",
+      about: "Chi siamo",
+      news: "News",
       contact: "Contatti",
     },
     languageSwitcher: {

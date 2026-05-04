@@ -1,7 +1,7 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import Link from "next/link";
+import Link from "@/i18n/LocalizedLink";
 
 type CaseStudiesProps = {
   id?: string;

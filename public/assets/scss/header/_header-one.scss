@@ -1,5 +1,5 @@
 .header-top-area-wrapper {
-    background: #20282D;
+    background: var(--color-primary);
 
     @media #{$md-layout} {
         display: none;
@@ -207,7 +207,7 @@
 
 #search,
 #menu-btn {
-    background: #F2F2F2;
+    background: var(--color-light);
     height: 55px;
     min-width: 55px;
     display: flex;
@@ -217,7 +217,7 @@
     border: none;
 
     i {
-        color: #1C2539;
+        color: var(--color-heading-1);
         font-size: 18px;
     }
 }

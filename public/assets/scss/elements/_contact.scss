@@ -84,7 +84,7 @@ body.contact-page {
 }
 
 #form-messages.success {
-    color: green;
+    color: var(--color-success);
 }
 
 .contact-form-p {
@@ -197,5 +197,5 @@ body.contact-page {
 }
 
 #form-messages.success {
-    color: green;
+    color: var(--color-success);
 }

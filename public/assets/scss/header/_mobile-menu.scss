@@ -456,7 +456,7 @@
                 margin: 20px 0 5px 0;
                 font-size: 18px;
                 font-weight: 500;
-                color: #1C2539;
+                color: var(--color-heading-1);
             }
 
             .mobile-menu-link {
@@ -1154,5 +1154,5 @@ header.header-three {
     border-bottom: 1px solid #f3f3f3;
     cursor: pointer;
     font-weight: 600;
-    color: #20282d;
+    color: var(--color-primary);
 }

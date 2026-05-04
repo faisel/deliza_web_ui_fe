@@ -20,7 +20,7 @@
     &.left {
         .title {
             font-size: 36px;
-            color: #1C2539;
+            color: var(--color-heading-1);
             line-height: 46px;
 
             span {
@@ -31,7 +31,7 @@
         p {
             &.disc {
                 font-size: 16px;
-                color: #5D666F;
+                color: var(--color-gray);
                 line-height: 26px;
             }
         }
@@ -59,7 +59,7 @@
 
             li {
                 a {
-                    color: #5D666F;
+                    color: var(--color-gray);
                     font-size: 16px;
                     font-weight: 400;
                     display: flex;
@@ -119,13 +119,13 @@
             margin-left: 30px;
 
             span {
-                color: #5D666F;
+                color: var(--color-gray);
                 font-size: 16px;
                 font-weight: 400;
             }
 
             a {
-                color: #1C2539;
+                color: var(--color-heading-1);
                 font-weight: 500;
                 font-size: 16px;
                 transition: .3s;
@@ -151,7 +151,7 @@
 
         p.disc {
             margin-bottom: 0;
-            color: #1C2539;
+            color: var(--color-heading-1);
             font-weight: 500;
 
             @media #{$large-mobile} {
@@ -180,7 +180,7 @@
 
                     a {
                         transition: .3s;
-                        color: #1C2539;
+                        color: var(--color-heading-1);
                         font-weight: 500;
                     }
                 }
@@ -192,7 +192,7 @@
 
 
 .rts-footer-area-two {
-    background-color: #20282D;
+    background-color: var(--color-primary);
 }
 
 .bg-footer-two {
@@ -481,7 +481,7 @@
                 background: #FFFFFF;
 
                 &:focus {
-                    border: 1px solid #20282D;
+                    border: 1px solid var(--color-primary);
                 }
             }
 
@@ -489,7 +489,7 @@
                 height: 55px;
                 width: 55px;
                 border-radius: 8px;
-                background: #20282D;
+                background: var(--color-primary);
                 color: #fff;
                 position: absolute;
                 right: 0;
@@ -541,7 +541,7 @@
 
     .title-main {
         font-size: 40px;
-        color: #1C2539;
+        color: var(--color-heading-1);
         margin-bottom: 13px;
         margin-top: 20px;
     }
@@ -571,7 +571,7 @@
                 border-radius: 50%;
 
                 i {
-                    color: #20282D;
+                    color: var(--color-primary);
                 }
             }
 
@@ -688,7 +688,7 @@
 
                     .note-area {
                         p {
-                            color: #5D666F;
+                            color: var(--color-gray);
                             margin-top: 25px;
                             font-weight: 400;
 
@@ -803,13 +803,13 @@
                     .info {
                         span {
                             display: block;
-                            color: #5D666F;
+                            color: var(--color-gray);
                             font-size: 15px;
                             font-weight: 400;
                         }
 
                         a {
-                            color: #1C2539;
+                            color: var(--color-heading-1);
                             font-size: 16px;
                             font-weight: 600;
                             transition: .3s;
@@ -842,7 +842,7 @@
                 position: relative;
                 z-index: 1;
                 transition: .3s;
-                color: #1C2539;
+                color: var(--color-heading-1);
 
                 &::after {
                     position: absolute;
@@ -883,10 +883,10 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 21px;
-        color: #1C2539;
+        color: var(--color-heading-1);
 
         P {
-            color: #1C2539;
+            color: var(--color-heading-1);
             flex-wrap: 400;
             font-size: 16px;
         }
@@ -1014,7 +1014,7 @@
     .footer-one-single-wized {
         &.mid-bg {
             padding: 40px;
-            background: linear-gradient(180deg, #354046 -15.16%, #20282D 100%);
+            background: linear-gradient(180deg, var(--bg-dark-1) -15.16%, var(--color-primary) 100%);
             border-radius: 15px;
             margin-top: -40px;
             margin: -40px 30px 0 30px;

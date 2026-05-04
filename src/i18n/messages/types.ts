@@ -60,10 +60,11 @@ export interface Messages {
     topNav: { companyNews: string; faq: string; contact: string };
     nav: {
       home: string;
-      pages: string;
-      service: string;
-      project: string;
-      blog: string;
+      brands: string;
+      products: string;
+      investment: string;
+      about: string;
+      news: string;
       contact: string;
     };
     languageSwitcher: { label: string };

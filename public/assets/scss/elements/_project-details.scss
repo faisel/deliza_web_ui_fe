@@ -32,7 +32,7 @@
             font-weight: 600;
             font-size: 16px;
             line-height: 22px;
-            color: #141416;
+            color: var(--color-title);
         }
     }
 }
@@ -47,7 +47,7 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 28px;
-        color: #141416;
+        color: var(--color-title);
         margin-bottom: 30px;
     }
 }

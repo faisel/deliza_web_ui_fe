@@ -7,7 +7,7 @@
         padding: 8px 16px;
         border: 1px solid #E9E9E9;
         font-size: 16px;
-        color: #5D666F;
+        color: var(--color-gray);
         display: flex;
         max-width: max-content;
         text-transform: uppercase;
@@ -163,7 +163,7 @@
 
     .pre {
         font-size: 18px;
-        color: #5D666F;
+        color: var(--color-gray);
         font-weight: 500;
     }
 
@@ -222,7 +222,7 @@
         line-height: 21px;
         letter-spacing: 0.3em;
         text-transform: uppercase;
-        color: #5D666F;
+        color: var(--color-gray);
     }
 
     .title {
@@ -230,8 +230,8 @@
         font-size: 48px;
         line-height: 65px;
         text-transform: uppercase;
-        color: #1C2539;
-        -webkit-text-stroke-color: #1C2539;
+        color: var(--color-heading-1);
+        -webkit-text-stroke-color: var(--color-heading-1);
         -webkit-text-stroke: 1px;
         margin-top: 20px;
 
@@ -290,7 +290,7 @@
         line-height: 21px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #5D666F;
+        color: var(--color-gray);
 
         @media #{$large-mobile} {
             font-size: 14px;
@@ -327,7 +327,7 @@
 
 
 .bg-main {
-    background: #20282D;
+    background: var(--color-primary);
 
     .title-style-one {
         .pre {
@@ -439,14 +439,14 @@
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 18px;
-                color: #5D666F;
+                color: var(--color-gray);
             }
 
             .title {
                 font-weight: 700;
                 font-size: 20px;
                 line-height: 26px;
-                color: #1C2539;
+                color: var(--color-heading-1);
                 margin: 0;
             }
         }
@@ -573,8 +573,8 @@
         .swiper-button-prev {
             height: 55px;
             width: 55px;
-            background: #F2F2F2;
-            color: #1C2539;
+            background: var(--color-light);
+            color: var(--color-heading-1);
             transition: .3s;
 
             @media #{$large-mobile} {
@@ -655,7 +655,7 @@
         border: 1px solid #EBEBEB;
         border-radius: 15px;
         margin-right: 10px;
-        color: #1C2539;
+        color: var(--color-heading-1);
         font-weight: 700;
         height: 50px;
         width: 50px;
@@ -773,7 +773,7 @@
     --color-primary: #E04700;
 
     .testimonails-8-mian-wrapper {
-        background: #20282D;
+        background: var(--color-primary);
     }
 
     .why-choose-8-wrapper-content {
@@ -786,7 +786,7 @@
 
     .title-area-client-client::before,
     .title-area-client-client::after {
-        background: #20282D;
+        background: var(--color-primary);
     }
 
     .single-feature-service-wrapper-8 .icon {

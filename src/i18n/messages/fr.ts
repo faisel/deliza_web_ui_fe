@@ -40,10 +40,11 @@ const fr: Messages = {
     },
     nav: {
       home: "Accueil",
-      pages: "Pages",
-      service: "Services",
-      project: "Projets",
-      blog: "Blog",
+      brands: "Marques",
+      products: "Services",
+      investment: "Conseil",
+      about: "À propos",
+      news: "Actualités",
       contact: "Contact",
     },
     languageSwitcher: {

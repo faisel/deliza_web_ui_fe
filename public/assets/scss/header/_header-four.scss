@@ -4,14 +4,14 @@
         border-bottom: 1px solid #EDEDED;
 
         * {
-            color: #1C2539 !important;
+            color: var(--color-heading-1) !important;
         }
 
         .header-top-one-wrapper {
             .right {
                 p {
                     margin: 0;
-                    color: #5D666F;
+                    color: var(--color-gray);
 
                     a {
                         font-weight: 600;

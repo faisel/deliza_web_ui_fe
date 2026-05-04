@@ -36,7 +36,7 @@
                     font-weight: 500;
                     font-size: 14px;
                     line-height: 18px;
-                    color: #5D666F;
+                    color: var(--color-gray);
                     margin-bottom: 7px;
                     display: block;
                 }
@@ -45,7 +45,7 @@
                     font-weight: 700;
                     font-size: 20px;
                     line-height: 26px;
-                    color: #1C2539;
+                    color: var(--color-heading-1);
                     margin: 0;
                 }
             }
@@ -172,7 +172,7 @@
             justify-content: center;
             height: 60px;
             min-width: 60px;
-            background: #F2F2F2;
+            background: var(--color-light);
             border-radius: 50%;
         }
 
@@ -243,12 +243,12 @@
                 margin: 5px 0;
 
                 i {
-                    color: #20282D;
+                    color: var(--color-primary);
                 }
 
                 p {
                     margin: 0;
-                    color: #1C2539;
+                    color: var(--color-heading-1);
                     font-size: 16px;
                 }
             }
@@ -328,7 +328,7 @@
     .counter-about-area {
         position: absolute;
         padding: 50px 33px;
-        background: #20282D;
+        background: var(--color-primary);
         position: absolute;
         top: 50px;
         left: -75px;
@@ -378,7 +378,7 @@
 
 .about-content-right-three {
     .about-feature {
-        border: 1px solid #20282d26;
+        border: 1px solid var(--color-primary)26;
         border-radius: 20px;
         margin-bottom: 55px;
         max-width: 80%;
@@ -391,11 +391,11 @@
             display: flex;
             align-items: center;
             padding: 17px 20px;
-            border-bottom: 1px solid #20282d26;
+            border-bottom: 1px solid var(--color-primary)26;
 
             .single {
                 flex-basis: 48%;
-                color: #5D666F;
+                color: var(--color-gray);
                 font-size: 18px;
             }
 
@@ -617,7 +617,7 @@
 
         .single-about-service {
             padding: 40px;
-            background: #F2F2F2;
+            background: var(--color-light);
             border-radius: 10px;
             min-width: 235px;
 
@@ -745,14 +745,14 @@
                     font-weight: 500;
                     font-size: 14px;
                     line-height: 18px;
-                    color: #5D666F;
+                    color: var(--color-gray);
                 }
 
                 .title {
                     font-weight: 700;
                     font-size: 20px;
                     line-height: 26px;
-                    color: #1C2539;
+                    color: var(--color-heading-1);
                     margin: 0;
                 }
             }
@@ -766,7 +766,7 @@
     }
 
     p.disc {
-        color: #5D666F;
+        color: var(--color-gray);
         font-size: 16px;
     }
 
@@ -962,7 +962,7 @@
             background-color: transparent;
 
             .progress-bar {
-                background: #F2F2F2;
+                background: var(--color-light);
                 border-radius: 33px;
             }
         }
@@ -972,7 +972,7 @@
         padding-left: 70px;
         position: relative;
         font-size: 16px;
-        color: #5D666F;
+        color: var(--color-gray);
 
         @media #{$large-mobile} {
             padding-left: 0;
@@ -1208,7 +1208,7 @@
     .counter-about-area {
         position: absolute;
         padding: 50px 33px;
-        background: #20282D;
+        background: var(--color-primary);
         position: absolute;
         top: 50px;
         left: -75px;
@@ -1323,14 +1323,14 @@
             height: 35px;
             background: transparent;
             border-radius: 8px;
-            border: 1px solid #5D666F;
+            border: 1px solid var(--color-gray);
             display: flex;
             align-items: center;
             justify-content: center;
             transition: var(--transition);
 
             i {
-                color: #5D666F;
+                color: var(--color-gray);
             }
 
             &::after {
@@ -1366,7 +1366,7 @@
                 }
 
                 &.swiper-pagination-total {
-                    color: #5D666F;
+                    color: var(--color-gray);
                 }
             }
         }

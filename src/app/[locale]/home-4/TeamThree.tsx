@@ -5,7 +5,7 @@ import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Link from "next/link";
+import Link from "@/i18n/LocalizedLink";
 
 // Register GSAP plugins
 gsap.registerPlugin(SplitText, ScrollTrigger);

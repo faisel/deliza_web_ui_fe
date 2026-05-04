@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/i18n/LocalizedLink";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";

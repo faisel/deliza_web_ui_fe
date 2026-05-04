@@ -55,7 +55,7 @@
         }
 
         span {
-            color: #5D666F;
+            color: var(--color-gray);
             font-size: 16px;
         }
     }
@@ -192,7 +192,7 @@
             }
 
             &.swiper-pagination-total {
-                color: #5D666F;
+                color: var(--color-gray);
             }
         }
     }
@@ -230,7 +230,7 @@
             margin-bottom: 7px;
             font-size: 30px;
             font-weight: 700;
-            color: #1C2539;
+            color: var(--color-heading-1);
         }
     }
 
@@ -292,7 +292,7 @@
             }
 
             &.swiper-pagination-total {
-                color: #5D666F;
+                color: var(--color-gray);
             }
         }
     }
@@ -309,7 +309,7 @@
     .swiper-button-prevs {
         width: 40px;
         height: 35px;
-        background: #F2F2F2;
+        background: var(--color-light);
         border-radius: 8px;
         border: 1px solid transparent;
         display: flex;
@@ -317,7 +317,7 @@
         justify-content: center;
 
         i {
-            color: #1C2539;
+            color: var(--color-heading-1);
         }
 
         &::after {
@@ -344,7 +344,7 @@
             }
 
             &.swiper-pagination-total {
-                color: #5D666F;
+                color: var(--color-gray);
             }
         }
     }
@@ -395,7 +395,7 @@
 
 .rts-project-area.without-bg-image {
     .project-content-left-5 {
-        background: #20282D;
+        background: var(--color-primary);
         border-radius: 0;
 
         .title,
@@ -501,18 +501,18 @@
             padding: 13px 25px;
             border-radius: 10px !important;
             font-size: 16px;
-            color: #1C2539;
+            color: var(--color-heading-1);
             font-weight: 500;
             transition: .3s;
 
             &:hover {
-                background-color: #20282D !important;
+                background-color: var(--color-primary) !important;
                 box-shadow: 0px 9px 18px rgba(24, 16, 16, 0.05) !important;
                 color: #fff !important;
             }
 
             &.active {
-                background-color: #20282D !important;
+                background-color: var(--color-primary) !important;
                 box-shadow: 0px 9px 18px rgba(24, 16, 16, 0.05) !important;
                 color: #fff !important;
             }
