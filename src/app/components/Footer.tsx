@@ -1,10 +1,30 @@
+"use client";
 import React from 'react'
+import { useTranslation } from "@/i18n/useTranslation";
+import { localizePath } from "@/i18n/routing";
+import type { Locale } from "@/i18n/config";
 
 interface FooterProps {
   id?: string
 }
 
+const bottomLinkLabels: Record<Locale, { legalNotice: string; privacyPolicy: string }> = {
+  de: { legalNotice: "Impressum", privacyPolicy: "Datenschutz" },
+  en: { legalNotice: "Legal Notice", privacyPolicy: "Privacy Policy" },
+  fr: { legalNotice: "Mentions légales", privacyPolicy: "Politique de confidentialité" },
+  it: { legalNotice: "Note legali", privacyPolicy: "Informativa sulla privacy" },
+};
+
+const copyrightSuffix: Record<Locale, string> = {
+  de: "Alle Rechte vorbehalten",
+  en: "All rights reserved",
+  fr: "Tous droits réservés",
+  it: "Tutti i diritti riservati",
+};
+
 function Footer({ id }: FooterProps) {
+  const { locale } = useTranslation();
+  const labels = bottomLinkLabels[locale];
   return (
     <>
       <div id={id} className="rts-footer-area pt--100 pb--100 pt_sm--50 pb_sm--40 footer-two footer-bg-two">
@@ -127,18 +147,15 @@ function Footer({ id }: FooterProps) {
             <div className="col-lg-12">
               <div className="copyright-h-2-wrapper">
                 <p className="disc">
-                  Deliza - Copyright {new Date().getFullYear()}. All rights reserved.
+                  Deliza GmbH © {new Date().getFullYear()}. {copyrightSuffix[locale]}
                 </p>
                 <div className="right">
                   <ul>
                     <li>
-                      <a href="/blog">Company News</a>
+                      <a href={localizePath("/legal-notice", locale)}>{labels.legalNotice}</a>
                     </li>
                     <li>
-                      <a href="#">Faq</a>
-                    </li>
-                    <li>
-                      <a href="/contact">Contact</a>
+                      <a href={localizePath("/privacy-policy", locale)}>{labels.privacyPolicy}</a>
                     </li>
                   </ul>
                 </div>
