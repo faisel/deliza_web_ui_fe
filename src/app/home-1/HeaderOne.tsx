@@ -1,21 +1,19 @@
 'use client'
 import { useState, useEffect } from 'react';
-import Link from "@/i18n/LocalizedLink";
+import Link from "next/link";
 import OffcanvasMenu from './OffcanvasMenu';
 import { useTranslation } from '@/i18n/useTranslation';
-import { localizePath } from '@/i18n/routing';
+import { navHref, type NavKey } from '@/i18n/routing';
 import { LanguageSwitcher } from '@/i18n/LanguageSwitcher';
 
-type NavKey = "home" | "brands" | "products" | "investment" | "about" | "news" | "contact";
-
-export const mainNavItems: { key: NavKey; href: string }[] = [
-    { key: "home", href: "/" },
-    { key: "brands", href: "/brands" },
-    { key: "products", href: "/products-services" },
-    { key: "investment", href: "/investment-consulting" },
-    { key: "about", href: "/about-us" },
-    { key: "news", href: "/news-events" },
-    { key: "contact", href: "/contact-us" },
+export const mainNavKeys: NavKey[] = [
+    "home",
+    "brands",
+    "products",
+    "investment",
+    "about",
+    "news",
+    "contact",
 ];
 
 interface HeaderOneProps {
@@ -60,17 +58,17 @@ function HeaderOne({
                             <div className="col-lg-12">
                                 <div className="header-main-one-wrapper">
                                     <div className="thumbnail">
-                                        <Link href={`/${locale}`}>
+                                        <Link href={navHref("home", locale)}>
                                             <img className="deliza-logo" src={DELIZA_LOGO_SRC} alt={DELIZA_LOGO_ALT} />
                                         </Link>
                                     </div>
                                     <div className="main-header">
                                         <div className="nav-area">
                                             <ul className="">
-                                                {mainNavItems.map((item) => (
-                                                    <li key={item.key} className="main-nav">
-                                                        <Link href={localizePath(item.href, locale)}>
-                                                            {t.header.nav[item.key]}
+                                                {mainNavKeys.map((key) => (
+                                                    <li key={key} className="main-nav">
+                                                        <Link href={navHref(key, locale)}>
+                                                            {t.header.nav[key]}
                                                         </Link>
                                                     </li>
                                                 ))}

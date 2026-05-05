@@ -1,12 +1,18 @@
 "use client";
 import React from 'react'
 import { useTranslation } from "@/i18n/useTranslation";
-import { localizePath } from "@/i18n/routing";
+import { localizePath, navHref, type NavKey } from "@/i18n/routing";
 import type { Locale } from "@/i18n/config";
 
 interface FooterProps {
   id?: string
 }
+
+const CONTACT_PHONE = "081 661 23 45";
+const CONTACT_PHONE_HREF = "tel:+41816612345";
+const CONTACT_ADDRESS = "Flurweg 4, 7310 Bad Ragaz";
+const CONTACT_EMAIL = "info@giessenpark.com";
+const BRAND_TITLE = "Deliza GmbH";
 
 const bottomLinkLabels: Record<Locale, { legalNotice: string; privacyPolicy: string }> = {
   de: { legalNotice: "Impressum", privacyPolicy: "Datenschutz" },
@@ -22,78 +28,123 @@ const copyrightSuffix: Record<Locale, string> = {
   it: "Tutti i diritti riservati",
 };
 
+const ctaCopy: Record<Locale, { titleLead: string; titleRest: string; description: string; button: string }> = {
+  de: {
+    titleLead: "Bereit,",
+    titleRest: "etwas Besonderes zu schaffen?",
+    description:
+      "Wo Gastronomie auf Innovation trifft, schaffen wir einzigartige Erlebnisse durch Kulinarik, Produkte und Hospitality-Konzepte.",
+    button: "Angebot anfragen",
+  },
+  en: {
+    titleLead: "Ready To",
+    titleRest: "Create Something Exceptional?",
+    description:
+      "Where gastronomy meets innovation, we craft meaningful experiences through dining, products, and hospitality concepts.",
+    button: "Get a Quote",
+  },
+  fr: {
+    titleLead: "Prêt à",
+    titleRest: "créer quelque chose d’exceptionnel ?",
+    description:
+      "Là où la gastronomie rencontre l’innovation, nous créons des expériences uniques à travers la cuisine, les produits et les concepts d’hospitalité.",
+    button: "Demander un devis",
+  },
+  it: {
+    titleLead: "Pronto a",
+    titleRest: "creare qualcosa di eccezionale?",
+    description:
+      "Dove la gastronomia incontra l’innovazione, creiamo esperienze uniche attraverso cucina, prodotti e concetti di ospitalità.",
+    button: "Richiedi un preventivo",
+  },
+};
+
+const contactTitle: Record<Locale, string> = {
+  de: "Kontakt",
+  en: "Contact Us",
+  fr: "Contactez-nous",
+  it: "Contattaci",
+};
+
+const brandNavItems: { key: Exclude<NavKey, "home" | "about">; label: Record<Locale, string> }[] = [
+  {
+    key: "brands",
+    label: {
+      de: "Unsere Marken",
+      en: "Our Brands",
+      fr: "Nos marques",
+      it: "I nostri marchi",
+    },
+  },
+  {
+    key: "products",
+    label: {
+      de: "Produkte & Leistungen",
+      en: "Products & Services",
+      fr: "Produits & services",
+      it: "Prodotti & servizi",
+    },
+  },
+  {
+    key: "investment",
+    label: {
+      de: "Investment & Beratung",
+      en: "Investment & Consulting",
+      fr: "Investissement & conseil",
+      it: "Investimento & consulenza",
+    },
+  },
+  {
+    key: "news",
+    label: {
+      de: "News & Events",
+      en: "News & Events",
+      fr: "Actualités & événements",
+      it: "Notizie & eventi",
+    },
+  },
+  {
+    key: "contact",
+    label: {
+      de: "Kontakt & Zusammenarbeit",
+      en: "Contact & Collaborate",
+      fr: "Contact & collaboration",
+      it: "Contatto & collaborazione",
+    },
+  },
+];
+
 function Footer({ id }: FooterProps) {
   const { locale } = useTranslation();
   const labels = bottomLinkLabels[locale];
+  const cta = ctaCopy[locale];
   return (
     <>
       <div id={id} className="rts-footer-area pt--100 pb--100 pt_sm--50 pb_sm--40 footer-two footer-bg-two">
         <div className="container">
           <div className="row">
-            {/* single wized */}
+            {/* Column 1: CTA */}
             <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
               <div className="footer-two-single-wized left">
                 <h3 className="title animated fadeIn">
-                  <span>Ready To</span> <br />
-                  Work With Us?
+                  <span>{cta.titleLead}</span> <br />
+                  {cta.titleRest}
                 </h3>
                 <p className="disc">
-                  Felis consequat magnis est fames sagittis ultrices placerat sodales
-                  porttitor quisque.
+                  {cta.description}
                 </p>
                 <a className="rts-btn btn-primary" href="#">
-                  Get a Quote
+                  {cta.button}
                 </a>
               </div>
             </div>
+
+            {/* Column 2: Contact */}
             <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--50">
-              <div className="footer-two-single-wized two">
-                <div className="wized-title-area">
-                  <h5 className="wized-title">Our Services</h5>
-                  <img src="/assets/images/footer/01.png" alt="Deliza_Footer" />
-                </div>
-                <div className="wized-2-body">
-                  <ul>
-                    <li>
-                      <a href="/service-details">
-                        <i className="fa-solid fa-angles-right" />
-                        Business planning
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/service-details">
-                        <i className="fa-solid fa-angles-right" />
-                        Tax strategy
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/service-details">
-                        <i className="fa-solid fa-angles-right" />
-                        Financial advices
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/service-details">
-                        <i className="fa-solid fa-angles-right" />
-                        Insurance strategy
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/service-details">
-                        <i className="fa-solid fa-angles-right" />
-                        Manage investment
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            {/* single wized */}
-            <div className="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--30 mt_md--30">
               <div className="footer-two-single-wized">
                 <div className="wized-title-area">
-                  <h5 className="wized-title">Contact Us</h5>
-                  <img src="/assets/images/footer/01.png" alt="Deliza_Footer" />
+                  <h5 className="wized-title">{contactTitle[locale]}</h5>
+                  <img src="/assets/images/footer/01.png" alt="Deliza" />
                 </div>
                 <div className="wized-2-body">
                   <div className="contact-info-1">
@@ -101,8 +152,15 @@ function Footer({ id }: FooterProps) {
                       <i className="fas fa-phone-alt" />
                     </div>
                     <div className="disc">
-                      <span>Call Us 24/7</span>
-                      <a href="#">(+256) 2145.2156</a>
+                      <a href={CONTACT_PHONE_HREF}>{CONTACT_PHONE}</a>
+                    </div>
+                  </div>
+                  <div className="contact-info-1">
+                    <div className="icon">
+                      <i className="fas fa-map-marker-alt" />
+                    </div>
+                    <div className="disc">
+                      <a href="#">{CONTACT_ADDRESS}</a>
                     </div>
                   </div>
                   <div className="contact-info-1">
@@ -110,33 +168,34 @@ function Footer({ id }: FooterProps) {
                       <i className="fas fa-envelope" />
                     </div>
                     <div className="disc">
-                      <span>Work with us</span>
-                      <a href="#">info@deliza.com</a>
+                      <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            {/* single wized */}
-            <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-              <div className="footer-two-single-wized right">
+
+            {/* Column 3 + 4 merged: Brand + nav links (wider on xl) */}
+            <div className="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12 mt_sm--30 mt_md--30">
+              <div className="footer-two-single-wized two">
+                <div className="wized-title-area">
+                  <h5 className="wized-title">{BRAND_TITLE}</h5>
+                  <img src="/assets/images/footer/01.png" alt="Deliza" />
+                </div>
                 <div className="wized-2-body">
-                  <div className="contact-info-1">
-                    <div className="icon">
-                      <i className="fas fa-map-marker-alt" />
-                    </div>
-                    <div className="disc">
-                      <span>Our Location</span>
-                      <a href="#">
-                        XYZ Hilton Street, 125 Town <br />
-                        United State
-                      </a>
-                    </div>
-                  </div>
+                  <ul>
+                    {brandNavItems.map((item) => (
+                      <li key={item.key}>
+                        <a href={navHref(item.key, locale)}>
+                          <i className="fa-solid fa-angles-right" />
+                          {item.label[locale]}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
-            {/* single wized */}
           </div>
         </div>
       </div>
