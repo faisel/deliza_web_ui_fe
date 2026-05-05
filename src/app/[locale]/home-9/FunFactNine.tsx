@@ -108,7 +108,7 @@ function FunFactNine() {
                         <div className="col-lg-6">
                             <div className="modern-funfacts-area-wrapper">
                                 <div className="thumbnail">
-                                    <img src="assets/images/fun-facts/01.webp" alt="funfacts" />
+                                    <img src="/assets/images/fun-facts/01.webp" alt="funfacts" />
                                 </div>
                             </div>
                         </div>

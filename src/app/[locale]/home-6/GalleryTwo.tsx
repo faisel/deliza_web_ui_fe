@@ -3,11 +3,11 @@
 import React, { useState } from "react";
 
 const images = [
-    "assets/images/gallery/06.webp",
-    "assets/images/gallery/07.webp",
-    "assets/images/gallery/08.webp",
-    "assets/images/gallery/09.webp",
-    "assets/images/gallery/10.webp",
+    "/assets/images/gallery/06.webp",
+    "/assets/images/gallery/07.webp",
+    "/assets/images/gallery/08.webp",
+    "/assets/images/gallery/09.webp",
+    "/assets/images/gallery/10.webp",
 ];
 function GalleryTwo() {
     const [open, setOpen] = useState(false);

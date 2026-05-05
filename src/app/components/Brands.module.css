@@ -1,0 +1,12 @@
+/* Tighter, centered row for a small set of brand marks (vs template default space-between for many logos) */
+
+.logosRow:global(.client-wrapper-one) {
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1.25rem, 4vw, 2.75rem);
+}
+
+.logosRow a img {
+  margin-right: 0;
+  margin-bottom: 0;
+}

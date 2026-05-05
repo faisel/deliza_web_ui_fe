@@ -149,7 +149,7 @@ const en: Messages = {
       ],
     },
     brands: {
-      title: "Our trusted clients",
+      title: "Our Brands",
     },
     team: {
       chip: "Team",

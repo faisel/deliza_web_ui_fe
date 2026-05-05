@@ -20,22 +20,22 @@ function PartnerMain() {
                             </div>
                             <div className="brand-area-main-wrapper--box pt--80">
                                 <div className="single-brand">
-                                    <img src="assets/images/brand/01.webp" alt="brand" />
+                                    <img src="/assets/images/brand/01.webp" alt="brand" />
                                 </div>
                                 <div className="single-brand">
-                                    <img src="assets/images/brand/02.webp" alt="brand" />
+                                    <img src="/assets/images/brand/02.webp" alt="brand" />
                                 </div>
                                 <div className="single-brand border-last">
-                                    <img src="assets/images/brand/03.webp" alt="brand" />
+                                    <img src="/assets/images/brand/03.webp" alt="brand" />
                                 </div>
                                 <div className="single-brand border-bottom">
-                                    <img src="assets/images/brand/04.webp" alt="brand" />
+                                    <img src="/assets/images/brand/04.webp" alt="brand" />
                                 </div>
                                 <div className="single-brand border-bottom">
-                                    <img src="assets/images/brand/05.webp" alt="brand" />
+                                    <img src="/assets/images/brand/05.webp" alt="brand" />
                                 </div>
                                 <div className="single-brand border-bottom">
-                                    <img src="assets/images/brand/06.webp" alt="brand" />
+                                    <img src="/assets/images/brand/06.webp" alt="brand" />
                                 </div>
                             </div>
                         </div>

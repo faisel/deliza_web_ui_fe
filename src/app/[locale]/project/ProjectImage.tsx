@@ -10,7 +10,7 @@ function ProjectImage() {
                         <div className="col-lg-12">
                             <div className="project-details-main-inner">
                                 <div className="project-details-thumbnail">
-                                    <img src="assets/images/project/18.webp" alt="project" />
+                                    <img src="/assets/images/project/18.webp" alt="project" />
                                 </div>
                             </div>
                         </div>

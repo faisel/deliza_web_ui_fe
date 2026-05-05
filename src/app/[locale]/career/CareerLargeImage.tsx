@@ -11,7 +11,7 @@ function CareerLargeImage() {
                             data-animation="zoomOut"
                             data-delay="0.1"
                         >
-                            <img src="assets/images/blog/20.webp" alt="career" />
+                            <img src="/assets/images/blog/20.webp" alt="career" />
                         </div>
                     </div>
                 </div>

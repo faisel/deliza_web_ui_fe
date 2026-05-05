@@ -14,7 +14,7 @@ function TeamInner() {
                     >
                         <div className="single-team-area-one-start">
                             <Link href="/team-details" className="thumbnail">
-                                <img src="assets/images/team/01.webp" alt="team" />
+                                <img src="/assets/images/team/01.webp" alt="team" />
                             </Link>
                             <div className="inner-content">
                                 <div className="text-top">
@@ -53,7 +53,7 @@ function TeamInner() {
                     >
                         <div className="single-team-area-one-start">
                             <Link href="/team-details" className="thumbnail">
-                                <img src="assets/images/team/02.webp" alt="team" />
+                                <img src="/assets/images/team/02.webp" alt="team" />
                             </Link>
                             <div className="inner-content">
                                 <div className="text-top">
@@ -92,7 +92,7 @@ function TeamInner() {
                     >
                         <div className="single-team-area-one-start">
                             <Link href="/team-details" className="thumbnail">
-                                <img src="assets/images/team/03.webp" alt="team" />
+                                <img src="/assets/images/team/03.webp" alt="team" />
                             </Link>
                             <div className="inner-content">
                                 <div className="text-top">
@@ -133,7 +133,7 @@ function TeamInner() {
                     >
                         <div className="single-team-area-one-start">
                             <Link href="/team-details" className="thumbnail">
-                                <img src="assets/images/team/01.webp" alt="team" />
+                                <img src="/assets/images/team/01.webp" alt="team" />
                             </Link>
                             <div className="inner-content">
                                 <div className="text-top">
@@ -172,7 +172,7 @@ function TeamInner() {
                     >
                         <div className="single-team-area-one-start">
                             <Link href="/team-details" className="thumbnail">
-                                <img src="assets/images/team/02.webp" alt="team" />
+                                <img src="/assets/images/team/02.webp" alt="team" />
                             </Link>
                             <div className="inner-content">
                                 <div className="text-top">
@@ -211,7 +211,7 @@ function TeamInner() {
                     >
                         <div className="single-team-area-one-start">
                             <Link href="/team-details" className="thumbnail">
-                                <img src="assets/images/team/03.webp" alt="team" />
+                                <img src="/assets/images/team/03.webp" alt="team" />
                             </Link>
                             <div className="inner-content">
                                 <div className="text-top">

@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderOne from '../../home-1/HeaderOne'
 import PartnerBreadcrumb from '../project-slider/PartnerBreadcrumb'
-import BrandInner from '../service/BrandInner'
+import Brands from '../../components/Brands'
 import CtaInner from '../about/CtaInner'
 import FooterTen from '../home-10/FooterTen'
 import RTL from '../../home-1/RTL'
@@ -14,7 +14,7 @@ function page() {
             <HeaderOne logoSrc="/assets/images/logo/01.svg" />
             <PartnerBreadcrumb />
             <CaseStudies />
-            <BrandInner className='rts-section-gapBottom' />
+            <Brands className='rts-section-gapBottom' />
             <CtaInner />
             <FooterTen />
             <RTL />

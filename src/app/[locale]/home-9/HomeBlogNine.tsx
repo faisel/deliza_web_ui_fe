@@ -37,7 +37,7 @@ function HomeBlogNine({ id }: HomeBlogNineProps) {
                         >
                             <div className="single-blog-card-6">
                                 <Link href="/blog/liliput-settle-tips-of-the-new-ages-exist" className="thumbnail">
-                                    <img src="assets/images/blog/10.webp" alt="blog" />
+                                    <img src="/assets/images/blog/10.webp" alt="blog" />
                                 </Link>
                                 <div className="inner-content">
                                     <p className="top">

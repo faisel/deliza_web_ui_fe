@@ -534,6 +534,6 @@ const blogMenuData = [
 ];
 
 // Right-side banner image
-const serviceMenuThumb = "assets/images/banner/24.webp";
+const serviceMenuThumb = "/assets/images/banner/24.webp";
 
 export default HeaderFour

@@ -39,7 +39,7 @@ function AppoinmentContactForm() {
                         </div>
                         <div className="col-lg-5">
                             <div className="appoinment-thumbnail">
-                                <img src="assets/images/appoinment/01.webp" alt="appoinment" />
+                                <img src="/assets/images/appoinment/01.webp" alt="appoinment" />
                             </div>
                         </div>
                     </div>

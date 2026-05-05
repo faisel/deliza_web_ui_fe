@@ -77,7 +77,7 @@ function ServicesTen({ id }: ServicesTenProps) {
                                 <div className="signle-service-style-10">
                                     <div className="content-area-wrapper">
                                         <div className="icon">
-                                            <img src="assets/images/service/icons/11.svg" alt="service" />
+                                            <img src="/assets/images/service/icons/11.svg" alt="service" />
                                         </div>
                                         <h5 className="title">Business Solution</h5>
                                         <p className="disc">
@@ -88,13 +88,13 @@ function ServicesTen({ id }: ServicesTenProps) {
                                         </Link>
                                     </div>
                                     <div className="thumbnail">
-                                        <img src="assets/images/service/07.webp" alt="service" />
+                                        <img src="/assets/images/service/07.webp" alt="service" />
                                     </div>
                                 </div>
                                 <div className="signle-service-style-10">
                                     <div className="content-area-wrapper">
                                         <div className="icon">
-                                            <img src="assets/images/service/icons/12.svg" alt="service" />
+                                            <img src="/assets/images/service/icons/12.svg" alt="service" />
                                         </div>
                                         <h5 className="title">Marketing Solution</h5>
                                         <p className="disc">
@@ -105,16 +105,16 @@ function ServicesTen({ id }: ServicesTenProps) {
                                         </Link>
                                     </div>
                                     <div className="thumbnail">
-                                        <img src="assets/images/service/08.webp" alt="service" />
+                                        <img src="/assets/images/service/08.webp" alt="service" />
                                     </div>
                                 </div>
                                 <div className="signle-service-style-10 order-control-sm-device">
                                     <div className="thumbnail">
-                                        <img src="assets/images/service/09.webp" alt="service" />
+                                        <img src="/assets/images/service/09.webp" alt="service" />
                                     </div>
                                     <div className="content-area-wrapper">
                                         <div className="icon">
-                                            <img src="assets/images/service/icons/13.svg" alt="service" />
+                                            <img src="/assets/images/service/icons/13.svg" alt="service" />
                                         </div>
                                         <h5 className="title">Agency Marketing</h5>
                                         <p className="disc">
@@ -127,11 +127,11 @@ function ServicesTen({ id }: ServicesTenProps) {
                                 </div>
                                 <div className="signle-service-style-10 order-control-sm-device">
                                     <div className="thumbnail">
-                                        <img src="assets/images/service/10.webp" alt="service" />
+                                        <img src="/assets/images/service/10.webp" alt="service" />
                                     </div>
                                     <div className="content-area-wrapper">
                                         <div className="icon">
-                                            <img src="assets/images/service/icons/14.svg" alt="service" />
+                                            <img src="/assets/images/service/icons/14.svg" alt="service" />
                                         </div>
                                         <h5 className="title">Startup Paskages</h5>
                                         <p className="disc">

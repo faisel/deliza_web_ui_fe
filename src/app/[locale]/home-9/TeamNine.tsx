@@ -99,7 +99,7 @@ function TeamNine() {
                                         <div className="team-image-area">
                                             <Link href="/team-details">
                                                 <img
-                                                    src="assets/images/team/12.webp"
+                                                    src="/assets/images/team/12.webp"
                                                     alt="Business_Team_single"
                                                 />
                                                 <div className="team-social">
@@ -127,7 +127,7 @@ function TeamNine() {
                                         <div className="team-image-area">
                                             <Link href="/team-details">
                                                 <img
-                                                    src="assets/images/team/13.webp"
+                                                    src="/assets/images/team/13.webp"
                                                     alt="Business_Team_single"
                                                 />
                                                 <div className="team-social">
@@ -155,7 +155,7 @@ function TeamNine() {
                                         <div className="team-image-area">
                                             <Link href="/team-details">
                                                 <img
-                                                    src="assets/images/team/14.webp"
+                                                    src="/assets/images/team/14.webp"
                                                     alt="Business_Team_single"
                                                 />
                                                 <div className="team-social">
@@ -183,7 +183,7 @@ function TeamNine() {
                                         <div className="team-image-area">
                                             <Link href="/team-details">
                                                 <img
-                                                    src="assets/images/team/15.webp"
+                                                    src="/assets/images/team/15.webp"
                                                     alt="Business_Team_single"
                                                 />
                                                 <div className="team-social">
@@ -211,7 +211,7 @@ function TeamNine() {
                                         <div className="team-image-area">
                                             <Link href="/team-details">
                                                 <img
-                                                    src="assets/images/team/07.webp"
+                                                    src="/assets/images/team/07.webp"
                                                     alt="Business_Team_single"
                                                 />
                                                 <div className="team-social">

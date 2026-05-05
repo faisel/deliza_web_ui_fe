@@ -14,7 +14,7 @@ function BlogDetailsInner() {
                                 data-delay="0.2"
                                 data-duration="1.2"
                             >
-                                <img src="assets/images/team/16.webp" alt="team" />
+                                <img src="/assets/images/team/16.webp" alt="team" />
                             </div>
                         </div>
                         <div className="col-lg-6 pl--35 pl_sm--15 mt_md--30 mt_sm--50">

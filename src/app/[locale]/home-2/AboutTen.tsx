@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Link from 'next/link'
 
 interface OdometerElement extends HTMLElement {
     od?: any;
@@ -59,13 +58,13 @@ function AboutTen({ id }: AboutTenProps) {
     return (
         <>
             {/* rts about area stat */}
-            <div id={id} className="rts-about-area-start rts-section-gapBottom">
+            <div id={id} className="rts-about-area-start rts-section-gapBottom rts-section-gap">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="thumbnail-about-10-wrapper">
-                                <img src="/assets/images/about/15.webp" alt="abotu" />
-                                <div className="top-counter-area">
+                                <img src="/assets/images/deliza/about.jpg" alt="abotu" />
+                                {/* <div className="top-counter-area">
                                     <div className="icon">
                                         <img src="/assets/images/about/icons/08.svg" alt="about" />
                                     </div>
@@ -104,7 +103,7 @@ function AboutTen({ id }: AboutTenProps) {
                                         +
                                     </h2>
                                     <p>Skilled Experts</p>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="col-lg-6 mt_md--50 mt_sm--50">

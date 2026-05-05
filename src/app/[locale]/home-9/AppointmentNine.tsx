@@ -9,7 +9,7 @@ function AppointmentNine() {
                     <div className="row g-0">
                         <div className="col-lg-6">
                             <div className="thumbnail-appoinment-9">
-                                <img src="assets/images/appoinment/05.webp" alt="appoinment" />
+                                <img src="/assets/images/appoinment/05.webp" alt="appoinment" />
                             </div>
                         </div>
                         <div className="col-lg-6">

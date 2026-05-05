@@ -7,7 +7,7 @@ function LargeImage() {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="large-image-bottm-breadcrumb">
-                            <img src="assets/images/about/16.webp" alt="about" />
+                            <img src="/assets/images/about/16.webp" alt="about" />
                         </div>
                     </div>
                 </div>

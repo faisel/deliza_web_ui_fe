@@ -56,7 +56,7 @@ function ShopSingleMain() {
                                     <SwiperSlide>
                                         <div className="slider-inner">
                                             <img
-                                                src="assets/images/shop/shop-01.jpg"
+                                                src="/assets/images/shop/shop-01.jpg"
                                                 alt="full_screen-image"
                                             />
                                         </div>
@@ -64,7 +64,7 @@ function ShopSingleMain() {
                                     <SwiperSlide>
                                         <div className="slider-inner">
                                             <img
-                                                src="assets/images/shop/shop-03.jpg"
+                                                src="/assets/images/shop/shop-03.jpg"
                                                 alt="full_screen-image"
                                             />
                                         </div>
@@ -72,7 +72,7 @@ function ShopSingleMain() {
                                     <SwiperSlide>
                                         <div className="slider-inner">
                                             <img
-                                                src="assets/images/shop/shop-02.jpg"
+                                                src="/assets/images/shop/shop-02.jpg"
                                                 alt="full_screen-image"
                                             />
                                         </div>

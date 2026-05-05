@@ -19,7 +19,7 @@ function ServicesBottom({ id }: ServicesBottomProps) {
                                     </p>
                                 </div>
                                 <div className="mid-image">
-                                    <img src="assets/images/service/01.png" alt="service_image" />
+                                    <img src="/assets/images/service/01.png" alt="service_image" />
                                 </div>
                             </div>
                         </div>

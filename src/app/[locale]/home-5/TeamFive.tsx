@@ -18,25 +18,25 @@ function TeamFive() {
     {
       name: "Andreas Menor",
       role: "Sr. Manager",
-      image: "assets/images/team/08.webp",
+      image: "/assets/images/team/08.webp",
       delay: 0,
     },
     {
       name: "John Dion",
       role: "Sr. Manager",
-      image: "assets/images/team/09.webp",
+      image: "/assets/images/team/09.webp",
       delay: 200,
     },
     {
       name: "Martin Anderson",
       role: "Sr. Manager",
-      image: "assets/images/team/10.webp",
+      image: "/assets/images/team/10.webp",
       delay: 400,
     },
     {
       name: "Kupar Tamil",
       role: "Sr. Manager",
-      image: "assets/images/team/11.webp",
+      image: "/assets/images/team/11.webp",
       delay: 600,
     },
   ];

@@ -65,7 +65,7 @@ function WhyChooseUsNine({ id }: WhyChooseUsNineProps) {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="why-choose-us-thumbnail">
-                                <img src="assets/images/why-choose/10.webp" alt="why" />
+                                <img src="/assets/images/why-choose/10.webp" alt="why" />
                             </div>
                         </div>
                         <div className="col-lg-6 pl--50 pl_sm--10 mt_md--50 mt_sm--50 pb_md--50 pb_sm--40">
@@ -79,7 +79,7 @@ function WhyChooseUsNine({ id }: WhyChooseUsNineProps) {
                                 <div className="single-feature-service-wrapper-8">
                                     <div className="icon">
                                         <img
-                                            src="assets/images/why-choose/icons/08.svg"
+                                            src="/assets/images/why-choose/icons/08.svg"
                                             alt="service"
                                         />
                                     </div>
@@ -94,7 +94,7 @@ function WhyChooseUsNine({ id }: WhyChooseUsNineProps) {
                                 <div className="single-feature-service-wrapper-8">
                                     <div className="icon">
                                         <img
-                                            src="assets/images/why-choose/icons/09.svg"
+                                            src="/assets/images/why-choose/icons/09.svg"
                                             alt="service"
                                         />
                                     </div>

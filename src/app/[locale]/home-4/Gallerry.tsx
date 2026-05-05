@@ -3,11 +3,11 @@
 import React, { useState } from "react";
 
 const images = [
-  "assets/images/gallery/01.webp",
-  "assets/images/gallery/03.webp",
-  "assets/images/gallery/04.webp",
-  "assets/images/gallery/05.webp",
-  "assets/images/gallery/02.webp",
+  "/assets/images/gallery/01.webp",
+  "/assets/images/gallery/03.webp",
+  "/assets/images/gallery/04.webp",
+  "/assets/images/gallery/05.webp",
+  "/assets/images/gallery/02.webp",
 ];
 
 function Gallery() {

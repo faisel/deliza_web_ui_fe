@@ -21,17 +21,17 @@ function ProgressFive({className = ""} : ProgressFiveProps) {
   const progressData = [
     {
       value: 76,
-      image: "assets/images/fun/01.svg",
+      image: "/assets/images/fun/01.svg",
       label: "Trusted Clients",
     },
     {
       value: 89,
-      image: "assets/images/fun/02.svg",
+      image: "/assets/images/fun/02.svg",
       label: "Project Completed",
     },
     {
       value: 70,
-      image: "assets/images/fun/03.svg",
+      image: "/assets/images/fun/03.svg",
       label: "Business Awards",
     },
   ];

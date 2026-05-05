@@ -112,7 +112,7 @@ function CaseStudiesTen({ id }: CaseStudiesTenProps) {
                                     <SwiperSlide>
                                         <div className="single-case-studies-four">
                                             <a href="/project-details" className="thumbnail">
-                                                <img src="assets/images/project/07.webp" alt="project" />
+                                                <img src="/assets/images/project/07.webp" alt="project" />
                                             </a>
                                             <div className="inner">
                                                 <a href="/project-details">
@@ -121,14 +121,14 @@ function CaseStudiesTen({ id }: CaseStudiesTenProps) {
                                                 </a>
                                             </div>
                                             <div className="eye">
-                                                <img src="assets/images/project/eye.svg" alt="project" />
+                                                <img src="/assets/images/project/eye.svg" alt="project" />
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="single-case-studies-four">
                                             <a href="/project-details" className="thumbnail">
-                                                <img src="assets/images/project/08.webp" alt="project" />
+                                                <img src="/assets/images/project/08.webp" alt="project" />
                                             </a>
                                             <div className="inner">
                                                 <a href="/project-details">
@@ -137,14 +137,14 @@ function CaseStudiesTen({ id }: CaseStudiesTenProps) {
                                                 </a>
                                             </div>
                                             <div className="eye">
-                                                <img src="assets/images/project/eye.svg" alt="project" />
+                                                <img src="/assets/images/project/eye.svg" alt="project" />
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="single-case-studies-four">
                                             <a href="/project-details" className="thumbnail">
-                                                <img src="assets/images/project/09.webp" alt="project" />
+                                                <img src="/assets/images/project/09.webp" alt="project" />
                                             </a>
                                             <div className="inner">
                                                 <a href="/project-details">
@@ -153,14 +153,14 @@ function CaseStudiesTen({ id }: CaseStudiesTenProps) {
                                                 </a>
                                             </div>
                                             <div className="eye">
-                                                <img src="assets/images/project/eye.svg" alt="project" />
+                                                <img src="/assets/images/project/eye.svg" alt="project" />
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="single-case-studies-four">
                                             <a href="/project-details" className="thumbnail">
-                                                <img src="assets/images/project/08.webp" alt="project" />
+                                                <img src="/assets/images/project/08.webp" alt="project" />
                                             </a>
                                             <div className="inner">
                                                 <a href="/project-details">
@@ -169,7 +169,7 @@ function CaseStudiesTen({ id }: CaseStudiesTenProps) {
                                                 </a>
                                             </div>
                                             <div className="eye">
-                                                <img src="assets/images/project/eye.svg" alt="project" />
+                                                <img src="/assets/images/project/eye.svg" alt="project" />
                                             </div>
                                         </div>
                                     </SwiperSlide>

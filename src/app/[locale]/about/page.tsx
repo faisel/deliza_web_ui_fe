@@ -9,7 +9,7 @@ import AboutOne from '../../home-1/AboutOne'
 import TeamOne from '../../home-1/TeamOne'
 import BusinessGoalOne from '../../home-1/BusinessGoalOne'
 import TestimonialsOne from '../../home-1/TestimonialsOne'
-import BrandOne from '../../home-1/BrandOne'
+import Brands from '../../components/Brands'
 import CtaInner from './CtaInner'
 import FooterTen from '../home-10/FooterTen'
 
@@ -27,7 +27,7 @@ function page() {
             <TeamOne />
             <BusinessGoalOne className='rts-section-gapBottom'/>
             <TestimonialsOne />
-            <BrandOne />
+            <Brands />
             <CtaInner />
             <FooterTen />
             <RTL />

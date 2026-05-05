@@ -1,6 +1,7 @@
 import BodyClass from './BodyClassTwo'
 import HeaderOne from '../../home-1/HeaderOne'
 import BannerTwo from './BannerTwo'
+import AboutTen from './AboutTen'
 import AboutTwo from './AboutTwo'
 import ServicesTwo from './ServicesTwo'
 import BusinessConsultantOne from './BusinessConsultantOne'
@@ -11,6 +12,7 @@ import BusinessGoalTwo from './BusinessGoalTwo'
 import PricingOne from './PricingOne'
 import HomeBlogTwo from './HomeBlogTwo'
 import CtaTwo from './CtaTwo'
+import Brands from '../../components/Brands'
 import FooterTwo from './FooterTwo'
 import CopyrightOne from './CopyrightOne'
 import RTL from '../../home-1/RTL'
@@ -26,14 +28,15 @@ export default function HomePage() {
       <>
         <HeaderOne logoSrc="/assets/images/logo/01.svg"/>
         <BannerTwo />
-        <AboutTwo />
+        <AboutTen />
+        <Brands />
         <ServicesTwo className='rts-section-gapBottom' />
         <BusinessConsultantOne />
         <CounterUpTwo />
-        <WorkingProcessOne />
-        <TeamTwo className='rts-section-gap'/>
+        {/* <WorkingProcessOne /> */}
+        {/* <TeamTwo className='rts-section-gap'/> */}
         <BusinessGoalTwo />
-        <PricingOne />
+        {/* <PricingOne /> */}
         <HomeBlogTwo />
         <CtaTwo className='rts-section-gapBottom'/>
         <FooterTwo />

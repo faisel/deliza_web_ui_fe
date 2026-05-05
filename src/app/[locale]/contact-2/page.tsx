@@ -3,7 +3,7 @@ import BodyClass from '../home-2/BodyClassTwo'
 import HeaderOne from '../../home-1/HeaderOne'
 import Banner from '../../components/Banner'
 import GoogleMaps from '../../components/GoogleMaps'
-import BrandInner from '../service/BrandInner'
+import Brands from '../../components/Brands'
 import CtaInner from '../about/CtaInner'
 import FooterTen from '../home-10/FooterTen'
 import RTL from '../../home-1/RTL'
@@ -21,7 +21,7 @@ function page() {
                 <Banner />
                 <ContactMainTwo />
                 <GoogleMaps />
-                <BrandInner className='rts-section-gap' />
+                <Brands className='rts-section-gap' />
                 <CtaInner />
                 <FooterTen />
                 <RTL />

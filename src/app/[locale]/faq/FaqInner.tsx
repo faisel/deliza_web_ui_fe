@@ -14,16 +14,16 @@ function FaqInner() {
         >
           <div className="thumbnail-about-right-4">
             <div className="large-iamge">
-              <img src="assets/images/about/08.webp" alt="about" />
+              <img src="/assets/images/about/08.webp" alt="about" />
             </div>
             <div className="small-image images-r">
-              <img src="assets/images/about/09.webp" alt="about" />
+              <img src="/assets/images/about/09.webp" alt="about" />
             </div>
             <div className="poligon-shape images-r">
-              <img src="assets/images/about/poligon-shape.svg" alt="" />
+              <img src="/assets/images/about/poligon-shape.svg" alt="" />
             </div>
             <div className="video-area">
-              <img src="assets/images/about/video.svg" alt="video" />
+              <img src="/assets/images/about/video.svg" alt="video" />
               <div className="vedio-icone">
                 <a
                   className="video-play-button play-video popup-video"

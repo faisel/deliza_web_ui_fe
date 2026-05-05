@@ -467,6 +467,6 @@ const blogMenuData = [
   { link: "/blog/liliput-settle-tips-of-the-new-ages-exist", label: "Blog Details" },
 ];
 
-const serviceMenuThumb = "assets/images/banner/24.webp";
+const serviceMenuThumb = "/assets/images/banner/24.webp";
 
 export default HeaderFive

@@ -44,7 +44,7 @@ function ContactMain() {
                         </div>
                         <div className="col-lg-5">
                             <div className="thumbnail-contact-form">
-                                <img src="assets/images/contact/01.webp" alt="contact" />
+                                <img src="/assets/images/contact/01.webp" alt="contact" />
                             </div>
                         </div>
                         <div className="col-lg-3">

@@ -1,0 +1,90 @@
+/* Deliza hero: banner_1.png + layout so copy doesn’t collide the logotype */
+
+.delizaBanner:global(.rts-banner-area.banner-style-one) {
+  background-color: var(--color-page-bg);
+  background-image: url("/assets/images/deliza/banner_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.delizaBanner:global(.banner-style-one) :global(.banner-one-inner) {
+  position: relative;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 1599px) {
+  .delizaBanner:global(.rts-banner-area.banner-style-one) {
+    background-position: 40% center;
+  }
+
+  .delizaBanner:global(.banner-style-one) :global(.banner-one-inner) {
+    width: min(50%, 32rem);
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 1rem;
+    box-sizing: border-box;
+  }
+
+  .delizaBanner:global(.banner-style-one) :global(.banner-one-inner .title) {
+    font-size: clamp(2.25rem, 3.6vw, 3.5rem);
+    line-height: 1.2;
+  }
+
+  .delizaBanner:global(.banner-style-one) :global(.banner-one-inner .title span) {
+    font-size: clamp(2.5rem, 4vw, 3.85rem);
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .delizaBanner:global(.rts-banner-area.banner-style-one) {
+    background-position: 75% center;
+    height: auto;
+    min-height: 0;
+  }
+
+  .delizaBanner:global(.banner-style-one) :global(.banner-one-inner) {
+    width: 100%;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    padding: clamp(4.25rem, 11vw, 7.5rem) clamp(1rem, 4vw, 1.75rem)
+      clamp(5rem, 12vw, 8.75rem);
+    background: rgba(253, 235, 232, 0.93);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+
+  .delizaBanner:global(.banner-style-one) :global(.shape-iamge-area) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .delizaBanner:global(.rts-banner-area.banner-style-one) {
+    background-position: 85% center;
+  }
+
+  .delizaBanner:global(.banner-style-one) :global(.banner-one-inner .title) {
+    font-size: clamp(1.75rem, 6.5vw, 2.5rem);
+  }
+
+  .delizaBanner:global(.banner-style-one) :global(.banner-one-inner .title span) {
+    font-size: clamp(1.75rem, 6.5vw, 2.5rem);
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .delizaBanner:global(.rts-banner-area.banner-style-one) {
+    background-position: 90% center;
+  }
+
+  .delizaBanner:global(.banner-style-one) :global(.banner-one-inner) {
+    border-radius: 0;
+    margin-top: 0;
+  }
+}

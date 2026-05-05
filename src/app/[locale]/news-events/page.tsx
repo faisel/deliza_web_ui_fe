@@ -1,6 +1,6 @@
 import HeaderOne from "@/app/home-1/HeaderOne";
 import BreadCrumbOne from "@/app/[locale]/blog/BreadCrumbOne";
-import BrandInner from "@/app/[locale]/service/BrandInner";
+import Brands from "@/app/components/Brands";
 import CtaInner from "@/app/[locale]/about/CtaInner";
 import FooterTen from "@/app/[locale]/home-10/FooterTen";
 import RTL from "@/app/home-1/RTL";
@@ -57,7 +57,7 @@ export default async function NewsEventsPage({ params }: PageProps) {
         description={copy.description}
       />
       <NewsListInner />
-      <BrandInner className="rts-section-gapBottom" />
+      <Brands className="rts-section-gapBottom" />
       <CtaInner />
       <FooterTen />
       <RTL />

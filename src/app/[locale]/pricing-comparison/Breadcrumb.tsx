@@ -20,10 +20,10 @@ function Breadcrumb() {
                     </div>
                 </div>
                 <div className="shape-area">
-                    <img src="assets/images/about/shape/01.png" alt="shape" className="one" />
-                    <img src="assets/images/about/shape/02.png" alt="shape" className="two" />
+                    <img src="/assets/images/about/shape/01.png" alt="shape" className="one" />
+                    <img src="/assets/images/about/shape/02.png" alt="shape" className="two" />
                     <img
-                        src="assets/images/about/shape/03.png"
+                        src="/assets/images/about/shape/03.png"
                         alt="shape"
                         className="three"
                     />

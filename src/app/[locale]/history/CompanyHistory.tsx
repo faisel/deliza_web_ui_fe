@@ -18,7 +18,7 @@ function CompanyHistory() {
                                 </p>
                                 <img
                                     className="mt--70 shape-iamge-line"
-                                    src="assets/images/appoinment/01.svg"
+                                    src="/assets/images/appoinment/01.svg"
                                     alt="appoinment"
                                 />
                             </div>

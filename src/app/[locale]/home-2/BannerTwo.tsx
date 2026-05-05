@@ -4,6 +4,8 @@ import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
+import styles from "./BannerTwo.module.css";
+
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
 type BannerTwoProps = {
@@ -50,14 +52,14 @@ function BannerTwo({ id }: BannerTwoProps) {
     return (
         <>
             {/* rts banner area start */}
-            <div id={id} className="rts-banner-area banner-style-one bg_image">
+            <div
+                id={id}
+                className={`${styles.delizaBanner} rts-banner-area banner-style-one`}
+            >
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="banner-one-inner text-start">
-                                <p className="pre-title">
-                                    <span>Welcome!</span> Start Growing Your Business Today
-                                </p>
                                 <h1 className="title rts-text-anime-style-1" ref={splitRef}>
                                     Innovative <span>Solutions,</span> Tailored for Your Success
                                 </h1>
@@ -66,9 +68,6 @@ function BannerTwo({ id }: BannerTwoProps) {
                                     risus suscipit <br /> Dui feugiat fusce conubia ridiculus
                                     tristique parturient
                                 </p>
-                                <a href="#" className="rts-btn btn-primary color-h-black">
-                                    Get Consultant
-                                </a>
                             </div>
                         </div>
                     </div>

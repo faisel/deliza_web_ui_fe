@@ -35,7 +35,7 @@ function ProgressArea() {
                                                 transform="matrix(0, 1, -1, 0, 80, 0)"
                                             />
                                         </svg>
-                                        <img src="assets/images/fun/04.svg" alt="fun" />
+                                        <img src="/assets/images/fun/04.svg" alt="fun" />
                                     </div>
                                     <div className="right-counter">
                                         <h2 className="counter title">
@@ -73,7 +73,7 @@ function ProgressArea() {
                                                 transform="matrix(0, 1, -1, 0, 80, 0)"
                                             />
                                         </svg>
-                                        <img src="assets/images/fun/05.svg" alt="fun" />
+                                        <img src="/assets/images/fun/05.svg" alt="fun" />
                                     </div>
                                     <div className="right-counter">
                                         <h2 className="counter title">
@@ -111,7 +111,7 @@ function ProgressArea() {
                                                 transform="matrix(0, 1, -1, 0, 80, 0)"
                                             />
                                         </svg>
-                                        <img src="assets/images/fun/06.svg" alt="fun" />
+                                        <img src="/assets/images/fun/06.svg" alt="fun" />
                                     </div>
                                     <div className="right-counter">
                                         <h2 className="counter title">

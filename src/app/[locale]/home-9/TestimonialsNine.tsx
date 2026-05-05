@@ -40,7 +40,7 @@ function TestimonialsNine() {
                                         <div className="single-testimoanils-9">
                                             <div className="brand-logo">
                                                 <img
-                                                    src="assets/images/testimonials/01.svg"
+                                                    src="/assets/images/testimonials/01.svg"
                                                     alt="brand"
                                                 />
                                             </div>
@@ -62,7 +62,7 @@ function TestimonialsNine() {
                                         <div className="single-testimoanils-9">
                                             <div className="brand-logo">
                                                 <img
-                                                    src="assets/images/testimonials/01.svg"
+                                                    src="/assets/images/testimonials/01.svg"
                                                     alt="brand"
                                                 />
                                             </div>
@@ -84,7 +84,7 @@ function TestimonialsNine() {
                                         <div className="single-testimoanils-9">
                                             <div className="brand-logo">
                                                 <img
-                                                    src="assets/images/testimonials/01.svg"
+                                                    src="/assets/images/testimonials/01.svg"
                                                     alt="brand"
                                                 />
                                             </div>
@@ -106,7 +106,7 @@ function TestimonialsNine() {
                                         <div className="single-testimoanils-9">
                                             <div className="brand-logo">
                                                 <img
-                                                    src="assets/images/testimonials/01.svg"
+                                                    src="/assets/images/testimonials/01.svg"
                                                     alt="brand"
                                                 />
                                             </div>
@@ -128,7 +128,7 @@ function TestimonialsNine() {
                                         <div className="single-testimoanils-9">
                                             <div className="brand-logo">
                                                 <img
-                                                    src="assets/images/testimonials/01.svg"
+                                                    src="/assets/images/testimonials/01.svg"
                                                     alt="brand"
                                                 />
                                             </div>
