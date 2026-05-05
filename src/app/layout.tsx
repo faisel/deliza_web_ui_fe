@@ -1,16 +1,25 @@
 import type { Metadata } from "next";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import "../../public/assets/css/bootstrap.min.css";
 // import "../../public/assets/css/swiper.css";
 import "../../public/assets/css/odometer.css";
 import "../../public/assets/css/aos.css";
 import "../../public/assets/css/style.css";
+import "./font-overrides.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import Script from "next/script";
 import { defaultLocale } from "@/i18n/config";
 import { I18nProvider } from "@/i18n/I18nProvider";
+
+const manrope = Manrope({
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
+  variable: "--font-manrope",
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Deliza – Business Consulting",
@@ -45,7 +54,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang={defaultLocale} suppressHydrationWarning>
+    <html
+      lang={defaultLocale}
+      className={manrope.variable}
+      suppressHydrationWarning
+    >
       <head>
         <link
           rel="stylesheet"

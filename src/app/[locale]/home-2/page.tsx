@@ -36,11 +36,12 @@ export default async function HomePage({ params }: HomePageProps) {
         <HeaderOne logoSrc="/assets/images/logo/01.svg" />
         <BannerTwo />
         <AboutTen />
-        <PageIntro nav="home" />
+        {/* <PageIntro nav="home" /> */}
+
         <Brands />
         <ServicesTwo className='rts-section-gapBottom' />
         <BusinessConsultantOne />
-        <CounterUpTwo />
+
         <BusinessGoalTwo />
         <HomeBlogTwo />
         <PageFaq nav="home" />

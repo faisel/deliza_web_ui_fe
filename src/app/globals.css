@@ -21,3 +21,22 @@
     max-width: 130px;
   }
 }
+
+.rts-footer-area.footer-two,
+.rts-footer-area.footer-two h1,
+.rts-footer-area.footer-two h2,
+.rts-footer-area.footer-two h3,
+.rts-footer-area.footer-two h4,
+.rts-footer-area.footer-two h5,
+.rts-footer-area.footer-two h6,
+.rts-footer-area.footer-two p,
+.rts-footer-area.footer-two span,
+.rts-footer-area.footer-two a,
+.rts-footer-area.footer-two i,
+.rts-footer-area.footer-two li,
+.rts-copy-right-1,
+.rts-copy-right-1 p,
+.rts-copy-right-1 a,
+.rts-copy-right-1 li {
+  color: #000 !important;
+}

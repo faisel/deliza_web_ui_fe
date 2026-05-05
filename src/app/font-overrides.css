@@ -1,0 +1,28 @@
+/*
+ * Brand font override.
+ *
+ * The bundled template (public/assets/css/style.css) declares two CSS vars
+ * --font-primary (used for headings) and --font-secondary (used for body)
+ * inside :root. We redeclare them here so that everything across the site
+ * uses Manrope instead of the template defaults (kumlien-pro / Open Sans).
+ *
+ * This file is imported AFTER style.css in src/app/layout.tsx so it wins
+ * the cascade by source order.
+ *
+ * --font-manrope is wired up by next/font (see src/app/layout.tsx) and
+ * inherits through `html` so the `font-family` declared here resolves to
+ * the locally hosted Manrope variable font.
+ */
+
+:root {
+  --font-primary: var(--font-manrope), "Manrope", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  --font-secondary: var(--font-manrope), "Manrope", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+}
+
+html,
+body {
+  font-family: var(--font-manrope), "Manrope", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+}

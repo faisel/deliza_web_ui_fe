@@ -11,6 +11,20 @@ interface OdometerElement extends HTMLElement {
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import styles from "./CounterUpTwo.module.css";
+
+const BRAND_IMAGES = [
+  "/assets/images/deliza/brands/1.png",
+  "/assets/images/deliza/brands/2.png",
+  "/assets/images/deliza/brands/3.png",
+] as const;
+
+const COUNT_ITEMS = [
+  { count: 1200, suffix: "+" as const, label: "Business Solution", aosDelay: 200 },
+  { count: 2, suffix: "k" as const, label: "Solution Experts", aosDelay: 400 },
+  { count: 196, suffix: "k" as const, label: "Worldwide Partner", aosDelay: 600 },
+] as const;
+
 function CounterUpTwo() {
   const odometerRefs = useRef<OdometerElement[]>([]);
 
@@ -70,101 +84,54 @@ function CounterUpTwo() {
       {/* rts fun facts area start */}
       <div className="rts-fun-facts-area rts-section-gapBottom mt--30">
         <div className="container">
+
+        <div className="row">
+          <div className="col-12">
+            <div className="title-area-client-client text-center">
+              <p className="client-title">Our Brands</p>
+            </div>
+          </div>
+        </div>
+
           <div className="row g-5">
+            {COUNT_ITEMS.map((item, index) => (
+              <div
+                key={item.label}
+                className="col-12 col-md-6 col-lg-4"
+                data-aos="fade-up"
+                data-aos-delay={item.aosDelay}
+              >
+                <div className="signle-fun-facts-one">
+                  <div className={styles.brandThumb}>
+                    <Image
+                      src={BRAND_IMAGES[index]}
+                      alt={`Deliza brand partner ${index + 1}`}
+                      width={500}
+                      height={300}
+                      className={styles.image}
+                      sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                    />
+                  </div>
 
-            {/* ITEM 1 */}
-            <div className="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div className="signle-fun-facts-one">
-                <div className="icon">
-                  <Image
-                      src="/assets/images/fun-facts/01.svg"
-                      alt="fun-facts"
-                      width={46}
-                      height={46}
-                  />
+                  <h2 className="counter title">
+                    <span
+                      className="odometer"
+                      data-count={item.count}
+                      ref={(el) => {
+                        if (el && !odometerRefs.current.includes(el as OdometerElement)) {
+                          odometerRefs.current.push(el as OdometerElement);
+                        }
+                      }}
+                    >
+                      00
+                    </span>
+                    {item.suffix}
+                  </h2>
+
+                  <span className="bototm">{item.label}</span>
                 </div>
-
-                <h2 className="counter title">
-                  <span
-                    className="odometer"
-                    data-count={1200}
-                    ref={(el) => {
-                      if (el && !odometerRefs.current.includes(el as OdometerElement)) {
-                        odometerRefs.current.push(el as OdometerElement);
-                      }
-                    }}
-                  >
-                    00
-                  </span>
-                  +
-                </h2>
-
-                <span className="bototm">Business Solution</span>
               </div>
-            </div>
-
-            {/* ITEM 2 */}
-            <div className="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-              <div className="signle-fun-facts-one">
-                <div className="icon">
-                  <Image
-                      src="/assets/images/fun-facts/02.svg"
-                      alt="fun-facts"
-                      width={45}
-                      height={50}
-                  />
-                </div>
-
-                <h2 className="counter title">
-                  <span
-                    className="odometer"
-                    data-count={2}
-                    ref={(el) => {
-                      if (el && !odometerRefs.current.includes(el as OdometerElement)) {
-                        odometerRefs.current.push(el as OdometerElement);
-                      }
-                    }}
-                  >
-                    00
-                  </span>
-                  k
-                </h2>
-
-                <span className="bototm">Solution Experts</span>
-              </div>
-            </div>
-
-            {/* ITEM 3 */}
-            <div className="col-lg-4" data-aos="fade-up" data-aos-delay="600">
-              <div className="signle-fun-facts-one">
-                <div className="icon">
-                  <Image
-                      src="/assets/images/fun-facts/03.svg"
-                      alt="fun-facts"
-                      width={47}
-                      height={50}
-                  />
-                </div>
-
-                <h2 className="counter title">
-                  <span
-                    className="odometer"
-                    data-count={196}
-                    ref={(el) => {
-                      if (el && !odometerRefs.current.includes(el as OdometerElement)) {
-                        odometerRefs.current.push(el as OdometerElement);
-                      }
-                    }}
-                  >
-                    00
-                  </span>
-                  k
-                </h2>
-
-                <span className="bototm">Worldwide Partner</span>
-              </div>
-            </div>
-
+            ))}
           </div>
         </div>
       </div>

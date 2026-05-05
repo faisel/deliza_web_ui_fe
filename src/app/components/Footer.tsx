@@ -1,6 +1,5 @@
 "use client";
 import React from 'react'
-import Image from "next/image";
 import { useTranslation } from "@/i18n/useTranslation";
 import { localizePath, navHref, type NavKey } from "@/i18n/routing";
 import type { Locale } from "@/i18n/config";
@@ -145,13 +144,6 @@ function Footer({ id }: FooterProps) {
               <div className="footer-two-single-wized">
                 <div className="wized-title-area">
                   <h5 className="wized-title">{contactTitle[locale]}</h5>
-                  <Image
-                    src="/assets/images/footer/01.png"
-                    alt=""
-                    width={60}
-                    height={3}
-                    aria-hidden="true"
-                  />
                 </div>
                 <div className="wized-2-body">
                   <div className="contact-info-1">
@@ -187,13 +179,6 @@ function Footer({ id }: FooterProps) {
               <div className="footer-two-single-wized two">
                 <div className="wized-title-area">
                   <h5 className="wized-title">{BRAND_TITLE}</h5>
-                  <Image
-                    src="/assets/images/footer/01.png"
-                    alt=""
-                    width={60}
-                    height={3}
-                    aria-hidden="true"
-                  />
                 </div>
                 <div className="wized-2-body">
                   <ul>
