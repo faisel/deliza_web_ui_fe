@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { useTranslation } from "@/i18n/useTranslation";
 
 interface OdometerElement extends HTMLElement {
@@ -67,10 +68,12 @@ function CounterUpOne() {
               <div key={index} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                 <div className={counterLayoutClasses[index] ?? counterLayoutClasses[0]}>
                   <div className="icon">
-                    <img
-                      loading="lazy"
-                      src={counterIcons[index] ?? counterIcons[0]}
-                      alt="Business_counter"
+                    <Image
+                        loading="lazy"
+                        src={counterIcons[index] ?? counterIcons[0]}
+                        alt="Business_counter"
+                        width={800}
+                        height={600}
                     />
                   </div>
                   <div className="counter-details">

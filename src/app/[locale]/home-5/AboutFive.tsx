@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -57,7 +58,13 @@ function AboutFive({ id }: AboutFiveProps) {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pr--70 pr_md--0 pr_sm--0">
                             <div className="thumbnail-about-five">
-                                <img src="/assets/images/about/10.webp" alt="" />
+                                <Image
+                                    src="/assets/images/about/10.webp"
+                                    alt=""
+                                    width={1828}
+                                    height={1300}
+                                    aria-hidden="true"
+                                />
                             </div>
                         </div>
                         <div className="col-lg-6 mt_md--30 mt_sm--30">
@@ -78,7 +85,13 @@ function AboutFive({ id }: AboutFiveProps) {
                                     {/* ingle about start */}
                                     <div className="about-single-home-7">
                                         <div className="icon">
-                                            <img src="/assets/images/about/icons/03.svg" alt="" />
+                                            <Image
+                                                src="/assets/images/about/icons/03.svg"
+                                                alt=""
+                                                width={75}
+                                                height={75}
+                                                aria-hidden="true"
+                                            />
                                         </div>
                                         <div className="discription">
                                             <h6 className="title">Global Insights</h6>
@@ -92,7 +105,13 @@ function AboutFive({ id }: AboutFiveProps) {
                                     {/* ingle about start */}
                                     <div className="about-single-home-7">
                                         <div className="icon">
-                                            <img src="/assets/images/about/icons/04.svg" alt="" />
+                                            <Image
+                                                src="/assets/images/about/icons/04.svg"
+                                                alt=""
+                                                width={75}
+                                                height={75}
+                                                aria-hidden="true"
+                                            />
                                         </div>
                                         <div className="discription">
                                             <h6 className="title">Business Investment</h6>
@@ -106,7 +125,13 @@ function AboutFive({ id }: AboutFiveProps) {
                                     {/* ingle about start */}
                                     <div className="about-single-home-7">
                                         <div className="icon">
-                                            <img src="/assets/images/about/icons/05.svg" alt="" />
+                                            <Image
+                                                src="/assets/images/about/icons/05.svg"
+                                                alt=""
+                                                width={75}
+                                                height={75}
+                                                aria-hidden="true"
+                                            />
                                         </div>
                                         <div className="discription">
                                             <h6 className="title">Yearly Calculation</h6>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 function WorkingProcessOne() {
 
@@ -43,7 +44,12 @@ function WorkingProcessOne() {
                 >
                   <div className="left">
                     <div className="icon">
-                      <img src="/assets/images/process/icon/01.svg" alt="process" />
+                      <Image
+                          src="/assets/images/process/icon/01.svg"
+                          alt="process"
+                          width={52}
+                          height={52}
+                      />
                     </div>
                   </div>
 
@@ -66,7 +72,12 @@ function WorkingProcessOne() {
                 >
                   <div className="left">
                     <div className="icon">
-                      <img src="/assets/images/process/icon/02.svg" alt="process" />
+                      <Image
+                          src="/assets/images/process/icon/02.svg"
+                          alt="process"
+                          width={52}
+                          height={56}
+                      />
                     </div>
                   </div>
 
@@ -89,7 +100,12 @@ function WorkingProcessOne() {
                 >
                   <div className="left">
                     <div className="icon">
-                      <img src="/assets/images/process/icon/03.svg" alt="process" />
+                      <Image
+                          src="/assets/images/process/icon/03.svg"
+                          alt="process"
+                          width={52}
+                          height={50}
+                      />
                     </div>
                   </div>
 
@@ -114,9 +130,11 @@ function WorkingProcessOne() {
                 data-aos="zoom-in"
                 data-aos-delay="300"
               >
-                <img
-                  src="/assets/images/process/01.webp"
-                  alt="working-process"
+                <Image
+                    src="/assets/images/process/01.webp"
+                    alt="working-process"
+                    width={872}
+                    height={872}
                 />
               </div>
             </div>

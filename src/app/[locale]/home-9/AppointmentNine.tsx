@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 function AppointmentNine() {
     return (
         <>
@@ -9,7 +10,12 @@ function AppointmentNine() {
                     <div className="row g-0">
                         <div className="col-lg-6">
                             <div className="thumbnail-appoinment-9">
-                                <img src="/assets/images/appoinment/05.webp" alt="appoinment" />
+                                <Image
+                                    src="/assets/images/appoinment/05.webp"
+                                    alt="appoinment"
+                                    width={1182}
+                                    height={1422}
+                                />
                             </div>
                         </div>
                         <div className="col-lg-6">

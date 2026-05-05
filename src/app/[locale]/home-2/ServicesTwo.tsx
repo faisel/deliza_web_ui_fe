@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -64,7 +65,12 @@ function ServicesTwo({ className = "", id = "" }: ServicesTwoProps) {
                                 <div className="sticky-statement">
                                     <div className="left-side">
                                         <div className="icon">
-                                            <img src="/assets/images/service/01.svg" alt="service" />
+                                            <Image
+                                                src="/assets/images/service/01.svg"
+                                                alt="service"
+                                                width={68}
+                                                height={68}
+                                            />
                                         </div>
                                         <h5 className="title">Business Solution</h5>
                                     </div>
@@ -82,7 +88,12 @@ function ServicesTwo({ className = "", id = "" }: ServicesTwoProps) {
                                 <div className="sticky-statement">
                                     <div className="left-side">
                                         <div className="icon">
-                                            <img src="/assets/images/service/02.svg" alt="service" />
+                                            <Image
+                                                src="/assets/images/service/02.svg"
+                                                alt="service"
+                                                width={67}
+                                                height={67}
+                                            />
                                         </div>
                                         <h5 className="title">Creative Ideas</h5>
                                     </div>
@@ -100,7 +111,12 @@ function ServicesTwo({ className = "", id = "" }: ServicesTwoProps) {
                                 <div className="sticky-statement">
                                     <div className="left-side">
                                         <div className="icon">
-                                            <img src="/assets/images/service/03.svg" alt="service" />
+                                            <Image
+                                                src="/assets/images/service/03.svg"
+                                                alt="service"
+                                                width={68}
+                                                height={68}
+                                            />
                                         </div>
                                         <h5 className="title">Market Research</h5>
                                     </div>
@@ -118,7 +134,12 @@ function ServicesTwo({ className = "", id = "" }: ServicesTwoProps) {
                                 <div className="sticky-statement">
                                     <div className="left-side">
                                         <div className="icon">
-                                            <img src="/assets/images/service/01.svg" alt="service" />
+                                            <Image
+                                                src="/assets/images/service/01.svg"
+                                                alt="service"
+                                                width={68}
+                                                height={68}
+                                            />
                                         </div>
                                         <h5 className="title">Technology Solution</h5>
                                     </div>

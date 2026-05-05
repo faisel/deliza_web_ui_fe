@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
+import Image from "next/image";
 import Link from "@/i18n/LocalizedLink";
 
 function HeaderSix() {
@@ -29,7 +30,12 @@ function HeaderSix() {
                         <div className="col-lg-12">
                             <div className="header-transparent-main-wrapper">
                                 <Link href="/" className="logo">
-                                    <img src="/assets/images/logo/02.svg" alt="index" />
+                                    <Image
+                                        src="/assets/images/logo/02.svg"
+                                        alt="index"
+                                        width={201}
+                                        height={70}
+                                    />
                                 </Link>
                                 <div className="nav-area">
                                     <ul className="">
@@ -114,7 +120,12 @@ function HeaderSix() {
 
                                                                         {item.icon && (
                                                                             <div className="icon">
-                                                                            <img src={item.icon} alt="service" />
+                                                                            <Image
+                                                                                src={item.icon}
+                                                                                alt="service"
+                                                                                width={800}
+                                                                                height={600}
+                                                                            />
                                                                             </div>
                                                                         )}
 
@@ -134,7 +145,12 @@ function HeaderSix() {
                                                             {/* RIGHT SIDE IMAGE */}
                                                             <div className="col-lg-4">
                                                             <div className="menu-thumb pl--20">
-                                                                <img src={serviceMenuThumb} alt="service banner" />
+                                                                <Image
+                                                                    src={serviceMenuThumb}
+                                                                    alt="service banner"
+                                                                    width={800}
+                                                                    height={600}
+                                                                />
                                                             </div>
                                                             </div>
                                                         </div>
@@ -205,10 +221,12 @@ function HeaderSix() {
                                         Book a Meeting
                                     </a>
                                     <button id="menu-btn" className="menu menu-btn ml--20 ml_sm--5">
-                                        <img
+                                        <Image
                                             className="menu-light"
                                             src="/assets/images/icons/01.svg"
                                             alt="Menu-icon"
+                                            width={20}
+                                            height={16}
                                         />
                                     </button>
                                 </div>

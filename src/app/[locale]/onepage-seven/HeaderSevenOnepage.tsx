@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
+import Image from "next/image";
 import Link from "@/i18n/LocalizedLink";
 import OffcanvasMenuOnepage from '../../home-1/OffcanvasMenuOnepage';
 
@@ -32,7 +33,12 @@ function HeaderSevenOnepage() {
                         <div className="col-lg-12">
                             <div className="header-transparent-main-wrapper">
                                 <Link href="/" className="logo">
-                                    <img src="/assets/images/logo/02.svg" alt="index" />
+                                    <Image
+                                        src="/assets/images/logo/02.svg"
+                                        alt="index"
+                                        width={201}
+                                        height={70}
+                                    />
                                 </Link>
                                 <div className="nav-area">
 
@@ -63,10 +69,12 @@ function HeaderSevenOnepage() {
                                         className="menu-btn menu ml--20 ml_sm--5"
                                         onClick={() => setIsOffcanvasOpen(true)}
                                     >
-                                        <img
+                                        <Image
                                             className="menu-light"
                                             src="/assets/images/icons/01.svg"
                                             alt="Menu-icon"
+                                            width={20}
+                                            height={16}
                                         />
                                     </button>
                                 </div>

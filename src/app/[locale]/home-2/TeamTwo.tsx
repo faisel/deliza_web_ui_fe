@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
+import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { gsap } from "gsap";
@@ -82,7 +83,12 @@ function TeamTwo({ className = "" }: TeamTwoProps) {
             >
               <div className="single-team-area-one-start">
                 <Link href="/team-details" className="thumbnail">
-                  <img src="/assets/images/team/01.webp" alt="team" />
+                  <Image
+                      src="/assets/images/team/01.webp"
+                      alt="team"
+                      width={615}
+                      height={675}
+                  />
                 </Link>
                 <div className="inner-content">
                   <div className="text-top">
@@ -111,7 +117,12 @@ function TeamTwo({ className = "" }: TeamTwoProps) {
             >
               <div className="single-team-area-one-start">
                 <Link href="/team-details" className="thumbnail">
-                  <img src="/assets/images/team/02.webp" alt="team" />
+                  <Image
+                      src="/assets/images/team/02.webp"
+                      alt="team"
+                      width={615}
+                      height={675}
+                  />
                 </Link>
                 <div className="inner-content">
                   <div className="text-top">
@@ -140,7 +151,12 @@ function TeamTwo({ className = "" }: TeamTwoProps) {
             >
               <div className="single-team-area-one-start">
                 <a href="/team-details" className="thumbnail">
-                  <img src="/assets/images/team/03.webp" alt="team" />
+                  <Image
+                      src="/assets/images/team/03.webp"
+                      alt="team"
+                      width={615}
+                      height={675}
+                  />
                 </a>
                 <div className="inner-content">
                   <div className="text-top">

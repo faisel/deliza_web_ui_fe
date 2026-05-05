@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from "next/image";
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 
@@ -46,7 +47,12 @@ function HomeBlogSix({ id }: HomeBlogSixProps) {
             >
               <div className="single-blog-card-6">
                 <Link href="/blog/liliput-settle-tips-of-the-new-ages-exist" className="thumbnail">
-                  <img src="/assets/images/blog/10.webp" alt="blog" />
+                  <Image
+                      src="/assets/images/blog/10.webp"
+                      alt="blog"
+                      width={1260}
+                      height={756}
+                  />
                 </Link>
 
                 <div className="inner-content">

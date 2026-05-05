@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -77,7 +78,12 @@ function TeamThree() {
                         >
                             <div className="single-team-area-one-start wide-space">
                                 <Link href="/team-details" className="thumbnail">
-                                    <img src="/assets/images/team/01.webp" alt="team" />
+                                    <Image
+                                        src="/assets/images/team/01.webp"
+                                        alt="team"
+                                        width={615}
+                                        height={675}
+                                    />
                                 </Link>
                                 <div className="inner-content">
                                     <div className="inner">
@@ -104,7 +110,12 @@ function TeamThree() {
                         >
                             <div className="single-team-area-one-start wide-space">
                                 <Link href="/team-details" className="thumbnail">
-                                    <img src="/assets/images/team/02.webp" alt="team" />
+                                    <Image
+                                        src="/assets/images/team/02.webp"
+                                        alt="team"
+                                        width={615}
+                                        height={675}
+                                    />
                                 </Link>
                                 <div className="inner-content">
                                     <div className="inner">
@@ -131,7 +142,12 @@ function TeamThree() {
                         >
                             <div className="single-team-area-one-start wide-space">
                                 <Link href="/team-details" className="thumbnail">
-                                    <img src="/assets/images/team/03.webp" alt="team" />
+                                    <Image
+                                        src="/assets/images/team/03.webp"
+                                        alt="team"
+                                        width={615}
+                                        height={675}
+                                    />
                                 </Link>
                                 <div className="inner-content">
                                     <div className="inner">

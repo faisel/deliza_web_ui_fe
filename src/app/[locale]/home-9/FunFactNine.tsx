@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useRef } from "react";
 
+import Image from "next/image";
 interface OdometerElement extends HTMLElement {
     od?: any;
 }
@@ -108,7 +109,12 @@ function FunFactNine() {
                         <div className="col-lg-6">
                             <div className="modern-funfacts-area-wrapper">
                                 <div className="thumbnail">
-                                    <img src="/assets/images/fun-facts/01.webp" alt="funfacts" />
+                                    <Image
+                                        src="/assets/images/fun-facts/01.webp"
+                                        alt="funfacts"
+                                        width={1320}
+                                        height={1076}
+                                    />
                                 </div>
                             </div>
                         </div>

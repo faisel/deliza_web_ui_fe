@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from "next/image";
 import React from 'react';
 
 interface PostOneProps {
@@ -30,9 +31,11 @@ const PostOne: React.FC<PostOneProps> = ({
 
       <div className="bottom-details">
         <Link href={`/blog/${Slug || "details"}`} className="thumbnail">
-          <img
-            src={Img || "/assets/images/blog/03.webp"}
-            alt={Title || "Blog thumbnail"}
+          <Image
+              src={Img || "/assets/images/blog/03.webp"}
+              alt={Title || "Blog thumbnail"}
+              width={800}
+              height={600}
           />
         </Link>
       </div>

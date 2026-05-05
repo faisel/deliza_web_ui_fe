@@ -1,5 +1,6 @@
 "use client"
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from "next/image";
 import { Pagination } from 'swiper/modules';
 import { useTranslation } from '@/i18n/useTranslation';
 import { localizePath } from '@/i18n/routing';
@@ -61,10 +62,12 @@ function ProjectOne({ className = "", id="" }: ProjectOneProps) {
                                         <SwiperSlide key={index}>
                                             <div className="project-style-one">
                                                 <a href={detailsHref} className="thumbnail">
-                                                    <img
+                                                    <Image
                                                         loading="lazy"
                                                         src={projectImages[index] ?? projectImages[0]}
                                                         alt="project"
+                                                        width={800}
+                                                        height={600}
                                                     />
                                                 </a>
                                                 <div className="inner-content">

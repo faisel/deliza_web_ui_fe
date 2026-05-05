@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 function ProjectDetailsMain() {
     return (
         <>
@@ -9,15 +10,30 @@ function ProjectDetailsMain() {
                     <div className="row g-0">
                         <div className="col-lg-8">
                             <div className="thumbnail">
-                                <img src="/assets/images/portfolio/29.webp" alt="portfolio" />
+                                <Image
+                                    src="/assets/images/portfolio/29.webp"
+                                    alt="portfolio"
+                                    width={1910}
+                                    height={1300}
+                                />
                             </div>
                         </div>
                         <div className="col-lg-4 pl--20 pl_md--0 pl_sm--0">
                             <div className="thumbnail mb--10 mt_md--10 mt_sm--15">
-                                <img src="/assets/images/portfolio/30.webp" alt="portfolio" />
+                                <Image
+                                    src="/assets/images/portfolio/30.webp"
+                                    alt="portfolio"
+                                    width={910}
+                                    height={640}
+                                />
                             </div>
                             <div className="thumbnail">
-                                <img src="/assets/images/portfolio/31.webp" alt="portfolio" />
+                                <Image
+                                    src="/assets/images/portfolio/31.webp"
+                                    alt="portfolio"
+                                    width={910}
+                                    height={640}
+                                />
                             </div>
                         </div>
                     </div>
@@ -124,9 +140,11 @@ function ProjectDetailsMain() {
                             <div className="counterup-area-project-details">
                                 <div className="single-counter-up-area">
                                     <div className="icon">
-                                        <img
+                                        <Image
                                             src="/assets/images/portfolio/icons/05.svg"
                                             alt="portfolio"
+                                            width={46}
+                                            height={45}
                                         />
                                     </div>
                                     <h2 className="counter title">
@@ -141,9 +159,11 @@ function ProjectDetailsMain() {
                                 </div>
                                 <div className="single-counter-up-area with-pl">
                                     <div className="icon">
-                                        <img
+                                        <Image
                                             src="/assets/images/portfolio/icons/06.svg"
                                             alt="portfolio"
+                                            width={45}
+                                            height={45}
                                         />
                                     </div>
                                     <h2 className="counter title">
@@ -158,9 +178,11 @@ function ProjectDetailsMain() {
                                 </div>
                                 <div className="single-counter-up-area with-pl">
                                     <div className="icon">
-                                        <img
+                                        <Image
                                             src="/assets/images/portfolio/icons/07.svg"
                                             alt="portfolio"
+                                            width={45}
+                                            height={45}
                                         />
                                     </div>
                                     <h2 className="counter title">
@@ -173,9 +195,11 @@ function ProjectDetailsMain() {
                                 </div>
                                 <div className="single-counter-up-area with-pl b-n">
                                     <div className="icon">
-                                        <img
+                                        <Image
                                             src="/assets/images/portfolio/icons/08.svg"
                                             alt="portfolio"
+                                            width={53}
+                                            height={45}
                                         />
                                     </div>
                                     <h2 className="counter title">
@@ -212,7 +236,12 @@ function ProjectDetailsMain() {
                                         >
                                             <div className="accordion-body">
                                                 <div className="left">
-                                                    <img src="/assets/images/faq/02.webp" alt="faq" />
+                                                    <Image
+                                                        src="/assets/images/faq/02.webp"
+                                                        alt="faq"
+                                                        width={1373}
+                                                        height={861}
+                                                    />
                                                 </div>
                                                 <div className="right-area">
                                                     <h4 className="title">
@@ -259,7 +288,12 @@ function ProjectDetailsMain() {
                                         >
                                             <div className="accordion-body">
                                                 <div className="left">
-                                                    <img src="/assets/images/faq/02.webp" alt="faq" />
+                                                    <Image
+                                                        src="/assets/images/faq/02.webp"
+                                                        alt="faq"
+                                                        width={1373}
+                                                        height={861}
+                                                    />
                                                 </div>
                                                 <div className="right-area">
                                                     <h4 className="title">
@@ -306,7 +340,12 @@ function ProjectDetailsMain() {
                                         >
                                             <div className="accordion-body">
                                                 <div className="left">
-                                                    <img src="/assets/images/faq/02.webp" alt="faq" />
+                                                    <Image
+                                                        src="/assets/images/faq/02.webp"
+                                                        alt="faq"
+                                                        width={1373}
+                                                        height={861}
+                                                    />
                                                 </div>
                                                 <div className="right-area">
                                                     <h4 className="title">
@@ -353,7 +392,12 @@ function ProjectDetailsMain() {
                                         >
                                             <div className="accordion-body">
                                                 <div className="left">
-                                                    <img src="/assets/images/faq/02.webp" alt="faq" />
+                                                    <Image
+                                                        src="/assets/images/faq/02.webp"
+                                                        alt="faq"
+                                                        width={1373}
+                                                        height={861}
+                                                    />
                                                 </div>
                                                 <div className="right-area">
                                                     <h4 className="title">
@@ -400,7 +444,12 @@ function ProjectDetailsMain() {
                                         >
                                             <div className="accordion-body">
                                                 <div className="left">
-                                                    <img src="/assets/images/faq/02.webp" alt="faq" />
+                                                    <Image
+                                                        src="/assets/images/faq/02.webp"
+                                                        alt="faq"
+                                                        width={1373}
+                                                        height={861}
+                                                    />
                                                 </div>
                                                 <div className="right-area">
                                                     <h4 className="title">
@@ -433,7 +482,12 @@ function ProjectDetailsMain() {
                         <div className="col-lg-12">
                             <div className="next-prev-project-wrapper" dir="ltr">
                                 <div className="single-next-prev-wrapper">
-                                    <img src="/assets/images/portfolio/32.webp" alt="left" />
+                                    <Image
+                                        src="/assets/images/portfolio/32.webp"
+                                        alt="left"
+                                        width={280}
+                                        height={280}
+                                    />
                                     <div className="info">
                                         <span>Building</span>
                                         <p>Quality Construction Projects That Stand the Test of Time</p>
@@ -444,7 +498,12 @@ function ProjectDetailsMain() {
                                         <span>Building</span>
                                         <p>Quality Construction Projects That Stand the Test of Time</p>
                                     </div>
-                                    <img src="/assets/images/portfolio/32.webp" alt="left" />
+                                    <Image
+                                        src="/assets/images/portfolio/32.webp"
+                                        alt="left"
+                                        width={280}
+                                        height={280}
+                                    />
                                 </div>
                             </div>
                         </div>

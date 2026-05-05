@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -114,7 +115,12 @@ function BannerEight({ id }: BannerEightProps) {
                         <div className="col-lg-12">
                             <div className="banner-inner-content-eight">
                                 <div className="pre-title-area">
-                                    <img src="/assets/images/banner/icon/02.svg" alt="banner" />
+                                    <Image
+                                        src="/assets/images/banner/icon/02.svg"
+                                        alt="banner"
+                                        width={20}
+                                        height={20}
+                                    />
                                     <p>Business Success Starts Here</p>
                                 </div>
                                 <h1 className="title rts-text-anime-style-1" ref={splitRef}>
@@ -182,7 +188,12 @@ function BannerEight({ id }: BannerEightProps) {
                                         </span>
                                     </div>
                                     <div className="absolute-image">
-                                        <img src="/assets/images/banner/11.webp" alt="bottom" />
+                                        <Image
+                                            src="/assets/images/banner/11.webp"
+                                            alt="bottom"
+                                            width={528}
+                                            height={764}
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -192,7 +203,12 @@ function BannerEight({ id }: BannerEightProps) {
                 {/* counter up area end */}
                 <div className="banner-shape-area">
                     <div className="shape-area">
-                        <img src="/assets/images/banner/shape/shape.svg" alt="shape" />
+                        <Image
+                            src="/assets/images/banner/shape/shape.svg"
+                            alt="shape"
+                            width={534}
+                            height={149}
+                        />
                     </div>
                 </div>
             </div>

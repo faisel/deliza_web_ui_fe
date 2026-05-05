@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 
@@ -51,9 +52,11 @@ function BusinessGoalTwo() {
                                 <div className="row">
                                     <div className="col-lg-5">
                                         <div className="business-marklting-area-thumb">
-                                            <img
+                                            <Image
                                                 src="/assets/images/business/01.webp"
                                                 alt="business_area"
+                                                width={1308}
+                                                height={732}
                                             />
                                         </div>
                                     </div>

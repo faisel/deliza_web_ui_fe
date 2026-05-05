@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from "next/image";
 import React from 'react'
 
 function FooterSix() {
@@ -46,9 +47,11 @@ function FooterSix() {
                         <div className="footer-one-single-wized">
                             <div className="wized-title">
                                 <h5 className="title">Quick Links</h5>
-                                <img
+                                <Image
                                     src="/assets/images/footer/under-title.png"
                                     alt="finbiz_footer"
+                                    width={55}
+                                    height={2}
                                 />
                             </div>
                             <div className="quick-link-inner">
@@ -111,9 +114,11 @@ function FooterSix() {
                         <div className="footer-one-single-wized mid-bg">
                             <div className="wized-title">
                                 <h5 className="title">Opening Hours</h5>
-                                <img
+                                <Image
                                     src="/assets/images/footer/under-title.png"
                                     alt="finbiz_footer"
+                                    width={55}
+                                    height={2}
                                 />
                             </div>
                             <div className="opening-time-inner">
@@ -141,18 +146,22 @@ function FooterSix() {
                         <div className="footer-one-single-wized margin-left-65">
                             <div className="wized-title">
                                 <h5 className="title">Popular Updates</h5>
-                                <img
+                                <Image
                                     src="/assets/images/footer/under-title.png"
                                     alt="finbiz_footer"
+                                    width={55}
+                                    height={2}
                                 />
                             </div>
                             <div className="post-wrapper">
                                 {/* single post */}
                                 <div className="single-footer-post mb--30">
                                     <div className="left-thumbnail">
-                                        <img
+                                        <Image
                                             src="/assets/images/footer/post/01.png"
                                             alt="finbiz_business-post"
+                                            width={100}
+                                            height={95}
                                         />
                                     </div>
                                     <div className="post-right">
@@ -175,9 +184,11 @@ function FooterSix() {
                                 {/* single post */}
                                 <div className="single-footer-post">
                                     <div className="left-thumbnail">
-                                        <img
+                                        <Image
                                             src="/assets/images/footer/post/02.png"
                                             alt="finbiz_business-post"
+                                            width={100}
+                                            height={95}
                                         />
                                     </div>
                                     <div className="post-right">

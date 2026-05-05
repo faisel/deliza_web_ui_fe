@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -98,9 +99,11 @@ function TeamNine() {
                                     <div className="team-single-one-start">
                                         <div className="team-image-area">
                                             <Link href="/team-details">
-                                                <img
+                                                <Image
                                                     src="/assets/images/team/12.webp"
                                                     alt="Business_Team_single"
+                                                    width={600}
+                                                    height={600}
                                                 />
                                                 <div className="team-social">
                                                     <div className="main">
@@ -126,9 +129,11 @@ function TeamNine() {
                                     <div className="team-single-one-start">
                                         <div className="team-image-area">
                                             <Link href="/team-details">
-                                                <img
+                                                <Image
                                                     src="/assets/images/team/13.webp"
                                                     alt="Business_Team_single"
+                                                    width={600}
+                                                    height={600}
                                                 />
                                                 <div className="team-social">
                                                     <div className="main">
@@ -154,9 +159,11 @@ function TeamNine() {
                                     <div className="team-single-one-start">
                                         <div className="team-image-area">
                                             <Link href="/team-details">
-                                                <img
+                                                <Image
                                                     src="/assets/images/team/14.webp"
                                                     alt="Business_Team_single"
+                                                    width={600}
+                                                    height={600}
                                                 />
                                                 <div className="team-social">
                                                     <div className="main">
@@ -182,9 +189,11 @@ function TeamNine() {
                                     <div className="team-single-one-start">
                                         <div className="team-image-area">
                                             <Link href="/team-details">
-                                                <img
+                                                <Image
                                                     src="/assets/images/team/15.webp"
                                                     alt="Business_Team_single"
+                                                    width={600}
+                                                    height={600}
                                                 />
                                                 <div className="team-social">
                                                     <div className="main">
@@ -210,9 +219,11 @@ function TeamNine() {
                                     <div className="team-single-one-start">
                                         <div className="team-image-area">
                                             <Link href="/team-details">
-                                                <img
+                                                <Image
                                                     src="/assets/images/team/07.webp"
                                                     alt="Business_Team_single"
+                                                    width={450}
+                                                    height={450}
                                                 />
                                                 <div className="team-social">
                                                     <div className="main">

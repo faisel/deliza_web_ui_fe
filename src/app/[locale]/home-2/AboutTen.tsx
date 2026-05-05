@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
+import Image from "next/image";
 interface OdometerElement extends HTMLElement {
     od?: any;
 }
@@ -63,10 +64,22 @@ function AboutTen({ id }: AboutTenProps) {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="thumbnail-about-10-wrapper">
-                                <img src="/assets/images/deliza/about.jpg" alt="abotu" />
+                                <Image
+                                    src="/assets/images/deliza/about.jpg"
+                                    alt="Deliza GmbH hospitality and innovation"
+                                    width={731}
+                                    height={915}
+                                    priority
+                                    sizes="(max-width: 991px) 100vw, 50vw"
+                                />
                                 {/* <div className="top-counter-area">
                                     <div className="icon">
-                                        <img src="/assets/images/about/icons/08.svg" alt="about" />
+                                        <Image
+                                            src="/assets/images/about/icons/08.svg"
+                                            alt="about"
+                                            width={46}
+                                            height={46}
+                                        />
                                     </div>
                                     <h2 className="counter title">
                                         <span
@@ -86,7 +99,12 @@ function AboutTen({ id }: AboutTenProps) {
                                 </div>
                                 <div className="top-counter-area bottom">
                                     <div className="icon">
-                                        <img src="/assets/images/about/icons/09.svg" alt="about" />
+                                        <Image
+                                            src="/assets/images/about/icons/09.svg"
+                                            alt="about"
+                                            width={45}
+                                            height={50}
+                                        />
                                     </div>
                                     <h2 className="counter title">
                                         <span

@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 interface BreadcrumbThreeProps {
     preTitle?: string;
     bgTitle?: string;
@@ -29,12 +30,26 @@ function BreadcrumbThree(
       </div>
     </div>
     <div className="shape-area">
-      <img src="/assets/images/about/shape/01.png" alt="shape" className="one" />
-      <img src="/assets/images/about/shape/02.png" alt="shape" className="two" />
-      <img
-        src="/assets/images/about/shape/03.png"
-        alt="shape"
-        className="three"
+      <Image
+          src="/assets/images/about/shape/01.png"
+          alt="shape"
+          className="one"
+          width={132}
+          height={132}
+      />
+      <Image
+          src="/assets/images/about/shape/02.png"
+          alt="shape"
+          className="two"
+          width={90}
+          height={90}
+      />
+      <Image
+          src="/assets/images/about/shape/03.png"
+          alt="shape"
+          className="three"
+          width={234}
+          height={154}
       />
     </div>
   </div>

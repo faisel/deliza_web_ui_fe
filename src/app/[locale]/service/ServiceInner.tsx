@@ -2,6 +2,7 @@
 import Link from 'next/link'
 
 
+import Image from "next/image";
 type ServiceInnerProps ={
   id?: string;
 }
@@ -20,7 +21,12 @@ function ServiceInner({ id }: ServiceInnerProps) {
                                 <div className="signle-service-style-10">
                                     <div className="content-area-wrapper">
                                         <div className="icon">
-                                            <img src="/assets/images/service/icons/11.svg" alt="service" />
+                                            <Image
+                                                src="/assets/images/service/icons/11.svg"
+                                                alt="service"
+                                                width={52}
+                                                height={52}
+                                            />
                                         </div>
                                         <h5 className="title">Business Solution</h5>
                                         <p className="disc">
@@ -31,13 +37,23 @@ function ServiceInner({ id }: ServiceInnerProps) {
                                         </Link>
                                     </div>
                                     <div className="thumbnail">
-                                        <img src="/assets/images/service/07.webp" alt="service" />
+                                        <Image
+                                            src="/assets/images/service/07.webp"
+                                            alt="service"
+                                            width={323}
+                                            height={330}
+                                        />
                                     </div>
                                 </div>
                                 <div className="signle-service-style-10">
                                     <div className="content-area-wrapper">
                                         <div className="icon">
-                                            <img src="/assets/images/service/icons/12.svg" alt="service" />
+                                            <Image
+                                                src="/assets/images/service/icons/12.svg"
+                                                alt="service"
+                                                width={51}
+                                                height={51}
+                                            />
                                         </div>
                                         <h5 className="title">Marketing Solution</h5>
                                         <p className="disc">
@@ -48,16 +64,31 @@ function ServiceInner({ id }: ServiceInnerProps) {
                                         </Link>
                                     </div>
                                     <div className="thumbnail">
-                                        <img src="/assets/images/service/08.webp" alt="service" />
+                                        <Image
+                                            src="/assets/images/service/08.webp"
+                                            alt="service"
+                                            width={322}
+                                            height={330}
+                                        />
                                     </div>
                                 </div>
                                 <div className="signle-service-style-10 order-control-sm-device">
                                     <div className="thumbnail">
-                                        <img src="/assets/images/service/09.webp" alt="service" />
+                                        <Image
+                                            src="/assets/images/service/09.webp"
+                                            alt="service"
+                                            width={323}
+                                            height={330}
+                                        />
                                     </div>
                                     <div className="content-area-wrapper">
                                         <div className="icon">
-                                            <img src="/assets/images/service/icons/13.svg" alt="service" />
+                                            <Image
+                                                src="/assets/images/service/icons/13.svg"
+                                                alt="service"
+                                                width={50}
+                                                height={50}
+                                            />
                                         </div>
                                         <h5 className="title">Agency Marketing</h5>
                                         <p className="disc">
@@ -70,11 +101,21 @@ function ServiceInner({ id }: ServiceInnerProps) {
                                 </div>
                                 <div className="signle-service-style-10 order-control-sm-device">
                                     <div className="thumbnail">
-                                        <img src="/assets/images/service/10.webp" alt="service" />
+                                        <Image
+                                            src="/assets/images/service/10.webp"
+                                            alt="service"
+                                            width={323}
+                                            height={330}
+                                        />
                                     </div>
                                     <div className="content-area-wrapper">
                                         <div className="icon">
-                                            <img src="/assets/images/service/icons/14.svg" alt="service" />
+                                            <Image
+                                                src="/assets/images/service/icons/14.svg"
+                                                alt="service"
+                                                width={52}
+                                                height={52}
+                                            />
                                         </div>
                                         <h5 className="title">Startup Paskages</h5>
                                         <p className="disc">

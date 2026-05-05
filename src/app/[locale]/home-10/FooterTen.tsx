@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from "next/image";
 import React from 'react'
 
 type FooterTenProps ={
@@ -15,7 +16,12 @@ function FooterTen({ id }: FooterTenProps) {
                         <div className="col-lg-3">
                             <div className="footer-logo-area-left-8">
                                 <Link href="/" className="logo">
-                                    <img src="/assets/images/logo/03.svg" alt="logo" />
+                                    <Image
+                                        src="/assets/images/logo/03.svg"
+                                        alt="logo"
+                                        width={201}
+                                        height={70}
+                                    />
                                 </Link>
                                 <p className="disc">
                                     Felis consquat magnis fames sagittis ultrices plasodales porttitor
@@ -54,9 +60,11 @@ function FooterTen({ id }: FooterTenProps) {
                             <div className="footer-one-single-wized">
                                 <div className="wized-title">
                                     <h5 className="title">Quick Links</h5>
-                                    <img
+                                    <Image
                                         src="/assets/images/footer/under-title.png"
                                         alt="finbiz_footer"
+                                        width={55}
+                                        height={2}
                                     />
                                 </div>
                                 <div className="quick-link-inner">
@@ -118,9 +126,11 @@ function FooterTen({ id }: FooterTenProps) {
                             <div className="footer-one-single-wized">
                                 <div className="wized-title">
                                     <h5 className="title">Contact Us</h5>
-                                    <img
+                                    <Image
                                         src="/assets/images/footer/under-title.png"
                                         alt="finbiz_footer"
+                                        width={55}
+                                        height={2}
                                     />
                                 </div>
                                 <div className="quick-link-inner d-block">

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
+import Image from "next/image";
 // Extend HTMLElement to include od property
 interface OdometerElement extends HTMLElement {
   od?: any;
@@ -75,7 +76,12 @@ function CounterUpTwo() {
             <div className="col-lg-4" data-aos="fade-up" data-aos-delay="200">
               <div className="signle-fun-facts-one">
                 <div className="icon">
-                  <img src="/assets/images/fun-facts/01.svg" alt="fun-facts" />
+                  <Image
+                      src="/assets/images/fun-facts/01.svg"
+                      alt="fun-facts"
+                      width={46}
+                      height={46}
+                  />
                 </div>
 
                 <h2 className="counter title">
@@ -101,7 +107,12 @@ function CounterUpTwo() {
             <div className="col-lg-4" data-aos="fade-up" data-aos-delay="400">
               <div className="signle-fun-facts-one">
                 <div className="icon">
-                  <img src="/assets/images/fun-facts/02.svg" alt="fun-facts" />
+                  <Image
+                      src="/assets/images/fun-facts/02.svg"
+                      alt="fun-facts"
+                      width={45}
+                      height={50}
+                  />
                 </div>
 
                 <h2 className="counter title">
@@ -127,7 +138,12 @@ function CounterUpTwo() {
             <div className="col-lg-4" data-aos="fade-up" data-aos-delay="600">
               <div className="signle-fun-facts-one">
                 <div className="icon">
-                  <img src="/assets/images/fun-facts/03.svg" alt="fun-facts" />
+                  <Image
+                      src="/assets/images/fun-facts/03.svg"
+                      alt="fun-facts"
+                      width={47}
+                      height={50}
+                  />
                 </div>
 
                 <h2 className="counter title">

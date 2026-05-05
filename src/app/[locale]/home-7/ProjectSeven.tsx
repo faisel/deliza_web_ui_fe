@@ -1,5 +1,6 @@
 'use client'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import Image from "next/image";
 import { Navigation, Pagination } from 'swiper/modules'
 import Link from 'next/link'
 
@@ -45,13 +46,23 @@ function ProjectSeven({ id }: ProjectSevenProps) {
                                     <div className="row g-5">
                                         <div className="col-lg-7">
                                             <div className="thumbnail-project-5">
-                                                <img src="/assets/images/project/16.webp" alt="project" />
+                                                <Image
+                                                    src="/assets/images/project/16.webp"
+                                                    alt="project"
+                                                    width={1110}
+                                                    height={825}
+                                                />
                                             </div>
                                         </div>
                                         <div className="col-lg-5">
                                             <div className="project-content-left-5">
                                                 <div className="icon">
-                                                    <img src="/assets/images/project/02.svg" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/02.svg"
+                                                        alt="project"
+                                                        width={100}
+                                                        height={100}
+                                                    />
                                                 </div>
                                                 <div className="title-area">
                                                     <h6 className="title">Pro Business Solution</h6>
@@ -78,13 +89,23 @@ function ProjectSeven({ id }: ProjectSevenProps) {
                                     <div className="row g-5">
                                         <div className="col-lg-7">
                                             <div className="thumbnail-project-5">
-                                                <img src="/assets/images/project/16.webp" alt="project" />
+                                                <Image
+                                                    src="/assets/images/project/16.webp"
+                                                    alt="project"
+                                                    width={1110}
+                                                    height={825}
+                                                />
                                             </div>
                                         </div>
                                         <div className="col-lg-5">
                                             <div className="project-content-left-5">
                                                 <div className="icon">
-                                                    <img src="/assets/images/project/02.svg" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/02.svg"
+                                                        alt="project"
+                                                        width={100}
+                                                        height={100}
+                                                    />
                                                 </div>
                                                 <div className="title-area">
                                                     <h6 className="title">Pro Business Solution</h6>
@@ -111,13 +132,23 @@ function ProjectSeven({ id }: ProjectSevenProps) {
                                     <div className="row g-5">
                                         <div className="col-lg-7">
                                             <div className="thumbnail-project-5">
-                                                <img src="/assets/images/project/16.webp" alt="project" />
+                                                <Image
+                                                    src="/assets/images/project/16.webp"
+                                                    alt="project"
+                                                    width={1110}
+                                                    height={825}
+                                                />
                                             </div>
                                         </div>
                                         <div className="col-lg-5">
                                             <div className="project-content-left-5">
                                                 <div className="icon">
-                                                    <img src="/assets/images/project/02.svg" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/02.svg"
+                                                        alt="project"
+                                                        width={100}
+                                                        height={100}
+                                                    />
                                                 </div>
                                                 <div className="title-area">
                                                     <h6 className="title">Pro Business Solution</h6>

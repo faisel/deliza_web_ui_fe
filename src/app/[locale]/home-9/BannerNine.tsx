@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -95,7 +96,12 @@ function BannerNine({ id }: BannerNineProps) {
                 </div>
 
                 <div className="image-right-absolute">
-                    <img src="/assets/images/banner/12.webp" alt="banner" />
+                    <Image
+                        src="/assets/images/banner/12.webp"
+                        alt="banner"
+                        width={917}
+                        height={850}
+                    />
                 </div>
 
                 {/* =======================
@@ -104,7 +110,13 @@ function BannerNine({ id }: BannerNineProps) {
                 <div className="circle-text-main">
                     <div className="circle">
                         <div className="logo">
-                            <img src="/assets/images/banner/icon/video.svg" alt="" />
+                            <Image
+                                src="/assets/images/banner/icon/video.svg"
+                                alt=""
+                                width={43}
+                                height={52}
+                                aria-hidden="true"
+                            />
                         </div>
                         <div className="text" ref={circleTextRef}></div>
                     </div>

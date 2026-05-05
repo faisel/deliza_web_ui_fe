@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
+import Image from "next/image";
 import Link from "@/i18n/LocalizedLink";
 import OffcanvasMenuOnepage from '../../home-1/OffcanvasMenuOnepage';
 
@@ -54,7 +55,12 @@ function OnepageHeaderFive() {
                     <div className="row main-header main-header-three">
                         <div className="col-lg-3 col-md-4 col-sm-5 col-5">
                             <Link href="/" className="thumbnail-logo">
-                                <img src="/assets/images/logo/01.svg" alt="Logo_three" />
+                                <Image
+                                    src="/assets/images/logo/01.svg"
+                                    alt="Logo_three"
+                                    width={193}
+                                    height={53}
+                                />
                             </Link>
                         </div>
                         <div className="col-lg-6 d-none d-xl-block">
@@ -94,10 +100,12 @@ function OnepageHeaderFive() {
                                     className="menu-btn menu ml--20 ml_sm--5"
                                     onClick={() => setIsOffcanvasOpen(true)}
                                 >
-                                    <img
+                                    <Image
                                         className="menu-light"
                                         src="/assets/images/icons/01.svg"
                                         alt="Menu-icon"
+                                        width={20}
+                                        height={16}
                                     />
                                 </button>
                             </div>

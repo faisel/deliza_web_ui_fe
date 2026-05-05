@@ -1,5 +1,6 @@
 "use client";
 import { useParams } from "next/navigation";
+import Image from "next/image";
 import HeaderOne from "@/app/home-1/HeaderOne";
 import BrandInner from "@/app/[locale]/service/BrandInner";
 import CtaInner from "@/app/[locale]/about/CtaInner";
@@ -65,7 +66,13 @@ export default function NewsDetailsClient() {
             <div className="col-lg-12">
               <div className="blog-details-area-inner-content">
                 <div className="image-area mb--30">
-                  <img src={item.image} style={{ width: "100%" }} alt={t.title} />
+                  <Image
+                      src={item.image}
+                      style={{ width: "100%" }}
+                      alt={t.title}
+                      width={800}
+                      height={600}
+                  />
                 </div>
                 <div className="blog-details-top-wrapper">
                   <div className="single">

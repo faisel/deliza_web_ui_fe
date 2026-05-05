@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import AOS from "aos";
@@ -113,10 +114,22 @@ const BusinessGoalOne = ({ className = "" }: BusinessGoalOneProps) => {
             <div className="col-lg-6">
               <div className="thumbnail-business-area-right-two">
                 <div className="large-thumbnail">
-                  <img src="/assets/images/business-goal/02.webp" alt="" />
+                  <Image
+                      src="/assets/images/business-goal/02.webp"
+                      alt=""
+                      width={660}
+                      height={849}
+                      aria-hidden="true"
+                  />
                 </div>
                 <div className="small-thumbnail images-r">
-                  <img src="/assets/images/business-goal/01.webp" alt="" />
+                  <Image
+                      src="/assets/images/business-goal/01.webp"
+                      alt=""
+                      width={452}
+                      height={639}
+                      aria-hidden="true"
+                  />
                 </div>
               </div>
             </div>

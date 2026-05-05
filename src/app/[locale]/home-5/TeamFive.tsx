@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "@/i18n/LocalizedLink";
+import Image from "next/image";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -68,7 +69,12 @@ function TeamFive() {
               >
                 <div className="single-team-style-5">
                   <Link href="/team-details" className="thumbnail">
-                    <img src={member.image} alt={member.name} />
+                    <Image
+                        src={member.image}
+                        alt={member.name}
+                        width={800}
+                        height={600}
+                    />
                   </Link>
                   <div className="inner">
                     <Link href="/team-details">

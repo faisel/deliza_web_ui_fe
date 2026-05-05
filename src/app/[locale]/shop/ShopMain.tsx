@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from "next/image";
 import React from 'react'
 
 function ShopMain() {
@@ -13,7 +14,12 @@ function ShopMain() {
                     >
                         <div className="rts-single-shop-area">
                             <Link href="/shop-single" className="thumbnail">
-                                <img src="/assets/images/shop/01.webp" alt="shop" />
+                                <Image
+                                    src="/assets/images/shop/01.webp"
+                                    alt="shop"
+                                    width={630}
+                                    height={377}
+                                />
                             </Link>
                             <div className="inner-content">
                                 <div className="stars-area">
@@ -42,7 +48,12 @@ function ShopMain() {
                     >
                         <div className="rts-single-shop-area">
                             <Link href="/shop-single" className="thumbnail">
-                                <img src="/assets/images/shop/02.webp" alt="shop" />
+                                <Image
+                                    src="/assets/images/shop/02.webp"
+                                    alt="shop"
+                                    width={630}
+                                    height={377}
+                                />
                             </Link>
                             <div className="inner-content">
                                 <div className="stars-area">
@@ -71,7 +82,12 @@ function ShopMain() {
                     >
                         <div className="rts-single-shop-area">
                             <Link href="/shop-single" className="thumbnail">
-                                <img src="/assets/images/shop/03.webp" alt="shop" />
+                                <Image
+                                    src="/assets/images/shop/03.webp"
+                                    alt="shop"
+                                    width={630}
+                                    height={377}
+                                />
                             </Link>
                             <div className="inner-content">
                                 <div className="stars-area">
@@ -100,7 +116,12 @@ function ShopMain() {
                     >
                         <div className="rts-single-shop-area">
                             <Link href="/shop-single" className="thumbnail">
-                                <img src="/assets/images/shop/04.webp" alt="shop" />
+                                <Image
+                                    src="/assets/images/shop/04.webp"
+                                    alt="shop"
+                                    width={630}
+                                    height={377}
+                                />
                             </Link>
                             <div className="inner-content">
                                 <div className="stars-area">
@@ -129,7 +150,12 @@ function ShopMain() {
                     >
                         <div className="rts-single-shop-area">
                             <Link href="/shop-single" className="thumbnail">
-                                <img src="/assets/images/shop/05.webp" alt="shop" />
+                                <Image
+                                    src="/assets/images/shop/05.webp"
+                                    alt="shop"
+                                    width={630}
+                                    height={377}
+                                />
                             </Link>
                             <div className="inner-content">
                                 <div className="stars-area">
@@ -158,7 +184,12 @@ function ShopMain() {
                     >
                         <div className="rts-single-shop-area">
                             <Link href="/shop-single" className="thumbnail">
-                                <img src="/assets/images/shop/06.webp" alt="shop" />
+                                <Image
+                                    src="/assets/images/shop/06.webp"
+                                    alt="shop"
+                                    width={630}
+                                    height={377}
+                                />
                             </Link>
                             <div className="inner-content">
                                 <div className="stars-area">
@@ -187,7 +218,12 @@ function ShopMain() {
                     >
                         <div className="rts-single-shop-area">
                             <Link href="/shop-single" className="thumbnail">
-                                <img src="/assets/images/shop/07.webp" alt="shop" />
+                                <Image
+                                    src="/assets/images/shop/07.webp"
+                                    alt="shop"
+                                    width={630}
+                                    height={377}
+                                />
                             </Link>
                             <div className="inner-content">
                                 <div className="stars-area">
@@ -216,7 +252,12 @@ function ShopMain() {
                     >
                         <div className="rts-single-shop-area">
                             <Link href="/shop-single" className="thumbnail">
-                                <img src="/assets/images/shop/08.webp" alt="shop" />
+                                <Image
+                                    src="/assets/images/shop/08.webp"
+                                    alt="shop"
+                                    width={630}
+                                    height={377}
+                                />
                             </Link>
                             <div className="inner-content">
                                 <div className="stars-area">
@@ -245,7 +286,12 @@ function ShopMain() {
                     >
                         <div className="rts-single-shop-area">
                             <Link href="/shop-single" className="thumbnail">
-                                <img src="/assets/images/shop/09.webp" alt="shop" />
+                                <Image
+                                    src="/assets/images/shop/09.webp"
+                                    alt="shop"
+                                    width={630}
+                                    height={377}
+                                />
                             </Link>
                             <div className="inner-content">
                                 <div className="stars-area">

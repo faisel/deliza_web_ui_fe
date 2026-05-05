@@ -36,6 +36,45 @@ export interface BannerSlide {
   description: string;
 }
 
+/** One question/answer pair shown in a FAQ accordion and emitted as JSON-LD. */
+export interface FaqEntry {
+  q: string;
+  a: string;
+}
+
+/** Single H3 highlight block displayed under a page intro. */
+export interface PageHighlight {
+  title: string;
+  description: string;
+}
+
+/** SEO + content payload for a single active main-nav page. */
+export interface SeoPageContent {
+  /** <title> tag, ~50–60 chars. */
+  metaTitle: string;
+  /** <meta description>, ~140–160 chars. */
+  metaDescription: string;
+  /** Single visible H1 in the hero/breadcrumb. */
+  h1: string;
+  /** Optional small label rendered above the H1 / intro. */
+  eyebrow?: string;
+  /** Decorative oversized background word for hero blocks (already used by template). */
+  bgTitle?: string;
+  /** Hero subtitle — short sentence under H1. */
+  heroDescription?: string;
+  /** H2 used inside the page intro section under the hero. */
+  introTitle: string;
+  /** First lead paragraph — answers "what is this page" in 1–3 sentences. */
+  leadParagraph: string;
+  /** Optional highlight cards, rendered as H3 + paragraph each. */
+  highlights?: PageHighlight[];
+  /** FAQ block content. */
+  faq: {
+    title: string;
+    items: FaqEntry[];
+  };
+}
+
 export interface Messages {
   common: {
     language: string;
@@ -54,6 +93,23 @@ export interface Messages {
   };
   metadata: {
     home: { title: string; description: string };
+  };
+  seo: {
+    org: {
+      /** Short single-paragraph organization description. */
+      description: string;
+      /** Brand tagline used in OG/Twitter when appropriate. */
+      tagline: string;
+    };
+    pages: {
+      home: SeoPageContent;
+      brands: SeoPageContent;
+      products: SeoPageContent;
+      investment: SeoPageContent;
+      about: SeoPageContent;
+      news: SeoPageContent;
+      contact: SeoPageContent;
+    };
   };
   header: {
     topbar: { email: string; workingHours: string };

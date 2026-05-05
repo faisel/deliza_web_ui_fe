@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
+import Image from "next/image";
 import Link from "next/link";
 import OffcanvasMenu from './OffcanvasMenu';
 import { useTranslation } from '@/i18n/useTranslation';
@@ -59,7 +60,15 @@ function HeaderOne({
                                 <div className="header-main-one-wrapper">
                                     <div className="thumbnail">
                                         <Link href={navHref("home", locale)}>
-                                            <img className="deliza-logo" src={DELIZA_LOGO_SRC} alt={DELIZA_LOGO_ALT} />
+                                            <Image
+                                                className="deliza-logo"
+                                                src={DELIZA_LOGO_SRC}
+                                                alt={DELIZA_LOGO_ALT}
+                                                width={300}
+                                                height={89}
+                                                priority
+                                                sizes="200px"
+                                            />
                                         </Link>
                                     </div>
                                     <div className="main-header">
@@ -81,10 +90,13 @@ function HeaderOne({
                                                 onClick={() => setIsOffcanvasOpen(true)}
                                                 aria-label="Open menu"
                                             >
-                                                <img
+                                                <Image
                                                     className="menu-light"
                                                     src="/assets/images/icons/01.svg"
-                                                    alt="Menu-icon"
+                                                    alt=""
+                                                    width={20}
+                                                    height={16}
+                                                    aria-hidden="true"
                                                 />
                                             </button>
                                         </div>

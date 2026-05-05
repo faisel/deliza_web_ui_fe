@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 function ProjectInner() {
     return (
         <>
@@ -81,7 +82,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/03.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/03.webp"
+                                                        alt="project"
+                                                        width={1260}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -94,7 +100,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/04.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/04.webp"
+                                                        alt="project"
+                                                        width={1260}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -107,7 +118,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/05.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/05.webp"
+                                                        alt="project"
+                                                        width={1262}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -120,7 +136,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/06.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/06.webp"
+                                                        alt="project"
+                                                        width={1266}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -142,7 +163,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/03.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/03.webp"
+                                                        alt="project"
+                                                        width={1260}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -155,7 +181,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/04.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/04.webp"
+                                                        alt="project"
+                                                        width={1260}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -168,7 +199,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/05.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/05.webp"
+                                                        alt="project"
+                                                        width={1262}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -181,7 +217,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/06.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/06.webp"
+                                                        alt="project"
+                                                        width={1266}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -203,7 +244,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/03.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/03.webp"
+                                                        alt="project"
+                                                        width={1260}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -216,7 +262,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/04.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/04.webp"
+                                                        alt="project"
+                                                        width={1260}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -229,7 +280,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/05.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/05.webp"
+                                                        alt="project"
+                                                        width={1262}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -242,7 +298,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/06.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/06.webp"
+                                                        alt="project"
+                                                        width={1266}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -264,7 +325,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/03.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/03.webp"
+                                                        alt="project"
+                                                        width={1260}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -277,7 +343,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/04.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/04.webp"
+                                                        alt="project"
+                                                        width={1260}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -290,7 +361,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/05.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/05.webp"
+                                                        alt="project"
+                                                        width={1262}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">
@@ -303,7 +379,12 @@ function ProjectInner() {
                                         <div className="col-lg-6">
                                             <div className="single-project-style-three">
                                                 <a href="#" className="thumbnail">
-                                                    <img src="/assets/images/project/06.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/06.webp"
+                                                        alt="project"
+                                                        width={1266}
+                                                        height={806}
+                                                    />
                                                 </a>
                                                 <div className="inner-content">
                                                     <a href="#">

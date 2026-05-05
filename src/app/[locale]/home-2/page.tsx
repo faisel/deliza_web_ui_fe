@@ -2,42 +2,49 @@ import BodyClass from './BodyClassTwo'
 import HeaderOne from '../../home-1/HeaderOne'
 import BannerTwo from './BannerTwo'
 import AboutTen from './AboutTen'
-import AboutTwo from './AboutTwo'
 import ServicesTwo from './ServicesTwo'
 import BusinessConsultantOne from './BusinessConsultantOne'
 import CounterUpTwo from './CounterUpTwo'
-import WorkingProcessOne from './WorkingProcessOne'
-import TeamTwo from './TeamTwo'
 import BusinessGoalTwo from './BusinessGoalTwo'
-import PricingOne from './PricingOne'
 import HomeBlogTwo from './HomeBlogTwo'
 import CtaTwo from './CtaTwo'
 import Brands from '../../components/Brands'
 import Footer from '../../components/Footer'
 import RTL from '../../home-1/RTL'
 import BackToTop from '../../home-1/BackToTop'
+import PageIntro from '../../components/PageIntro'
+import PageFaq from '../../components/PageFaq'
+import PageSchema from '../../components/PageSchema'
+import { isValidLocale } from '@/i18n/config'
 
-export default function HomePage() {
+interface HomePageProps {
+  params: Promise<{ locale: string }>
+}
+
+export default async function HomePage({ params }: HomePageProps) {
+  const { locale: rawLocale } = await params
+  const locale = isValidLocale(rawLocale) ? rawLocale : 'de'
+
   return (
     <>
+      <PageSchema nav="home" locale={locale} />
       {/* Body class assign */}
       <BodyClass className="overflow-x-visible" />
 
       {/* Page content */}
       <>
-        <HeaderOne logoSrc="/assets/images/logo/01.svg"/>
+        <HeaderOne logoSrc="/assets/images/logo/01.svg" />
         <BannerTwo />
         <AboutTen />
+        <PageIntro nav="home" />
         <Brands />
         <ServicesTwo className='rts-section-gapBottom' />
         <BusinessConsultantOne />
         <CounterUpTwo />
-        {/* <WorkingProcessOne /> */}
-        {/* <TeamTwo className='rts-section-gap'/> */}
         <BusinessGoalTwo />
-        {/* <PricingOne /> */}
         <HomeBlogTwo />
-        <CtaTwo className='rts-section-gapBottom'/>
+        <PageFaq nav="home" />
+        <CtaTwo className='rts-section-gapBottom' />
         <Footer />
         <RTL />
         <BackToTop />

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -119,9 +120,11 @@ function CaseStudies() {
                                         <SwiperSlide>
                                             <div className="single-case-studies-four">
                                                 <Link href="/project-details" className="thumbnail">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/project/07.webp"
                                                         alt="project"
+                                                        width={810}
+                                                        height={852}
                                                     />
                                                 </Link>
                                                 <div className="inner">
@@ -131,9 +134,11 @@ function CaseStudies() {
                                                     </Link>
                                                 </div>
                                                 <div className="eye">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/project/eye.svg"
                                                         alt="project"
+                                                        width={55}
+                                                        height={55}
                                                     />
                                                 </div>
                                             </div>
@@ -141,9 +146,11 @@ function CaseStudies() {
                                         <SwiperSlide>
                                             <div className="single-case-studies-four">
                                                 <Link href="/project-details" className="thumbnail">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/project/08.webp"
                                                         alt="project"
+                                                        width={810}
+                                                        height={852}
                                                     />
                                                 </Link>
                                                 <div className="inner">
@@ -153,9 +160,11 @@ function CaseStudies() {
                                                     </Link>
                                                 </div>
                                                 <div className="eye">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/project/eye.svg"
                                                         alt="project"
+                                                        width={55}
+                                                        height={55}
                                                     />
                                                 </div>
                                             </div>
@@ -163,9 +172,11 @@ function CaseStudies() {
                                         <SwiperSlide>
                                             <div className="single-case-studies-four">
                                                 <Link href="/project-details" className="thumbnail">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/project/09.webp"
                                                         alt="project"
+                                                        width={810}
+                                                        height={852}
                                                     />
                                                 </Link>
                                                 <div className="inner">
@@ -175,9 +186,11 @@ function CaseStudies() {
                                                     </Link>
                                                 </div>
                                                 <div className="eye">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/project/eye.svg"
                                                         alt="project"
+                                                        width={55}
+                                                        height={55}
                                                     />
                                                 </div>
                                             </div>
@@ -185,9 +198,11 @@ function CaseStudies() {
                                         <SwiperSlide>
                                             <div className="single-case-studies-four">
                                                 <Link href="/project-details" className="thumbnail">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/project/08.webp"
                                                         alt="project"
+                                                        width={810}
+                                                        height={852}
                                                     />
                                                 </Link>
                                                 <div className="inner">
@@ -197,9 +212,11 @@ function CaseStudies() {
                                                     </Link>
                                                 </div>
                                                 <div className="eye">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/project/eye.svg"
                                                         alt="project"
+                                                        width={55}
+                                                        height={55}
                                                     />
                                                 </div>
                                             </div>

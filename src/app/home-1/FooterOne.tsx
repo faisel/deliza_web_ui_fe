@@ -1,5 +1,6 @@
 "use client";
 import { useTranslation } from "@/i18n/useTranslation";
+import Image from "next/image";
 import { localizePath } from "@/i18n/routing";
 
 type FooterOneProps = {
@@ -34,11 +35,13 @@ function FooterOne({ id }: FooterOneProps) {
                   <div className="col-lg-5">
                     <div className="map-information-2-footer">
                       <h5 className="title-main">{f.contact.title}</h5>
-                      <img
-                        loading="lazy"
-                        src="/assets/images/footer/02.svg"
-                        alt="line"
-                        className="line"
+                      <Image
+                          loading="lazy"
+                          src="/assets/images/footer/02.svg"
+                          alt="line"
+                          className="line"
+                          width={85}
+                          height={5}
                       />
                       <div className="contact-information-main-wrapper">
                         <div className="signle-contact-information">
@@ -89,10 +92,12 @@ function FooterOne({ id }: FooterOneProps) {
               <div className="footer-one-single-wized mid-bg">
                 <div className="wized-title">
                   <h5 className="title">{f.hours.title}</h5>
-                  <img
-                    loading="lazy"
-                    src="/assets/images/footer/01.svg"
-                    alt="finbiz_footer"
+                  <Image
+                      loading="lazy"
+                      src="/assets/images/footer/01.svg"
+                      alt="finbiz_footer"
+                      width={55}
+                      height={2}
                   />
                 </div>
                 <div className="opening-time-inner">
@@ -119,10 +124,12 @@ function FooterOne({ id }: FooterOneProps) {
               <div className="footer-one-single-wized">
                 <div className="wized-title">
                   <h5 className="title">{f.quickLinks.title}</h5>
-                  <img
-                    loading="lazy"
-                    src="/assets/images/footer/01.svg"
-                    alt="finbiz_footer"
+                  <Image
+                      loading="lazy"
+                      src="/assets/images/footer/01.svg"
+                      alt="finbiz_footer"
+                      width={55}
+                      height={2}
                   />
                 </div>
                 <div className="quick-link-inner">
@@ -152,10 +159,12 @@ function FooterOne({ id }: FooterOneProps) {
               <div className="footer-one-single-wized margin-left-65">
                 <div className="wized-title">
                   <h5 className="title">{f.updates.title}</h5>
-                  <img
-                    loading="lazy"
-                    src="/assets/images/footer/01.svg"
-                    alt="finbiz_footer"
+                  <Image
+                      loading="lazy"
+                      src="/assets/images/footer/01.svg"
+                      alt="finbiz_footer"
+                      width={55}
+                      height={2}
                   />
                 </div>
                 <div className="body">

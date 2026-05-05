@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from "react";
+import Image from "next/image";
 import { Keyboard, Navigation, Pagination, Parallax, Scrollbar } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -55,25 +56,31 @@ function ShopSingleMain() {
                                 >
                                     <SwiperSlide>
                                         <div className="slider-inner">
-                                            <img
+                                            <Image
                                                 src="/assets/images/shop/shop-01.jpg"
                                                 alt="full_screen-image"
+                                                width={699}
+                                                height={614}
                                             />
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="slider-inner">
-                                            <img
+                                            <Image
                                                 src="/assets/images/shop/shop-03.jpg"
                                                 alt="full_screen-image"
+                                                width={699}
+                                                height={614}
                                             />
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="slider-inner">
-                                            <img
+                                            <Image
                                                 src="/assets/images/shop/shop-02.jpg"
                                                 alt="full_screen-image"
+                                                width={699}
+                                                height={614}
                                             />
                                         </div>
                                     </SwiperSlide>

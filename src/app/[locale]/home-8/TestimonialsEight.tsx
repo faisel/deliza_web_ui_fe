@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -80,7 +81,13 @@ function TestimonialsEight({ className}: TestimonialsEightProps) {
                                 <div className="row">
                                     <div className="col-lg-4">
                                         <div className="circle-text">
-                                            <img src="/assets/images/testimonials/07.webp" alt="" />
+                                            <Image
+                                                src="/assets/images/testimonials/07.webp"
+                                                alt=""
+                                                width={285}
+                                                height={284}
+                                                aria-hidden="true"
+                                            />
                                         </div>
                                     </div>
                                     <div className="col-lg-8">
@@ -105,9 +112,11 @@ function TestimonialsEight({ className}: TestimonialsEightProps) {
                                                         </p>
                                                         <div className="author-area">
                                                             <div className="avatar">
-                                                                <img
+                                                                <Image
                                                                     src="/assets/images/testimonials/avatar/03.webp"
                                                                     alt="avatar"
+                                                                    width={80}
+                                                                    height={81}
                                                                 />
                                                             </div>
                                                             <div className="content">
@@ -129,9 +138,11 @@ function TestimonialsEight({ className}: TestimonialsEightProps) {
                                                         </p>
                                                         <div className="author-area">
                                                             <div className="avatar">
-                                                                <img
+                                                                <Image
                                                                     src="/assets/images/testimonials/avatar/03.webp"
                                                                     alt="avatar"
+                                                                    width={80}
+                                                                    height={81}
                                                                 />
                                                             </div>
                                                             <div className="content">
@@ -153,9 +164,11 @@ function TestimonialsEight({ className}: TestimonialsEightProps) {
                                                         </p>
                                                         <div className="author-area">
                                                             <div className="avatar">
-                                                                <img
+                                                                <Image
                                                                     src="/assets/images/testimonials/avatar/03.webp"
                                                                     alt="avatar"
+                                                                    width={80}
+                                                                    height={81}
                                                                 />
                                                             </div>
                                                             <div className="content">

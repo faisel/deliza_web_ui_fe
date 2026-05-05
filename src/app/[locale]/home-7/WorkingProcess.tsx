@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -75,7 +76,12 @@ function WorkingProcess() {
                                 >
                                     <div className="left">
                                         <div className="icon">
-                                            <img src="/assets/images/process/icon/01.svg" alt="process" />
+                                            <Image
+                                                src="/assets/images/process/icon/01.svg"
+                                                alt="process"
+                                                width={52}
+                                                height={52}
+                                            />
                                         </div>
                                     </div>
                                     <div className="inner-content">
@@ -97,7 +103,12 @@ function WorkingProcess() {
                                 >
                                     <div className="left">
                                         <div className="icon">
-                                            <img src="/assets/images/process/icon/02.svg" alt="process" />
+                                            <Image
+                                                src="/assets/images/process/icon/02.svg"
+                                                alt="process"
+                                                width={52}
+                                                height={56}
+                                            />
                                         </div>
                                     </div>
                                     <div className="inner-content">
@@ -119,7 +130,12 @@ function WorkingProcess() {
                                 >
                                     <div className="left">
                                         <div className="icon">
-                                            <img src="/assets/images/process/icon/03.svg" alt="process" />
+                                            <Image
+                                                src="/assets/images/process/icon/03.svg"
+                                                alt="process"
+                                                width={52}
+                                                height={50}
+                                            />
                                         </div>
                                     </div>
                                     <div className="inner-content">
@@ -142,7 +158,12 @@ function WorkingProcess() {
                                 data-delay="0.2"
                                 data-duration="1.2"
                             >
-                                <img src="/assets/images/process/02.webp" alt="working-process" />
+                                <Image
+                                    src="/assets/images/process/02.webp"
+                                    alt="working-process"
+                                    width={872}
+                                    height={1112}
+                                />
                             </div>
                         </div>
                     </div>

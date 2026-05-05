@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import AOS from "aos";
@@ -91,7 +92,12 @@ function ServiceThree({ id }: ServiceThreeProps) {
                             <div className="single-service-style-three">
                                 <div className="inner">
                                     <div className="icon">
-                                        <img src="/assets/images/service/icons/04.svg" alt="icon" />
+                                        <Image
+                                            src="/assets/images/service/icons/04.svg"
+                                            alt="icon"
+                                            width={38}
+                                            height={38}
+                                        />
                                     </div>
                                     <Link href="/service-details">
                                         <h4 className="title">Business Solution</h4>
@@ -115,7 +121,12 @@ function ServiceThree({ id }: ServiceThreeProps) {
                             <div className="single-service-style-three">
                                 <div className="inner">
                                     <div className="icon">
-                                        <img src="/assets/images/service/icons/05.svg" alt="icon" />
+                                        <Image
+                                            src="/assets/images/service/icons/05.svg"
+                                            alt="icon"
+                                            width={37}
+                                            height={37}
+                                        />
                                     </div>
                                     <Link href="/service-details">
                                         <h4 className="title">Creative Ideas</h4>
@@ -139,7 +150,12 @@ function ServiceThree({ id }: ServiceThreeProps) {
                             <div className="single-service-style-three">
                                 <div className="inner">
                                     <div className="icon">
-                                        <img src="/assets/images/service/icons/06.svg" alt="icon" />
+                                        <Image
+                                            src="/assets/images/service/icons/06.svg"
+                                            alt="icon"
+                                            width={38}
+                                            height={38}
+                                        />
                                     </div>
                                     <Link href="/service-details">
                                         <h4 className="title">Market Research</h4>
@@ -163,7 +179,12 @@ function ServiceThree({ id }: ServiceThreeProps) {
                             <div className="single-service-style-three">
                                 <div className="inner">
                                     <div className="icon">
-                                        <img src="/assets/images/service/icons/07.svg" alt="icon" />
+                                        <Image
+                                            src="/assets/images/service/icons/07.svg"
+                                            alt="icon"
+                                            width={38}
+                                            height={38}
+                                        />
                                     </div>
                                     <Link href="/service-details">
                                         <h4 className="title">Business Solution</h4>

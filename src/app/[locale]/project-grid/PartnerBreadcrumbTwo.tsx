@@ -1,6 +1,17 @@
-import React from 'react'
+"use client";
 
-function PartnerBreadcrumbTwo() {
+import { useTranslation } from "@/i18n/useTranslation";
+import type { NavKey } from "@/i18n/routing";
+
+interface PartnerBreadcrumbTwoProps {
+    /** Defaults to "products" — used under /[locale]/products-services. */
+    nav?: NavKey;
+}
+
+function PartnerBreadcrumbTwo({ nav = "products" }: PartnerBreadcrumbTwoProps) {
+    const { messages } = useTranslation();
+    const page = messages.seo.pages[nav];
+
     return (
         <>
             {/* partners area breadcrumb area wrapper */}
@@ -9,8 +20,16 @@ function PartnerBreadcrumbTwo() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="title-area-left center">
-                                <span className="bg-title">Project</span>
-                                <h1 className="title">Project Grid</h1>
+                                {page.eyebrow && (
+                                    <span className="pre">{page.eyebrow}</span>
+                                )}
+                                {page.bgTitle && (
+                                    <span className="bg-title">{page.bgTitle}</span>
+                                )}
+                                <h1 className="title">{page.h1}</h1>
+                                {page.heroDescription && (
+                                    <p className="disc">{page.heroDescription}</p>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -18,8 +37,7 @@ function PartnerBreadcrumbTwo() {
             </div>
             {/* partners area breadcrumb area end */}
         </>
-
-    )
+    );
 }
 
-export default PartnerBreadcrumbTwo
+export default PartnerBreadcrumbTwo;

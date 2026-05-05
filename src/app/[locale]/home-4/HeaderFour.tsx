@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
+import Image from "next/image";
 import Link from "@/i18n/LocalizedLink";
 import OffcanvasMenu from '../../home-1/OffcanvasMenu';
 
@@ -91,7 +92,12 @@ function HeaderFour() {
                                 <div className="header-main-one-wrapper">
                                     <div className="thumbnail">
                                         <Link href="/">
-                                            <img src="/assets/images/logo/01.svg" alt="finbiz-logo" />
+                                            <Image
+                                                src="/assets/images/logo/01.svg"
+                                                alt="finbiz-logo"
+                                                width={193}
+                                                height={53}
+                                            />
                                         </Link>
                                     </div>
                                     <div className="main-header">
@@ -184,7 +190,12 @@ function HeaderFour() {
 
                                                                                                 {item.icon && (
                                                                                                     <div className="icon">
-                                                                                                        <img src={item.icon} alt="service" />
+                                                                                                        <Image
+                                                                                                            src={item.icon}
+                                                                                                            alt="service"
+                                                                                                            width={800}
+                                                                                                            height={600}
+                                                                                                        />
                                                                                                     </div>
                                                                                                 )}
 
@@ -204,7 +215,12 @@ function HeaderFour() {
                                                                     {/* RIGHT SIDE IMAGE */}
                                                                     <div className="col-lg-4">
                                                                         <div className="menu-thumb pl--20">
-                                                                            <img src={serviceMenuThumb} alt="service banner" />
+                                                                            <Image
+                                                                                src={serviceMenuThumb}
+                                                                                alt="service banner"
+                                                                                width={800}
+                                                                                height={600}
+                                                                            />
                                                                         </div>
                                                                     </div>
 
@@ -292,10 +308,12 @@ function HeaderFour() {
                                                 className="menu-btn menu ml--20 ml_sm--5"
                                                 onClick={() => setIsOffcanvasOpen(true)}
                                             >
-                                                <img
+                                                <Image
                                                     className="menu-light"
                                                     src="/assets/images/icons/01.svg"
                                                     alt="Menu-icon"
+                                                    width={20}
+                                                    height={16}
                                                 />
                                             </button>
                                         </div>

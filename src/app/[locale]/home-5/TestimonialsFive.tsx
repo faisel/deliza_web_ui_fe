@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -119,9 +120,11 @@ function TestimonialsFive() {
                                 <SwiperSlide>
                                     <div className="single-testimonials-style-five">
                                         <div className="thumbnail">
-                                            <img
+                                            <Image
                                                 src="/assets/images/testimonials/03.webp"
                                                 alt="testimoanils"
+                                                width={520}
+                                                height={622}
                                             />
                                         </div>
                                         <div className="inner-content">
@@ -136,9 +139,11 @@ function TestimonialsFive() {
                                             </p>
                                             <div className="body-end">
                                                 <a href="#">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/testimonials/icons/03.webp"
                                                         alt="Client_logo"
+                                                        width={123}
+                                                        height={31}
                                                     />
                                                 </a>
                                                 <div className="star-icon">
@@ -155,9 +160,11 @@ function TestimonialsFive() {
                                 <SwiperSlide>
                                     <div className="single-testimonials-style-five">
                                         <div className="thumbnail">
-                                            <img
+                                            <Image
                                                 src="/assets/images/testimonials/04.webp"
                                                 alt="testimoanils"
+                                                width={520}
+                                                height={622}
                                             />
                                         </div>
                                         <div className="inner-content">
@@ -172,9 +179,11 @@ function TestimonialsFive() {
                                             </p>
                                             <div className="body-end">
                                                 <a href="#">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/testimonials/icons/02.webp"
                                                         alt="Client_logo"
+                                                        width={122}
+                                                        height={33}
                                                     />
                                                 </a>
                                                 <div className="star-icon">
@@ -191,9 +200,11 @@ function TestimonialsFive() {
                                 <SwiperSlide>
                                     <div className="single-testimonials-style-five">
                                         <div className="thumbnail">
-                                            <img
+                                            <Image
                                                 src="/assets/images/testimonials/03.webp"
                                                 alt="testimoanils"
+                                                width={520}
+                                                height={622}
                                             />
                                         </div>
                                         <div className="inner-content">
@@ -208,9 +219,11 @@ function TestimonialsFive() {
                                             </p>
                                             <div className="body-end">
                                                 <a href="#">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/testimonials/icons/03.webp"
                                                         alt="Client_logo"
+                                                        width={123}
+                                                        height={31}
                                                     />
                                                 </a>
                                                 <div className="star-icon">

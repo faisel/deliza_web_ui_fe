@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -85,16 +86,20 @@ function BusinessConsultantOne() {
                 data-aos-duration="1200"
               >
                 <div className="large-image">
-                  <img
-                    src="/assets/images/about/02.webp"
-                    alt="Consultancy discussion"
+                  <Image
+                      src="/assets/images/about/02.webp"
+                      alt="Consultancy discussion"
+                      width={717}
+                      height={717}
                   />
                 </div>
 
                 <div className="small-iamge images-r">
-                  <img
-                    src="/assets/images/about/03.webp"
-                    alt="Consultancy planning"
+                  <Image
+                      src="/assets/images/about/03.webp"
+                      alt="Consultancy planning"
+                      width={370}
+                      height={370}
                   />
                 </div>
               </div>
@@ -126,7 +131,13 @@ function BusinessConsultantOne() {
                   data-aos-delay="200"
                 >
                   <div className="icon">
-                    <img src="/assets/images/about/icons/01.svg" alt="" />
+                    <Image
+                        src="/assets/images/about/icons/01.svg"
+                        alt=""
+                        width={36}
+                        height={35}
+                        aria-hidden="true"
+                    />
                   </div>
                   <div className="information">
                     <h4 className="title">Best Business Consulting</h4>
@@ -144,7 +155,13 @@ function BusinessConsultantOne() {
                   data-aos-delay="300"
                 >
                   <div className="icon">
-                    <img src="/assets/images/about/icons/02.svg" alt="" />
+                    <Image
+                        src="/assets/images/about/icons/02.svg"
+                        alt=""
+                        width={35}
+                        height={35}
+                        aria-hidden="true"
+                    />
                   </div>
                   <div className="information">
                     <h4 className="title">24/7 Customer Support</h4>

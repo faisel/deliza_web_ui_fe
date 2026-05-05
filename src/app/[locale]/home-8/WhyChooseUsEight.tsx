@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -63,7 +64,12 @@ function WhyChooseUsEight() {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="thumbnail-why-choose-8">
-                                <img src="/assets/images/why-choose/09.webp" alt="why-choose" />
+                                <Image
+                                    src="/assets/images/why-choose/09.webp"
+                                    alt="why-choose"
+                                    width={641}
+                                    height={613}
+                                />
                             </div>
                         </div>
                         <div className="col-lg-6 pl--60">
@@ -76,7 +82,13 @@ function WhyChooseUsEight() {
                                 </div>
                                 <div className="signle-consultancy mb--30">
                                     <div className="icon">
-                                        <img src="/assets/images/about/icons/01.svg" alt="" />
+                                        <Image
+                                            src="/assets/images/about/icons/01.svg"
+                                            alt=""
+                                            width={36}
+                                            height={35}
+                                            aria-hidden="true"
+                                        />
                                     </div>
                                     <div className="information">
                                         <h4 className="title">Best Business Consulting</h4>
@@ -88,7 +100,13 @@ function WhyChooseUsEight() {
                                 </div>
                                 <div className="signle-consultancy">
                                     <div className="icon">
-                                        <img src="/assets/images/about/icons/02.svg" alt="" />
+                                        <Image
+                                            src="/assets/images/about/icons/02.svg"
+                                            alt=""
+                                            width={35}
+                                            height={35}
+                                            aria-hidden="true"
+                                        />
                                     </div>
                                     <div className="information">
                                         <h4 className="title">24/7 Customer Support</h4>

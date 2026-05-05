@@ -1,5 +1,6 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 function BrandFour() {
@@ -42,32 +43,62 @@ function BrandFour() {
                                 >
                                     <SwiperSlide>
                                         <div className="single-brand">
-                                            <img src="/assets/images/brand/01.webp" alt="brand" />
+                                            <Image
+                                                src="/assets/images/brand/01.webp"
+                                                alt="brand"
+                                                width={262}
+                                                height={74}
+                                            />
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="single-brand">
-                                            <img src="/assets/images/brand/02.webp" alt="brand" />
+                                            <Image
+                                                src="/assets/images/brand/02.webp"
+                                                alt="brand"
+                                                width={263}
+                                                height={64}
+                                            />
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="single-brand">
-                                            <img src="/assets/images/brand/03.webp" alt="brand" />
+                                            <Image
+                                                src="/assets/images/brand/03.webp"
+                                                alt="brand"
+                                                width={258}
+                                                height={54}
+                                            />
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="single-brand">
-                                            <img src="/assets/images/brand/04.webp" alt="brand" />
+                                            <Image
+                                                src="/assets/images/brand/04.webp"
+                                                alt="brand"
+                                                width={254}
+                                                height={62}
+                                            />
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="single-brand">
-                                            <img src="/assets/images/brand/05.webp" alt="brand" />
+                                            <Image
+                                                src="/assets/images/brand/05.webp"
+                                                alt="brand"
+                                                width={250}
+                                                height={66}
+                                            />
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="single-brand">
-                                            <img src="/assets/images/brand/03.webp" alt="brand" />
+                                            <Image
+                                                src="/assets/images/brand/03.webp"
+                                                alt="brand"
+                                                width={258}
+                                                height={54}
+                                            />
                                         </div>
                                     </SwiperSlide>
                                 </Swiper>

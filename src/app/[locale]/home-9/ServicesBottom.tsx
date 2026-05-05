@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 type ServicesBottomProps ={
   id?: string;
 }
@@ -19,7 +20,12 @@ function ServicesBottom({ id }: ServicesBottomProps) {
                                     </p>
                                 </div>
                                 <div className="mid-image">
-                                    <img src="/assets/images/service/01.png" alt="service_image" />
+                                    <Image
+                                        src="/assets/images/service/01.png"
+                                        alt="service_image"
+                                        width={120}
+                                        height={120}
+                                    />
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -66,7 +67,12 @@ function AboutSix({ id }: AboutSixProps) {
                     <div className="row align-items-center">
                         <div className="col-lg-6 pr--40 pr_sm--10">
                             <div className="thumbnail-about-six">
-                                <img src="/assets/images/about/11.webp" alt="about" />
+                                <Image
+                                    src="/assets/images/about/11.webp"
+                                    alt="about"
+                                    width={888}
+                                    height={989}
+                                />
                             </div>
                         </div>
                         <div className="col-lg-6 mt_sm--30">
@@ -85,7 +91,12 @@ function AboutSix({ id }: AboutSixProps) {
                                 <div className="about-service-wrapper-main">
                                     <div className="single-about-service">
                                         <div className="icon">
-                                            <img src="/assets/images/about/icons/06.svg" alt="service" />
+                                            <Image
+                                                src="/assets/images/about/icons/06.svg"
+                                                alt="service"
+                                                width={40}
+                                                height={41}
+                                            />
                                         </div>
                                         <h5 className="title">
                                             Management <br />
@@ -94,7 +105,12 @@ function AboutSix({ id }: AboutSixProps) {
                                     </div>
                                     <div className="single-about-service">
                                         <div className="icon">
-                                            <img src="/assets/images/about/icons/07.svg" alt="service" />
+                                            <Image
+                                                src="/assets/images/about/icons/07.svg"
+                                                alt="service"
+                                                width={36}
+                                                height={31}
+                                            />
                                         </div>
                                         <h5 className="title">
                                             Business <br />

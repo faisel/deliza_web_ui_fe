@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -162,7 +163,12 @@ const FaqOne: React.FC = () => {
                             data-aos-delay="200"
                         >
                             <div className="thumbnail">
-                                <img src="/assets/images/faq/01.webp" alt="faq" />
+                                <Image
+                                    src="/assets/images/faq/01.webp"
+                                    alt="faq"
+                                    width={786}
+                                    height={909}
+                                />
                             </div>
                         </div>
                     </div>

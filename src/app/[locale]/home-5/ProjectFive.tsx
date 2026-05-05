@@ -1,5 +1,6 @@
 "use client"
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from "next/image";
 import { Navigation, Pagination } from 'swiper/modules';
 import Link from 'next/link';
 
@@ -46,7 +47,12 @@ function ProjectFive({ id }: ProjectFiveProps) {
                                             <div className="col-lg-5">
                                                 <div className="project-content-left-5">
                                                     <div className="icon">
-                                                        <img src="/assets/images/project/01.svg" alt="project" />
+                                                        <Image
+                                                            src="/assets/images/project/01.svg"
+                                                            alt="project"
+                                                            width={100}
+                                                            height={100}
+                                                        />
                                                     </div>
                                                     <div className="title-area">
                                                         <h6 className="title">Pro Business Solution</h6>
@@ -69,7 +75,12 @@ function ProjectFive({ id }: ProjectFiveProps) {
                                             </div>
                                             <div className="col-lg-7">
                                                 <div className="thumbnail-project-5">
-                                                    <img src="/assets/images/project/11.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/11.webp"
+                                                        alt="project"
+                                                        width={1480}
+                                                        height={1100}
+                                                    />
                                                 </div>
                                             </div>
                                         </div>
@@ -79,7 +90,12 @@ function ProjectFive({ id }: ProjectFiveProps) {
                                             <div className="col-lg-5">
                                                 <div className="project-content-left-5">
                                                     <div className="icon">
-                                                        <img src="/assets/images/project/01.svg" alt="project" />
+                                                        <Image
+                                                            src="/assets/images/project/01.svg"
+                                                            alt="project"
+                                                            width={100}
+                                                            height={100}
+                                                        />
                                                     </div>
                                                     <div className="title-area">
                                                         <h6 className="title">Best Business Solution</h6>
@@ -102,7 +118,12 @@ function ProjectFive({ id }: ProjectFiveProps) {
                                             </div>
                                             <div className="col-lg-7">
                                                 <div className="thumbnail-project-5">
-                                                    <img src="/assets/images/project/11.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/11.webp"
+                                                        alt="project"
+                                                        width={1480}
+                                                        height={1100}
+                                                    />
                                                 </div>
                                             </div>
                                         </div>
@@ -112,7 +133,12 @@ function ProjectFive({ id }: ProjectFiveProps) {
                                             <div className="col-lg-5">
                                                 <div className="project-content-left-5">
                                                     <div className="icon">
-                                                        <img src="/assets/images/project/01.svg" alt="project" />
+                                                        <Image
+                                                            src="/assets/images/project/01.svg"
+                                                            alt="project"
+                                                            width={100}
+                                                            height={100}
+                                                        />
                                                     </div>
                                                     <div className="title-area">
                                                         <h6 className="title">Pro Business Solution</h6>
@@ -135,7 +161,12 @@ function ProjectFive({ id }: ProjectFiveProps) {
                                             </div>
                                             <div className="col-lg-7">
                                                 <div className="thumbnail-project-5">
-                                                    <img src="/assets/images/project/11.webp" alt="project" />
+                                                    <Image
+                                                        src="/assets/images/project/11.webp"
+                                                        alt="project"
+                                                        width={1480}
+                                                        height={1100}
+                                                    />
                                                 </div>
                                             </div>
                                         </div>

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 
+import Image from "next/image";
 type BusinessGoalThreeProps ={
   id?: string;
 }
@@ -88,13 +89,28 @@ function BusinessGoalThree({ id }: BusinessGoalThreeProps) {
             <div className={`tab-pane-custom ${isFading ? 'fade-out' : 'fade-in'}`}>
               <div className="thumbnail-area-wrapper-inner-6">
                 {activeTab === 'home' && (
-                  <img src="/assets/images/business-goal/03.webp" alt="Financial Planning" />
+                  <Image
+                      src="/assets/images/business-goal/03.webp"
+                      alt="Financial Planning"
+                      width={913}
+                      height={625}
+                  />
                 )}
                 {activeTab === 'profile' && (
-                  <img src="/assets/images/business-goal/03.webp" alt="Business Investment" />
+                  <Image
+                      src="/assets/images/business-goal/03.webp"
+                      alt="Business Investment"
+                      width={913}
+                      height={625}
+                  />
                 )}
                 {activeTab === 'contact' && (
-                  <img src="/assets/images/business-goal/03.webp" alt="Management Planning" />
+                  <Image
+                      src="/assets/images/business-goal/03.webp"
+                      alt="Management Planning"
+                      width={913}
+                      height={625}
+                  />
                 )}
               </div>
             </div>

@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -74,7 +75,12 @@ function ProjectTwo({ className = "", id = "" }: ProjectTwoProps) {
                         <div className="col-lg-6 rts-jump__item">
                             <div className="single-project-style-three">
                                 <Link href="/project-details" className="thumbnail">
-                                    <img src="/assets/images/project/03.webp" alt="project" />
+                                    <Image
+                                        src="/assets/images/project/03.webp"
+                                        alt="project"
+                                        width={1260}
+                                        height={806}
+                                    />
                                 </Link>
                                 <div className="inner-content">
                                     <a href="/project-details">
@@ -87,7 +93,12 @@ function ProjectTwo({ className = "", id = "" }: ProjectTwoProps) {
                         <div className="col-lg-6 rts-jump__item">
                             <div className="single-project-style-three">
                                 <Link href="/project-details" className="thumbnail">
-                                    <img src="/assets/images/project/04.webp" alt="project" />
+                                    <Image
+                                        src="/assets/images/project/04.webp"
+                                        alt="project"
+                                        width={1260}
+                                        height={806}
+                                    />
                                 </Link>
                                 <div className="inner-content">
                                     <Link href="/project-details">
@@ -100,7 +111,12 @@ function ProjectTwo({ className = "", id = "" }: ProjectTwoProps) {
                         <div className="col-lg-6 rts-jump__item">
                             <div className="single-project-style-three">
                                 <Link href="/project-details" className="thumbnail">
-                                    <img src="/assets/images/project/05.webp" alt="project" />
+                                    <Image
+                                        src="/assets/images/project/05.webp"
+                                        alt="project"
+                                        width={1262}
+                                        height={806}
+                                    />
                                 </Link>
                                 <div className="inner-content">
                                     <Link href="/project-details">
@@ -113,7 +129,12 @@ function ProjectTwo({ className = "", id = "" }: ProjectTwoProps) {
                         <div className="col-lg-6 rts-jump__item">
                             <div className="single-project-style-three">
                                 <Link href="/project-details" className="thumbnail">
-                                    <img src="/assets/images/project/06.webp" alt="project" />
+                                    <Image
+                                        src="/assets/images/project/06.webp"
+                                        alt="project"
+                                        width={1266}
+                                        height={806}
+                                    />
                                 </Link>
                                 <div className="inner-content">
                                     <Link href="/project-details">

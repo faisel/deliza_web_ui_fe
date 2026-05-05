@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -57,11 +58,21 @@ function AboutThree({ id }: AboutThreeProps) {
                             <div className="main-thumnal-inner-about-three">
                                 <div className="about-thumbnail-style-three">
                                     <div className="thumbnail">
-                                        <img src="/assets/images/about/06.webp" alt="about" />
+                                        <Image
+                                            src="/assets/images/about/06.webp"
+                                            alt="about"
+                                            width={842}
+                                            height={1008}
+                                        />
                                     </div>
                                 </div>
                                 <div className="shape">
-                                    <img src="/assets/images/about/shape/04.svg" alt="about" />
+                                    <Image
+                                        src="/assets/images/about/shape/04.svg"
+                                        alt="about"
+                                        width={328}
+                                        height={623}
+                                    />
                                 </div>
                             </div>
                         </div>

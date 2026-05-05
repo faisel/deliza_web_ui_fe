@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -52,7 +53,12 @@ function CtaFour() {
                             <div className="cta-four-wrapper">
                                 <div className="left">
                                     <div className="img-area">
-                                        <img src="/assets/images/cta/05.webp" alt="cta" />
+                                        <Image
+                                            src="/assets/images/cta/05.webp"
+                                            alt="cta"
+                                            width={194}
+                                            height={194}
+                                        />
                                     </div>
                                     <h3 className="title rts-text-anime-style-1" ref={splitRef}>
                                         Need Any Business Consultancy? <br />

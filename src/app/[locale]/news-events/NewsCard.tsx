@@ -1,5 +1,6 @@
 "use client";
 import Link from "@/i18n/LocalizedLink";
+import Image from "next/image";
 import { localizePath } from "@/i18n/routing";
 import type { Locale } from "@/i18n/config";
 import type { NewsItem } from "@/app/data/news";
@@ -70,7 +71,12 @@ function NewsCard({ item, locale, readMoreLabel }: NewsCardProps) {
 
       <div className="bottom-details">
         {renderLink(
-          <img src={item.image} alt={t.title} />,
+          <Image
+              src={item.image}
+              alt={t.title}
+              width={800}
+              height={600}
+          />,
           "thumbnail"
         )}
       </div>

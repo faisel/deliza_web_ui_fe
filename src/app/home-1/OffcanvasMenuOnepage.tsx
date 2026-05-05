@@ -1,5 +1,6 @@
 "use client";
 import Link from "@/i18n/LocalizedLink";
+import Image from "next/image";
 import { useState } from "react";
 
 interface OffcanvasMenuOnepageProps {
@@ -29,7 +30,13 @@ function OffcanvasMenuOnepage({ isOpen, onClose }: OffcanvasMenuOnepageProps) {
                 {/* Desktop Sidebar */}
                 <div className="rts-sidebar-menu-desktop">
                     <Link className="logo-1" href="/">
-                        <img className="logo" src="/assets/images/logo/01.svg" alt="finbiz_logo" />
+                        <Image
+                            className="logo"
+                            src="/assets/images/logo/01.svg"
+                            alt="finbiz_logo"
+                            width={193}
+                            height={53}
+                        />
                     </Link>
                     <div className="body d-none d-xl-block">
                         <p className="disc">

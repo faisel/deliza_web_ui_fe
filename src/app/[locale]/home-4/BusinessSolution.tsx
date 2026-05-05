@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -97,10 +98,20 @@ function BusinessSolution({ id }: BusinessSolutionProps) {
                         <div className="col-lg-6">
                             <div className="business-solution-area-left-thumbnail">
                                 <div className="iamge-large">
-                                    <img src="/assets/images/why-choose/07.webp" alt="choose" />
+                                    <Image
+                                        src="/assets/images/why-choose/07.webp"
+                                        alt="choose"
+                                        width={615}
+                                        height={630}
+                                    />
                                 </div>
                                 <div className="small-mobile">
-                                    <img src="/assets/images/why-choose/08.webp" alt="choose" />
+                                    <Image
+                                        src="/assets/images/why-choose/08.webp"
+                                        alt="choose"
+                                        width={235}
+                                        height={268}
+                                    />
                                 </div>
                                 <div className="success-rate-area">
                                     <div className="inner">
@@ -137,7 +148,12 @@ function BusinessSolution({ id }: BusinessSolutionProps) {
                                 </p>
                                 <div className="featuremain-wrapper">
                                     <div className="single-feature-wrapper">
-                                        <img src="/assets/images/why-choose/icons/06.svg" alt="icon" />
+                                        <Image
+                                            src="/assets/images/why-choose/icons/06.svg"
+                                            alt="icon"
+                                            width={84}
+                                            height={84}
+                                        />
                                         <h5 className="title">Strategic Vision Work</h5>
                                         <p className="disc">
                                             Dorem ipsum dolor sit amet, consectetu mod tempor incididunt
@@ -145,7 +161,12 @@ function BusinessSolution({ id }: BusinessSolutionProps) {
                                         </p>
                                     </div>
                                     <div className="single-feature-wrapper">
-                                        <img src="/assets/images/why-choose/icons/07.svg" alt="icon" />
+                                        <Image
+                                            src="/assets/images/why-choose/icons/07.svg"
+                                            alt="icon"
+                                            width={84}
+                                            height={84}
+                                        />
                                         <h5 className="title">Ultimate Business Goal</h5>
                                         <p className="disc">
                                             Dorem ipsum dolor sit amet, consectetu mod tempor incididunt

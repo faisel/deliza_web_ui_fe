@@ -1,3 +1,4 @@
+import Image from "next/image";
 function BusinessGrowth() {
   const progressData = [
     { title: "Business Solution", value: "100%", delay: 0 },
@@ -65,9 +66,11 @@ function BusinessGrowth() {
               data-aos-delay="200"
             >
               <div className="business-groth-5-thumbnail">
-                <img
-                  src="/assets/images/business/02.webp"
-                  alt="business"
+                <Image
+                    src="/assets/images/business/02.webp"
+                    alt="business"
+                    width={1246}
+                    height={1050}
                 />
               </div>
             </div>

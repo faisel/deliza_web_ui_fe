@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 function MissionImagePage() {
     return (
         <>
@@ -13,7 +14,12 @@ function MissionImagePage() {
                                 data-animation="fadeInUp"
                                 data-delay="0.1"
                             >
-                                <img src="/assets/images/mission/01.webp" alt="mission" />
+                                <Image
+                                    src="/assets/images/mission/01.webp"
+                                    alt="mission"
+                                    width={615}
+                                    height={720}
+                                />
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
@@ -22,7 +28,12 @@ function MissionImagePage() {
                                 data-animation="fadeInUp"
                                 data-delay="0.2"
                             >
-                                <img src="/assets/images/mission/02.webp" alt="mission" />
+                                <Image
+                                    src="/assets/images/mission/02.webp"
+                                    alt="mission"
+                                    width={615}
+                                    height={720}
+                                />
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
@@ -31,7 +42,12 @@ function MissionImagePage() {
                                 data-animation="fadeInUp"
                                 data-delay="0.3"
                             >
-                                <img src="/assets/images/mission/03.webp" alt="mission" />
+                                <Image
+                                    src="/assets/images/mission/03.webp"
+                                    alt="mission"
+                                    width={615}
+                                    height={720}
+                                />
                             </div>
                         </div>
                     </div>

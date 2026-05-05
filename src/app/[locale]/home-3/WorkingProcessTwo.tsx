@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -60,9 +61,11 @@ function WorkingProcessTwo() {
                         <div className="rts-working-process-1 text-center">
                             <div className="inner">
                                 <div className="icon">
-                                    <img
+                                    <Image
                                         src="/assets/images/wokring-process/icon/01.svg"
                                         alt="Working_process"
+                                        width={43}
+                                        height={50}
                                     />
                                 </div>
                             </div>
@@ -80,9 +83,11 @@ function WorkingProcessTwo() {
                         <div className="rts-working-process-1 process-lg text-center">
                             <div className="inner two">
                                 <div className="icon">
-                                    <img
+                                    <Image
                                         src="/assets/images/wokring-process/icon/02.svg"
                                         alt="Working_process"
+                                        width={65}
+                                        height={66}
                                     />
                                 </div>
                             </div>
@@ -100,9 +105,11 @@ function WorkingProcessTwo() {
                         <div className="rts-working-process-1 text-center">
                             <div className="inner three">
                                 <div className="icon">
-                                    <img
+                                    <Image
                                         src="/assets/images/wokring-process/icon/03.svg"
                                         alt="Working_process"
+                                        width={52}
+                                        height={45}
                                     />
                                 </div>
                             </div>
@@ -120,9 +127,11 @@ function WorkingProcessTwo() {
                         <div className="rts-working-process-1 process-lg text-center">
                             <div className="inner four">
                                 <div className="icon">
-                                    <img
+                                    <Image
                                         src="/assets/images/wokring-process/icon/04.svg"
                                         alt="Working_process"
+                                        width={48}
+                                        height={65}
                                     />
                                 </div>
                             </div>

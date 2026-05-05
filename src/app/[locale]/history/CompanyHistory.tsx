@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 function CompanyHistory() {
     return (
         <>
@@ -16,10 +17,12 @@ function CompanyHistory() {
                                     Dabus nisl aliquet congue tellus nascetur lectus sagpien mattis
                                     arcu dictums augue volutpat felis etiam
                                 </p>
-                                <img
+                                <Image
                                     className="mt--70 shape-iamge-line"
                                     src="/assets/images/appoinment/01.svg"
                                     alt="appoinment"
+                                    width={306}
+                                    height={504}
                                 />
                             </div>
                         </div>

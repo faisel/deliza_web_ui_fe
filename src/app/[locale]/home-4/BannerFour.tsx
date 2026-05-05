@@ -1,5 +1,6 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import { Autoplay, Pagination } from "swiper/modules";
 
 type BannerFourProps = {
@@ -133,10 +134,20 @@ function BannerFour({ id }: BannerFourProps) {
                 <div className="swiper-pagination" />
                 <div className="banner-shape-left-right">
                     <div className="left">
-                        <img src="/assets/images/banner/shape/left.svg" alt="left" />
+                        <Image
+                            src="/assets/images/banner/shape/left.svg"
+                            alt="left"
+                            width={235}
+                            height={508}
+                        />
                     </div>
                     <div className="right">
-                        <img src="/assets/images/banner/shape/right.svg" alt="left" />
+                        <Image
+                            src="/assets/images/banner/shape/right.svg"
+                            alt="left"
+                            width={370}
+                            height={614}
+                        />
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from "next/image";
 import React from 'react'
 
 type FooterNineProps ={
@@ -13,7 +14,12 @@ function FooterNine({ id }: FooterNineProps) {
                     <div className="col-xl-5 col-lg-6">
                         <div className="footer-three-single-wized left">
                             <Link href="/" className="logo_footer">
-                                <img src="/assets/images/logo/04.svg" alt="Logo-image" />
+                                <Image
+                                    src="/assets/images/logo/04.svg"
+                                    alt="Logo-image"
+                                    width={193}
+                                    height={53}
+                                />
                             </Link>
                             <p className="disc">
                                 Felis consquat magnis fames sagittis ultrices plasodales porttitor
@@ -56,7 +62,12 @@ function FooterNine({ id }: FooterNineProps) {
                                 <div className="footer-three-single-wized footer-two-single-wized mid-left">
                                     <div className="wized-title-area mb--15">
                                         <h5 className="wized-title">Office Inforamtion</h5>
-                                        <img src="/assets/images/footer/01.png" alt="Deliza_Footer" />
+                                        <Image
+                                            src="/assets/images/footer/01.png"
+                                            alt="Deliza_Footer"
+                                            width={60}
+                                            height={3}
+                                        />
                                     </div>
                                     <div className="body">
                                         <div className="info-wrapper">
@@ -106,7 +117,12 @@ function FooterNine({ id }: FooterNineProps) {
                                 <div className="footer-two-single-wized two">
                                     <div className="wized-title-area">
                                         <h5 className="wized-title">Our Services</h5>
-                                        <img src="/assets/images/footer/01.png" alt="Deliza_Footer" />
+                                        <Image
+                                            src="/assets/images/footer/01.png"
+                                            alt="Deliza_Footer"
+                                            width={60}
+                                            height={3}
+                                        />
                                     </div>
                                     <div className="wized-2-body">
                                         <ul>

@@ -1,5 +1,6 @@
 "use client";
 import { useParams } from "next/navigation";
+import Image from "next/image";
 import HeaderOne from "@/app/home-1/HeaderOne";
 import posts from "../../../data/data-post.json";
 import React from "react";
@@ -28,7 +29,14 @@ export default function BlogDetailsPageClient() {
               <div className="col-lg-12">
                 <div className="blog-details-area-inner-content">
                   <div className="image-area mb--30">
-                    <img src={blogPost.blogImage} style={{ width: "100%" }} alt="" />
+                    <Image
+                        src={blogPost.blogImage}
+                        style={{ width: "100%" }}
+                        alt=""
+                        width={800}
+                        height={600}
+                        aria-hidden="true"
+                    />
                   </div>
                   <div className="blog-details-top-wrapper">
                     <div className="single">
@@ -78,7 +86,12 @@ export default function BlogDetailsPageClient() {
                     magna.
                   </p>
                   <div className="thumbnail-large">
-                    <img src="/assets/images/blog/19.webp" alt="blog" />
+                    <Image
+                        src="/assets/images/blog/19.webp"
+                        alt="blog"
+                        width={1115}
+                        height={480}
+                    />
                   </div>
                   <h5 className="title mt--50">Ultimate Business Strategy Solution</h5>
                   <p className="disc">
@@ -89,7 +102,12 @@ export default function BlogDetailsPageClient() {
                   <div className="row align-items-center">
                     <div className="col-lg-5">
                       <div className="thumbnail details mb_sm--15">
-                        <img src="/assets/images/blog/details/03.jpg" alt="finbiz_buseness" />
+                        <Image
+                            src="/assets/images/blog/details/03.jpg"
+                            alt="finbiz_buseness"
+                            width={560}
+                            height={278}
+                        />
                       </div>
                     </div>
                     <div className="col-lg-7">
@@ -152,7 +170,12 @@ export default function BlogDetailsPageClient() {
                   </div>
                   <div className="author-area-blog">
                     <div className="thumbnail details mb_sm--15">
-                      <img src="/assets/images/blog/details/author.jpg" alt="finbiz_buseness" />
+                      <Image
+                          src="/assets/images/blog/details/author.jpg"
+                          alt="finbiz_buseness"
+                          width={150}
+                          height={140}
+                      />
                     </div>
                     <div className="author-details team">
                       <span>Brand Designer</span>

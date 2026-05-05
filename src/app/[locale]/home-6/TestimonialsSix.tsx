@@ -1,6 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 function TestimonialsSix() {
@@ -63,9 +64,11 @@ function TestimonialsSix() {
                                                 <div className="botton-content">
                                                     <div className="avatar-area">
                                                         <div className="thumbnail">
-                                                            <img
+                                                            <Image
                                                                 src="/assets/images/testimonials/avatar/04.webp"
                                                                 alt="avatar"
+                                                                width={92}
+                                                                height={92}
                                                             />
                                                         </div>
                                                         <div className="inner">
@@ -98,9 +101,11 @@ function TestimonialsSix() {
                                                 <div className="botton-content">
                                                     <div className="avatar-area">
                                                         <div className="thumbnail">
-                                                            <img
+                                                            <Image
                                                                 src="/assets/images/testimonials/avatar/04.webp"
                                                                 alt="avatar"
+                                                                width={92}
+                                                                height={92}
                                                             />
                                                         </div>
                                                         <div className="inner">
@@ -133,9 +138,11 @@ function TestimonialsSix() {
                                                 <div className="botton-content">
                                                     <div className="avatar-area">
                                                         <div className="thumbnail">
-                                                            <img
+                                                            <Image
                                                                 src="/assets/images/testimonials/avatar/04.webp"
                                                                 alt="avatar"
+                                                                width={92}
+                                                                height={92}
                                                             />
                                                         </div>
                                                         <div className="inner">

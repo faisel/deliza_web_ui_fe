@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 interface OdometerElement extends HTMLElement {
     od?: any;
 }
@@ -90,7 +91,12 @@ function BannerSeven({ id }: BannerSevenProps) {
                                     <div className="col-lg-12">
                                         <div className="banner-seven-inner-content">
                                             <span className="pre-title">
-                                                <img src="/assets/images/banner/icon/01.svg" alt="banner" />
+                                                <Image
+                                                    src="/assets/images/banner/icon/01.svg"
+                                                    alt="banner"
+                                                    width={22}
+                                                    height={18}
+                                                />
                                                 Business Success Starts Here
                                             </span>
                                             <h1 className="title">
@@ -147,7 +153,12 @@ function BannerSeven({ id }: BannerSevenProps) {
                                     <div className="col-lg-12">
                                         <div className="banner-seven-inner-content">
                                             <span className="pre-title">
-                                                <img src="/assets/images/banner/icon/01.svg" alt="banner" />
+                                                <Image
+                                                    src="/assets/images/banner/icon/01.svg"
+                                                    alt="banner"
+                                                    width={22}
+                                                    height={18}
+                                                />
                                                 Business Success Starts Here
                                             </span>
                                             <h1 className="title">
@@ -204,7 +215,12 @@ function BannerSeven({ id }: BannerSevenProps) {
                                     <div className="col-lg-12">
                                         <div className="banner-seven-inner-content">
                                             <span className="pre-title">
-                                                <img src="/assets/images/banner/icon/01.svg" alt="banner" />
+                                                <Image
+                                                    src="/assets/images/banner/icon/01.svg"
+                                                    alt="banner"
+                                                    width={22}
+                                                    height={18}
+                                                />
                                                 Business Success Starts Here
                                             </span>
                                             <h1 className="title">

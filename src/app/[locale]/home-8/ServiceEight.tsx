@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image";
 import Link from 'next/link'
 
 type ServiceEightProps ={
@@ -17,7 +18,12 @@ function ServiceEight({ id }: ServiceEightProps) {
                                 <div className="sticky-statement narrow">
                                     <div className="left-side">
                                         <div className="icon">
-                                            <img src="/assets/images/service/01.svg" alt="service" />
+                                            <Image
+                                                src="/assets/images/service/01.svg"
+                                                alt="service"
+                                                width={68}
+                                                height={68}
+                                            />
                                         </div>
                                         <h5 className="title">Business Solution</h5>
                                     </div>
@@ -30,7 +36,12 @@ function ServiceEight({ id }: ServiceEightProps) {
                                 <div className="sticky-statement narrow">
                                     <div className="left-side">
                                         <div className="icon">
-                                            <img src="/assets/images/service/02.svg" alt="service" />
+                                            <Image
+                                                src="/assets/images/service/02.svg"
+                                                alt="service"
+                                                width={67}
+                                                height={67}
+                                            />
                                         </div>
                                         <h5 className="title">Creative Ideas</h5>
                                     </div>
@@ -43,7 +54,12 @@ function ServiceEight({ id }: ServiceEightProps) {
                                 <div className="sticky-statement narrow">
                                     <div className="left-side">
                                         <div className="icon">
-                                            <img src="/assets/images/service/03.svg" alt="service" />
+                                            <Image
+                                                src="/assets/images/service/03.svg"
+                                                alt="service"
+                                                width={68}
+                                                height={68}
+                                            />
                                         </div>
                                         <h5 className="title">Market Research</h5>
                                     </div>
@@ -56,7 +72,12 @@ function ServiceEight({ id }: ServiceEightProps) {
                                 <div className="sticky-statement narrow">
                                     <div className="left-side">
                                         <div className="icon">
-                                            <img src="/assets/images/service/01.svg" alt="service" />
+                                            <Image
+                                                src="/assets/images/service/01.svg"
+                                                alt="service"
+                                                width={68}
+                                                height={68}
+                                            />
                                         </div>
                                         <h5 className="title">Technology Solution</h5>
                                     </div>
@@ -85,7 +106,12 @@ function ServiceEight({ id }: ServiceEightProps) {
                                 </Link>
                             </div>
                             <div className="service-arrow-bottom-main">
-                                <img src="/assets/images/banner/shape/08.png" alt="service" />
+                                <Image
+                                    src="/assets/images/banner/shape/08.png"
+                                    alt="service"
+                                    width={388}
+                                    height={331}
+                                />
                             </div>
                         </div>
                     </div>
@@ -99,7 +125,12 @@ function ServiceEight({ id }: ServiceEightProps) {
                                     </p>
                                 </div>
                                 <div className="mid-image">
-                                    <img src="/assets/images/service/01.png" alt="service_image" />
+                                    <Image
+                                        src="/assets/images/service/01.png"
+                                        alt="service_image"
+                                        width={120}
+                                        height={120}
+                                    />
                                 </div>
                             </div>
                         </div>

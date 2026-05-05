@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import AOS from "aos";
@@ -104,7 +105,12 @@ function ProjectSix({ className='', id='' }: ProjectSixProps) {
             >
               <div className="single-project-area-main-wrapper-6">
                 <Link href="/project-details" className="thumbnail">
-                  <img src="/assets/images/project/12.webp" alt="project" />
+                  <Image
+                      src="/assets/images/project/12.webp"
+                      alt="project"
+                      width={912}
+                      height={906}
+                  />
                 </Link>
                 <div className="inner">
                   <h4 className="title">Business Growth</h4>
@@ -124,7 +130,12 @@ function ProjectSix({ className='', id='' }: ProjectSixProps) {
             >
               <div className="single-project-area-main-wrapper-6">
                 <Link href="/project-details" className="thumbnail">
-                  <img src="/assets/images/project/13.webp" alt="project" />
+                  <Image
+                      src="/assets/images/project/13.webp"
+                      alt="project"
+                      width={912}
+                      height={906}
+                  />
                 </Link>
                 <div className="inner">
                   <h4 className="title">Startup Solution</h4>
@@ -143,7 +154,12 @@ function ProjectSix({ className='', id='' }: ProjectSixProps) {
             >
               <div className="single-project-area-main-wrapper-6">
                 <Link href="/project-details" className="thumbnail">
-                  <img src="/assets/images/project/14.webp" alt="project" />
+                  <Image
+                      src="/assets/images/project/14.webp"
+                      alt="project"
+                      width={912}
+                      height={906}
+                  />
                 </Link>
                 <div className="inner">
                   <h4 className="title">Growth Manage</h4>
@@ -162,7 +178,12 @@ function ProjectSix({ className='', id='' }: ProjectSixProps) {
             >
               <div className="single-project-area-main-wrapper-6">
                 <Link href="/project-details" className="thumbnail">
-                  <img src="/assets/images/project/15.webp" alt="project" />
+                  <Image
+                      src="/assets/images/project/15.webp"
+                      alt="project"
+                      width={912}
+                      height={906}
+                  />
                 </Link>
                 <div className="inner">
                   <h4 className="title">Company Skills</h4>

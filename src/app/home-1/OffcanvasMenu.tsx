@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "@/i18n/useTranslation";
 import { navHref } from "@/i18n/routing";
@@ -59,7 +60,14 @@ function OffcanvasMenu({ isOpen, onClose }: OffcanvasMenuProps) {
                 {/* Desktop Sidebar */}
                 <div className="rts-sidebar-menu-desktop">
                     <Link className="logo-1" href={navHref("home", locale)}>
-                        <img className="logo deliza-logo" src="/assets/images/logo/deliza_web_b.png" alt="Deliza" />
+                        <Image
+                            className="logo deliza-logo"
+                            src="/assets/images/logo/deliza_web_b.png"
+                            alt="Deliza"
+                            width={300}
+                            height={89}
+                            sizes="200px"
+                        />
                     </Link>
                     <div className="body d-none d-xl-block">
                         <p className="disc">{copy.description}</p>

@@ -1,5 +1,6 @@
 "use client"
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -107,10 +108,12 @@ function ServicesOne({ id }: ServicesOneProps) {
                                                     <SwiperSlide key={index}>
                                                         <div className="single-service-signle-wrapper">
                                                             <div className="icons">
-                                                                <img
+                                                                <Image
                                                                     loading="lazy"
                                                                     src={serviceIcons[index] ?? serviceIcons[0]}
                                                                     alt="service"
+                                                                    width={800}
+                                                                    height={600}
                                                                 />
                                                             </div>
                                                             <div className="information">

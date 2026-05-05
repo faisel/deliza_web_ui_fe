@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -80,10 +81,12 @@ function BannerFive({ id }: BannerFiveProps) {
                     <div className="row align-items-center mt--65">
                         <div className="col-lg-9">
                             <div className="banner-image-primary-five">
-                                <img
+                                <Image
                                     className="grow"
                                     src="/assets/images/banner/05.webp"
                                     alt="banner"
+                                    width={1996}
+                                    height={1094}
                                 />
                             </div>
                         </div>
@@ -113,20 +116,26 @@ function BannerFive({ id }: BannerFiveProps) {
                     </div>
                 </div>
                 <div className="shape-area">
-                    <img
+                    <Image
                         src="/assets/images/banner/shape/05.png"
                         alt="shape"
                         className="one"
+                        width={170}
+                        height={154}
                     />
-                    <img
+                    <Image
                         src="/assets/images/banner/shape/06.png"
                         alt="shape"
                         className="two"
+                        width={325}
+                        height={327}
                     />
-                    <img
+                    <Image
                         src="/assets/images/banner/shape/07.png"
                         alt="shape"
                         className="three"
+                        width={325}
+                        height={327}
                     />
                 </div>
             </div>

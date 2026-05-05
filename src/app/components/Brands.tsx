@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useTranslation } from "@/i18n/useTranslation";
 
 import styles from "./Brands.module.css";
@@ -36,7 +37,13 @@ function Brands({ className = "rts-section-gapBottom" }: BrandsProps) {
                 data-aos-delay={index * 100}
                 data-aos-duration="1200"
               >
-                <img src={src} alt={`business_deliza ${index + 1}`} />
+                <Image
+                  src={src}
+                  alt={`Deliza brand partner ${index + 1}`}
+                  width={240}
+                  height={120}
+                  sizes="(max-width: 768px) 50vw, 240px"
+                />
               </a>
             ))}
           </div>

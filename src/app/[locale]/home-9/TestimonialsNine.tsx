@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Image from "next/image";
 import { Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -39,9 +40,11 @@ function TestimonialsNine() {
                                     <SwiperSlide>
                                         <div className="single-testimoanils-9">
                                             <div className="brand-logo">
-                                                <img
+                                                <Image
                                                     src="/assets/images/testimonials/01.svg"
                                                     alt="brand"
+                                                    width={117}
+                                                    height={33}
                                                 />
                                             </div>
                                             <p className="disc">
@@ -61,9 +64,11 @@ function TestimonialsNine() {
                                     <SwiperSlide>
                                         <div className="single-testimoanils-9">
                                             <div className="brand-logo">
-                                                <img
+                                                <Image
                                                     src="/assets/images/testimonials/01.svg"
                                                     alt="brand"
+                                                    width={117}
+                                                    height={33}
                                                 />
                                             </div>
                                             <p className="disc">
@@ -83,9 +88,11 @@ function TestimonialsNine() {
                                     <SwiperSlide>
                                         <div className="single-testimoanils-9">
                                             <div className="brand-logo">
-                                                <img
+                                                <Image
                                                     src="/assets/images/testimonials/01.svg"
                                                     alt="brand"
+                                                    width={117}
+                                                    height={33}
                                                 />
                                             </div>
                                             <p className="disc">
@@ -105,9 +112,11 @@ function TestimonialsNine() {
                                     <SwiperSlide>
                                         <div className="single-testimoanils-9">
                                             <div className="brand-logo">
-                                                <img
+                                                <Image
                                                     src="/assets/images/testimonials/01.svg"
                                                     alt="brand"
+                                                    width={117}
+                                                    height={33}
                                                 />
                                             </div>
                                             <p className="disc">
@@ -127,9 +136,11 @@ function TestimonialsNine() {
                                     <SwiperSlide>
                                         <div className="single-testimoanils-9">
                                             <div className="brand-logo">
-                                                <img
+                                                <Image
                                                     src="/assets/images/testimonials/01.svg"
                                                     alt="brand"
+                                                    width={117}
+                                                    height={33}
                                                 />
                                             </div>
                                             <p className="disc">

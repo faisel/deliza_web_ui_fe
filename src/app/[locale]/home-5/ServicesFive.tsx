@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "@/i18n/LocalizedLink";
+import Image from "next/image";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -44,7 +45,12 @@ function ServicesFive({ id }: ServicesFiveProps) {
                         >
                             <div className="service-single-main-wrapper-five">
                                 <div className="icon">
-                                    <img src="/assets/images/service/icons/08.svg" alt="service" />
+                                    <Image
+                                        src="/assets/images/service/icons/08.svg"
+                                        alt="service"
+                                        width={45}
+                                        height={45}
+                                    />
                                 </div>
                                 <div className="inner-content">
                                     <Link href="/service-details">
@@ -72,7 +78,12 @@ function ServicesFive({ id }: ServicesFiveProps) {
                         >
                             <div className="service-single-main-wrapper-five">
                                 <div className="icon">
-                                    <img src="/assets/images/service/icons/09.svg" alt="service" />
+                                    <Image
+                                        src="/assets/images/service/icons/09.svg"
+                                        alt="service"
+                                        width={40}
+                                        height={35}
+                                    />
                                 </div>
                                 <div className="inner-content">
                                     <Link href="/service-details">
@@ -100,7 +111,12 @@ function ServicesFive({ id }: ServicesFiveProps) {
                         >
                             <div className="service-single-main-wrapper-five">
                                 <div className="icon">
-                                    <img src="/assets/images/service/icons/10.svg" alt="service" />
+                                    <Image
+                                        src="/assets/images/service/icons/10.svg"
+                                        alt="service"
+                                        width={44}
+                                        height={45}
+                                    />
                                 </div>
                                 <div className="inner-content">
                                     <Link href="/service-details">

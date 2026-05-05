@@ -1,44 +1,45 @@
 "use client";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
-import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { useTranslation } from "@/i18n/useTranslation";
 
 import styles from "./BannerTwo.module.css";
 
-gsap.registerPlugin(SplitText, ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 type BannerTwoProps = {
   id?: string;
 };
 
 function BannerTwo({ id }: BannerTwoProps) {
-    const splitRef = useRef<HTMLHeadingElement>(null);
+  const { messages } = useTranslation();
+  const home = messages.seo.pages.home;
+  const splitRef = useRef<HTMLHeadingElement>(null);
 
-    // SplitText animation
-    useEffect(() => {
-        if (!splitRef.current) return;
+  useEffect(() => {
+    let split: { revert: () => void; chars: Element[] } | undefined;
 
-        const element = splitRef.current;
+    const initSplitText = async () => {
+      const SplitText = (await import("gsap/SplitText")).default;
+      gsap.registerPlugin(SplitText, ScrollTrigger);
 
-        // Reset previous animation if exists
-        if ((element as any).animation) {
-        (element as any).animation.progress(1).kill();
-        (element as any).split.revert();
-        }
+      if (!splitRef.current) return;
 
-        (element as any).split = new SplitText(element, {
+      const instance = new SplitText(splitRef.current, {
         type: "lines,words,chars",
         linesClass: "split-line",
-        });
+      });
+      split = instance;
 
-        gsap.set(element, { perspective: 400 });
-        gsap.set((element as any).split.chars, { opacity: 0, x: 50 });
+      gsap.set(splitRef.current, { perspective: 400 });
+      gsap.set(instance.chars, { opacity: 0, x: 50 });
 
-        (element as any).animation = gsap.to((element as any).split.chars, {
+      gsap.to(instance.chars, {
         scrollTrigger: {
-            trigger: element,
-            start: "top 95%",
+          trigger: splitRef.current,
+          start: "top 95%",
         },
         x: 0,
         y: 0,
@@ -47,40 +48,65 @@ function BannerTwo({ id }: BannerTwoProps) {
         duration: 1,
         ease: "back.out(1.7)",
         stagger: 0.02,
-        });
-    }, []);
-    return (
-        <>
-            {/* rts banner area start */}
-            <div
-                id={id}
-                className={`${styles.delizaBanner} rts-banner-area banner-style-one`}
-            >
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="banner-one-inner text-start">
-                                <h1 className="title rts-text-anime-style-1" ref={splitRef}>
-                                    Innovative <span>Solutions,</span> Tailored for Your Success
-                                </h1>
-                                <p className="disc banner-para">
-                                    Porttitor ornare fermentum aliquam pharetra facilisis gravida
-                                    risus suscipit <br /> Dui feugiat fusce conubia ridiculus
-                                    tristique parturient
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="shape-iamge-area">
-                    <img src="/assets/images/banner/shape/04.png" alt="" className="one" />
-                    <img src="/assets/images/banner/shape/circle.svg" alt="" className="two" />
-                </div>
-            </div>
-            {/* rts banner area end */}
-        </>
+      });
+    };
 
-    )
+    initSplitText();
+
+    return () => {
+      split?.revert();
+    };
+  }, [home.h1]);
+
+  return (
+    <>
+      {/* rts banner area start */}
+      <div
+        id={id}
+        className={`${styles.delizaBanner} rts-banner-area banner-style-one`}
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="banner-one-inner text-start">
+                {home.eyebrow && (
+                  <span className="pre">{home.eyebrow}</span>
+                )}
+                <h1
+                  className="title rts-text-anime-style-1"
+                  ref={splitRef}
+                >
+                  {home.h1}
+                </h1>
+                {home.heroDescription && (
+                  <p className="disc banner-para">{home.heroDescription}</p>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="shape-iamge-area">
+          <Image
+            src="/assets/images/banner/shape/04.png"
+            alt=""
+            className="one"
+            width={353}
+            height={341}
+            aria-hidden="true"
+          />
+          <Image
+            src="/assets/images/banner/shape/circle.svg"
+            alt=""
+            className="two"
+            width={161}
+            height={161}
+            aria-hidden="true"
+          />
+        </div>
+      </div>
+      {/* rts banner area end */}
+    </>
+  );
 }
 
-export default BannerTwo
+export default BannerTwo;

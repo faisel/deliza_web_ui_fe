@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useMemo } from 'react'
 
+import Image from "next/image";
 interface CartItem {
   id: number
   name: string
@@ -82,7 +83,13 @@ function CartMain() {
                         </td>
 
                         <td className="product-thumbnail">
-                          <img src={item.image} alt="" />
+                          <Image
+                              src={item.image}
+                              alt=""
+                              width={800}
+                              height={600}
+                              aria-hidden="true"
+                          />
                         </td>
 
                         <td className="product-name">

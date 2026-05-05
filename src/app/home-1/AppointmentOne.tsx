@@ -1,6 +1,7 @@
 "use client";
 import { useTranslation } from "@/i18n/useTranslation";
 
+import Image from "next/image";
 function AppointmentOne() {
     const { messages } = useTranslation();
     const t = messages.home.appointment;
@@ -38,10 +39,12 @@ function AppointmentOne() {
                         </div>
                         <div className="col-lg-5">
                             <div className="appoinment-thumbnail">
-                                <img
+                                <Image
                                     loading="lazy"
                                     src="/assets/images/appoinment/01.webp"
                                     alt="appoinment"
+                                    width={1040}
+                                    height={1032}
                                 />
                             </div>
                         </div>

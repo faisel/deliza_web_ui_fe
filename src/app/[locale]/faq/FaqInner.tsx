@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 function FaqInner() {
   return (
     <>
@@ -14,16 +15,37 @@ function FaqInner() {
         >
           <div className="thumbnail-about-right-4">
             <div className="large-iamge">
-              <img src="/assets/images/about/08.webp" alt="about" />
+              <Image
+                  src="/assets/images/about/08.webp"
+                  alt="about"
+                  width={690}
+                  height={797}
+              />
             </div>
             <div className="small-image images-r">
-              <img src="/assets/images/about/09.webp" alt="about" />
+              <Image
+                  src="/assets/images/about/09.webp"
+                  alt="about"
+                  width={351}
+                  height={390}
+              />
             </div>
             <div className="poligon-shape images-r">
-              <img src="/assets/images/about/poligon-shape.svg" alt="" />
+              <Image
+                  src="/assets/images/about/poligon-shape.svg"
+                  alt=""
+                  width={234}
+                  height={266}
+                  aria-hidden="true"
+              />
             </div>
             <div className="video-area">
-              <img src="/assets/images/about/video.svg" alt="video" />
+              <Image
+                  src="/assets/images/about/video.svg"
+                  alt="video"
+                  width={120}
+                  height={143}
+              />
               <div className="vedio-icone">
                 <a
                   className="video-play-button play-video popup-video"

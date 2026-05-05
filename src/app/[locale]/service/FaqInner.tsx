@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 function FaqInner() {
     return (
         <>
@@ -21,7 +22,12 @@ function FaqInner() {
                     <div className="row g-5">
                         <div className="col-lg-6">
                             <div className="thumbnail-faq-left">
-                                <img src="/assets/images/faq/02.webp" alt="faq-iumage area" />
+                                <Image
+                                    src="/assets/images/faq/02.webp"
+                                    alt="faq-iumage area"
+                                    width={1373}
+                                    height={861}
+                                />
                             </div>
                         </div>
                         <div className="col-lg-4">

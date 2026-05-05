@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 
+import Image from "next/image";
 const images = [
   "/assets/images/gallery/01.webp",
   "/assets/images/gallery/03.webp",
@@ -43,13 +44,20 @@ function GalleryInner() {
                           onClick={() => openModal(img)}
                           style={{ background: "none", border: "none", padding: 0 }}
                         >
-                          <img src={img} alt="gallery" />
+                          <Image
+                              src={img}
+                              alt="gallery"
+                              width={800}
+                              height={600}
+                          />
                         </button>
 
                         <div className="instagram">
-                          <img
-                            src="/assets/images/gallery/instagram.svg"
-                            alt="instagram"
+                          <Image
+                              src="/assets/images/gallery/instagram.svg"
+                              alt="instagram"
+                              width={85}
+                              height={85}
                           />
                         </div>
                       </div>
@@ -71,7 +79,12 @@ function GalleryInner() {
             <button className="gallery-close" onClick={closeModal}>
               ✕
             </button>
-            <img src={activeImage} alt="preview" />
+            <Image
+                src={activeImage}
+                alt="preview"
+                width={800}
+                height={600}
+            />
           </div>
         </div>
       )}

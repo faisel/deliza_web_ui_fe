@@ -1,5 +1,6 @@
 'use client'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import Image from "next/image";
 import { Pagination, Navigation, Autoplay } from 'swiper/modules'
 
 function TestimonialsSeven() {
@@ -65,15 +66,19 @@ function TestimonialsSeven() {
                                 <SwiperSlide>
                                     <div className="testimonails-area-seven">
                                         <div className="thumbnail-testimoanis">
-                                            <img
+                                            <Image
                                                 src="/assets/images/testimonials/06.webp"
                                                 alt="testimonials"
+                                                width={530}
+                                                height={668}
                                             />
                                         </div>
                                         <div className="right-content-area-main-wrapper">
-                                            <img
+                                            <Image
                                                 src="/assets/images/testimonials/icons/03.webp"
                                                 alt="testimonials"
+                                                width={123}
+                                                height={31}
                                             />
                                             <p className="disc">
                                                 I can't recommend The Gourmet Haven enough. It's a place
@@ -93,15 +98,19 @@ function TestimonialsSeven() {
                                 <SwiperSlide>
                                     <div className="testimonails-area-seven">
                                         <div className="thumbnail-testimoanis">
-                                            <img
+                                            <Image
                                                 src="/assets/images/testimonials/06.webp"
                                                 alt="testimonials"
+                                                width={530}
+                                                height={668}
                                             />
                                         </div>
                                         <div className="right-content-area-main-wrapper">
-                                            <img
+                                            <Image
                                                 src="/assets/images/testimonials/icons/03.webp"
                                                 alt="testimonials"
+                                                width={123}
+                                                height={31}
                                             />
                                             <p className="disc">
                                                 I can't recommend The Gourmet Haven enough. It's a place
@@ -121,15 +130,19 @@ function TestimonialsSeven() {
                                 <SwiperSlide>
                                     <div className="testimonails-area-seven">
                                         <div className="thumbnail-testimoanis">
-                                            <img
+                                            <Image
                                                 src="/assets/images/testimonials/06.webp"
                                                 alt="testimonials"
+                                                width={530}
+                                                height={668}
                                             />
                                         </div>
                                         <div className="right-content-area-main-wrapper">
-                                            <img
+                                            <Image
                                                 src="/assets/images/testimonials/icons/03.webp"
                                                 alt="testimonials"
+                                                width={123}
+                                                height={31}
                                             />
                                             <p className="disc">
                                                 I can't recommend The Gourmet Haven enough. It's a place

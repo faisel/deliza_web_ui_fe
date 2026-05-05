@@ -1,5 +1,6 @@
 "use client"
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from "next/image";
 import { Navigation, Pagination } from 'swiper/modules';
 
 interface HomeBlogTwoProps {
@@ -61,7 +62,12 @@ function HomeBlogTwo({ id }: HomeBlogTwoProps) {
                                                 </a>
                                                 <div className="bottom-details">
                                                     <a href="solution-of-settle-tips-of-the-new-ages-exist" className="thumbnail">
-                                                        <img src="/assets/images/blog/01.webp" alt="blog-area" />
+                                                        <Image
+                                                            src="/assets/images/blog/01.webp"
+                                                            alt="blog-area"
+                                                            width={410}
+                                                            height={303}
+                                                        />
                                                     </a>
                                                 </div>
                                             </div>
@@ -78,7 +84,12 @@ function HomeBlogTwo({ id }: HomeBlogTwoProps) {
                                                 </a>
                                                 <div className="bottom-details">
                                                     <a href="best-solution-tips-of-the-new-ages-exist" className="thumbnail">
-                                                        <img src="/assets/images/blog/02.webp" alt="blog-area" />
+                                                        <Image
+                                                            src="/assets/images/blog/02.webp"
+                                                            alt="blog-area"
+                                                            width={410}
+                                                            height={303}
+                                                        />
                                                     </a>
                                                 </div>
                                             </div>
@@ -95,7 +106,12 @@ function HomeBlogTwo({ id }: HomeBlogTwoProps) {
                                                 </a>
                                                 <div className="bottom-details">
                                                     <a href="the-quick-settle-tips-of-the-new-ages-exist" className="thumbnail">
-                                                        <img src="/assets/images/blog/03.webp" alt="blog-area" />
+                                                        <Image
+                                                            src="/assets/images/blog/03.webp"
+                                                            alt="blog-area"
+                                                            width={410}
+                                                            height={303}
+                                                        />
                                                     </a>
                                                 </div>
                                             </div>
@@ -112,7 +128,12 @@ function HomeBlogTwo({ id }: HomeBlogTwoProps) {
                                                 </a>
                                                 <div className="bottom-details">
                                                     <a href="solution-of-settle-tips-of-the-new-ages-exist" className="thumbnail">
-                                                        <img src="/assets/images/blog/01.webp" alt="blog-area" />
+                                                        <Image
+                                                            src="/assets/images/blog/01.webp"
+                                                            alt="blog-area"
+                                                            width={410}
+                                                            height={303}
+                                                        />
                                                     </a>
                                                 </div>
                                             </div>
@@ -129,7 +150,12 @@ function HomeBlogTwo({ id }: HomeBlogTwoProps) {
                                                 </a>
                                                 <div className="bottom-details">
                                                     <a href="best-solution-tips-of-the-new-ages-exist" className="thumbnail">
-                                                        <img src="/assets/images/blog/02.webp" alt="blog-area" />
+                                                        <Image
+                                                            src="/assets/images/blog/02.webp"
+                                                            alt="blog-area"
+                                                            width={410}
+                                                            height={303}
+                                                        />
                                                     </a>
                                                 </div>
                                             </div>
@@ -146,7 +172,12 @@ function HomeBlogTwo({ id }: HomeBlogTwoProps) {
                                                 </a>
                                                 <div className="bottom-details">
                                                     <a href="the-quick-settle-tips-of-the-new-ages-exist" className="thumbnail">
-                                                        <img src="/assets/images/blog/03.webp" alt="blog-area" />
+                                                        <Image
+                                                            src="/assets/images/blog/03.webp"
+                                                            alt="blog-area"
+                                                            width={410}
+                                                            height={303}
+                                                        />
                                                     </a>
                                                 </div>
                                             </div>

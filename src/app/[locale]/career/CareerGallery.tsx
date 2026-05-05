@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 
+import Image from "next/image";
 function CareerGallery() {
   const [open, setOpen] = useState(false);
   const [activeImage, setActiveImage] = useState<string | null>(null);
@@ -41,9 +42,11 @@ function CareerGallery() {
                 }
               >
                 <div className="thumbnail">
-                  <img
-                    src="/assets/images/gallery/11.webp"
-                    alt="gallery"
+                  <Image
+                      src="/assets/images/gallery/11.webp"
+                      alt="gallery"
+                      width={615}
+                      height={539}
                   />
                 </div>
               </button>
@@ -58,9 +61,11 @@ function CareerGallery() {
                 }
               >
                 <div className="thumbnail">
-                  <img
-                    src="/assets/images/gallery/12.webp"
-                    alt="gallery"
+                  <Image
+                      src="/assets/images/gallery/12.webp"
+                      alt="gallery"
+                      width={938}
+                      height={539}
                   />
                 </div>
               </button>
@@ -75,9 +80,11 @@ function CareerGallery() {
                 }
               >
                 <div className="thumbnail">
-                  <img
-                    src="/assets/images/gallery/13.webp"
-                    alt="gallery"
+                  <Image
+                      src="/assets/images/gallery/13.webp"
+                      alt="gallery"
+                      width={584}
+                      height={539}
                   />
                 </div>
               </button>
@@ -92,9 +99,11 @@ function CareerGallery() {
                 }
               >
                 <div className="thumbnail">
-                  <img
-                    src="/assets/images/gallery/14.webp"
-                    alt="gallery"
+                  <Image
+                      src="/assets/images/gallery/14.webp"
+                      alt="gallery"
+                      width={632}
+                      height={813}
                   />
                 </div>
               </button>
@@ -109,9 +118,11 @@ function CareerGallery() {
                 }
               >
                 <div className="thumbnail">
-                  <img
-                    src="/assets/images/gallery/15.webp"
-                    alt="gallery"
+                  <Image
+                      src="/assets/images/gallery/15.webp"
+                      alt="gallery"
+                      width={584}
+                      height={539}
                   />
                 </div>
               </button>
@@ -130,7 +141,12 @@ function CareerGallery() {
             <button className="gallery-close" onClick={closeModal}>
               ✕
             </button>
-            <img src={activeImage} alt="preview" />
+            <Image
+                src={activeImage}
+                alt="preview"
+                width={800}
+                height={600}
+            />
           </div>
         </div>
       )}

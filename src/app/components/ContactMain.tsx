@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 function ContactMain() {
     return (
         <>
@@ -44,7 +45,12 @@ function ContactMain() {
                         </div>
                         <div className="col-lg-5">
                             <div className="thumbnail-contact-form">
-                                <img src="/assets/images/contact/01.webp" alt="contact" />
+                                <Image
+                                    src="/assets/images/contact/01.webp"
+                                    alt="contact"
+                                    width={825}
+                                    height={807}
+                                />
                             </div>
                         </div>
                         <div className="col-lg-3">

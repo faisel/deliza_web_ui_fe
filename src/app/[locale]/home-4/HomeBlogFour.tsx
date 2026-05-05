@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -68,7 +69,12 @@ function HomeBlogFour({ id }: HomeBlogFourProps) {
                         <div className="col-lg-4 col-md-6 col-sm-12">
                             <div className="single-blog-area-four">
                                 <Link href="blog-details" className="thumbnail">
-                                    <img src="/assets/images/blog/07.webp" alt="blog" />
+                                    <Image
+                                        src="/assets/images/blog/07.webp"
+                                        alt="blog"
+                                        width={615}
+                                        height={701}
+                                    />
                                 </Link>
                                 <div className="inner-content">
                                     <div className="tag-area-wrapper">
@@ -95,7 +101,12 @@ function HomeBlogFour({ id }: HomeBlogFourProps) {
                         <div className="col-lg-4 col-md-6 col-sm-12">
                             <div className="single-blog-area-four">
                                 <Link href="/blog/liliput-settle-tips-of-the-new-ages-exist" className="thumbnail">
-                                    <img src="/assets/images/blog/08.webp" alt="blog" />
+                                    <Image
+                                        src="/assets/images/blog/08.webp"
+                                        alt="blog"
+                                        width={615}
+                                        height={701}
+                                    />
                                 </Link>
                                 <div className="inner-content">
                                     <div className="tag-area-wrapper">
@@ -123,7 +134,12 @@ function HomeBlogFour({ id }: HomeBlogFourProps) {
                         <div className="col-lg-4 col-md-6 col-sm-12">
                             <div className="single-blog-area-four">
                                 <Link href="/blog/liliput-settle-tips-of-the-new-ages-exist" className="thumbnail">
-                                    <img src="/assets/images/blog/09.webp" alt="blog" />
+                                    <Image
+                                        src="/assets/images/blog/09.webp"
+                                        alt="blog"
+                                        width={615}
+                                        height={701}
+                                    />
                                 </Link>
                                 <div className="inner-content">
                                     <div className="tag-area-wrapper">

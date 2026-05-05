@@ -1,5 +1,6 @@
 "use client"
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from "next/image";
 import { Navigation, Autoplay } from 'swiper/modules';
 import { useTranslation } from '@/i18n/useTranslation';
 import { localizePath } from '@/i18n/routing';
@@ -56,16 +57,40 @@ function BannerOne({ id }: BannerOneProps) {
                             </div>
                             <div className="shape-area-start">
                                 <div className="shape shape-one">
-                                    <img loading="lazy" src="/assets/images/banner/shape/01.webp" alt="shape-area" />
+                                    <Image
+                                        loading="lazy"
+                                        src="/assets/images/banner/shape/01.webp"
+                                        alt="shape-area"
+                                        width={348}
+                                        height={345}
+                                    />
                                 </div>
                                 <div className="shape shape-two">
-                                    <img loading="lazy" src="/assets/images/banner/shape/02.webp" alt="shape-area" />
+                                    <Image
+                                        loading="lazy"
+                                        src="/assets/images/banner/shape/02.webp"
+                                        alt="shape-area"
+                                        width={90}
+                                        height={90}
+                                    />
                                 </div>
                                 <div className="shape shape-three">
-                                    <img loading="lazy" src="/assets/images/banner/shape/03.webp" alt="shape-area" />
+                                    <Image
+                                        loading="lazy"
+                                        src="/assets/images/banner/shape/03.webp"
+                                        alt="shape-area"
+                                        width={132}
+                                        height={132}
+                                    />
                                 </div>
                                 <div className="shape shape-four">
-                                    <img loading="lazy" src="/assets/images/banner/shape/04.webp" alt="shape-area" />
+                                    <Image
+                                        loading="lazy"
+                                        src="/assets/images/banner/shape/04.webp"
+                                        alt="shape-area"
+                                        width={299}
+                                        height={336}
+                                    />
                                 </div>
                             </div>
                         </div>

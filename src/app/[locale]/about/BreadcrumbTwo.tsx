@@ -1,33 +1,26 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
-import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { useTranslation } from "@/i18n/useTranslation";
+import type { NavKey } from "@/i18n/routing";
 
-
-gsap.registerPlugin(SplitText, ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 interface BreadcrumbTwoProps {
-    preTitle?: string;
-    bgTitle?: string;
-    title: string;
-    description?: string;
+    /** Active nav destination — copy is read from messages.seo.pages[nav]. */
+    nav: NavKey;
 }
 
-function BreadcrumbTwo({
-    preTitle,
-    bgTitle,
-    title,
-    description, }: BreadcrumbTwoProps) {
-
+function BreadcrumbTwo({ nav }: BreadcrumbTwoProps) {
+    const { messages } = useTranslation();
+    const page = messages.seo.pages[nav];
     const splitRef = useRef<HTMLHeadingElement>(null);
 
-    /* ============================
-  GSAP SplitText Animation
-============================ */
     useEffect(() => {
-        let split: any;
+        let split: { revert: () => void } | undefined;
 
         const initSplitText = async () => {
             const SplitText = (await import("gsap/SplitText")).default;
@@ -35,17 +28,18 @@ function BreadcrumbTwo({
 
             if (!splitRef.current) return;
 
-            split = new SplitText(splitRef.current, {
+            const instance = new SplitText(splitRef.current, {
                 type: "lines,words,chars",
                 linesClass: "split-line",
             });
+            split = instance;
 
-            gsap.set(split.chars, {
+            gsap.set(instance.chars, {
                 opacity: 0,
                 x: 50,
             });
 
-            gsap.to(split.chars, {
+            gsap.to(instance.chars, {
                 scrollTrigger: {
                     trigger: splitRef.current,
                     start: "top 95%",
@@ -64,7 +58,7 @@ function BreadcrumbTwo({
             split?.revert();
             ScrollTrigger.getAll().forEach((t) => t.kill());
         };
-    }, []);
+    }, [nav]);
 
     return (
         <>
@@ -74,31 +68,52 @@ function BreadcrumbTwo({
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="title-area-left">
-                                {preTitle && <span className="pre">{preTitle}</span>}
-                                {bgTitle && <span className="bg-title">{bgTitle}</span>}
+                                {page.eyebrow && (
+                                    <span className="pre">{page.eyebrow}</span>
+                                )}
+                                {page.bgTitle && (
+                                    <span className="bg-title">{page.bgTitle}</span>
+                                )}
                                 <h1
                                     className="title rts-text-anime-style-1"
                                     ref={splitRef}
-                                    dangerouslySetInnerHTML={{ __html: title }}
-                                />
+                                >
+                                    {page.h1}
+                                </h1>
+                                {page.heroDescription && (
+                                    <p className="disc">{page.heroDescription}</p>
+                                )}
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="shape-area">
-                    <img src="/assets/images/about/shape/01.png" alt="shape" className="one" />
-                    <img src="/assets/images/about/shape/02.png" alt="shape" className="two" />
-                    <img
+                    <Image
+                        src="/assets/images/about/shape/01.png"
+                        alt=""
+                        className="one"
+                        width={132}
+                        height={132}
+                    />
+                    <Image
+                        src="/assets/images/about/shape/02.png"
+                        alt=""
+                        className="two"
+                        width={90}
+                        height={90}
+                    />
+                    <Image
                         src="/assets/images/about/shape/03.png"
-                        alt="shape"
+                        alt=""
                         className="three"
+                        width={234}
+                        height={154}
                     />
                 </div>
             </div>
             {/* about us area wrapper main end */}
         </>
-
-    )
+    );
 }
 
-export default BreadcrumbTwo
+export default BreadcrumbTwo;

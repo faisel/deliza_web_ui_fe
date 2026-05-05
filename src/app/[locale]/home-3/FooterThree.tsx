@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 interface FooterThreeProps {
   id?: string
 }
@@ -29,7 +30,12 @@ function FooterThree({ id }: FooterThreeProps) {
                         <div className="footer-two-single-wized two">
                             <div className="wized-title-area">
                                 <h5 className="wized-title">Our Services</h5>
-                                <img src="/assets/images/footer/01.png" alt="Deliza_Footer" />
+                                <Image
+                                    src="/assets/images/footer/01.png"
+                                    alt="Deliza_Footer"
+                                    width={60}
+                                    height={3}
+                                />
                             </div>
                             <div className="wized-2-body">
                                 <ul>
@@ -72,7 +78,12 @@ function FooterThree({ id }: FooterThreeProps) {
                         <div className="footer-two-single-wized">
                             <div className="wized-title-area">
                                 <h5 className="wized-title">Contact Us</h5>
-                                <img src="/assets/images/footer/01.png" alt="Deliza_Footer" />
+                                <Image
+                                    src="/assets/images/footer/01.png"
+                                    alt="Deliza_Footer"
+                                    width={60}
+                                    height={3}
+                                />
                             </div>
                             <div className="wized-2-body">
                                 <div className="contact-info-1">

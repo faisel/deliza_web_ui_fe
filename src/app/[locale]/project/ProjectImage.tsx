@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 function ProjectImage() {
     return (
         <>
@@ -10,7 +11,12 @@ function ProjectImage() {
                         <div className="col-lg-12">
                             <div className="project-details-main-inner">
                                 <div className="project-details-thumbnail">
-                                    <img src="/assets/images/project/18.webp" alt="project" />
+                                    <Image
+                                        src="/assets/images/project/18.webp"
+                                        alt="project"
+                                        width={1935}
+                                        height={974}
+                                    />
                                 </div>
                             </div>
                         </div>

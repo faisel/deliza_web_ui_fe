@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -161,7 +162,13 @@ export default function AboutTwo({ id }: AboutTwoProps) {
                     </div>
                   </div>
                   <div className="sign-area">
-                    <img src="/assets/images/about/sign.svg" alt="" />
+                    <Image
+                        src="/assets/images/about/sign.svg"
+                        alt=""
+                        width={190}
+                        height={57}
+                        aria-hidden="true"
+                    />
                   </div>
                 </div>
                 <a href="#" className="rts-btn btn-primary">
@@ -172,7 +179,12 @@ export default function AboutTwo({ id }: AboutTwoProps) {
             <div className="col-lg-7 pl--70">
               <div className="thumbnail-about-and-progress-1">
                 <div className="thumbnail-about-1">
-                  <img src="/assets/images/about/01.webp" alt="about" />
+                  <Image
+                      src="/assets/images/about/01.webp"
+                      alt="about"
+                      width={900}
+                      height={900}
+                  />
                 </div>
                 <div className="progress-circle-main-wrapper">
                   <div className="progress-area-wrapper images-r">

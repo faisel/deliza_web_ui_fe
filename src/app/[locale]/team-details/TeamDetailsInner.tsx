@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 function BlogDetailsInner() {
     return (
         <>
@@ -14,7 +15,12 @@ function BlogDetailsInner() {
                                 data-delay="0.2"
                                 data-duration="1.2"
                             >
-                                <img src="/assets/images/team/16.webp" alt="team" />
+                                <Image
+                                    src="/assets/images/team/16.webp"
+                                    alt="team"
+                                    width={990}
+                                    height={840}
+                                />
                             </div>
                         </div>
                         <div className="col-lg-6 pl--35 pl_sm--15 mt_md--30 mt_sm--50">

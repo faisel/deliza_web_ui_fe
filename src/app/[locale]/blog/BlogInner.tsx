@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react'
+import Image from "next/image";
 import PostOne from './PostOne'
 import posts from '../../data/data-post.json'
 
@@ -164,9 +165,11 @@ function BlogGridInner() {
                                 <div className="recent-post-single">
                                     <div className="thumbnail">
                                         <a href="#">
-                                            <img
+                                            <Image
                                                 src="/assets/images/blog/details/recent-post/01.png"
                                                 alt="Blog_post"
+                                                width={85}
+                                                height={85}
                                             />
                                         </a>
                                     </div>
@@ -187,9 +190,11 @@ function BlogGridInner() {
                                 <div className="recent-post-single">
                                     <div className="thumbnail">
                                         <a href="#">
-                                            <img
+                                            <Image
                                                 src="/assets/images/blog/details/recent-post/02.png"
                                                 alt="Blog_post"
+                                                width={85}
+                                                height={85}
                                             />
                                         </a>
                                     </div>
@@ -210,9 +215,11 @@ function BlogGridInner() {
                                 <div className="recent-post-single">
                                     <div className="thumbnail">
                                         <a href="#">
-                                            <img
+                                            <Image
                                                 src="/assets/images/blog/details/recent-post/03.png"
                                                 alt="Blog_post"
+                                                width={85}
+                                                height={85}
                                             />
                                         </a>
                                     </div>
@@ -256,7 +263,12 @@ function BlogGridInner() {
                         <div className="rts-single-wized contact">
                             <div className="wized-header">
                                 <a href="#">
-                                    <img src="/assets/images/logo/logo-2.svg" alt="Business_logo" />
+                                    <Image
+                                        src="/assets/images/logo/logo-2.svg"
+                                        alt="Business_logo"
+                                        width={201}
+                                        height={70}
+                                    />
                                 </a>
                             </div>
                             <div className="wized-body">

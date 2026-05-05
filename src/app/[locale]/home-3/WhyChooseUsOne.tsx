@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -70,20 +71,37 @@ function WhyChooseUsOne() {
                                 <div className="why-choose-feature">
                                     <div className="single">
                                         <div className="icon">
-                                            <img src="/assets/images/why-choose/01.svg" alt="" />
+                                            <Image
+                                                src="/assets/images/why-choose/01.svg"
+                                                alt=""
+                                                width={29}
+                                                height={29}
+                                                aria-hidden="true"
+                                            />
                                         </div>
                                         <p>Fast Growing Sells</p>
                                     </div>
                                     <div className="single">
                                         <div className="icon">
-                                            <img src="/assets/images/why-choose/02.svg" alt="" />
+                                            <Image
+                                                src="/assets/images/why-choose/02.svg"
+                                                alt=""
+                                                width={24}
+                                                height={24}
+                                                aria-hidden="true"
+                                            />
                                         </div>
                                         <p>24/7 Quality Services</p>
                                     </div>
                                 </div>
                                 <div className="call-area">
                                     <div className="thumb">
-                                        <img src="/assets/images/why-choose/01.webp" alt="why" />
+                                        <Image
+                                            src="/assets/images/why-choose/01.webp"
+                                            alt="why"
+                                            width={105}
+                                            height={105}
+                                        />
                                     </div>
                                     <div className="inner">
                                         <span>24/7 Support Team</span>
@@ -97,10 +115,21 @@ function WhyChooseUsOne() {
                         <div className="col-lg-6">
                             <div className="right-image-inner-why-choose-three">
                                 <div className="thumbnail-large">
-                                    <img src="/assets/images/why-choose/03.webp" alt="why" />
+                                    <Image
+                                        src="/assets/images/why-choose/03.webp"
+                                        alt="why"
+                                        width={732}
+                                        height={849}
+                                    />
                                 </div>
                                 <div className="small">
-                                    <img src="/assets/images/why-choose/02.webp" alt="" />
+                                    <Image
+                                        src="/assets/images/why-choose/02.webp"
+                                        alt=""
+                                        width={419}
+                                        height={495}
+                                        aria-hidden="true"
+                                    />
                                 </div>
                                 <div className="black-shape"></div>
                             </div>

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from "next/image";
 import React from 'react'
 
 function ServiceDetailsInner() {
@@ -11,7 +12,13 @@ function ServiceDetailsInner() {
                         <div className="col-xl-8">
                             <div className="service-details-left-area">
                                 <div className="thumbnail">
-                                    <img src="/assets/images/service/11.webp" alt="" />
+                                    <Image
+                                        src="/assets/images/service/11.webp"
+                                        alt=""
+                                        width={1275}
+                                        height={750}
+                                        aria-hidden="true"
+                                    />
                                 </div>
                                 <h3 className="title">Business Growth Mangment</h3>
                                 <p className="disc">
@@ -32,7 +39,13 @@ function ServiceDetailsInner() {
                                 <div className="service-short-main-wrapper">
                                     <div className="single-short-service">
                                         <div className="icon">
-                                            <img src="/assets/images/service/05.svg" alt="" />
+                                            <Image
+                                                src="/assets/images/service/05.svg"
+                                                alt=""
+                                                width={37}
+                                                height={26}
+                                                aria-hidden="true"
+                                            />
                                         </div>
                                         <div className="inner-content">
                                             <h5 className="title-sm">Instant Business Growth</h5>
@@ -43,7 +56,13 @@ function ServiceDetailsInner() {
                                     </div>
                                     <div className="single-short-service">
                                         <div className="icon">
-                                            <img src="/assets/images/service/06.svg" alt="" />
+                                            <Image
+                                                src="/assets/images/service/06.svg"
+                                                alt=""
+                                                width={28}
+                                                height={33}
+                                                aria-hidden="true"
+                                            />
                                         </div>
                                         <div className="inner-content">
                                             <h5 className="title-sm">24/7 Quality Service</h5>
@@ -54,7 +73,13 @@ function ServiceDetailsInner() {
                                     </div>
                                     <div className="single-short-service">
                                         <div className="icon">
-                                            <img src="/assets/images/service/07.svg" alt="" />
+                                            <Image
+                                                src="/assets/images/service/07.svg"
+                                                alt=""
+                                                width={36}
+                                                height={36}
+                                                aria-hidden="true"
+                                            />
                                         </div>
                                         <div className="inner-content">
                                             <h5 className="title-sm">Easy Customer Service</h5>
@@ -65,7 +90,13 @@ function ServiceDetailsInner() {
                                     </div>
                                     <div className="single-short-service">
                                         <div className="icon">
-                                            <img src="/assets/images/service/08.svg" alt="" />
+                                            <Image
+                                                src="/assets/images/service/08.svg"
+                                                alt=""
+                                                width={30}
+                                                height={30}
+                                                aria-hidden="true"
+                                            />
                                         </div>
                                         <div className="inner-content">
                                             <h5 className="title-sm">Quality Cost Service</h5>
@@ -99,7 +130,12 @@ function ServiceDetailsInner() {
                                 </p>
                                 <div className="single-step-service-details">
                                     <div className="thumbnail">
-                                        <img src="/assets/images/service/12.webp" alt="service" />
+                                        <Image
+                                            src="/assets/images/service/12.webp"
+                                            alt="service"
+                                            width={347}
+                                            height={179}
+                                        />
                                     </div>
                                     <div className="inner">
                                         <h5 className="title-f">Define Your Objectives and Plan</h5>
@@ -113,7 +149,12 @@ function ServiceDetailsInner() {
                                 </div>
                                 <div className="single-step-service-details">
                                     <div className="thumbnail">
-                                        <img src="/assets/images/service/13.webp" alt="service" />
+                                        <Image
+                                            src="/assets/images/service/13.webp"
+                                            alt="service"
+                                            width={347}
+                                            height={179}
+                                        />
                                     </div>
                                     <div className="inner">
                                         <h5 className="title-f">Build and Design Your Website</h5>
@@ -338,9 +379,11 @@ function ServiceDetailsInner() {
                                 <div className="wized-body">
                                     {/* single downlaod area start */}
                                     <div className="single-download-area">
-                                        <img
+                                        <Image
                                             src="/assets/images/service/icon/01.svg"
                                             alt="Business_downlaod"
+                                            width={24}
+                                            height={32}
                                         />
                                         <div className="mid">
                                             <h6 className="title">Our Brochures</h6>
@@ -353,9 +396,11 @@ function ServiceDetailsInner() {
                                     {/* single downlaod area End */}
                                     {/* single downlaod area start */}
                                     <div className="single-download-area">
-                                        <img
+                                        <Image
                                             src="/assets/images/service/icon/02.svg"
                                             alt="Business_downlaod"
+                                            width={24}
+                                            height={32}
                                         />
                                         <div className="mid">
                                             <h6 className="title">Company Details</h6>
@@ -373,7 +418,12 @@ function ServiceDetailsInner() {
                             <div className="rts-single-wized contact service">
                                 <div className="wized-header">
                                     <Link href="/">
-                                        <img src="/assets/images/logo/06.svg" alt="Business_logo" />
+                                        <Image
+                                            src="/assets/images/logo/06.svg"
+                                            alt="Business_logo"
+                                            width={201}
+                                            height={70}
+                                        />
                                     </Link>
                                 </div>
                                 <div className="wized-body">

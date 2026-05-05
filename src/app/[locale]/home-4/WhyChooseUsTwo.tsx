@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -87,13 +88,20 @@ function WhyChooseUsTwo() {
                         <div className="col-lg-4 col-md-6 col-sm-12 rts-jump__item">
                             <div className="single-why-choose-four">
                                 <a href="#" className="thumbnail">
-                                    <img src="/assets/images/why-choose/04.webp" alt="choose" />
+                                    <Image
+                                        src="/assets/images/why-choose/04.webp"
+                                        alt="choose"
+                                        width={615}
+                                        height={630}
+                                    />
                                 </a>
                                 <div className="inner-content">
                                     <div className="icon">
-                                        <img
+                                        <Image
                                             src="/assets/images/why-choose/icons/01.svg"
                                             alt="why-choose"
+                                            width={89}
+                                            height={87}
                                         />
                                     </div>
                                     <a href="#">
@@ -112,13 +120,20 @@ function WhyChooseUsTwo() {
                         <div className="col-lg-4 col-md-6 col-sm-12 rts-jump__item">
                             <div className="single-why-choose-four">
                                 <a href="#" className="thumbnail">
-                                    <img src="/assets/images/why-choose/05.webp" alt="choose" />
+                                    <Image
+                                        src="/assets/images/why-choose/05.webp"
+                                        alt="choose"
+                                        width={615}
+                                        height={630}
+                                    />
                                 </a>
                                 <div className="inner-content">
                                     <div className="icon">
-                                        <img
+                                        <Image
                                             src="/assets/images/why-choose/icons/02.svg"
                                             alt="why-choose"
+                                            width={89}
+                                            height={87}
                                         />
                                     </div>
                                     <a href="#">
@@ -137,13 +152,20 @@ function WhyChooseUsTwo() {
                         <div className="col-lg-4 col-md-6 col-sm-12 rts-jump__item">
                             <div className="single-why-choose-four">
                                 <a href="#" className="thumbnail">
-                                    <img src="/assets/images/why-choose/06.webp" alt="choose" />
+                                    <Image
+                                        src="/assets/images/why-choose/06.webp"
+                                        alt="choose"
+                                        width={615}
+                                        height={630}
+                                    />
                                 </a>
                                 <div className="inner-content">
                                     <div className="icon">
-                                        <img
+                                        <Image
                                             src="/assets/images/why-choose/icons/03.svg"
                                             alt="why-choose"
+                                            width={89}
+                                            height={87}
                                         />
                                     </div>
                                     <a href="#">

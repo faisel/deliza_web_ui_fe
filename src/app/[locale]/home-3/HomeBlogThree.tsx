@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -78,7 +79,12 @@ function HomeBlogThree({ id }: HomeBlogThreeProps) {
           <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
             <div className="rts-blog-h-2-wrapper">
               <Link href="/blog/liliput-settle-tips-of-the-new-ages-exist" className="thumbnail">
-                <img src="/assets/images/blog/04.webp" alt="Business_blog" />
+                <Image
+                    src="/assets/images/blog/04.webp"
+                    alt="Business_blog"
+                    width={678}
+                    height={474}
+                />
               </Link>
               <div className="body">
                 <span>Business Solution / by David Dolean</span>
@@ -99,7 +105,12 @@ function HomeBlogThree({ id }: HomeBlogThreeProps) {
           <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div className="rts-blog-h-2-wrapper">
               <Link href="/blog/liliput-settle-tips-of-the-new-ages-exist" className="thumbnail">
-                <img src="/assets/images/blog/05.webp" alt="Business_blog" />
+                <Image
+                    src="/assets/images/blog/05.webp"
+                    alt="Business_blog"
+                    width={678}
+                    height={474}
+                />
               </Link>
               <div className="body">
                 <span>Business Solution / by David Dolean</span>
@@ -118,7 +129,12 @@ function HomeBlogThree({ id }: HomeBlogThreeProps) {
           <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div className="rts-blog-h-2-wrapper">
               <Link href="/blog/liliput-settle-tips-of-the-new-ages-exist" className="thumbnail">
-                <img src="/assets/images/blog/06.webp" alt="Business_blog" />
+                <Image
+                    src="/assets/images/blog/06.webp"
+                    alt="Business_blog"
+                    width={678}
+                    height={474}
+                />
               </Link>
               <div className="body">
                 <span>Business Solution / by David Dolean</span>

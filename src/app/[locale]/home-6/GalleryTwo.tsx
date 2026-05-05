@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 
+import Image from "next/image";
 const images = [
     "/assets/images/gallery/06.webp",
     "/assets/images/gallery/07.webp",
@@ -39,13 +40,20 @@ function GalleryTwo() {
                                             onClick={() => openModal(img)}
                                             style={{ background: "none", border: "none", padding: 0 }}
                                         >
-                                            <img src={img} alt="gallery" />
+                                            <Image
+                                                src={img}
+                                                alt="gallery"
+                                                width={800}
+                                                height={600}
+                                            />
                                         </button>
 
                                         <div className="instagram">
-                                            <img
+                                            <Image
                                                 src="/assets/images/gallery/instagram.svg"
                                                 alt="instagram"
+                                                width={85}
+                                                height={85}
                                             />
                                         </div>
                                     </div>
@@ -64,7 +72,12 @@ function GalleryTwo() {
                         <button className="gallery-close" onClick={closeModal}>
                             ✕
                         </button>
-                        <img src={activeImage} alt="preview" />
+                        <Image
+                            src={activeImage}
+                            alt="preview"
+                            width={800}
+                            height={600}
+                        />
                     </div>
                 </div>
             )}

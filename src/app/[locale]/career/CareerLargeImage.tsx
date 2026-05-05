@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 function CareerLargeImage() {
     return (
         <div className="large-thumbnail-career rts-section-gap">
@@ -11,7 +12,12 @@ function CareerLargeImage() {
                             data-animation="zoomOut"
                             data-delay="0.1"
                         >
-                            <img src="/assets/images/blog/20.webp" alt="career" />
+                            <Image
+                                src="/assets/images/blog/20.webp"
+                                alt="career"
+                                width={1935}
+                                height={942}
+                            />
                         </div>
                     </div>
                 </div>

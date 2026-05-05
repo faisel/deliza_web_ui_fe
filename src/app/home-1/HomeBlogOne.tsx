@@ -1,5 +1,6 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import { Navigation, Pagination } from "swiper/modules";
 import { useTranslation } from "@/i18n/useTranslation";
 import { localizePath } from "@/i18n/routing";
@@ -69,7 +70,13 @@ function HomeBlogOne({ className = "", titleClassName = "" , id=""}: HomeBlogOne
                     </a>
                     <div className="bottom-details">
                       <a href={detailHref} className="thumbnail">
-                        <img loading="lazy" src={blogImages[index] ?? blogImages[0]} alt="blog-area" />
+                        <Image
+                            loading="lazy"
+                            src={blogImages[index] ?? blogImages[0]}
+                            alt="blog-area"
+                            width={800}
+                            height={600}
+                        />
                       </a>
                     </div>
                   </div>

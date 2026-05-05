@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -67,7 +68,13 @@ function BannerTen({ id }: BannerTenProps) {
                         <div className="col-lg-12">
                             <div className="banner-inner-content-12">
                                 <p className="pre">
-                                    <img src="/assets/images/banner/icon/01.svg" alt="" />
+                                    <Image
+                                        src="/assets/images/banner/icon/01.svg"
+                                        alt=""
+                                        width={22}
+                                        height={18}
+                                        aria-hidden="true"
+                                    />
                                     Business Success Starts Here
                                 </p>
                                 <h1 className="title rts-text-anime-style-1" ref={splitRef}>
@@ -91,15 +98,21 @@ function BannerTen({ id }: BannerTenProps) {
                     </div>
                 </div>
                 <div className="chart-image">
-                    <img
+                    <Image
                         src="/assets/images/banner/small-img/01.webp"
                         alt=""
                         className="one"
+                        width={166}
+                        height={156}
+                        aria-hidden="true"
                     />
-                    <img
+                    <Image
                         src="/assets/images/banner/small-img/02.webp"
                         alt=""
                         className="two"
+                        width={215}
+                        height={213}
+                        aria-hidden="true"
                     />
                 </div>
             </div>

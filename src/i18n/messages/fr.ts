@@ -23,9 +23,347 @@ const fr: Messages = {
   },
   metadata: {
     home: {
-      title: "Deliza – Votre partenaire en conseil aux entreprises",
+      title: "Deliza GmbH – Hospitalité & innovation, Bad Ragaz",
       description:
-        "Deliza accompagne les entreprises avec un conseil sur mesure, des stratégies claires et une croissance durable.",
+        "Groupe suisse d'hospitalité et d'innovation basé à Bad Ragaz. Nos marques : Giessenpark, 7310 et Chutnee im Schloss.",
+    },
+  },
+  seo: {
+    org: {
+      description:
+        "Deliza GmbH est un groupe suisse d'hospitalité et d'innovation basé à Bad Ragaz. Nous réunissons gastronomie, conseil, développement de produits et innovation digitale sous un même toit.",
+      tagline: "Hospitalité, gastronomie et innovation depuis Bad Ragaz.",
+    },
+    pages: {
+      home: {
+        metaTitle: "Deliza GmbH – Hospitalité & innovation, Bad Ragaz",
+        metaDescription:
+          "Groupe suisse d'hospitalité et d'innovation basé à Bad Ragaz. Marques : Giessenpark, 7310 et Chutnee im Schloss.",
+        h1: "Hospitalité, gastronomie et innovation depuis Bad Ragaz",
+        eyebrow: "Deliza GmbH",
+        bgTitle: "Deliza",
+        heroDescription:
+          "Nous réunissons gastronomie, conseil, développement de produits et innovation digitale au sein d'un groupe suisse d'hospitalité basé à Bad Ragaz.",
+        introTitle: "Un groupe, trois marques, une exigence",
+        leadParagraph:
+          "Deliza GmbH rassemble hospitalité, conseil en gastronomie et innovation digitale sous un même toit. Depuis Bad Ragaz, nous concevons des expériences pour les hôtes, des accompagnements pour les partenaires et des projets pour la région à travers nos marques Giessenpark, 7310 et Chutnee im Schloss.",
+        highlights: [
+          {
+            title: "Giessenpark – Hospitalité & conseil",
+            description:
+              "Lieu, espaces événementiels et conseil pour des concepts de gastronomie et d'hospitalité au cœur de la région du Heidiland.",
+          },
+          {
+            title: "7310 – Plateforme digitale régionale",
+            description:
+              "Notre plateforme digitale pour Bad Ragaz et ses environs réunit acteurs locaux, expériences et visiteurs en un seul endroit.",
+          },
+          {
+            title: "Chutnee im Schloss – Gastronomie",
+            description:
+              "Une gastronomie contemporaine aux saveurs indiennes, dans un cadre singulier, signée Deliza GmbH.",
+          },
+        ],
+        faq: {
+          title: "Questions fréquentes sur Deliza GmbH",
+          items: [
+            {
+              q: "Qu'est-ce que Deliza GmbH ?",
+              a: "Deliza GmbH est un groupe suisse d'hospitalité et d'innovation basé à Bad Ragaz. Nous réunissons gastronomie, conseil en hospitalité, développement de produits et plateformes digitales sous un même toit.",
+            },
+            {
+              q: "Où Deliza GmbH est-il basé ?",
+              a: "Notre siège est en Suisse, à Bad Ragaz, dans le canton de Saint-Gall, au cœur de la région du Heidiland et de Sargans–Werdenberg.",
+            },
+            {
+              q: "Quelles marques appartiennent à Deliza GmbH ?",
+              a: "Deliza GmbH opère Giessenpark (hospitalité, conseil et espaces événementiels), 7310 (plateforme digitale régionale) et Chutnee im Schloss (gastronomie d'inspiration indienne).",
+            },
+            {
+              q: "Qu'est-ce qui distingue Deliza ?",
+              a: "Nous concevons gastronomie, conseil et innovation digitale comme un seul ensemble. Le résultat : des concepts d'hospitalité tangibles pour les hôtes et mesurables pour les partenaires.",
+            },
+          ],
+        },
+      },
+      brands: {
+        metaTitle: "Marques de Deliza GmbH | Giessenpark, 7310, Chutnee",
+        metaDescription:
+          "Les marques de Deliza GmbH : Giessenpark, 7310 et Chutnee im Schloss — hospitalité, gastronomie et innovation digitale depuis Bad Ragaz.",
+        h1: "Nos marques",
+        eyebrow: "Portefeuille Deliza GmbH",
+        bgTitle: "Marques",
+        heroDescription:
+          "Trois marques indépendantes, une même idée : hospitalité, qualité et innovation depuis Bad Ragaz.",
+        introTitle: "Trois marques sous un même toit",
+        leadParagraph:
+          "Deliza GmbH opère trois marques au profil affirmé : Giessenpark comme marque d'hospitalité et de conseil, 7310 comme plateforme digitale régionale pour Bad Ragaz, et Chutnee im Schloss comme adresse culinaire signature.",
+        highlights: [
+          {
+            title: "Giessenpark",
+            description:
+              "Hospitalité, espaces événementiels et conseil à Bad Ragaz — conception, location de lieux et accompagnement de projets de gastronomie et d'hospitalité.",
+          },
+          {
+            title: "7310",
+            description:
+              "Une plateforme digitale régionale pour Bad Ragaz et ses environs, qui relie acteurs locaux, événements et visiteurs.",
+          },
+          {
+            title: "Chutnee im Schloss",
+            description:
+              "Un restaurant moderne aux accents indiens, dans un cadre singulier — ancré régionalement, contemporain dans son expression, signé Deliza GmbH.",
+          },
+        ],
+        faq: {
+          title: "Questions fréquentes sur nos marques",
+          items: [
+            {
+              q: "Quelles marques font partie de Deliza GmbH ?",
+              a: "Deliza GmbH opère Giessenpark, 7310 et Chutnee im Schloss. Chaque marque a son propre univers tout en complétant les autres au sein du groupe.",
+            },
+            {
+              q: "Qu'est-ce que Giessenpark ?",
+              a: "Giessenpark est la marque d'hospitalité et de conseil de Deliza GmbH à Bad Ragaz. Elle propose des espaces événementiels, du développement de concepts et du conseil pour des projets de gastronomie et d'hospitalité.",
+            },
+            {
+              q: "Qu'est-ce que 7310 ?",
+              a: "7310 est la plateforme digitale de Deliza GmbH dédiée à la région de Bad Ragaz. Elle réunit en un seul lieu les acteurs locaux, expériences et événements.",
+            },
+            {
+              q: "Qu'est-ce que Chutnee im Schloss ?",
+              a: "Chutnee im Schloss est la marque gastronomique de Deliza GmbH. Elle propose une cuisine contemporaine d'inspiration indienne dans un cadre singulier.",
+            },
+          ],
+        },
+      },
+      products: {
+        metaTitle: "Produits & services | Deliza GmbH, Bad Ragaz",
+        metaDescription:
+          "Gastronomie, traiteur, espaces événementiels, développement de produits et solutions digitales — tous les services de Deliza GmbH en un coup d'œil.",
+        h1: "Produits & services",
+        eyebrow: "Ce que nous proposons",
+        bgTitle: "Services",
+        heroDescription:
+          "Gastronomie, traiteur, espaces événementiels, développement de produits et solutions digitales — orchestrés par Deliza GmbH.",
+        introTitle: "Des services à la croisée de l'hospitalité, de la gastronomie et de l'innovation",
+        leadParagraph:
+          "Deliza GmbH réunit plusieurs domaines de service : gastronomie et traiteur via Chutnee im Schloss, expériences d'hospitalité et espaces événementiels via Giessenpark, développement de produits et solutions digitales. Un seul point de contact pour vos hôtes, partenaires et acteurs régionaux.",
+        highlights: [
+          {
+            title: "Gastronomie & traiteur",
+            description:
+              "Exploitation de restaurant, cartes signées et prestations traiteur via Chutnee im Schloss — pour les occasions privées comme pour les événements d'entreprise.",
+          },
+          {
+            title: "Espaces événementiels & hospitalité",
+            description:
+              "Espaces et concepts pour événements, célébrations et formats d'entreprise via Giessenpark à Bad Ragaz.",
+          },
+          {
+            title: "Développement de produits",
+            description:
+              "Conception de produits régionaux et culinaires, du concept initial à l'offre commercialisable.",
+          },
+          {
+            title: "Solutions digitales",
+            description:
+              "Plateformes digitales comme 7310, qui mettent en visibilité acteurs locaux, expériences et hôtes de manière simple et accessible.",
+          },
+        ],
+        faq: {
+          title: "Questions fréquentes sur nos services",
+          items: [
+            {
+              q: "Quels services Deliza propose-t-il ?",
+              a: "Nous combinons gastronomie et traiteur, expériences d'hospitalité et espaces événementiels, développement de produits et solutions digitales pour la région — le tout coordonné par Deliza GmbH.",
+            },
+            {
+              q: "Deliza propose-t-il un service traiteur ?",
+              a: "Oui. Via Chutnee im Schloss et Giessenpark, nous assurons traiteur et hospitalité pour des occasions privées et des formats d'entreprise.",
+            },
+            {
+              q: "Deliza développe-t-il des produits régionaux ?",
+              a: "Oui. Nous concevons et orchestrons des produits régionaux, culinaires et digitaux, du premier concept à l'offre commercialisable.",
+            },
+            {
+              q: "Puis-je louer des espaces événementiels ?",
+              a: "Oui. Via Giessenpark, nous proposons des espaces et salles à Bad Ragaz. Contactez-nous et nous vérifierons les disponibilités à la date souhaitée.",
+            },
+          ],
+        },
+      },
+      investment: {
+        metaTitle: "Investissement & conseil en hospitalité | Deliza GmbH",
+        metaDescription:
+          "Investissement et conseil pour des projets de gastronomie et d'hospitalité : concept, exécution et partenariat avec Deliza GmbH à Bad Ragaz.",
+        h1: "Investissement & conseil",
+        eyebrow: "Conseil en hospitalité",
+        bgTitle: "Conseil",
+        heroDescription:
+          "Nous accompagnons les projets de gastronomie et d'hospitalité, de la première idée à la mise en œuvre.",
+        introTitle: "Conseil et investissement pour l'hospitalité et la gastronomie",
+        leadParagraph:
+          "Deliza GmbH accompagne des projets visionnaires en gastronomie et en hospitalité. Nous concevons les concepts, conseillons sur la mise en œuvre opérationnelle et, lorsque cela a du sens, nous nous engageons en tant que partenaire de long terme via l'investissement.",
+        highlights: [
+          {
+            title: "Développement de concept",
+            description:
+              "De l'analyse du lieu à la création du concept — nous concevons des projets d'hospitalité et de gastronomie viables.",
+          },
+          {
+            title: "Conseil opérationnel",
+            description:
+              "Conseil sur l'exploitation, l'hospitalité, les processus et les indicateurs — nourri par notre propre expérience de marques et de lieux.",
+          },
+          {
+            title: "Investissement & partenariat",
+            description:
+              "Pour des projets sélectionnés en hospitalité et innovation, nous nous engageons comme partenaire de long terme aux côtés des fondateurs et exploitants.",
+          },
+        ],
+        faq: {
+          title: "Questions fréquentes sur l'investissement & le conseil",
+          items: [
+            {
+              q: "Deliza propose-t-il du conseil en hospitalité ?",
+              a: "Oui. À travers Giessenpark et l'ensemble du groupe Deliza GmbH, nous conseillons des projets de gastronomie et d'hospitalité, du concept à l'exploitation.",
+            },
+            {
+              q: "Quels types de projets Giessenpark accompagne-t-il ?",
+              a: "Giessenpark accompagne des projets de gastronomie, d'hospitalité et d'événementiel — avec un focus particulier sur la région de Bad Ragaz et la zone DACH.",
+            },
+            {
+              q: "Deliza peut-il aider à développer un concept de gastronomie ?",
+              a: "Oui. Nous co-développons des concepts de gastronomie et d'hospitalité et accompagnons leur réalisation, de l'idée initiale à l'ouverture.",
+            },
+          ],
+        },
+      },
+      about: {
+        metaTitle: "À propos de Deliza GmbH | Hospitalité, Bad Ragaz",
+        metaDescription:
+          "À propos de Deliza GmbH : groupe suisse d'hospitalité et d'innovation basé à Bad Ragaz — gastronomie, conseil et innovation digitale.",
+        h1: "À propos de Deliza GmbH",
+        eyebrow: "Qui nous sommes",
+        bgTitle: "À propos",
+        heroDescription:
+          "Un groupe suisse d'hospitalité qui considère gastronomie, conseil et innovation digitale comme un seul artisanat.",
+        introTitle: "Hospitalité, innovation et savoir-faire — pensés ensemble",
+        leadParagraph:
+          "Deliza GmbH a été créé pour rapprocher gastronomie, conseil en hospitalité et innovation digitale. Depuis Bad Ragaz, nous bâtissons des concepts tangibles pour les hôtes, fiables pour les partenaires et porteurs de sens pour la région.",
+        highlights: [
+          {
+            title: "Racines suisses",
+            description:
+              "Nous sommes ancrés à Bad Ragaz et pensons régional — de la cuisine aux formats événementiels en passant par notre plateforme digitale 7310.",
+          },
+          {
+            title: "L'hospitalité comme état d'esprit",
+            description:
+              "L'hospitalité n'est pas un ajout final. C'est le cœur de chaque marque et de chaque projet que nous menons.",
+          },
+          {
+            title: "Une innovation porteuse de sens",
+            description:
+              "Nous mobilisons l'innovation là où elle améliore réellement l'expérience hôte, les opérations ou la valeur créée pour la région.",
+          },
+        ],
+        faq: {
+          title: "Questions fréquentes sur Deliza GmbH",
+          items: [
+            {
+              q: "Quelle est l'idée derrière Deliza GmbH ?",
+              a: "Deliza GmbH réunit gastronomie, conseil en hospitalité et innovation digitale sous un même toit, pour que marque, opérations et expérience digitale soient pensées ensemble.",
+            },
+            {
+              q: "Sur quoi Deliza se concentre-t-il ?",
+              a: "Nous nous concentrons sur l'hospitalité, la gastronomie, le développement de produits et les solutions digitales, avec un fort accent sur la région de Bad Ragaz et la Suisse.",
+            },
+            {
+              q: "Qu'est-ce qui distingue Deliza ?",
+              a: "Nous concevons marque, opérations et expérience digitale ensemble, et nous opérons nos propres projets — nous ne nous limitons pas au conseil externe.",
+            },
+          ],
+        },
+      },
+      news: {
+        metaTitle: "Actualités & événements | Deliza GmbH, Bad Ragaz",
+        metaDescription:
+          "Actualités et événements de Deliza GmbH : ouvertures, projets d'hospitalité et nouveautés autour de Giessenpark, 7310 et Chutnee im Schloss.",
+        h1: "Actualités & événements",
+        eyebrow: "Nouveautés",
+        bgTitle: "News",
+        heroDescription:
+          "Les dernières actualités, ouvertures et annonces de notre portefeuille.",
+        introTitle: "Ce qui se passe en ce moment chez Deliza GmbH",
+        leadParagraph:
+          "Nous partageons ici les actualités, ouvertures et coulisses de Deliza GmbH et de ses marques Giessenpark, 7310 et Chutnee im Schloss.",
+        faq: {
+          title: "Questions fréquentes sur les actualités & événements",
+          items: [
+            {
+              q: "Quel type d'actualités Deliza publie-t-il ?",
+              a: "Nous publions des nouveautés autour de nos marques : ouvertures, nouveaux projets d'hospitalité, partenariats et événements à Bad Ragaz et dans la région.",
+            },
+            {
+              q: "Les lancements de produits et événements sont-ils annoncés ici ?",
+              a: "Oui. Ouvertures, pop-up, événements et lancements de produits apparaissent d'abord dans cette rubrique.",
+            },
+            {
+              q: "Où peut-on suivre les actualités ?",
+              a: "Vous pouvez consulter régulièrement cette page ou nous contacter via le formulaire pour être tenu informé. Les nouveautés sont publiées ici en premier.",
+            },
+          ],
+        },
+      },
+      contact: {
+        metaTitle: "Contact | Deliza GmbH, Bad Ragaz",
+        metaDescription:
+          "Contactez Deliza GmbH pour des demandes de traiteur, d'hospitalité, de conseil ou de partenariat. Siège à Bad Ragaz, Suisse.",
+        h1: "Nous contacter",
+        eyebrow: "Parlons-en",
+        bgTitle: "Contact",
+        heroDescription:
+          "Contactez-nous pour des demandes de traiteur, d'hospitalité, de conseil ou de partenariat autour de nos marques.",
+        introTitle: "Construisons quelque chose ensemble",
+        leadParagraph:
+          "Vous avez un projet d'hospitalité, de gastronomie ou d'innovation ? Écrivez-nous ou appelez-nous. Nous répondons rapidement et personnellement, depuis nos bureaux de Bad Ragaz.",
+        highlights: [
+          {
+            title: "Demandes de conseil & d'investissement",
+            description:
+              "Pour les demandes de concept, de conseil et d'investissement liées à l'hospitalité et à la gastronomie.",
+          },
+          {
+            title: "Traiteur, événements & occasions privées",
+            description:
+              "Pour le traiteur, les espaces événementiels ou les occasions privées — partagez votre brief et nous étudierons votre demande.",
+          },
+          {
+            title: "Partenariat & collaboration",
+            description:
+              "Vous souhaitez collaborer avec l'une de nos marques ou contribuer au développement de la région de Bad Ragaz ? Contactez-nous.",
+          },
+        ],
+        faq: {
+          title: "Questions fréquentes sur le contact",
+          items: [
+            {
+              q: "Comment contacter Deliza GmbH ?",
+              a: "Par e-mail à info@giessenpark.com ou par téléphone au 081 661 23 45. Notre adresse est Flurweg 4, 7310 Bad Ragaz, Suisse.",
+            },
+            {
+              q: "Puis-je demander un service traiteur ou de conseil ?",
+              a: "Oui. Les demandes de traiteur, d'hospitalité ou de conseil peuvent être adressées directement par e-mail ou via le formulaire de contact.",
+            },
+            {
+              q: "Puis-je collaborer avec Deliza ?",
+              a: "Oui. Nous étudions les collaborations avec des prestataires, marques et partenaires qui complètent durablement notre portefeuille. Présentez-nous brièvement votre idée et nous reviendrons vers vous.",
+            },
+          ],
+        },
+      },
     },
   },
   header: {

@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { gsap } from "gsap";
@@ -104,9 +105,11 @@ function TestimonialsTwo() {
                                         <div className="rts-client-reviews-h2">
                                             <div className="review-header">
                                                 <a href="#" className="thumbnail">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/testimonials/avatar/01.webp"
                                                         alt="testimonials_area"
+                                                        width={80}
+                                                        height={81}
                                                     />
                                                 </a>
                                                 <div className="discription">
@@ -124,9 +127,11 @@ function TestimonialsTwo() {
                                                 </p>
                                                 <div className="body-end">
                                                     <a href="#">
-                                                        <img
+                                                        <Image
                                                             src="/assets/images/testimonials/icons/01.webp"
                                                             alt="Client_logo"
+                                                            width={117}
+                                                            height={34}
                                                         />
                                                     </a>
                                                     <div className="star-icon">
@@ -146,9 +151,11 @@ function TestimonialsTwo() {
                                         <div className="rts-client-reviews-h2">
                                             <div className="review-header">
                                                 <a href="#" className="thumbnail">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/testimonials/avatar/02.webp"
                                                         alt="testimonials_area"
+                                                        width={80}
+                                                        height={81}
                                                     />
                                                 </a>
                                                 <div className="discription">
@@ -166,9 +173,11 @@ function TestimonialsTwo() {
                                                 </p>
                                                 <div className="body-end">
                                                     <a href="#">
-                                                        <img
+                                                        <Image
                                                             src="/assets/images/testimonials/icons/02.webp"
                                                             alt="Client_logo"
+                                                            width={122}
+                                                            height={33}
                                                         />
                                                     </a>
                                                     <div className="star-icon">
@@ -188,9 +197,11 @@ function TestimonialsTwo() {
                                         <div className="rts-client-reviews-h2">
                                             <div className="review-header">
                                                 <a href="#" className="thumbnail">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/testimonials/avatar/03.webp"
                                                         alt="testimonials_area"
+                                                        width={80}
+                                                        height={81}
                                                     />
                                                 </a>
                                                 <div className="discription">
@@ -208,9 +219,11 @@ function TestimonialsTwo() {
                                                 </p>
                                                 <div className="body-end">
                                                     <a href="#">
-                                                        <img
+                                                        <Image
                                                             src="/assets/images/testimonials/icons/03.webp"
                                                             alt="Client_logo"
+                                                            width={123}
+                                                            height={31}
                                                         />
                                                     </a>
                                                     <div className="star-icon">
@@ -230,9 +243,11 @@ function TestimonialsTwo() {
                                         <div className="rts-client-reviews-h2">
                                             <div className="review-header">
                                                 <a href="#" className="thumbnail">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/testimonials/avatar/01.webp"
                                                         alt="testimonials_area"
+                                                        width={80}
+                                                        height={81}
                                                     />
                                                 </a>
                                                 <div className="discription">
@@ -250,9 +265,11 @@ function TestimonialsTwo() {
                                                 </p>
                                                 <div className="body-end">
                                                     <a href="#">
-                                                        <img
+                                                        <Image
                                                             src="/assets/images/testimonials/icons/01.webp"
                                                             alt="Client_logo"
+                                                            width={117}
+                                                            height={34}
                                                         />
                                                     </a>
                                                     <div className="star-icon">
@@ -272,9 +289,11 @@ function TestimonialsTwo() {
                                         <div className="rts-client-reviews-h2">
                                             <div className="review-header">
                                                 <a href="#" className="thumbnail">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/testimonials/avatar/02.webp"
                                                         alt="testimonials_area"
+                                                        width={80}
+                                                        height={81}
                                                     />
                                                 </a>
                                                 <div className="discription">
@@ -292,9 +311,11 @@ function TestimonialsTwo() {
                                                 </p>
                                                 <div className="body-end">
                                                     <a href="#">
-                                                        <img
+                                                        <Image
                                                             src="/assets/images/testimonials/icons/02.webp"
                                                             alt="Client_logo"
+                                                            width={122}
+                                                            height={33}
                                                         />
                                                     </a>
                                                     <div className="star-icon">
@@ -314,9 +335,11 @@ function TestimonialsTwo() {
                                         <div className="rts-client-reviews-h2">
                                             <div className="review-header">
                                                 <a href="#" className="thumbnail">
-                                                    <img
+                                                    <Image
                                                         src="/assets/images/testimonials/avatar/03.webp"
                                                         alt="testimonials_area"
+                                                        width={80}
+                                                        height={81}
                                                     />
                                                 </a>
                                                 <div className="discription">
@@ -334,9 +357,11 @@ function TestimonialsTwo() {
                                                 </p>
                                                 <div className="body-end">
                                                     <a href="#">
-                                                        <img
+                                                        <Image
                                                             src="/assets/images/testimonials/icons/03.webp"
                                                             alt="Client_logo"
+                                                            width={123}
+                                                            height={31}
                                                         />
                                                     </a>
                                                     <div className="star-icon">

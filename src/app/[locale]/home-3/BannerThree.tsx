@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -104,16 +105,35 @@ function BannerThree({ id }: BannerThreeProps) {
                 </div>
             </div>
             <div className="right-thumbnail rts-reveal-one">
-                <img
+                <Image
                     className="rts-reveal-image-one"
                     src="/assets/images/banner/04.webp"
                     alt="banner-area"
+                    width={1065}
+                    height={1275}
                 />
             </div>
             <div className="all-shape">
-                <img src="/assets/images/banner/shape/01.png" alt="banner" className="one" />
-                <img src="/assets/images/banner/shape/02.png" alt="banner" className="two" />
-                <img src="/assets/images/banner/shape/03.png" alt="banner" className="three"
+                <Image
+                    src="/assets/images/banner/shape/01.png"
+                    alt="banner"
+                    className="one"
+                    width={223}
+                    height={208}
+                />
+                <Image
+                    src="/assets/images/banner/shape/02.png"
+                    alt="banner"
+                    className="two"
+                    width={79}
+                    height={82}
+                />
+                <Image
+                    src="/assets/images/banner/shape/03.png"
+                    alt="banner"
+                    className="three"
+                    width={223}
+                    height={208}
                 />
             </div>
         </div>

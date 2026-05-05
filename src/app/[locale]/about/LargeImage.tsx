@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 function LargeImage() {
     return (
         <div className="about-deliza-large-image">
@@ -7,7 +8,12 @@ function LargeImage() {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="large-image-bottm-breadcrumb">
-                            <img src="/assets/images/about/16.webp" alt="about" />
+                            <Image
+                                src="/assets/images/about/16.webp"
+                                alt="about"
+                                width={1290}
+                                height={628}
+                            />
                         </div>
                     </div>
                 </div>

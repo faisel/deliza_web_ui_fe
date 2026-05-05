@@ -1,6 +1,7 @@
 "use client";
 import { useTranslation } from "@/i18n/useTranslation";
 
+import Image from "next/image";
 const clients = [
   "/assets/images/client/1.webp",
   "/assets/images/client/2.webp",
@@ -33,7 +34,12 @@ function BrandOne() {
                 data-aos-delay={index * 100}
                 data-aos-duration="1200"
               >
-                <img src={src} alt={`business_deliza ${index + 1}`} />
+                <Image
+                    src={src}
+                    alt={`business_deliza ${index + 1}`}
+                    width={800}
+                    height={600}
+                />
               </a>
             ))}
           </div>

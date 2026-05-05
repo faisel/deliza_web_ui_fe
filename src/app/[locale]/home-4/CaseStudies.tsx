@@ -1,5 +1,6 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import Link from "@/i18n/LocalizedLink";
 
@@ -63,7 +64,12 @@ function CaseStudies({ className='', id='' }: CaseStudiesProps) {
                                     <SwiperSlide>
                                         <div className="single-case-studies-four">
                                             <Link href="/project-details" className="thumbnail">
-                                                <img src="/assets/images/project/07.webp" alt="project" />
+                                                <Image
+                                                    src="/assets/images/project/07.webp"
+                                                    alt="project"
+                                                    width={810}
+                                                    height={852}
+                                                />
                                             </Link>
                                             <div className="inner">
                                                 <Link href="/project-details">
@@ -72,14 +78,24 @@ function CaseStudies({ className='', id='' }: CaseStudiesProps) {
                                                 </Link>
                                             </div>
                                             <div className="eye">
-                                                <img src="/assets/images/project/eye.svg" alt="project" />
+                                                <Image
+                                                    src="/assets/images/project/eye.svg"
+                                                    alt="project"
+                                                    width={55}
+                                                    height={55}
+                                                />
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="single-case-studies-four">
                                             <Link href="/project-details" className="thumbnail">
-                                                <img src="/assets/images/project/08.webp" alt="project" />
+                                                <Image
+                                                    src="/assets/images/project/08.webp"
+                                                    alt="project"
+                                                    width={810}
+                                                    height={852}
+                                                />
                                             </Link>
                                             <div className="inner">
                                                 <Link href="/project-details">
@@ -88,14 +104,24 @@ function CaseStudies({ className='', id='' }: CaseStudiesProps) {
                                                 </Link>
                                             </div>
                                             <div className="eye">
-                                                <img src="/assets/images/project/eye.svg" alt="project" />
+                                                <Image
+                                                    src="/assets/images/project/eye.svg"
+                                                    alt="project"
+                                                    width={55}
+                                                    height={55}
+                                                />
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="single-case-studies-four">
                                             <Link href="/project-details" className="thumbnail">
-                                                <img src="/assets/images/project/09.webp" alt="project" />
+                                                <Image
+                                                    src="/assets/images/project/09.webp"
+                                                    alt="project"
+                                                    width={810}
+                                                    height={852}
+                                                />
                                             </Link>
                                             <div className="inner">
                                                 <Link href="/project-details">
@@ -104,14 +130,24 @@ function CaseStudies({ className='', id='' }: CaseStudiesProps) {
                                                 </Link>
                                             </div>
                                             <div className="eye">
-                                                <img src="/assets/images/project/eye.svg" alt="project" />
+                                                <Image
+                                                    src="/assets/images/project/eye.svg"
+                                                    alt="project"
+                                                    width={55}
+                                                    height={55}
+                                                />
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="single-case-studies-four">
                                             <Link href="/project-details" className="thumbnail">
-                                                <img src="/assets/images/project/08.webp" alt="project" />
+                                                <Image
+                                                    src="/assets/images/project/08.webp"
+                                                    alt="project"
+                                                    width={810}
+                                                    height={852}
+                                                />
                                             </Link>
                                             <div className="inner">
                                                 <Link href="/project-details">
@@ -120,7 +156,12 @@ function CaseStudies({ className='', id='' }: CaseStudiesProps) {
                                                 </Link>
                                             </div>
                                             <div className="eye">
-                                                <img src="/assets/images/project/eye.svg" alt="project" />
+                                                <Image
+                                                    src="/assets/images/project/eye.svg"
+                                                    alt="project"
+                                                    width={55}
+                                                    height={55}
+                                                />
                                             </div>
                                         </div>
                                     </SwiperSlide>

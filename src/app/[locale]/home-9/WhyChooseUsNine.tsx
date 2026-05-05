@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -65,7 +66,12 @@ function WhyChooseUsNine({ id }: WhyChooseUsNineProps) {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="why-choose-us-thumbnail">
-                                <img src="/assets/images/why-choose/10.webp" alt="why" />
+                                <Image
+                                    src="/assets/images/why-choose/10.webp"
+                                    alt="why"
+                                    width={1349}
+                                    height={1059}
+                                />
                             </div>
                         </div>
                         <div className="col-lg-6 pl--50 pl_sm--10 mt_md--50 mt_sm--50 pb_md--50 pb_sm--40">
@@ -78,9 +84,11 @@ function WhyChooseUsNine({ id }: WhyChooseUsNineProps) {
                                 </div>
                                 <div className="single-feature-service-wrapper-8">
                                     <div className="icon">
-                                        <img
+                                        <Image
                                             src="/assets/images/why-choose/icons/08.svg"
                                             alt="service"
+                                            width={31}
+                                            height={31}
                                         />
                                     </div>
                                     <div className="inner-wrapper">
@@ -93,9 +101,11 @@ function WhyChooseUsNine({ id }: WhyChooseUsNineProps) {
                                 </div>
                                 <div className="single-feature-service-wrapper-8">
                                     <div className="icon">
-                                        <img
+                                        <Image
                                             src="/assets/images/why-choose/icons/09.svg"
                                             alt="service"
+                                            width={31}
+                                            height={31}
                                         />
                                     </div>
                                     <div className="inner-wrapper">

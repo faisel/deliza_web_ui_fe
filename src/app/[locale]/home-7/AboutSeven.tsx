@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -150,10 +151,20 @@ function AboutSeven({ id }: AboutSevenProps) {
                         <div className="col-lg-7">
                             <div className="about-6-thumbnail-left-wrapper">
                                 <div className="single-thumbnail">
-                                    <img src="/assets/images/about/12.webp" alt="about" />
+                                    <Image
+                                        src="/assets/images/about/12.webp"
+                                        alt="about"
+                                        width={582}
+                                        height={759}
+                                    />
                                 </div>
                                 <div className="single-thumbnail mt--40">
-                                    <img src="/assets/images/about/13.webp" alt="about" />
+                                    <Image
+                                        src="/assets/images/about/13.webp"
+                                        alt="about"
+                                        width={582}
+                                        height={759}
+                                    />
                                 </div>
                                 <div className="progress-circle-main-wrapper">
                                     <div className="progress-area-wrapper images-r">
@@ -215,7 +226,13 @@ function AboutSeven({ id }: AboutSevenProps) {
                                         </div>
                                     </div>
                                     <div className="sign-area">
-                                        <img src="/assets/images/about/sign.svg" alt="" />
+                                        <Image
+                                            src="/assets/images/about/sign.svg"
+                                            alt=""
+                                            width={190}
+                                            height={57}
+                                            aria-hidden="true"
+                                        />
                                     </div>
                                 </div>
                                 <Link href="/about" className="rts-btn btn-primary">

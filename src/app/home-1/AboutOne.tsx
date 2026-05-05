@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -97,9 +98,21 @@ function AboutOne({ id }: AboutOneProps) {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="left-thumbnail-about-area-two">
-              <img loading="lazy" src="/assets/images/about/04.webp" alt="about" />
+              <Image
+                  loading="lazy"
+                  src="/assets/images/about/04.webp"
+                  alt="about"
+                  width={735}
+                  height={825}
+              />
               <div className="small-image">
-                <img loading="lazy" src="/assets/images/about/05.webp" alt="small" />
+                <Image
+                    loading="lazy"
+                    src="/assets/images/about/05.webp"
+                    alt="small"
+                    width={317}
+                    height={356}
+                />
               </div>
               <div className="counter-about-area">
                 <h2 className="counter title">
@@ -153,7 +166,14 @@ function AboutOne({ id }: AboutOneProps) {
                   </div>
                 </div>
                 <div className="sign-area">
-                  <img loading="lazy" src="/assets/images/about/sign.svg" alt="" />
+                  <Image
+                      loading="lazy"
+                      src="/assets/images/about/sign.svg"
+                      alt=""
+                      width={190}
+                      height={57}
+                      aria-hidden="true"
+                  />
                 </div>
               </div>
             </div>
@@ -161,8 +181,22 @@ function AboutOne({ id }: AboutOneProps) {
         </div>
       </div>
       <div className="shape-area">
-        <img loading="lazy" src="/assets/images/about/shape/01.svg" alt="shape" className="one" />
-        <img loading="lazy" src="/assets/images/about/shape/02.svg" alt="shape" className="two" />
+        <Image
+            loading="lazy"
+            src="/assets/images/about/shape/01.svg"
+            alt="shape"
+            className="one"
+            width={223}
+            height={208}
+        />
+        <Image
+            loading="lazy"
+            src="/assets/images/about/shape/02.svg"
+            alt="shape"
+            className="two"
+            width={107}
+            height={126}
+        />
       </div>
     </div>
   );

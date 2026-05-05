@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -156,7 +157,12 @@ function ProgressFive({className = ""} : ProgressFiveProps) {
                       </svg>
 
                       {/* image */}
-                      <img src={item.image} alt={item.label} />
+                      <Image
+                          src={item.image}
+                          alt={item.label}
+                          width={800}
+                          height={600}
+                      />
                     </div>
 
                     <div className="right-counter">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -180,7 +181,12 @@ function AboutEight({ id }: AboutEightProps) {
                                 </div>
                                 <div className="sign-and-contact-area-8">
                                     <div className="singn">
-                                        <img src="/assets/images/about/sign-white.svg" alt="sign" />
+                                        <Image
+                                            src="/assets/images/about/sign-white.svg"
+                                            alt="sign"
+                                            width={190}
+                                            height={57}
+                                        />
                                     </div>
                                     <div className="number-area-start">
                                         <span>Call Us Anytime!</span>
@@ -202,10 +208,12 @@ function AboutEight({ id }: AboutEightProps) {
                     </div>
                 </div>
                 <div className="right-content-image">
-                    <img
+                    <Image
                         src="/assets/images/about/14.webp"
                         alt="about"
                         className="large-image"
+                        width={479}
+                        height={739}
                     />
                 </div>
             </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import Link from 'next/link'
 
 interface OdometerElement extends HTMLElement {
@@ -64,10 +65,20 @@ function AboutTen({ id }: AboutTenProps) {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="thumbnail-about-10-wrapper">
-                                <img src="/assets/images/about/15.webp" alt="abotu" />
+                                <Image
+                                    src="/assets/images/about/15.webp"
+                                    alt="abotu"
+                                    width={731}
+                                    height={915}
+                                />
                                 <div className="top-counter-area">
                                     <div className="icon">
-                                        <img src="/assets/images/about/icons/08.svg" alt="about" />
+                                        <Image
+                                            src="/assets/images/about/icons/08.svg"
+                                            alt="about"
+                                            width={46}
+                                            height={46}
+                                        />
                                     </div>
                                     <h2 className="counter title">
                                         <span
@@ -87,7 +98,12 @@ function AboutTen({ id }: AboutTenProps) {
                                 </div>
                                 <div className="top-counter-area bottom">
                                     <div className="icon">
-                                        <img src="/assets/images/about/icons/09.svg" alt="about" />
+                                        <Image
+                                            src="/assets/images/about/icons/09.svg"
+                                            alt="about"
+                                            width={45}
+                                            height={50}
+                                        />
                                     </div>
                                     <h2 className="counter title">
                                         <span

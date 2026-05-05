@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Image from "next/image";
 type FooterFourProps = {
   id?: string;
 };
@@ -12,7 +13,12 @@ function FooterFour({ id }: FooterFourProps) {
       <div className="col-xl-4 col-lg-6">
         <div className="footer-three-single-wized left">
           <a href="/" className="logo_footer">
-            <img src="/assets/images/logo/01.svg" alt="Logo-image" />
+            <Image
+                src="/assets/images/logo/01.svg"
+                alt="Logo-image"
+                width={193}
+                height={53}
+            />
           </a>
           <p className="disc">
             Felis consquat magnis fames sagittis ultrices plasodales porttitor

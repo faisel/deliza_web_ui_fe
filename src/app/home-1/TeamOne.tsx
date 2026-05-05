@@ -1,5 +1,6 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import { Pagination, Autoplay } from "swiper/modules";
 import { useTranslation } from "@/i18n/useTranslation";
 import { localizePath } from "@/i18n/routing";
@@ -58,7 +59,13 @@ function TeamOne({className}: TeamOneProps) {
                   <div className="team-single-one-start">
                     <div className="team-image-area">
                       <a href={detailsHref}>
-                        <img loading="lazy" src={teamImages[index] ?? teamImages[0]} alt={member.name} />
+                        <Image
+                            loading="lazy"
+                            src={teamImages[index] ?? teamImages[0]}
+                            alt={member.name}
+                            width={800}
+                            height={600}
+                        />
                         <div className="team-social">
                           <div className="main">
                             <i className="fa fa-plus" />

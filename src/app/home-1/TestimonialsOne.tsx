@@ -1,5 +1,6 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -65,7 +66,13 @@ function TestimonialsOne() {
                 <SwiperSlide key={index}>
                   <div className="testimonials-main-wrapper-two">
                     <div className="left-thumbnail">
-                      <img loading="lazy" src={testimonialImages[index] ?? testimonialImages[0]} alt="testimonials" />
+                      <Image
+                          loading="lazy"
+                          src={testimonialImages[index] ?? testimonialImages[0]}
+                          alt="testimonials"
+                          width={800}
+                          height={600}
+                      />
                     </div>
                     <div className="right-content-testimonials">
                       <p className="disc">{item.text}</p>
