@@ -2,7 +2,7 @@ import HeaderOne from "@/app/home-1/HeaderOne";
 import BreadCrumbOne from "@/app/[locale]/blog/BreadCrumbOne";
 import Brands from "@/app/components/Brands";
 import CtaInner from "@/app/[locale]/about/CtaInner";
-import FooterTen from "@/app/[locale]/home-10/FooterTen";
+import Footer from "@/app/components/Footer";
 import RTL from "@/app/home-1/RTL";
 import BackToTop from "@/app/home-1/BackToTop";
 import NewsListInner from "./NewsListInner";
@@ -59,7 +59,7 @@ export default async function NewsEventsPage({ params }: PageProps) {
       <NewsListInner />
       <Brands className="rts-section-gapBottom" />
       <CtaInner />
-      <FooterTen />
+      <Footer />
       <RTL />
       <BackToTop />
     </>

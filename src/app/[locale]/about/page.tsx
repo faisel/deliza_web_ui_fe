@@ -11,7 +11,7 @@ import BusinessGoalOne from '../../home-1/BusinessGoalOne'
 import TestimonialsOne from '../../home-1/TestimonialsOne'
 import Brands from '../../components/Brands'
 import CtaInner from './CtaInner'
-import FooterTen from '../home-10/FooterTen'
+import Footer from '../../components/Footer'
 
 function page() {
     return (
@@ -29,7 +29,7 @@ function page() {
             <TestimonialsOne />
             <Brands />
             <CtaInner />
-            <FooterTen />
+            <Footer />
             <RTL />
             <BackToTop />
         </>

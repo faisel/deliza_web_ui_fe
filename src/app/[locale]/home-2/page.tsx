@@ -13,8 +13,7 @@ import PricingOne from './PricingOne'
 import HomeBlogTwo from './HomeBlogTwo'
 import CtaTwo from './CtaTwo'
 import Brands from '../../components/Brands'
-import FooterTwo from './FooterTwo'
-import CopyrightOne from './CopyrightOne'
+import Footer from '../../components/Footer'
 import RTL from '../../home-1/RTL'
 import BackToTop from '../../home-1/BackToTop'
 
@@ -39,8 +38,7 @@ export default function HomePage() {
         {/* <PricingOne /> */}
         <HomeBlogTwo />
         <CtaTwo className='rts-section-gapBottom'/>
-        <FooterTwo />
-        <CopyrightOne />
+        <Footer />
         <RTL />
         <BackToTop />
       </>

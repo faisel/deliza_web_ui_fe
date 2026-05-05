@@ -2,7 +2,7 @@ import React from 'react'
 import HeaderOne from '../../home-1/HeaderOne'
 import Brands from '../../components/Brands'
 import CtaInner from '../about/CtaInner'
-import FooterTen from '../home-10/FooterTen'
+import Footer from '../../components/Footer'
 import RTL from '../../home-1/RTL'
 import BackToTop from '../../home-1/BackToTop'
 import BreadcrumbService from '../service-details/BreadcrumbService'
@@ -16,7 +16,7 @@ function page() {
             <ServiceDetailsInner />
             <Brands />
             <CtaInner />
-            <FooterTen />
+            <Footer />
             <RTL />
             <BackToTop />
         </>

@@ -5,7 +5,7 @@ import Banner from '../../components/Banner'
 import GoogleMaps from '../../components/GoogleMaps'
 import Brands from '../../components/Brands'
 import CtaInner from '../about/CtaInner'
-import FooterTen from '../home-10/FooterTen'
+import Footer from '../../components/Footer'
 import RTL from '../../home-1/RTL'
 import BackToTop from '../../home-1/BackToTop'
 import ContactMainTwo from '../../components/ContactMainTwo'
@@ -23,7 +23,7 @@ function page() {
                 <GoogleMaps />
                 <Brands className='rts-section-gap' />
                 <CtaInner />
-                <FooterTen />
+                <Footer />
                 <RTL />
                 <BackToTop />
             </>

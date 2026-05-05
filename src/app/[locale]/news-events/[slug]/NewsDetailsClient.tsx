@@ -3,7 +3,7 @@ import { useParams } from "next/navigation";
 import HeaderOne from "@/app/home-1/HeaderOne";
 import BrandInner from "@/app/[locale]/service/BrandInner";
 import CtaInner from "@/app/[locale]/about/CtaInner";
-import FooterTen from "@/app/[locale]/home-10/FooterTen";
+import Footer from "@/app/components/Footer";
 import RTL from "@/app/home-1/RTL";
 import BackToTop from "@/app/home-1/BackToTop";
 import news from "@/app/data/news";
@@ -48,7 +48,7 @@ export default function NewsDetailsClient() {
         <div className="container py--80">
           <p>{notFoundCopy[locale]}</p>
         </div>
-        <FooterTen />
+        <Footer />
       </>
     );
   }
@@ -83,7 +83,7 @@ export default function NewsDetailsClient() {
       </div>
       <BrandInner className="rts-section-gap" />
       <CtaInner />
-      <FooterTen />
+      <Footer />
       <RTL />
       <BackToTop />
     </>
