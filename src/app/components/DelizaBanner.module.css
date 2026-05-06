@@ -1,0 +1,61 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: var(--deliza-banner-bg, #ffffff);
+}
+
+.banner {
+  position: relative;
+  width: 80%;
+  aspect-ratio: 1200 / 500;
+  overflow: hidden;
+  background: var(--deliza-banner-bg, #ffffff);
+  line-height: 0;
+}
+
+.video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+.title {
+  font-family: var(--font-poppins), system-ui, -apple-system, "Segoe UI",
+    sans-serif;
+  font-weight: 200;
+  font-size: 360px;
+}
+
+.subtitle {
+  font-family: var(--font-poppins), system-ui, -apple-system, "Segoe UI",
+    sans-serif;
+  font-weight: 300;
+  font-size: 56px;
+  fill: var(--deliza-banner-fg, #0a0a0a);
+}
+
+@media (max-width: 768px) {
+  .banner {
+    aspect-ratio: 1200 / 600;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    aspect-ratio: 1200 / 700;
+  }
+}

@@ -9,6 +9,7 @@ import BusinessGoalTwo from './BusinessGoalTwo'
 import HomeBlogTwo from './HomeBlogTwo'
 import CtaTwo from './CtaTwo'
 import Brands from '../../components/Brands'
+import DelizaBanner from '../../components/DelizaBanner'
 import Footer from '../../components/Footer'
 import RTL from '../../home-1/RTL'
 import BackToTop from '../../home-1/BackToTop'
@@ -33,12 +34,18 @@ export default async function HomePage({ params }: HomePageProps) {
 
       {/* Page content */}
       <>
+
         <HeaderOne logoSrc="/assets/images/logo/01.svg" />
-        <BannerTwo />
+
+        <DelizaBanner />
+
         <AboutTen />
         {/* <PageIntro nav="home" /> */}
 
         <Brands />
+
+
+        
         <ServicesTwo className='rts-section-gapBottom' />
         <BusinessConsultantOne />
 

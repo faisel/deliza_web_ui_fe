@@ -487,7 +487,7 @@ const de: Messages = {
       ],
     },
     brands: {
-      title: "Unsere geschätzten Kunden",
+      title: "Unsere Marken",
     },
     team: {
       chip: "Team",

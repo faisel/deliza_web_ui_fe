@@ -487,7 +487,7 @@ const it: Messages = {
       ],
     },
     brands: {
-      title: "I nostri clienti di fiducia",
+      title: "I nostri marchi",
     },
     team: {
       chip: "Team",

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Manrope, Poppins } from "next/font/google";
 import "./globals.css";
 import "../../public/assets/css/bootstrap.min.css";
 // import "../../public/assets/css/swiper.css";
@@ -19,6 +19,13 @@ const manrope = Manrope({
   display: "swap",
   variable: "--font-manrope",
   weight: ["200", "300", "400", "500", "600", "700", "800"],
+});
+
+const poppins = Poppins({
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300"],
 });
 
 export const metadata: Metadata = {
@@ -56,7 +63,7 @@ export default function RootLayout({
   return (
     <html
       lang={defaultLocale}
-      className={manrope.variable}
+      className={`${manrope.variable} ${poppins.variable}`}
       suppressHydrationWarning
     >
       <head>

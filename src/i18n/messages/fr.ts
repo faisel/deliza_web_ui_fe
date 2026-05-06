@@ -487,7 +487,7 @@ const fr: Messages = {
       ],
     },
     brands: {
-      title: "Nos clients de confiance",
+      title: "Nos marques",
     },
     team: {
       chip: "Équipe",
