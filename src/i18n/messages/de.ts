@@ -534,6 +534,89 @@ const de: Messages = {
         message: "Ihre Nachricht",
       },
     },
+    delizaServices: {
+      pre: "Produkte & Dienstleistungen",
+      title: "Gastronomie und 7310-Produkte",
+      items: [
+        {
+          title: "Chutnee im Schloss",
+          description:
+            "Fine Dining und Catering in einzigartigem Schlossambiente – verfeinerte Küche und herzliche Gastfreundschaft.",
+        },
+        {
+          title: "Giessenpark Catering",
+          description:
+            "Massgeschneiderte Catering-Lösungen für Events jeder Grösse, gemeinsam mit unseren Kund:innen entwickelt.",
+        },
+        {
+          title: "7310 Produkte",
+          description:
+            "Whisky, Gin und Wein mit dem Charakter von Bad Ragaz – kleine Chargen, eigenständiger Stil.",
+        },
+      ],
+    },
+    delizaDigital: {
+      pre: "Digitale Innovationen",
+      title: "Die 7310-App – gemacht für unsere Region",
+      description:
+        "Unsere kommende 7310-App präsentiert lokale Events, fördert Kollaboration und hilft Einheimischen, Ideen unter der Marke 7310 zu Produkten zu machen.",
+      features: [
+        {
+          title: "Lokale Events auf einen Blick",
+          description:
+            "Entdecken Sie, was rund um Bad Ragaz passiert – von Tastings bis zu Konzerten und Community-Treffen.",
+        },
+        {
+          title: "Kollaboration & 7310-Launchpad",
+          description:
+            "Vernetzen Sie sich mit Kreativen aus der Region und bringen Sie neue Produkte unter der Marke 7310 auf den Weg.",
+        },
+      ],
+      cta: "Auf dem Laufenden bleiben",
+    },
+    delizaInvestments: {
+      pre: "Investment & Beratung",
+      title: "Hospitality-Konzepte mit Bestand gestalten",
+      description:
+        "Giessenpark berät bei der Entwicklung von Gastronomie- und Hospitality-Konzepten. Wir investieren in vielversprechende Restaurants, Hotels und einzigartige Vorhaben wie Camping oder Glamping.",
+      checks: [
+        "Hospitality- und Gastronomieberatung",
+        "Restaurant- und Hotelinvestments",
+        "Camping- und Glamping-Projekte",
+        "Konzeptentwicklung von der Idee bis zum Launch",
+      ],
+    },
+    delizaCta: {
+      title: "Kontakt & Kollaboration",
+      subtitle:
+        "Sprechen Sie uns an – für Catering, Partnerschaften mit 7310 oder Beratung und Investments mit Giessenpark.",
+      button: "Kontakt aufnehmen",
+    },
+    delizaNews: {
+      pre: "News & Events",
+      title: "Aktuelles aus dem Hause Deliza",
+    },
+    delizaTestimonials: {
+      pre: "Stimmen unserer Partner",
+      title: "Was unsere Partner sagen",
+      items: [
+        {
+          text: "Die Zusammenarbeit mit Giessenpark bei unserem Event war reibungslos. Das Team versteht Gastfreundschaft auf einem Niveau, das man selten erlebt – jedes Detail wurde mit Sorgfalt umgesetzt.",
+          name: "Lara Steiner",
+          designation: "Event Managerin, Heidiland Tourism",
+        },
+        {
+          text: "Das Erlebnis im Chutnee im Schloss war aussergewöhnlich. Küche, Ambiente und Service ergaben ein wirklich unvergessliches Ganzes.",
+          name: "Marco Bianchi",
+          designation: "Gründer, Bianchi & Co.",
+        },
+        {
+          text: "Mit der Beratung von Deliza haben wir unser Restaurant in einer Saison neu positioniert. Ehrliche Einschätzungen, praktische Unterstützung und greifbare Ergebnisse.",
+          name: "Andrea Vogel",
+          designation: "Inhaberin, Restaurant Vogelsang",
+        },
+      ],
+    },
     blog: {
       chip: "Blog",
       pre: "Blog & News",

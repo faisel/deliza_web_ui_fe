@@ -184,6 +184,38 @@ export interface Messages {
       title: string;
       posts: BlogPost[];
     };
+    delizaServices: {
+      pre: string;
+      title: string;
+      items: ServiceItem[];
+    };
+    delizaDigital: {
+      pre: string;
+      title: string;
+      description: string;
+      features: ServiceItem[];
+      cta: string;
+    };
+    delizaInvestments: {
+      pre: string;
+      title: string;
+      description: string;
+      checks: string[];
+    };
+    delizaCta: {
+      title: string;
+      subtitle: string;
+      button: string;
+    };
+    delizaNews: {
+      pre: string;
+      title: string;
+    };
+    delizaTestimonials: {
+      pre: string;
+      title: string;
+      items: TestimonialItem[];
+    };
   };
   footer: {
     contact: {

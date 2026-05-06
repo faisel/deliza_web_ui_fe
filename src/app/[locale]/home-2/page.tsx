@@ -10,6 +10,12 @@ import HomeBlogTwo from './HomeBlogTwo'
 import CtaTwo from './CtaTwo'
 import Brands from '../../components/Brands'
 import DelizaBanner from '../../components/DelizaBanner'
+import DelizaServices from '../../components/DelizaServices'
+import DelizaDigital from '../../components/DelizaDigital'
+import DelizaInvestments from '../../components/DelizaInvestments'
+import DelizaCta from '../../components/DelizaCta'
+import DelizaNews from '../../components/DelizaNews'
+import DelizaTestimonials from '../../components/DelizaTestimonials'
 import Footer from '../../components/Footer'
 import RTL from '../../home-1/RTL'
 import BackToTop from '../../home-1/BackToTop'
@@ -44,13 +50,13 @@ export default async function HomePage({ params }: HomePageProps) {
 
         <Brands />
 
+        <DelizaServices />
+        <DelizaDigital />
+        <DelizaInvestments />
+        <DelizaCta />
+        <DelizaNews />
+        <DelizaTestimonials />
 
-        
-        <ServicesTwo className='rts-section-gapBottom' />
-        <BusinessConsultantOne />
-
-        <BusinessGoalTwo />
-        <HomeBlogTwo />
         <PageFaq nav="home" />
         <CtaTwo className='rts-section-gapBottom' />
         <Footer />

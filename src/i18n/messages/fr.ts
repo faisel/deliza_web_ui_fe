@@ -534,6 +534,89 @@ const fr: Messages = {
         message: "Votre message",
       },
     },
+    delizaServices: {
+      pre: "Produits & Services",
+      title: "Gastronomie et produits 7310",
+      items: [
+        {
+          title: "Chutnee im Schloss",
+          description:
+            "Gastronomie raffinée et traiteur dans un cadre de château unique – cuisine soignée et hospitalité chaleureuse.",
+        },
+        {
+          title: "Giessenpark Catering",
+          description:
+            "Solutions de traiteur sur mesure pour des événements de toutes tailles, conçues main dans la main avec nos clients.",
+        },
+        {
+          title: "Produits 7310",
+          description:
+            "Whisky, gin et vin imprégnés de l'esprit de Bad Ragaz – petites séries, caractère affirmé.",
+        },
+      ],
+    },
+    delizaDigital: {
+      pre: "Innovations numériques",
+      title: "L'app 7310 — pensée pour notre région",
+      description:
+        "Notre future application 7310 met en avant les événements locaux, encourage les collaborations et aide les habitants à transformer leurs idées en produits sous la marque 7310.",
+      features: [
+        {
+          title: "Les événements locaux d'un coup d'œil",
+          description:
+            "Découvrez ce qui se passe autour de Bad Ragaz – des dégustations aux concerts en passant par les rencontres communautaires.",
+        },
+        {
+          title: "Collaboration & tremplin 7310",
+          description:
+            "Connectez-vous avec les créateurs de la région et donnez vie à de nouveaux produits sous la marque 7310.",
+        },
+      ],
+      cta: "Rester informé",
+    },
+    delizaInvestments: {
+      pre: "Investissements & Conseil",
+      title: "Concevoir des concepts d'hospitalité durables",
+      description:
+        "Giessenpark accompagne le développement de concepts gastronomiques et hôteliers. Nous investissons dans des restaurants, hôtels et projets singuliers prometteurs, comme le camping ou le glamping.",
+      checks: [
+        "Conseil en hôtellerie et gastronomie",
+        "Investissements dans les restaurants et hôtels",
+        "Projets de camping et glamping",
+        "Conception de concepts, de l'idée au lancement",
+      ],
+    },
+    delizaCta: {
+      title: "Contactez-nous & Collaborons",
+      subtitle:
+        "Écrivez-nous – pour le traiteur, des partenariats avec 7310, ou du conseil et de l'investissement avec Giessenpark.",
+      button: "Nous contacter",
+    },
+    delizaNews: {
+      pre: "Actualités & Événements",
+      title: "Les dernières nouvelles de Deliza",
+    },
+    delizaTestimonials: {
+      pre: "Voix de nos partenaires",
+      title: "Ce que disent nos partenaires",
+      items: [
+        {
+          text: "Travailler avec Giessenpark sur notre événement a été un vrai plaisir. Leur équipe maîtrise l'hospitalité comme rarement – chaque détail a été soigné.",
+          name: "Lara Steiner",
+          designation: "Event Manager, Heidiland Tourism",
+        },
+        {
+          text: "L'expérience au Chutnee im Schloss a été exceptionnelle. La cuisine, le cadre, le service – tout s'est conjugué pour créer un moment vraiment mémorable.",
+          name: "Marco Bianchi",
+          designation: "Fondateur, Bianchi & Co.",
+        },
+        {
+          text: "Le conseil de Deliza nous a permis de repositionner notre restaurant en une seule saison. Avis francs, accompagnement concret, résultats au rendez-vous.",
+          name: "Andrea Vogel",
+          designation: "Propriétaire, Restaurant Vogelsang",
+        },
+      ],
+    },
     blog: {
       chip: "Blog",
       pre: "Blog & actualités",
