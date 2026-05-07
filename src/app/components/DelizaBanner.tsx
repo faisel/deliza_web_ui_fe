@@ -37,8 +37,26 @@ export default function DelizaBanner({
           aria-hidden="true"
         >
           <defs>
-            <mask id={maskId}>
-              <rect width="1200" height="500" fill="white" />
+            <mask
+              id={maskId}
+              maskUnits="userSpaceOnUse"
+              x="-2000"
+              y="-2000"
+              width="5200"
+              height="4500"
+            >
+              {/* Oversized white rect so the mask region always
+                  covers the full SVG viewport, even when the
+                  banner aspect-ratio is taller than the viewBox
+                  on mobile / tablet (xMidYMid meet would otherwise
+                  letterbox the inner 1200x500 rect). */}
+              <rect
+                x="-2000"
+                y="-2000"
+                width="5200"
+                height="4500"
+                fill="white"
+              />
               <text
                 x="600"
                 y="220"
@@ -54,8 +72,10 @@ export default function DelizaBanner({
             </mask>
           </defs>
           <rect
-            width="1200"
-            height="500"
+            x="-2000"
+            y="-2000"
+            width="5200"
+            height="4500"
             fill="var(--deliza-banner-bg, #ffffff)"
             mask={`url(#${maskId})`}
           />
