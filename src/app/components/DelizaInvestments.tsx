@@ -49,16 +49,19 @@ function DelizaInvestments() {
     <div className="boost-your-business-today mt--70">
       <div className="container-2">
         <div className="col-lg-12">
-          <div className="business-boost-wrapper-main rts-section-gap">
+          <div
+            className="business-boost-wrapper-main rts-section-gap"
+            style={{ backgroundColor: "#fff" }}
+          >
             <div className="container">
               <div className="row">
                 <div className="col-lg-5">
                   <div className="business-marklting-area-thumb">
                     <Image
-                      src="/assets/images/business/01.webp"
+                      src="/assets/images/deliza/schloss.jpg"
                       alt="Deliza investments and consulting"
-                      width={1308}
-                      height={732}
+                      width={1920}
+                      height={1080}
                     />
                   </div>
                 </div>

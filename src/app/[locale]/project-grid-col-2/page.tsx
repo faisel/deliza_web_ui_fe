@@ -1,6 +1,6 @@
 import React from 'react'
 import HeaderOne from '../../home-1/HeaderOne'
-import PartnerBreadcrumbTwo from '../project-grid/PartnerBreadcrumbTwo'
+import PartnerBreadcrumbTwo from '../produkte-leistungen/PartnerBreadcrumbTwo'
 import ProjectTwo from '../home-3/ProjectTwo'
 import BrandInner from '../service/BrandInner'
 import CtaInner from '../about/CtaInner'

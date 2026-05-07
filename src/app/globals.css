@@ -40,3 +40,11 @@
 .rts-copy-right-1 li {
   color: #000 !important;
 }
+
+.rts-footer-area.footer-two a.deliza-footer-cta {
+  color: #fff !important;
+}
+
+.rts-footer-area.footer-two a.deliza-footer-cta:hover {
+  color: #000 !important;
+}

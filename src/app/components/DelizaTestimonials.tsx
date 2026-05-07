@@ -11,9 +11,10 @@ import { useTranslation } from "@/i18n/useTranslation";
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
 const testimonialImages = [
-  "/assets/images/testimonials/03.webp",
-  "/assets/images/testimonials/04.webp",
-  "/assets/images/testimonials/03.webp",
+  "/assets/images/deliza/testimonials/1.jpg",
+  "/assets/images/deliza/testimonials/2.jpg",
+  "/assets/images/deliza/testimonials/3.jpg",
+  "/assets/images/deliza/testimonials/4.jpg",
 ];
 
 function DelizaTestimonials() {

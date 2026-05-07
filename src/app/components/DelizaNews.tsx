@@ -11,12 +11,18 @@ import Link from "@/i18n/LocalizedLink";
 import { useTranslation } from "@/i18n/useTranslation";
 import { navSlugs } from "@/i18n/routing";
 import news from "@/app/data/news";
+import styles from "./DelizaNews.module.css";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
 interface DelizaNewsProps {
   id?: string;
   limit?: number;
+}
+
+function truncate(value: string, max: number) {
+  if (value.length <= max) return value;
+  return `${value.slice(0, max).trimEnd()}...`;
 }
 
 function DelizaNews({ id, limit = 3 }: DelizaNewsProps) {
@@ -111,7 +117,7 @@ function DelizaNews({ id, limit = 3 }: DelizaNewsProps) {
                 data-aos="fade-up"
                 data-aos-delay={index * 200}
               >
-                <div className="rts-blog-h-2-wrapper">
+                <div className={`rts-blog-h-2-wrapper ${styles.wrapper}`}>
                   {renderLink(
                     item,
                     <Image
@@ -120,18 +126,21 @@ function DelizaNews({ id, limit = 3 }: DelizaNewsProps) {
                       width={678}
                       height={474}
                     />,
-                    "thumbnail"
+                    `thumbnail ${styles.thumbnail}`
                   )}
-                  <div className="body">
-                    {renderLink(item, <h4 className="title">{tr.title}</h4>)}
-                    <p className="disc">{tr.teaser}</p>
+                  <div className={`body ${styles.body}`}>
+                    {renderLink(
+                      item,
+                      <h4 className="title">{truncate(tr.title, 52)}</h4>
+                    )}
+                    <p className="disc">{truncate(tr.teaser, 120)}</p>
                     {renderLink(
                       item,
                       <>
                         <i className="fa fa-arrow-right" />
                         {readMore}
                       </>,
-                      "rts-read-more btn-primary"
+                      `rts-read-more btn-primary ${styles.readMore}`
                     )}
                   </div>
                 </div>

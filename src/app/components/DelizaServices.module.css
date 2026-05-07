@@ -1,0 +1,129 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  min-height: 320px;
+  padding: clamp(1.5rem, 2.5vw, 2.5rem);
+  border-radius: 14px;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.5s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 35%,
+      rgba(0, 0, 0, 0.65) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.25) 50%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+  transition: opacity 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+}
+
+.titleRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.title {
+  flex: 1 1 auto;
+  margin: 0;
+  color: #ffffff;
+  font-family: var(--font-poppins), var(--font-manrope), system-ui,
+    -apple-system, "Segoe UI", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.2vw, 2.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(48px, 4vw, 60px);
+  height: clamp(48px, 4vw, 60px);
+  border-radius: 8px;
+  background: #ffffff;
+  color: #111;
+  border: 1px solid transparent;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease,
+    transform 0.3s ease;
+  text-decoration: none;
+}
+
+.icon i {
+  font-size: clamp(0.95rem, 1vw, 1.1rem);
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover,
+.icon:focus-visible {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+  outline: none;
+}
+
+.icon:hover i,
+.icon:focus-visible i {
+  transform: translateX(2px);
+}
+
+@media (max-width: 991px) {
+  .card {
+    aspect-ratio: 3 / 4;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    aspect-ratio: 16 / 11;
+    min-height: 260px;
+  }
+
+  .title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    aspect-ratio: 4 / 3;
+  }
+}

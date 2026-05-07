@@ -5,6 +5,13 @@ import "aos/dist/aos.css";
 import Link from "@/i18n/LocalizedLink";
 import { useTranslation } from "@/i18n/useTranslation";
 import { navHref } from "@/i18n/routing";
+import styles from "./DelizaServices.module.css";
+
+const cardImages = [
+  "/assets/images/news/Chutnee_restaurant_1.jpg",
+  "/assets/images/news/Indisches_Buffet_6-761x507x0x19x761x469x1720170783.jpg",
+  "/assets/images/news/events_7310.jpg",
+];
 
 function DelizaServices() {
   const { messages, locale } = useTranslation();
@@ -26,7 +33,7 @@ function DelizaServices() {
             </div>
           </div>
         </div>
-        <div className="row g-5 mt--10">
+        <div className="row g-4 g-lg-5 mt--10">
           {t.items.map((item, index) => (
             <div
               key={item.title}
@@ -34,23 +41,23 @@ function DelizaServices() {
               data-aos="fade-up"
               data-aos-delay={index * 200}
             >
-              <div
-                className={`single-service-nine bg_image deliza-service-card${
-                  index % 4 === 1
-                    ? " two"
-                    : index % 4 === 2
-                    ? " three"
-                    : index % 4 === 3
-                    ? " four"
-                    : ""
-                }`}
+              <article
+                className={styles.card}
+                style={{
+                  backgroundImage: `url(${cardImages[index % cardImages.length]})`,
+                }}
               >
-                <h3 className="title">{item.title}</h3>
-                <p className="disc">{item.description}</p>
-                <Link href={productsHref} className="icon">
-                  <i className="fa-solid fa-arrow-right" />
-                </Link>
-              </div>
+                <div className={styles.titleRow}>
+                  <h3 className={styles.title}>{item.title}</h3>
+                  <Link
+                    href={productsHref}
+                    className={styles.icon}
+                    aria-label={item.title}
+                  >
+                    <i className="fa-solid fa-arrow-right" />
+                  </Link>
+                </div>
+              </article>
             </div>
           ))}
         </div>

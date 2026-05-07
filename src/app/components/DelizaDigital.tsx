@@ -6,7 +6,9 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Link from "@/i18n/LocalizedLink";
 import { useTranslation } from "@/i18n/useTranslation";
-import { navHref } from "@/i18n/routing";
+import styles from "./DelizaDigital.module.css";
+
+const DIGITAL_7310_HREF = "https://www.7310.ch/";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,9 +17,8 @@ interface DelizaDigitalProps {
 }
 
 function DelizaDigital({ id }: DelizaDigitalProps) {
-  const { messages, locale } = useTranslation();
+  const { messages } = useTranslation();
   const t = messages.home.delizaDigital;
-  const contactHref = navHref("contact", locale);
   const splitRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
@@ -60,18 +61,20 @@ function DelizaDigital({ id }: DelizaDigitalProps) {
   return (
     <div id={id} className="rts-why-choose-us-section-8 rts-section-gap">
       <div className="container-fluid">
-        <div className="row align-items-center">
-          <div className="col-lg-6">
-            <div className="why-choose-us-thumbnail">
+        <div className={styles.layout}>
+          <div className={`${styles.mediaCol} why-choose-us-thumbnail`}>
+            <div className={styles.imageWrap}>
               <Image
-                src="/assets/images/why-choose/10.webp"
-                alt="Deliza Digital Innovation"
-                width={1349}
-                height={1059}
+                src="/assets/images/deliza/badragaz.jpg"
+                alt="Bad Ragaz"
+                width={1920}
+                height={1080}
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className={styles.image}
               />
             </div>
           </div>
-          <div className="col-lg-6 pl--50 pl_sm--10 mt_md--50 mt_sm--50 pb_md--50 pb_sm--40">
+          <div className={`pl--50 pl_sm--10 mt_md--50 mt_sm--50 pb_md--50 pb_sm--40 ${styles.contentCol}`}>
             <div className="why-choose-8-wrapper-content">
               <div className="title-style-five mb--40">
                 <span className="pre">{t.pre}</span>
@@ -96,7 +99,12 @@ function DelizaDigital({ id }: DelizaDigitalProps) {
                   </div>
                 </div>
               ))}
-              <Link href={contactHref} className="rts-btn btn-primary mt--50">
+              <Link
+                href={DIGITAL_7310_HREF}
+                className="rts-btn btn-primary mt--50"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {t.cta}
               </Link>
             </div>

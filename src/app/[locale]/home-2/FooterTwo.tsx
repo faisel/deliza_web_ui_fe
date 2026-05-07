@@ -19,7 +19,7 @@ function FooterTwo({ id }: FooterTwoProps) {
                                 Felis consequat magnis est fames sagittis ultrices placerat sodales
                                 porttitor quisque.
                             </p>
-                            <a className="rts-btn btn-primary" href="#">
+                            <a className="rts-btn btn-primary deliza-footer-cta" href="#">
                                 Get a Quote
                             </a>
                         </div>

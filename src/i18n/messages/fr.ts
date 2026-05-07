@@ -534,6 +534,12 @@ const fr: Messages = {
         message: "Votre message",
       },
     },
+    aboutIntro: {
+      pre: "Hospitalité & Innovation",
+      title: ["L'hospitalité, la gastronomie", "et l'esprit de Bad Ragaz"],
+      description:
+        "Deliza GmbH est la maison-mère de Giessenpark, 7310 et Chutnee im Schloss — trois noms, une même histoire d'hospitalité suisse enracinée à Bad Ragaz. Depuis 2010, lorsque Judith et Mathew Zacharias ont entamé leur aventure avec Giessenpark, jusqu'à ce nouveau chapitre à l'Hôtel Schloss Ragaz, nous façonnons des lieux où gastronomie, savoir-faire régional et innovation numérique se rejoignent. Fine dining, traiteur sur mesure, petites séries de produits, conseil en hôtellerie et une plateforme pour la région — autant d'expressions d'une même idée : des moments façonnés avec soin, qui restent.",
+    },
     delizaServices: {
       pre: "Produits & Services",
       title: "Gastronomie et produits 7310",
@@ -572,7 +578,7 @@ const fr: Messages = {
             "Connectez-vous avec les créateurs de la région et donnez vie à de nouveaux produits sous la marque 7310.",
         },
       ],
-      cta: "Rester informé",
+      cta: "Visiter 7310.ch",
     },
     delizaInvestments: {
       pre: "Investissements & Conseil",
@@ -601,19 +607,24 @@ const fr: Messages = {
       title: "Ce que disent nos partenaires",
       items: [
         {
-          text: "Travailler avec Giessenpark sur notre événement a été un vrai plaisir. Leur équipe maîtrise l'hospitalité comme rarement – chaque détail a été soigné.",
-          name: "Lara Steiner",
-          designation: "Event Manager, Heidiland Tourism",
+          text: "La collaboration avec Deliza a été professionnelle et agréable dès le départ. Nous avons particulièrement apprécié l'alliance entre gastronomie créative, organisation impeccable et véritable hospitalité.",
+          name: "Lukas Meier",
+          designation: "Directeur général, Alpine Event Solutions",
         },
         {
-          text: "L'expérience au Chutnee im Schloss a été exceptionnelle. La cuisine, le cadre, le service – tout s'est conjugué pour créer un moment vraiment mémorable.",
-          name: "Marco Bianchi",
-          designation: "Fondateur, Bianchi & Co.",
+          text: "La collaboration avec Giessenpark pour notre événement s'est déroulée sans accroc. L'équipe maîtrise l'hospitalité à un niveau que l'on rencontre rarement. Chaque détail a été soigné avec une grande attention.",
+          name: "Sabrina Keller",
+          designation: "Responsable événements, Heidiland Tourism",
         },
         {
-          text: "Le conseil de Deliza nous a permis de repositionner notre restaurant en une seule saison. Avis francs, accompagnement concret, résultats au rendez-vous.",
-          name: "Andrea Vogel",
-          designation: "Propriétaire, Restaurant Vogelsang",
+          text: "Chutnee im Schloss a largement dépassé nos attentes. L'atmosphère, la qualité des mets et le service personnalisé créent une expérience qui reste longtemps gravée dans la mémoire des invités.",
+          name: "Daniel Frei",
+          designation: "Propriétaire, Frei Hospitality Consulting",
+        },
+        {
+          text: "La vision portée par 7310 allie identité régionale et innovation contemporaine. Il est inspirant de voir comment Deliza soutient les idées locales pour en faire naître des produits de qualité et de nouvelles opportunités.",
+          name: "Nadine Schmid",
+          designation: "Cheffe de projet, Développement régional Bad Ragaz",
         },
       ],
     },

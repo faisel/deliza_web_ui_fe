@@ -53,7 +53,7 @@ export default async function HomePage({ params }: HomePageProps) {
         <DelizaServices />
         <DelizaDigital />
         <DelizaInvestments />
-        <DelizaCta />
+
         <DelizaNews />
         <DelizaTestimonials />
 

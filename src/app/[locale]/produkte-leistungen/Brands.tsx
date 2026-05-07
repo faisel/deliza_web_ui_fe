@@ -91,7 +91,6 @@ function Brands({ className = "rts-section-gapBottom" }: BrandsProps) {
               </div>
             </div>
           </div>
-
           <div className="row g-5">
             {COUNT_ITEMS.map((item, index) => (
               <div

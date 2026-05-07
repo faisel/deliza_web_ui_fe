@@ -184,6 +184,11 @@ export interface Messages {
       title: string;
       posts: BlogPost[];
     };
+    aboutIntro: {
+      pre: string;
+      title: [string, string];
+      description: string;
+    };
     delizaServices: {
       pre: string;
       title: string;
