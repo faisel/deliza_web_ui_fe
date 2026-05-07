@@ -23,17 +23,17 @@ function DelizaServices() {
   }, []);
 
   return (
-    <div className="rts-service-area rts-section-gap">
+    <div className="rts-service-area home-section">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className="title-style-five center">
+            <div className="title-style-five center mb--30">
               <span className="pre">{t.pre}</span>
               <h2 className="title">{t.title}</h2>
             </div>
           </div>
         </div>
-        <div className="row g-4 g-lg-5 mt--10">
+        <div className="row g-4 g-lg-5 home-content-gap">
           {t.items.map((item, index) => (
             <div
               key={item.title}

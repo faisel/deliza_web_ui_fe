@@ -55,7 +55,7 @@ function DelizaTestimonials() {
   }, []);
 
   return (
-    <div className="rts-testimonials-area-five rts-section-gapTop">
+    <div className="rts-testimonials-area-five home-section">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
@@ -78,7 +78,7 @@ function DelizaTestimonials() {
             </div>
           </div>
         </div>
-        <div className="row g-5 mt--10">
+        <div className="row g-5 home-content-gap">
           <div className="col-lg-12">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}

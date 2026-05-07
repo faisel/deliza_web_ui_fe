@@ -59,7 +59,7 @@ function DelizaDigital({ id }: DelizaDigitalProps) {
   }, []);
 
   return (
-    <div id={id} className="rts-why-choose-us-section-8 rts-section-gap">
+    <div id={id} className="rts-why-choose-us-section-8 home-section">
       <div className="container-fluid">
         <div className={styles.layout}>
           <div className={`${styles.mediaCol} why-choose-us-thumbnail`}>
@@ -76,13 +76,13 @@ function DelizaDigital({ id }: DelizaDigitalProps) {
           </div>
           <div className={`pl--50 pl_sm--10 mt_md--50 mt_sm--50 pb_md--50 pb_sm--40 ${styles.contentCol}`}>
             <div className="why-choose-8-wrapper-content">
-              <div className="title-style-five mb--40">
+              <div className="title-style-five">
                 <span className="pre">{t.pre}</span>
                 <h2 className="title rts-text-anime-style-1" ref={splitRef}>
                   {t.title}
                 </h2>
               </div>
-              <p className="disc mb--30">{t.description}</p>
+              <p className="disc">{t.description}</p>
               {t.features.map((feature, index) => (
                 <div key={feature.title} className="single-feature-service-wrapper-8">
                   <div className="icon">

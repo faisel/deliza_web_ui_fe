@@ -82,7 +82,7 @@ function Brands({ className = "rts-section-gapBottom" }: BrandsProps) {
   return (
     <>
       {/* rts fun facts area start */}
-      <div className={`rts-fun-facts-area ${className} mt--30`}>
+      <div className={`rts-fun-facts-area ${className}`}>
         <div className="container">
           <div className="row">
             <div className="col-12">

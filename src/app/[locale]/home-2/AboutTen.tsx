@@ -15,7 +15,7 @@ function AboutTen({ id }: AboutTenProps) {
   return (
     <div
       id={id}
-      className="rts-about-area-start rts-section-gapBottom rts-section-gap"
+      className="rts-about-area-start home-section"
     >
       <div className="container">
         <div className="row align-items-center">

@@ -94,8 +94,8 @@ function DelizaNews({ id, limit = 3 }: DelizaNewsProps) {
   };
 
   return (
-    <div id={id} className="rts-blog-area rts-section-gapTop">
-      <div className="container pt--40">
+    <div id={id} className="rts-blog-area home-section">
+      <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <div className="title-style-three center">
@@ -107,7 +107,7 @@ function DelizaNews({ id, limit = 3 }: DelizaNewsProps) {
           </div>
         </div>
 
-        <div className="row g-5 mt--20">
+        <div className="row g-5 home-content-gap">
           {sortedNews.map((item, index) => {
             const tr = item.translations[locale];
             return (

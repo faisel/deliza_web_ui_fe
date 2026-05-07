@@ -46,11 +46,11 @@ function DelizaInvestments() {
   }, []);
 
   return (
-    <div className="boost-your-business-today mt--70">
+    <div className="boost-your-business-today home-section">
       <div className="container-2">
         <div className="col-lg-12">
           <div
-            className="business-boost-wrapper-main rts-section-gap"
+            className="business-boost-wrapper-main"
             style={{ backgroundColor: "#fff" }}
           >
             <div className="container">
@@ -77,7 +77,7 @@ function DelizaInvestments() {
                       </h2>
                     </div>
                     <p className="disc">{t.description}</p>
-                    <div className="feature-one-wrapper mt--40 pl_sm--0">
+                    <div className="feature-one-wrapper pl_sm--0">
                       {t.checks.map((check, index) => (
                         <div
                           key={check}

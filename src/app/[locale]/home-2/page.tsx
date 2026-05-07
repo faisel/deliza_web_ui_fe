@@ -36,7 +36,7 @@ export default async function HomePage({ params }: HomePageProps) {
     <>
       <PageSchema nav="home" locale={locale} />
       {/* Body class assign */}
-      <BodyClass className="overflow-x-visible" />
+      <BodyClass className="overflow-x-visible home-page" />
 
       {/* Page content */}
       <>
@@ -46,9 +46,8 @@ export default async function HomePage({ params }: HomePageProps) {
         <DelizaBanner />
 
         <AboutTen />
-        {/* <PageIntro nav="home" /> */}
 
-        <Brands />
+        <Brands className="home-section" />
 
         <DelizaServices />
         <DelizaDigital />
@@ -57,8 +56,8 @@ export default async function HomePage({ params }: HomePageProps) {
         <DelizaNews />
         <DelizaTestimonials />
 
-        <PageFaq nav="home" />
-        <CtaTwo className='rts-section-gapBottom' />
+        <PageFaq nav="home" className="home-section" />
+        <CtaTwo className="home-section home-section-last" />
         <Footer />
         <RTL />
         <BackToTop />
