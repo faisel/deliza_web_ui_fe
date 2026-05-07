@@ -14288,13 +14288,6 @@ section.main-wrapper-sticky .sticky-statement.narrow .left-side img {
   width: auto;
   object-fit: cover;
 }
-@media only screen and (max-width: 575px) {
-  .business-boost-wrapper-main .business-marklting-area-thumb img {
-    clip-path: none;
-    margin-bottom: 30px;
-    height: auto;
-  }
-}
 @media (max-width: 991px) {
   .business-boost-wrapper-main .business-marklting-area-thumb img {
     margin-bottom: 40px;

@@ -200,6 +200,20 @@
   }
 }
 
+/* DelizaNews thumbnails: the template's .rts-blog-h-2-wrapper .thumbnail
+   rule sets max-width: max-content, which resolves differently per image
+   depending on the source file's intrinsic size and produces uneven
+   widths on mobile. Force the thumbnail (and its image) to fill the
+   column on every breakpoint. */
+.home-page .rts-blog-h-2-wrapper .thumbnail {
+  max-width: 100%;
+  width: 100%;
+}
+
+.home-page .rts-blog-h-2-wrapper .thumbnail img {
+  width: 100%;
+}
+
 /* DelizaInvestments image: keep the polygon clip-path overlay on
    all viewports. Template default removes it below 575px. */
 @media (max-width: 575px) {

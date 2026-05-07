@@ -8,8 +8,8 @@ import { navHref } from "@/i18n/routing";
 import styles from "./DelizaServices.module.css";
 
 const cardImages = [
-  "/assets/images/news/Chutnee_restaurant_1.jpg",
-  "/assets/images/news/Indisches_Buffet_6-761x507x0x19x761x469x1720170783.jpg",
+  "/assets/images/deliza/news/Chutnee_restaurant_4.jpg",
+  "/assets/images/deliza/news/Chutnee_restaurant_5.jpg",
   "/assets/images/news/events_7310.jpg",
 ];
 
