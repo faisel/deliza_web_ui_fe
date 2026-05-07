@@ -2,7 +2,7 @@ import React from 'react'
 import HeaderOne from '../../home-1/HeaderOne'
 import RTL from '../../home-1/RTL'
 import BackToTop from '../../home-1/BackToTop'
-import BreadcrumbTwo from './BreadcrumbTwo'
+import PartnerBreadcrumbTwo from './PartnerBreadcrumbTwo'
 import LargeImage from './LargeImage'
 import Brands from '../../components/Brands'
 import CtaInner from './CtaInner'
@@ -27,7 +27,7 @@ async function page({ params }: PageProps) {
         <>
             <PageSchema nav="about" locale={locale} />
             <HeaderOne logoSrc="/assets/images/logo/01.svg" />
-            <BreadcrumbTwo nav="about" />
+            <PartnerBreadcrumbTwo nav="about" />
             <LargeImage />
             <PageIntro nav="about" />
             <Brands />

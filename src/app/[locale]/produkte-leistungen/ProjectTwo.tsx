@@ -79,7 +79,7 @@ function ProjectTwo({ className = "", id = "" }: ProjectTwoProps) {
 
     const cards = SERVICE_ORDER.map((serviceId) => {
         const content = getServiceContent(serviceId, locale);
-        const image = SERVICE_IMAGES[serviceId].gallery[0];
+        const image = SERVICE_IMAGES[serviceId].card;
         return {
             serviceId,
             href: getServicePath(serviceId, locale),

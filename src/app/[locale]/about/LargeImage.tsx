@@ -9,7 +9,7 @@ function LargeImage() {
                     <div className="col-lg-12">
                         <div className="large-image-bottm-breadcrumb">
                             <Image
-                                src="/assets/images/about/16.webp"
+                                src="/assets/images/deliza/about_6.jpg"
                                 alt="about"
                                 width={1290}
                                 height={628}

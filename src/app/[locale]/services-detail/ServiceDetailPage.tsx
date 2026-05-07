@@ -9,7 +9,7 @@ import {
   SERVICE_IMAGES,
   type ServiceId,
 } from "./content";
-import ServiceDetailHero from "./ServiceDetailHero";
+import PartnerBreadcrumbTwo from "./PartnerBreadcrumbTwo";
 import ServiceDetailMain from "./ServiceDetailMain";
 
 interface Props {
@@ -25,7 +25,7 @@ function ServiceDetailPage({ serviceId, rawLocale }: Props) {
   return (
     <>
       <HeaderOne logoSrc="/assets/images/logo/01.svg" />
-      <ServiceDetailHero content={content} />
+      <PartnerBreadcrumbTwo title={content.heroTitle} image={images.banner} />
       <ServiceDetailMain
         serviceId={serviceId}
         content={content}

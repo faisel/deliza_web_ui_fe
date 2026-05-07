@@ -5,7 +5,7 @@ import Footer from "@/app/components/Footer";
 import RTL from "@/app/home-1/RTL";
 import BackToTop from "@/app/home-1/BackToTop";
 import NewsListInner from "./NewsListInner";
-import NewsBreadcrumb from "./NewsBreadcrumb";
+import PartnerBreadcrumbTwo from "./PartnerBreadcrumbTwo";
 import PageIntro from "@/app/components/PageIntro";
 import PageFaq from "@/app/components/PageFaq";
 import PageSchema from "@/app/components/PageSchema";
@@ -26,7 +26,7 @@ export default async function NewsEventsPage({ params }: PageProps) {
     <>
       <PageSchema nav="news" locale={locale} />
       <HeaderOne logoSrc="/assets/images/logo/01.svg" />
-      <NewsBreadcrumb />
+      <PartnerBreadcrumbTwo nav="news" />
       <PageIntro nav="news" />
       <NewsListInner />
       <PageFaq nav="news" />

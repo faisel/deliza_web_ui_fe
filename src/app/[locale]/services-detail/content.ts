@@ -62,6 +62,10 @@ export interface ServiceImageSet {
     { src: string; alt: string; width: number; height: number },
     { src: string; alt: string; width: number; height: number }
   ];
+  /** Thumbnail used in the produkte-leistungen card grid. */
+  card: { src: string; alt: string; width: number; height: number };
+  /** Hero banner image for the service detail page. */
+  banner: string;
   /** Image displayed inside each FAQ accordion body. */
   faq: { src: string; alt: string; width: number; height: number };
 }
@@ -70,24 +74,31 @@ export const SERVICE_IMAGES: Record<ServiceId, ServiceImageSet> = {
   chutnee: {
     gallery: [
       {
-        src: "/assets/images/deliza/schloss.jpg",
+        src: "/assets/images/deliza/news/Chutnee_restaurant_12.jpg",
         alt: "Chutnee im Schloss – Schlossambiente",
         width: 1910,
         height: 1300,
       },
       {
-        src: "/assets/images/portfolio/30.webp",
+        src: "/assets/images/deliza/news/Chutnee_restaurant_13.jpg",
         alt: "Chutnee im Schloss – Speisen",
         width: 910,
         height: 640,
       },
       {
-        src: "/assets/images/portfolio/31.webp",
+        src: "/assets/images/deliza/news/Chutnee_restaurant_14.jpg",
         alt: "Chutnee im Schloss – Service",
         width: 910,
         height: 640,
       },
     ],
+    card: {
+      src: "/assets/images/deliza/news/Chutnee_restaurant_12.jpg",
+      alt: "Chutnee im Schloss",
+      width: 1910,
+      height: 1300,
+    },
+    banner: "/assets/images/deliza/banner/11.jpg",
     faq: {
       src: "/assets/images/faq/02.webp",
       alt: "Chutnee im Schloss – Eindrücke",
@@ -98,24 +109,31 @@ export const SERVICE_IMAGES: Record<ServiceId, ServiceImageSet> = {
   giessenpark: {
     gallery: [
       {
-        src: "/assets/images/deliza/3.jpg",
+        src: "/assets/images/deliza/news/Chutnee_restaurant_9.jpg",
         alt: "Giessenpark Catering – Eventimpression",
         width: 1910,
         height: 1300,
       },
       {
-        src: "/assets/images/portfolio/35.webp",
+        src: "/assets/images/deliza/news/Chutnee_restaurant_11.jpg",
         alt: "Giessenpark Catering – Hospitality",
         width: 910,
         height: 640,
       },
       {
-        src: "/assets/images/portfolio/36.webp",
+        src: "/assets/images/deliza/news/Chutnee_restaurant_10.jpg",
         alt: "Giessenpark Catering – Speisen",
         width: 910,
         height: 640,
       },
     ],
+    card: {
+      src: "/assets/images/deliza/news/Chutnee_restaurant_15.jpg",
+      alt: "Giessenpark Catering",
+      width: 1910,
+      height: 1300,
+    },
+    banner: "/assets/images/deliza/banner/12.jpg",
     faq: {
       src: "/assets/images/faq/02.webp",
       alt: "Giessenpark Catering – Eindrücke",
@@ -126,24 +144,31 @@ export const SERVICE_IMAGES: Record<ServiceId, ServiceImageSet> = {
   "7310": {
     gallery: [
       {
-        src: "/assets/images/deliza/badragaz.jpg",
+        src: "/assets/images/deliza/news/badragaz_13_v.jpg",
         alt: "7310 – Bad Ragaz",
         width: 1910,
         height: 1300,
       },
       {
-        src: "/assets/images/portfolio/32.webp",
+        src: "/assets/images/deliza/news/badragaz_5.jpg",
         alt: "7310 – Produkte",
         width: 910,
         height: 640,
       },
       {
-        src: "/assets/images/portfolio/34.webp",
+        src: "/assets/images/deliza/news/badragaz_8.jpg",
         alt: "7310 – Lifestyle",
         width: 910,
         height: 640,
       },
     ],
+    card: {
+      src: "/assets/images/deliza/news/badragaz_13_v.jpg",
+      alt: "7310",
+      width: 1910,
+      height: 1300,
+    },
+    banner: "/assets/images/deliza/banner/2.jpg",
     faq: {
       src: "/assets/images/faq/02.webp",
       alt: "7310 – Eindrücke",

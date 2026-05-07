@@ -1,5 +1,48 @@
-import { makeNavMetadata } from "@/lib/page-metadata";
+import BodyClass from '../home-2/BodyClassTwo'
+import HeaderOne from '@/app/home-1/HeaderOne'
+import PartnerBreadcrumbTwo from './PartnerBreadcrumbTwo'
+import GoogleMaps from '@/app/components/GoogleMaps'
+import Brands from '@/app/components/Brands'
+import CtaInner from '../about/CtaInner'
+import Footer from '@/app/components/Footer'
+import RTL from '@/app/home-1/RTL'
+import BackToTop from '@/app/home-1/BackToTop'
+import ContactMainTwo from '@/app/components/ContactMainTwo'
+import PageIntro from '@/app/components/PageIntro'
+import PageFaq from '@/app/components/PageFaq'
+import PageSchema from '@/app/components/PageSchema'
+import { isValidLocale } from '@/i18n/config'
+import { makeNavMetadata } from '@/lib/page-metadata'
 
-export const generateMetadata = makeNavMetadata("contact");
+export const generateMetadata = makeNavMetadata('contact')
 
-export { default } from "../contact-2/page";
+interface PageProps {
+    params: Promise<{ locale: string }>
+}
+
+export default async function ContactUsPage({ params }: PageProps) {
+    const { locale: rawLocale } = await params
+    const locale = isValidLocale(rawLocale) ? rawLocale : 'de'
+
+    return (
+        <>
+            <PageSchema nav="contact" locale={locale} />
+            {/* Body class assign */}
+            <BodyClass className="contact-page" />
+            {/* Page content */}
+            <>
+                <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+                <PartnerBreadcrumbTwo nav="contact" />
+                <PageIntro nav="contact" />
+                <ContactMainTwo />
+                <GoogleMaps />
+                <PageFaq nav="contact" />
+                <Brands className='rts-section-gap' />
+                <CtaInner />
+                <Footer />
+                <RTL />
+                <BackToTop />
+            </>
+        </>
+    )
+}
