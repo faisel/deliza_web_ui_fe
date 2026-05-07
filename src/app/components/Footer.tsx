@@ -120,7 +120,7 @@ function Footer({ id }: FooterProps) {
   const cta = ctaCopy[locale];
   return (
     <>
-      <div id={id} className="rts-footer-area pt--100 pb--100 pt_sm--50 pb_sm--40 footer-two footer-bg-two">
+      <div id={id} className="rts-footer-area mt--100 pt--100 pb--100 pt_sm--50 pb_sm--40 footer-two footer-bg-two">
         <div className="container">
           <div className="row">
             {/* Column 1: CTA */}

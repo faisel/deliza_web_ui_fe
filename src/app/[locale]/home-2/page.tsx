@@ -57,7 +57,7 @@ export default async function HomePage({ params }: HomePageProps) {
         <DelizaTestimonials />
 
         <PageFaq nav="home" className="home-section" />
-        <CtaTwo className="home-section home-section-last" />
+
         <Footer />
         <RTL />
         <BackToTop />
