@@ -479,34 +479,7 @@ function ProjectDetailsMain() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-12">
-                            <div className="next-prev-project-wrapper" dir="ltr">
-                                <div className="single-next-prev-wrapper">
-                                    <Image
-                                        src="/assets/images/portfolio/32.webp"
-                                        alt="left"
-                                        width={280}
-                                        height={280}
-                                    />
-                                    <div className="info">
-                                        <span>Building</span>
-                                        <p>Quality Construction Projects That Stand the Test of Time</p>
-                                    </div>
-                                </div>
-                                <div className="single-next-prev-wrapper last">
-                                    <div className="info">
-                                        <span>Building</span>
-                                        <p>Quality Construction Projects That Stand the Test of Time</p>
-                                    </div>
-                                    <Image
-                                        src="/assets/images/portfolio/32.webp"
-                                        alt="left"
-                                        width={280}
-                                        height={280}
-                                    />
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>

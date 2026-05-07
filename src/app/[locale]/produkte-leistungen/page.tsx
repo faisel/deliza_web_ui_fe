@@ -2,7 +2,7 @@ import { makeNavMetadata } from "@/lib/page-metadata";
 import HeaderOne from "@/app/[locale]/produkte-leistungen/HeaderOne";
 import Brands from "@/app/[locale]/produkte-leistungen/Brands";
 import CtaInner from "@/app/[locale]/produkte-leistungen/CtaInner";
-import Footer from "@/app/[locale]/produkte-leistungen/Footer";
+import Footer from "@/app/components/Footer";
 import RTL from "@/app/[locale]/produkte-leistungen/RTL";
 import BackToTop from "@/app/[locale]/produkte-leistungen/BackToTop";
 import ProjectTwo from "@/app/[locale]/produkte-leistungen/ProjectTwo";

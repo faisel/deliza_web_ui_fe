@@ -133,7 +133,7 @@ function Footer({ id }: FooterProps) {
                 <p className="disc">
                   {cta.description}
                 </p>
-                <a className="rts-btn btn-primary" href="#">
+                <a className="rts-btn btn-primary deliza-footer-cta" href="#">
                   {cta.button}
                 </a>
               </div>

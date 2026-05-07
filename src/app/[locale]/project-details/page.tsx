@@ -6,6 +6,8 @@ import BackToTop from '../../home-1/BackToTop'
 import PartnerBreadcrumbThree from './PartnerBreadcrumbThree'
 import ProjectDetailsMain from './ProjectDetailsMain'
 import ProjectOne from '../../home-1/ProjectOne'
+import Footer from '../../components/Footer'
+
 
 function page() {
     return (
@@ -13,8 +15,8 @@ function page() {
             <HeaderOne logoSrc="/assets/images/logo/01.svg" />
             <PartnerBreadcrumbThree />
             <ProjectDetailsMain />
-            <ProjectOne />
-            <FooterTen />
+
+            <Footer />
             <RTL />
             <BackToTop />
         </>

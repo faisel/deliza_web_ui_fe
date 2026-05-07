@@ -5,6 +5,14 @@ import { gsap } from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Link from "@/i18n/LocalizedLink";
+import { useTranslation } from "@/i18n/useTranslation";
+import type { Locale } from "@/i18n/config";
+import {
+    getServiceContent,
+    getServicePath,
+    SERVICE_IMAGES,
+    type ServiceId,
+} from "@/app/[locale]/services-detail/content";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -13,7 +21,18 @@ type ProjectTwoProps = {
     id?: string;
 };
 
+const SERVICE_ORDER: ServiceId[] = ["chutnee", "giessenpark", "7310"];
+
+const SECTION_LABELS: Record<Locale, { eyebrow: string; title: string }> = {
+    de: { eyebrow: "Marken & Konzepte", title: "Unsere Spezialgebiete" },
+    en: { eyebrow: "Brands & Concepts", title: "Our specialist areas" },
+    fr: { eyebrow: "Marques & Concepts", title: "Nos domaines de spécialité" },
+    it: { eyebrow: "Marchi & Concept", title: "Le nostre aree di specializzazione" },
+};
+
 function ProjectTwo({ className = "", id = "" }: ProjectTwoProps) {
+    const { locale } = useTranslation();
+    const labels = SECTION_LABELS[locale];
 
     const splitRef = useRef<HTMLHeadingElement>(null);
     // SplitText animation
@@ -57,6 +76,20 @@ function ProjectTwo({ className = "", id = "" }: ProjectTwoProps) {
 
         return () => ctx.revert();
     }, []);
+
+    const cards = SERVICE_ORDER.map((serviceId) => {
+        const content = getServiceContent(serviceId, locale);
+        const image = SERVICE_IMAGES[serviceId].gallery[0];
+        return {
+            serviceId,
+            href: getServicePath(serviceId, locale),
+            title: content.heroTitle,
+            // infoCards[2] is the "Category"/"Kategorie" entry across all locales.
+            category: content.infoCards[2].value,
+            image,
+        };
+    });
+
     return (
         <>
             {/* case studies area start */}
@@ -65,87 +98,38 @@ function ProjectTwo({ className = "", id = "" }: ProjectTwoProps) {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="title-style-three center">
-                                <span className="pre">Case Studies</span>
-                                <div className="bg-title">05</div>
+                                <span className="pre">{labels.eyebrow}</span>
+                                <div className="bg-title">03</div>
                                 <h2 className="title rts-text-anime-style-1" ref={splitRef}>
-                                    Specialist Business Cases
+                                    {labels.title}
                                 </h2>
                             </div>
                         </div>
                     </div>
                     <div className="row g-5 mt--10 rts_jump_animation-wrapper">
-                        <div className="col-lg-6 rts-jump__item">
-                            <div className="single-project-style-three">
-                                <Link href="/project-details" className="thumbnail">
-                                    <Image
-                                        src="/assets/images/project/03.webp"
-                                        alt="project"
-                                        width={1260}
-                                        height={806}
-                                    />
-                                </Link>
-                                <div className="inner-content">
-                                    <Link href="/project-details">
-                                        <h4 className="title">Business Growth</h4>
+                        {cards.map((card) => (
+                            <div
+                                key={card.serviceId}
+                                className="col-lg-4 col-md-6 rts-jump__item"
+                            >
+                                <div className="single-project-style-three">
+                                    <Link href={card.href} className="thumbnail">
+                                        <Image
+                                            src={card.image.src}
+                                            alt={card.image.alt}
+                                            width={card.image.width}
+                                            height={card.image.height}
+                                        />
                                     </Link>
-                                    <span>Business Strategy</span>
+                                    <div className="inner-content">
+                                        <Link href={card.href}>
+                                            <h4 className="title">{card.title}</h4>
+                                        </Link>
+                                        <span>{card.category}</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-6 rts-jump__item">
-                            <div className="single-project-style-three">
-                                <Link href="/project-details" className="thumbnail">
-                                    <Image
-                                        src="/assets/images/project/04.webp"
-                                        alt="project"
-                                        width={1260}
-                                        height={806}
-                                    />
-                                </Link>
-                                <div className="inner-content">
-                                    <Link href="/project-details">
-                                        <h4 className="title">Startup Solution</h4>
-                                    </Link>
-                                    <span>Business Strategy</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 rts-jump__item">
-                            <div className="single-project-style-three">
-                                <Link href="/project-details" className="thumbnail">
-                                    <Image
-                                        src="/assets/images/project/05.webp"
-                                        alt="project"
-                                        width={1262}
-                                        height={806}
-                                    />
-                                </Link>
-                                <div className="inner-content">
-                                    <Link href="/project-details">
-                                        <h4 className="title">Growth Manage</h4>
-                                    </Link>
-                                    <span>Business Strategy</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 rts-jump__item">
-                            <div className="single-project-style-three">
-                                <Link href="/project-details" className="thumbnail">
-                                    <Image
-                                        src="/assets/images/project/06.webp"
-                                        alt="project"
-                                        width={1266}
-                                        height={806}
-                                    />
-                                </Link>
-                                <div className="inner-content">
-                                    <Link href="/project-details">
-                                        <h4 className="title">Company Skills</h4>
-                                    </Link>
-                                    <span>Business Strategy</span>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
