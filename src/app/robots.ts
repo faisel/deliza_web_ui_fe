@@ -8,6 +8,7 @@ import { SITE_URL } from "@/lib/site";
  */
 const DISALLOWED_TEMPLATE_PATHS = [
   "/*/home/",
+  "/*/marken/pages/",
   "/*/home-1/",
   "/*/home-2/",
   "/*/home-3/",

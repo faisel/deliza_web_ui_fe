@@ -1,36 +1,29 @@
-import DelizaHeader from "@/app/components/DelizaHeader";
-import PartnerBreadcrumbTwo from './PartnerBreadcrumbTwo'
-import Brands from './Brands'
-import CtaInner from './CtaInner'
-import Footer from '../../components/Footer'
-import BackToTop from './BackToTop'
-import CaseStudies from './CaseStudies'
-import PageIntro from './PageIntro'
-import PageFaq from './PageFaq'
-import PageSchema from './PageSchema'
-import { isValidLocale } from '@/i18n/config'
-import { makeNavMetadata } from '@/lib/page-metadata'
+import { notFound } from "next/navigation";
+import { isValidLocale } from "@/i18n/config";
+import { makeNavMetadata } from "@/lib/page-metadata";
+import BrandsDePage from "./pages/marken/page";
+import BrandsEnPage from "./pages/brands/page";
+import BrandsFrPage from "./pages/marques/page";
+import BrandsItPage from "./pages/marchi/page";
 
-export const generateMetadata = makeNavMetadata('brands')
+export const generateMetadata = makeNavMetadata("brands");
 
-interface PageProps {
-    params: Promise<{ locale: string }>
+interface BrandsRouteProps {
+  params: Promise<{ locale: string }>;
 }
 
-export default async function BrandsPage({ params }: PageProps) {
-    const { locale: rawLocale } = await params
-    const locale = isValidLocale(rawLocale) ? rawLocale : 'de'
+export default async function BrandsRoute({ params }: BrandsRouteProps) {
+  const { locale } = await params;
+  if (!isValidLocale(locale)) notFound();
 
-    return (
-        <>
-            <PageSchema nav="brands" locale={locale} />
-            <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
-            <PartnerBreadcrumbTwo nav="brands" />
-            <PageIntro nav="brands" />
-            <Brands className='rts-section-gapBottom' />
-            <PageFaq nav="brands" />
-            <Footer />
-            <BackToTop />
-        </>
-    )
+  switch (locale) {
+    case "de":
+      return <BrandsDePage />;
+    case "en":
+      return <BrandsEnPage />;
+    case "fr":
+      return <BrandsFrPage />;
+    case "it":
+      return <BrandsItPage />;
+  }
 }
