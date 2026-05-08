@@ -1,14 +1,14 @@
 import DelizaHeader from "@/app/components/DelizaHeader";
-import Brands from "@/app/components/Brands";
-import CtaInner from "@/app/[locale]/about/CtaInner";
-import Footer from "@/app/components/Footer";
-import RTL from "@/app/home-1/RTL";
-import BackToTop from "@/app/home-1/BackToTop";
+import Brands from "./Brands";
+import CtaInner from "./CtaInner";
+import Footer from "../../components/Footer";
+import RTL from "./RTL";
+import BackToTop from "./BackToTop";
 import NewsListInner from "./NewsListInner";
 import PartnerBreadcrumbTwo from "./PartnerBreadcrumbTwo";
-import PageIntro from "@/app/components/PageIntro";
-import PageFaq from "@/app/components/PageFaq";
-import PageSchema from "@/app/components/PageSchema";
+import PageIntro from "./PageIntro";
+import PageFaq from "./PageFaq";
+import PageSchema from "./PageSchema";
 import { isValidLocale } from "@/i18n/config";
 import { makeNavMetadata } from "@/lib/page-metadata";
 

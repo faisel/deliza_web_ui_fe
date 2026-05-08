@@ -1,10 +1,10 @@
 import DelizaHeader from "@/app/components/DelizaHeader";
 import PartnerBreadcrumbTwo from "./PartnerBreadcrumbTwo";
-import Brands from "@/app/components/Brands";
-import CtaInner from "@/app/[locale]/about/CtaInner";
-import Footer from "@/app/components/Footer";
-import RTL from "@/app/home-1/RTL";
-import BackToTop from "@/app/home-1/BackToTop";
+import Brands from "./Brands";
+import CtaInner from "./CtaInner";
+import Footer from "../../components/Footer";
+import RTL from "./RTL";
+import BackToTop from "./BackToTop";
 import LegalNoticeInner from "./LegalNoticeInner";
 import { isValidLocale, type Locale } from "@/i18n/config";
 

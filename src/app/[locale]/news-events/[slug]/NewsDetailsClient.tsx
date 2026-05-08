@@ -2,11 +2,11 @@
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import DelizaHeader from "@/app/components/DelizaHeader";
-import BrandInner from "@/app/[locale]/service/BrandInner";
-import CtaInner from "@/app/[locale]/about/CtaInner";
-import Footer from "@/app/components/Footer";
-import RTL from "@/app/home-1/RTL";
-import BackToTop from "@/app/home-1/BackToTop";
+import BrandInner from "./BrandInner";
+import CtaInner from "./CtaInner";
+import Footer from "../../../components/Footer";
+import RTL from "./RTL";
+import BackToTop from "./BackToTop";
 import news from "@/app/data/news";
 import { useTranslation } from "@/i18n/useTranslation";
 import type { Locale } from "@/i18n/config";

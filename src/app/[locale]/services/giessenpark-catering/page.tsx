@@ -1,5 +1,5 @@
-import ServiceDetailPage from "@/app/[locale]/services-detail/ServiceDetailPage";
-import { makeServiceMetadata } from "@/app/[locale]/services-detail/metadata";
+import ServiceDetailPage from "./ServiceDetailPage";
+import { makeServiceMetadata } from "./metadata";
 
 export const generateMetadata = makeServiceMetadata("giessenpark");
 

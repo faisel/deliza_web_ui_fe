@@ -1,15 +1,14 @@
 import { makeNavMetadata } from "@/lib/page-metadata";
 import DelizaHeader from "@/app/components/DelizaHeader";
-import Brands from "@/app/[locale]/produkte-leistungen/Brands";
-import CtaInner from "@/app/[locale]/produkte-leistungen/CtaInner";
-import Footer from "@/app/components/Footer";
-import RTL from "@/app/[locale]/produkte-leistungen/RTL";
-import BackToTop from "@/app/[locale]/produkte-leistungen/BackToTop";
-import ProjectTwo from "@/app/[locale]/produkte-leistungen/ProjectTwo";
-import PartnerBreadcrumbTwo from "@/app/[locale]/produkte-leistungen/PartnerBreadcrumbTwo";
-import PageIntro from "@/app/[locale]/produkte-leistungen/PageIntro";
-import PageFaq from "@/app/[locale]/produkte-leistungen/PageFaq";
-import PageSchema from "@/app/[locale]/produkte-leistungen/PageSchema";
+import Brands from "./Brands";
+import Footer from "../../components/Footer";
+import RTL from "./RTL";
+import BackToTop from "./BackToTop";
+import ProjectTwo from "./ProjectTwo";
+import PartnerBreadcrumbTwo from "./PartnerBreadcrumbTwo";
+import PageIntro from "./PageIntro";
+import PageFaq from "./PageFaq";
+import PageSchema from "./PageSchema";
 import { isValidLocale } from "@/i18n/config";
 
 export const generateMetadata = makeNavMetadata("products");
