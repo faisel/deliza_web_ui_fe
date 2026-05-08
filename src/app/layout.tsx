@@ -13,6 +13,7 @@ import "swiper/css/autoplay";
 import Script from "next/script";
 import { defaultLocale } from "@/i18n/config";
 import { I18nProvider } from "@/i18n/I18nProvider";
+import { asset } from "@/lib/asset";
 
 const manrope = Manrope({
   subsets: ["latin", "latin-ext"],
@@ -50,26 +51,26 @@ export const metadata: Metadata = {
   description: "Deliza – Business Consulting",
   icons: {
     icon: [
-      { url: "/assets/favicon/favicon.ico", sizes: "any" },
+      { url: asset("/assets/favicon/favicon.ico"), sizes: "any" },
       {
-        url: "/assets/favicon/favicon.svg",
+        url: asset("/assets/favicon/favicon.svg"),
         type: "image/svg+xml",
       },
       {
-        url: "/assets/favicon/favicon-96x96.png",
+        url: asset("/assets/favicon/favicon-96x96.png"),
         type: "image/png",
         sizes: "96x96",
       },
     ],
     apple: [
       {
-        url: "/assets/favicon/apple-touch-icon.png",
+        url: asset("/assets/favicon/apple-touch-icon.png"),
         sizes: "180x180",
         type: "image/png",
       },
     ],
   },
-  manifest: "/assets/favicon/site.webmanifest",
+  manifest: asset("/assets/favicon/site.webmanifest"),
 };
 
 export default function RootLayout({
@@ -92,8 +93,8 @@ export default function RootLayout({
       </head>
       <body>
         <I18nProvider locale={defaultLocale}>{children}</I18nProvider>
-        <Script src="/assets/js/smooth-scroll.js" strategy="afterInteractive" />
-        <Script src="/assets/js/bootstrap.min.js" strategy="afterInteractive" />
+        <Script src={asset("/assets/js/smooth-scroll.js")} strategy="afterInteractive" />
+        <Script src={asset("/assets/js/bootstrap.min.js")} strategy="afterInteractive" />
       </body>
     </html>
   );

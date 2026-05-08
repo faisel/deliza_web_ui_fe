@@ -1,4 +1,5 @@
 import styles from "./DelizaBanner.module.css";
+import { asset } from "@/lib/asset";
 
 interface DelizaBannerProps {
   title?: string;
@@ -23,7 +24,7 @@ export default function DelizaBanner({
       >
         <video
           className={styles.video}
-          src={videoSrc}
+          src={asset(videoSrc)}
           autoPlay
           muted
           loop

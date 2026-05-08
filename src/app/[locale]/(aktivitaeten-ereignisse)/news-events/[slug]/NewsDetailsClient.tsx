@@ -2,10 +2,10 @@
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import DelizaHeader from "@/app/components/DelizaHeader";
-import BrandInner from "./BrandInner";
-import CtaInner from "./CtaInner";
+import Brands from "@/app/components/Brands";
 import Footer from "../../../../components/Footer";
 import BackToTop from "./BackToTop";
+import { asset } from "@/lib/asset";
 import { findNewsBySlug } from "@/app/data/news";
 import { useTranslation } from "@/i18n/useTranslation";
 import type { Locale } from "@/i18n/config";
@@ -59,7 +59,12 @@ export default function NewsDetailsClient() {
   return (
     <>
       <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
-      <div className="blog-details-banner-large-image" />
+      <div
+        className="blog-details-banner-large-image"
+        style={{
+          backgroundImage: `url("${asset("/assets/images/deliza/banner/1.jpg")}")`,
+        }}
+      />
       <div className="blog-details-area-main-wrapper pt--80">
         <div className="container-blog-details">
           <div className="row">
@@ -90,8 +95,8 @@ export default function NewsDetailsClient() {
           </div>
         </div>
       </div>
-      <BrandInner className="rts-section-gap" />
-      <CtaInner />
+      <Brands className="rts-section-gap" />
+
       <Footer />
       <BackToTop />
     </>

@@ -28,7 +28,7 @@ interface BrandsProps {
   className?: string;
 }
 
-function Brands({ className = "rts-section-gapBottom" }: BrandsProps) {
+function Brands({ className = "" }: BrandsProps) {
   const { messages } = useTranslation();
   const odometerRefs = useRef<OdometerElement[]>([]);
 

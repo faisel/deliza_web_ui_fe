@@ -101,25 +101,7 @@ export default function PageIntro({ nav, className = "" }: PageIntroProps) {
               </div>
             )}
 
-            {related.length > 0 && (
-              <nav
-                className="page-intro-related mt--30"
-                aria-label={relatedHeading[locale]}
-              >
-                <p className="pre mb--10">
-                  <strong>{relatedHeading[locale]}:</strong>
-                </p>
-                <ul className="related-link-list">
-                  {related.map((key) => (
-                    <li key={key}>
-                      <Link href={navHref(key, locale)}>
-                        {relatedLabels[locale][key]}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-            )}
+           
           </div>
         </div>
       </div>

@@ -21271,10 +21271,15 @@ body.with-sticky-item {
   display: block;
   margin-bottom: 10px;
 }
-.contact-info-area-wrapper-p .single-contact-info .info-wrapper a {
+.contact-info-area-wrapper-p .single-contact-info .info-wrapper a,
+.contact-info-area-wrapper-p .single-contact-info .info-wrapper address {
   color: #FFFFFF;
   font-size: 22px;
   font-weight: 500;
+}
+.contact-info-area-wrapper-p .single-contact-info .info-wrapper address {
+  font-style: normal;
+  margin: 0;
 }
 .contact-info-area-wrapper-p.new {
   margin-right: 0;

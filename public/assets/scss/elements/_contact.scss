@@ -48,10 +48,16 @@
                 margin-bottom: 10px;
             }
 
-            a {
+            a,
+            address {
                 color: #FFFFFF;
                 font-size: 22px;
                 font-weight: 500;
+            }
+
+            address {
+                font-style: normal;
+                margin: 0;
             }
         }
     }

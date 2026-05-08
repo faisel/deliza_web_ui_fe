@@ -18,7 +18,7 @@ interface PageFaqProps {
  * The same FAQ data is also emitted as FAQPage JSON-LD via PageSchema, so this
  * component is purely the user-visible companion.
  */
-export default function PageFaq({ nav, className = "rts-section-gapBottom", id }: PageFaqProps) {
+export default function PageFaq({ nav, className = "", id }: PageFaqProps) {
   const { messages } = useTranslation();
   const faq = messages.seo.pages[nav]?.faq;
   if (!faq || !faq.items?.length) return null;
@@ -26,7 +26,7 @@ export default function PageFaq({ nav, className = "rts-section-gapBottom", id }
   const accordionId = id ?? `faq-${nav}`;
 
   return (
-    <section className={`rts-faq-area ${className}`} aria-labelledby={`${accordionId}-heading`}>
+    <section className={`rts-faq-area mt--60 ${className}`} aria-labelledby={`${accordionId}-heading`}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-10">

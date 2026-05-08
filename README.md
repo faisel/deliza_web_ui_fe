@@ -25,3 +25,11 @@ pkill -f "astro"     # astro dev server
 pkill -f "vite"      # vite dev server
 
 rm -rf .next && pnpm dev
+
+
+
+
+# Build 
+
+HostPoint: pnpm build:demo
+AWS S3: pnpm build

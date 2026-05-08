@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 import Link from "@/i18n/LocalizedLink";
 import { useTranslation } from "@/i18n/useTranslation";
 import { navSlugs } from "@/i18n/routing";
-import news from "@/app/data/news";
+import news, { getNewsSlug } from "@/app/data/news";
 import styles from "./DelizaNews.module.css";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
@@ -87,7 +87,7 @@ function DelizaNews({ id, limit = 3 }: DelizaNewsProps) {
       );
     }
     return (
-      <Link href={`/${newsBaseSlug}/${item.slug}`} className={className}>
+      <Link href={`/${newsBaseSlug}/${getNewsSlug(item, locale)}`} className={className}>
         {children}
       </Link>
     );

@@ -1,13 +1,15 @@
 import Link from "@/i18n/LocalizedLink";
 import { defaultLocale } from "@/i18n/config";
+import { BASE_PATH } from "@/lib/asset";
 
 const target = `/${defaultLocale}/`;
+const absoluteTarget = `${BASE_PATH}${target}`;
 
 export const metadata = {
   title: "Deliza",
   description: "Deliza",
   robots: { index: false, follow: false },
-  alternates: { canonical: target },
+  alternates: { canonical: absoluteTarget },
 };
 
 /**
@@ -18,11 +20,11 @@ export const metadata = {
 export default function RootRedirectPage() {
   return (
     <>
-      <meta httpEquiv="refresh" content={`0; url=${target}`} />
-      <link rel="canonical" href={target} />
+      <meta httpEquiv="refresh" content={`0; url=${absoluteTarget}`} />
+      <link rel="canonical" href={absoluteTarget} />
       <script
         dangerouslySetInnerHTML={{
-          __html: `window.location.replace(${JSON.stringify(target)});`,
+          __html: `window.location.replace(${JSON.stringify(absoluteTarget)});`,
         }}
       />
       <noscript>

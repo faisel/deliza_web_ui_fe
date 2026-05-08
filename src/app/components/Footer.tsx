@@ -1,5 +1,6 @@
 "use client";
 import React from 'react'
+import Link from "next/link";
 import { useTranslation } from "@/i18n/useTranslation";
 import { localizePath, navHref, type NavKey } from "@/i18n/routing";
 import type { Locale } from "@/i18n/config";
@@ -191,10 +192,10 @@ function Footer({ id }: FooterProps) {
                   <ul>
                     {brandNavItems.map((item) => (
                       <li key={item.key}>
-                        <a href={navHref(item.key, locale)}>
+                        <Link href={navHref(item.key, locale)}>
                           <i className="fa-solid fa-angles-right" />
                           {item.label[locale]}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -216,10 +217,10 @@ function Footer({ id }: FooterProps) {
                 <div className="right">
                   <ul>
                     <li>
-                      <a href={localizePath(legalNoticeSlug[locale], locale)}>{labels.legalNotice}</a>
+                      <Link href={localizePath(legalNoticeSlug[locale], locale)}>{labels.legalNotice}</Link>
                     </li>
                     <li>
-                      <a href={navHref("privacy", locale)}>{labels.privacyPolicy}</a>
+                      <Link href={navHref("privacy", locale)}>{labels.privacyPolicy}</Link>
                     </li>
                   </ul>
                 </div>

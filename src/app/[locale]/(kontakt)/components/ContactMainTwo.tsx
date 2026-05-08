@@ -120,7 +120,7 @@ function ContactMainTwo() {
                                     </div>
                                     <div className="info-wrapper">
                                         <span>{t.location}</span>
-                                        <address style={{ fontStyle: "normal", margin: 0 }}>
+                                        <address>
                                             {address}, {BRAND_CONTACT.countryName}
                                         </address>
                                     </div>

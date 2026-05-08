@@ -25,8 +25,9 @@ export default async function InvestmentConsultingPage({ params }: PageProps) {
       <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
       <PartnerBreadcrumbTwo nav="investment" />
       <PageIntro nav="investment" />
-      <PageFaq nav="investment" />
+  
       <Brands />
+      <PageFaq nav="investment" />
       <Footer />
       <BackToTop />
     </>

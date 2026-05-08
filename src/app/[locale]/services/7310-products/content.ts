@@ -36,22 +36,22 @@ export interface ServiceContent {
 /** Per-locale URL slug for each service detail route. Used for canonical/hreflang. */
 export const SERVICE_SLUGS: Record<ServiceId, Record<Locale, string>> = {
   chutnee: {
-    de: "leistungen/chutnee-im-schloss",
+    de: "services/chutnee-im-schloss",
     en: "services/chutnee-im-schloss",
     fr: "services/chutnee-im-schloss",
-    it: "servizi/chutnee-im-schloss",
+    it: "services/chutnee-im-schloss",
   },
   giessenpark: {
-    de: "leistungen/giessenpark-catering",
+    de: "services/giessenpark-catering",
     en: "services/giessenpark-catering",
     fr: "services/giessenpark-catering",
-    it: "servizi/giessenpark-catering",
+    it: "services/giessenpark-catering",
   },
   "7310": {
-    de: "leistungen/7310-produkte",
+    de: "services/7310-products",
     en: "services/7310-products",
     fr: "services/7310-produits",
-    it: "servizi/7310-prodotti",
+    it: "services/7310-products",
   },
 };
 

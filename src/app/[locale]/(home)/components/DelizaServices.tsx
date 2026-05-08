@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import Link from "@/i18n/LocalizedLink";
 import { useTranslation } from "@/i18n/useTranslation";
 import { navHref } from "@/i18n/routing";
+import { asset } from "@/lib/asset";
 import styles from "./DelizaServices.module.css";
 
 const cardImages = [
@@ -44,7 +45,7 @@ function DelizaServices() {
               <article
                 className={styles.card}
                 style={{
-                  backgroundImage: `url(${cardImages[index % cardImages.length]})`,
+                  backgroundImage: `url(${asset(cardImages[index % cardImages.length])})`,
                 }}
               >
                 <div className={styles.titleRow}>

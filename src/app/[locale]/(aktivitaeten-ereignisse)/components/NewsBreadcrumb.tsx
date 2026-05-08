@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslation } from "@/i18n/useTranslation";
+import { asset } from "@/lib/asset";
 
 /**
  * Locale-aware breadcrumb hero for the news index page.
@@ -27,9 +28,9 @@ export default function NewsBreadcrumb() {
         </div>
       </div>
       <div className="shape-area">
-        <img src="/assets/images/about/shape/01.png" alt="" className="one" />
-        <img src="/assets/images/about/shape/02.png" alt="" className="two" />
-        <img src="/assets/images/about/shape/03.png" alt="" className="three" />
+        <img src={asset("/assets/images/about/shape/01.png")} alt="" className="one" />
+        <img src={asset("/assets/images/about/shape/02.png")} alt="" className="two" />
+        <img src={asset("/assets/images/about/shape/03.png")} alt="" className="three" />
       </div>
     </div>
   );

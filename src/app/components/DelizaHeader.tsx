@@ -7,6 +7,7 @@ import OffcanvasMenu from './OffcanvasMenu';
 import { useTranslation } from '@/i18n/useTranslation';
 import { navHref, type SeoNavKey } from '@/i18n/routing';
 import { LanguageSwitcher } from '@/i18n/LanguageSwitcher';
+import { asset } from '@/lib/asset';
 
 export const mainNavKeys: SeoNavKey[] = [
     "home",
@@ -70,14 +71,15 @@ function DelizaHeader({
                                 <div className="header-main-one-wrapper">
                                     <div className="thumbnail">
                                         <Link href={navHref("home", locale)}>
-                                            <Image
+                                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                                            <img
                                                 className="deliza-logo"
-                                                src={DELIZA_LOGO_SRC}
+                                                src={asset(DELIZA_LOGO_SRC)}
                                                 alt={DELIZA_LOGO_ALT}
                                                 width={300}
                                                 height={89}
-                                                priority
-                                                sizes="200px"
+                                                fetchPriority="high"
+                                                decoding="async"
                                             />
                                         </Link>
                                     </div>
