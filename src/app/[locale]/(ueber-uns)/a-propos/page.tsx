@@ -31,7 +31,6 @@ async function page({ params }: PageProps) {
             <PageIntro nav="about" />
             <Brands />
             <PageFaq nav="about" />
-            <CtaInner />
             <Footer />
             <BackToTop />
         </>

@@ -6,7 +6,7 @@ import BrandInner from "./BrandInner";
 import CtaInner from "./CtaInner";
 import Footer from "../../../../components/Footer";
 import BackToTop from "./BackToTop";
-import news from "@/app/data/news";
+import { findNewsBySlug } from "@/app/data/news";
 import { useTranslation } from "@/i18n/useTranslation";
 import type { Locale } from "@/i18n/config";
 
@@ -39,7 +39,8 @@ function formatDate(date: string, locale: Locale): string {
 export default function NewsDetailsClient() {
   const { slug } = useParams();
   const { locale } = useTranslation();
-  const item = news.find((n) => n.slug === slug);
+  const slugStr = Array.isArray(slug) ? slug[0] : slug;
+  const item = slugStr ? findNewsBySlug(slugStr, locale) : undefined;
 
   if (!item) {
     return (
@@ -67,10 +68,12 @@ export default function NewsDetailsClient() {
                 <div className="image-area mb--30">
                   <Image
                       src={item.image}
-                      style={{ width: "100%" }}
-                      alt={t.title}
-                      width={800}
-                      height={600}
+                      style={{ width: "100%", height: "auto" }}
+                      alt={t.alt ?? t.title}
+                      width={1200}
+                      height={675}
+                      sizes="(max-width: 991px) 100vw, 800px"
+                      priority
                   />
                 </div>
                 <div className="blog-details-top-wrapper">

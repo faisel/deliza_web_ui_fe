@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { locales } from "@/i18n/config";
 import { navHref, type NavKey } from "@/i18n/routing";
 import { absoluteUrl } from "@/lib/site";
-import news from "@/app/data/news";
+import news, { getNewsSlug } from "@/app/data/news";
 
 const NAV_KEYS: NavKey[] = [
   "home",
@@ -47,9 +47,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const lastModified = new Date(item.date);
     for (const locale of locales) {
       const newsBase = navHref("news", locale);
-      const url = absoluteUrl(`${newsBase}/${item.slug}`);
+      const url = absoluteUrl(`${newsBase}/${getNewsSlug(item, locale)}`);
       const languages = locales.reduce<Record<string, string>>((acc, l) => {
-        acc[l] = absoluteUrl(`${navHref("news", l)}/${item.slug}`);
+        acc[l] = absoluteUrl(`${navHref("news", l)}/${getNewsSlug(item, l)}`);
         return acc;
       }, {});
       entries.push({

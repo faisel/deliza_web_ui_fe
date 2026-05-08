@@ -30,7 +30,6 @@ export default async function NewsEventsPage({ params }: PageProps) {
       <NewsListInner />
       <PageFaq nav="news" />
       <Brands className="rts-section-gapBottom" />
-      <CtaInner />
       <Footer />
       <BackToTop />
     </>

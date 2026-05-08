@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
 import OffcanvasMenu from './OffcanvasMenu';
 import { useTranslation } from '@/i18n/useTranslation';
 import { navHref, type SeoNavKey } from '@/i18n/routing';
@@ -30,8 +31,17 @@ function DelizaHeader({
     className = "",
 }: DelizaHeaderProps) {
     const { locale, messages } = useTranslation();
+    const pathname = usePathname();
     const [isSticky, setIsSticky] = useState(false);
     const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
+
+    const isActive = (key: SeoNavKey): boolean => {
+        const href = navHref(key, locale);
+        if (key === "home") {
+            return pathname === href || pathname === `${href}/`;
+        }
+        return pathname === href || pathname.startsWith(`${href}/`);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -76,7 +86,11 @@ function DelizaHeader({
                                             <ul className="">
                                                 {mainNavKeys.map((key) => (
                                                     <li key={key} className="main-nav">
-                                                        <Link href={navHref(key, locale)}>
+                                                        <Link
+                                                            href={navHref(key, locale)}
+                                                            className={isActive(key) ? "active" : undefined}
+                                                            aria-current={isActive(key) ? "page" : undefined}
+                                                        >
                                                             {t.header.nav[key]}
                                                         </Link>
                                                     </li>

@@ -78,7 +78,7 @@ export default function PageIntro({ nav, className = "" }: PageIntroProps) {
   const related = (relatedLinksByNav[nav] ?? []).filter((k) => k !== nav);
 
   return (
-    <section className={`rts-page-intro rts-section-gapBottom ${className}`}>
+    <section className={`rts-page-intro rts-section-gapBottom mt--60 ${className}`}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-10">

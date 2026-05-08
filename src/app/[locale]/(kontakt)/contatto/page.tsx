@@ -37,7 +37,7 @@ export default async function ContactUsPage({ params }: PageProps) {
                 <GoogleMaps />
                 <PageFaq nav="contact" />
                 <Brands className='rts-section-gap' />
-                <CtaInner />
+      
                 <Footer />
                 <BackToTop />
             </>
