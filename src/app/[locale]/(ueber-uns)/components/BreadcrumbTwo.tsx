@@ -5,13 +5,13 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useTranslation } from "@/i18n/useTranslation";
-import type { NavKey } from "@/i18n/routing";
+import type { SeoNavKey } from "@/i18n/routing";
 
 gsap.registerPlugin(ScrollTrigger);
 
 interface BreadcrumbTwoProps {
     /** Active nav destination — copy is read from messages.seo.pages[nav]. */
-    nav: NavKey;
+    nav: SeoNavKey;
 }
 
 function BreadcrumbTwo({ nav }: BreadcrumbTwoProps) {

@@ -1,6 +1,6 @@
 import { locales, type Locale } from "@/i18n/config";
 import { getMessages } from "@/i18n/messages";
-import { navHref, type NavKey } from "@/i18n/routing";
+import { navHref, type SeoNavKey } from "@/i18n/routing";
 import news from "@/app/data/news";
 import {
   BRAND_CONTACT,
@@ -93,7 +93,7 @@ export function localBusinessSchema(locale: Locale): JsonLdValue {
   };
 }
 
-export function webPageSchema(nav: NavKey, locale: Locale): JsonLdValue {
+export function webPageSchema(nav: SeoNavKey, locale: Locale): JsonLdValue {
   const messages = getMessages(locale);
   const page = messages.seo.pages[nav];
   const path = navHref(nav, locale);
@@ -114,7 +114,7 @@ export function webPageSchema(nav: NavKey, locale: Locale): JsonLdValue {
   };
 }
 
-export function breadcrumbSchema(nav: NavKey, locale: Locale): JsonLdValue {
+export function breadcrumbSchema(nav: SeoNavKey, locale: Locale): JsonLdValue {
   const messages = getMessages(locale);
   const homeLabel = messages.header.nav.home;
   const pageLabel = messages.seo.pages[nav].h1;
@@ -143,7 +143,7 @@ export function breadcrumbSchema(nav: NavKey, locale: Locale): JsonLdValue {
   };
 }
 
-export function faqSchema(nav: NavKey, locale: Locale): JsonLdValue | null {
+export function faqSchema(nav: SeoNavKey, locale: Locale): JsonLdValue | null {
   const messages = getMessages(locale);
   const items = messages.seo.pages[nav].faq.items;
   if (!items || !items.length) return null;
@@ -160,7 +160,7 @@ export function faqSchema(nav: NavKey, locale: Locale): JsonLdValue | null {
   };
 }
 
-export function serviceSchema(nav: NavKey, locale: Locale): JsonLdValue | null {
+export function serviceSchema(nav: SeoNavKey, locale: Locale): JsonLdValue | null {
   if (nav !== "products" && nav !== "investment") return null;
   const messages = getMessages(locale);
   const page = messages.seo.pages[nav];
@@ -222,7 +222,7 @@ function getNewsSlug(locale: Locale): string {
  * Compose a full @graph for an active page in a given locale.
  * Caller should serialize this with JSON.stringify and embed in a script tag.
  */
-export function buildPageGraph(nav: NavKey, locale: Locale): JsonLdValue {
+export function buildPageGraph(nav: SeoNavKey, locale: Locale): JsonLdValue {
   const graph: JsonLdValue[] = [
     organizationSchema(locale),
     websiteSchema(locale),

@@ -1,10 +1,10 @@
 "use client";
 
 import { useTranslation } from "@/i18n/useTranslation";
-import type { NavKey } from "@/i18n/routing";
+import type { SeoNavKey } from "@/i18n/routing";
 
 interface PageFaqProps {
-  nav: NavKey;
+  nav: SeoNavKey;
   className?: string;
   /** Optional id used to scope the bootstrap accordion. */
   id?: string;
@@ -12,7 +12,7 @@ interface PageFaqProps {
 
 /**
  * Visible FAQ section for an active page. Reads questions/answers from the
- * locale message bundle keyed by NavKey. Uses a bootstrap-compatible accordion
+ * locale message bundle keyed by SeoNavKey. Uses a bootstrap-compatible accordion
  * that ships in the existing CSS bundle.
  *
  * The same FAQ data is also emitted as FAQPage JSON-LD via PageSchema, so this

@@ -222,6 +222,16 @@ export interface Messages {
       items: TestimonialItem[];
     };
   };
+  notFound: {
+    /** Big "404" heading. */
+    code: string;
+    /** Sub-heading under the code, e.g. "Page Not Found". */
+    heading: string;
+    /** One-paragraph explanation. */
+    description: string;
+    /** Label for the home-link button. */
+    backHome: string;
+  };
   footer: {
     contact: {
       title: string;

@@ -2,15 +2,15 @@
 
 import Link from "next/link";
 import { useTranslation } from "@/i18n/useTranslation";
-import { navHref, type NavKey } from "@/i18n/routing";
+import { navHref, type SeoNavKey } from "@/i18n/routing";
 import type { Locale } from "@/i18n/config";
 
 interface PageIntroProps {
-  nav: NavKey;
+  nav: SeoNavKey;
   className?: string;
 }
 
-const relatedLinksByNav: Partial<Record<NavKey, NavKey[]>> = {
+const relatedLinksByNav: Partial<Record<SeoNavKey, SeoNavKey[]>> = {
   home: ["brands", "products", "investment", "contact"],
   brands: ["products", "contact"],
   products: ["investment", "contact"],
@@ -27,7 +27,7 @@ const relatedHeading: Record<Locale, string> = {
   it: "Sezioni correlate",
 };
 
-const relatedLabels: Record<Locale, Record<NavKey, string>> = {
+const relatedLabels: Record<Locale, Record<SeoNavKey, string>> = {
   de: {
     home: "Startseite",
     brands: "Unsere Marken",

@@ -709,6 +709,13 @@ const de: Messages = {
     },
     copyright: "Deliza – Alle Rechte vorbehalten.",
   },
+  notFound: {
+    code: "404",
+    heading: "Seite nicht gefunden",
+    description:
+      "Die gesuchte Seite wurde verschoben, umgeleitet oder dauerhaft entfernt.",
+    backHome: "Zur Startseite",
+  },
 };
 
 export default de;

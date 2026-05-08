@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import { useTranslation } from "@/i18n/useTranslation";
-import type { NavKey } from "@/i18n/routing";
+import type { SeoNavKey } from "@/i18n/routing";
 import styles from "./PartnerBreadcrumbTwo.module.css";
 
 interface PartnerBreadcrumbTwoProps {
     /** Defaults to "investment" — locale routes under investment-beratung / investment-consulting / investissement-conseil / investimento-consulenza. */
-    nav?: NavKey;
+    nav?: SeoNavKey;
     /** Hero image source. Will eventually be supplied by the API. */
     image?: string;
     imageAlt?: string;

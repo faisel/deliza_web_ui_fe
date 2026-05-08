@@ -1,10 +1,10 @@
 "use client";
 
 import { useTranslation } from "@/i18n/useTranslation";
-import type { NavKey } from "@/i18n/routing";
+import type { SeoNavKey } from "@/i18n/routing";
 
 interface PageFaqProps {
-  nav: NavKey;
+  nav: SeoNavKey;
   className?: string;
   /** Optional id used to scope the bootstrap accordion. */
   id?: string;

@@ -7,7 +7,15 @@ export type NavKey =
   | "investment"
   | "about"
   | "news"
-  | "contact";
+  | "contact"
+  | "privacy";
+
+/**
+ * Subset of NavKey for pages that participate in the shared SEO/intro/FAQ/JSON-LD
+ * content system. Footer-only pages like `privacy` have a URL slug but no
+ * `seo.pages.<key>` entry in the message bundles.
+ */
+export type SeoNavKey = Exclude<NavKey, "privacy">;
 
 /**
  * Per-locale URL slug for each main-nav destination. Used to render localized
@@ -47,6 +55,12 @@ export const navSlugs: Record<NavKey, Record<Locale, string>> = {
     en: "contact",
     fr: "contact",
     it: "contatto",
+  },
+  privacy: {
+    de: "datenschutz",
+    en: "privacy-policy",
+    fr: "politique_de_confidentialite",
+    it: "Informativa_sulla_privacy",
   },
 };
 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { locales, type Locale } from "@/i18n/config";
 import { getMessages } from "@/i18n/messages";
-import { navHref, type NavKey } from "@/i18n/routing";
+import { navHref, type SeoNavKey } from "@/i18n/routing";
 import {
   BRAND_NAME,
   DEFAULT_OG_IMAGE,
@@ -17,7 +17,7 @@ import {
  * - alternates.languages includes one entry per locale + x-default (de)
  * - title/description are pulled from the per-locale message bundle
  */
-export function buildPageMetadata(nav: NavKey, locale: Locale): Metadata {
+export function buildPageMetadata(nav: SeoNavKey, locale: Locale): Metadata {
   const messages = getMessages(locale);
   const page = messages.seo.pages[nav];
   const title = page.metaTitle;

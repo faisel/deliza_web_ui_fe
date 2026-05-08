@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import { useTranslation } from "@/i18n/useTranslation";
-import type { NavKey } from "@/i18n/routing";
+import type { SeoNavKey } from "@/i18n/routing";
 
 interface BannerProps {
     /** Defaults to "contact" — main usage. */
-    nav?: NavKey;
+    nav?: SeoNavKey;
 }
 
 function Banner({ nav = "contact" }: BannerProps) {

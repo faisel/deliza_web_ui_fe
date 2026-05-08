@@ -21,6 +21,13 @@ const bottomLinkLabels: Record<Locale, { legalNotice: string; privacyPolicy: str
   it: { legalNotice: "Note legali", privacyPolicy: "Informativa sulla privacy" },
 };
 
+const legalNoticeSlug: Record<Locale, string> = {
+  de: "/impressum",
+  en: "/legal-notice",
+  fr: "/mentions_legales",
+  it: "/note_legali",
+};
+
 const copyrightSuffix: Record<Locale, string> = {
   de: "Alle Rechte vorbehalten",
   en: "All rights reserved",
@@ -209,10 +216,10 @@ function Footer({ id }: FooterProps) {
                 <div className="right">
                   <ul>
                     <li>
-                      <a href={localizePath("/legal-notice", locale)}>{labels.legalNotice}</a>
+                      <a href={localizePath(legalNoticeSlug[locale], locale)}>{labels.legalNotice}</a>
                     </li>
                     <li>
-                      <a href={localizePath("/privacy-policy", locale)}>{labels.privacyPolicy}</a>
+                      <a href={navHref("privacy", locale)}>{labels.privacyPolicy}</a>
                     </li>
                   </ul>
                 </div>

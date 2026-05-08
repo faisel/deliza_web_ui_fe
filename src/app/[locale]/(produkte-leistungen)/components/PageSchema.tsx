@@ -1,10 +1,10 @@
 import type { Locale } from "@/i18n/config";
-import type { NavKey } from "@/i18n/routing";
+import type { SeoNavKey } from "@/i18n/routing";
 import { buildPageGraph } from "@/lib/jsonld";
 import JsonLd from "./JsonLd";
 
 interface PageSchemaProps {
-  nav: NavKey;
+  nav: SeoNavKey;
   locale: Locale;
 }
 
