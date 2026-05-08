@@ -11,7 +11,7 @@ let instanceCounter = 0;
 export default function DelizaBanner({
   title = "DELIZA",
   subtitle = "Die Genuss GmbH",
-  videoSrc = "/assets/images/banner/01.mp4",
+  videoSrc = "/assets/images/deliza/video/BannerVideoSeq.mp4",
 }: DelizaBannerProps) {
   const maskId = `deliza-banner-mask-${++instanceCounter}`;
 

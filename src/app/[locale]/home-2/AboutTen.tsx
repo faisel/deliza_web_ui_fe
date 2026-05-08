@@ -22,7 +22,7 @@ function AboutTen({ id }: AboutTenProps) {
           <div className="col-lg-6">
             <div className="thumbnail-about-10-wrapper">
               <Image
-                src="/assets/images/deliza/about.jpg"
+                src="/assets/images/deliza/about_1.jpg"
                 alt="Deliza GmbH hospitality and innovation"
                 width={731}
                 height={915}

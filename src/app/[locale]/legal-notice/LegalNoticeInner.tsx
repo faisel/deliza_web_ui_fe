@@ -3,165 +3,66 @@ import type { Locale } from "@/i18n/config";
 
 interface Section {
   heading: string;
-  body: string[];
+  lines: string[];
 }
 
 interface Copy {
-  intro: string;
   sections: Section[];
 }
 
+const ADDRESS_LINES = [
+  "Deliza GmbH",
+  "Flurweg 4",
+  "7310 Bad Ragaz",
+  "",
+  "081 661 23 45",
+  "info@giessenpark.com",
+];
+
+const REGISTER_LINES = [
+  "UID: CHE-239.707.548",
+  "CH-ID: CH-320-4100477-8",
+];
+
 const copy: Record<Locale, Copy> = {
   de: {
-    intro:
-      "Dieses Impressum gilt für die Inhalte dieser Website. Die nachfolgenden Angaben dienen der Erfüllung der gesetzlichen Pflichten zur Anbieterkennzeichnung.",
     sections: [
-      {
-        heading: "Anbieter",
-        body: [
-          "Deliza GmbH",
-          "Musterstrasse 1",
-          "8000 Zürich, Schweiz",
-        ],
-      },
-      {
-        heading: "Kontakt",
-        body: [
-          "Telefon: +41 00 000 00 00",
-          "E-Mail: info@deliza.com",
-        ],
-      },
+      { heading: "Gesamtverantwortung", lines: ADDRESS_LINES },
       {
         heading: "Vertretungsberechtigte Person",
-        body: ["Geschäftsführung: [Name der Geschäftsführung]"],
+        lines: ["Geschäftsführung: Judith und Mathew Zacharias"],
       },
-      {
-        heading: "Handelsregister",
-        body: [
-          "Eintrag im Handelsregister des Kantons Zürich",
-          "Registernummer: CHE-000.000.000",
-        ],
-      },
-      {
-        heading: "Haftungsausschluss",
-        body: [
-          "Die Inhalte dieser Website wurden mit grösstmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.",
-        ],
-      },
+      { heading: "Handelsregister", lines: REGISTER_LINES },
     ],
   },
   en: {
-    intro:
-      "This legal notice applies to the contents of this website. The following information is provided in order to comply with statutory disclosure requirements.",
     sections: [
+      { heading: "Overall responsibility", lines: ADDRESS_LINES },
       {
-        heading: "Provider",
-        body: [
-          "Deliza GmbH",
-          "Musterstrasse 1",
-          "8000 Zurich, Switzerland",
-        ],
+        heading: "Authorised representative",
+        lines: ["Managing directors: Judith and Mathew Zacharias"],
       },
-      {
-        heading: "Contact",
-        body: [
-          "Phone: +41 00 000 00 00",
-          "Email: info@deliza.com",
-        ],
-      },
-      {
-        heading: "Authorized representative",
-        body: ["Management: [Name of management]"],
-      },
-      {
-        heading: "Commercial register",
-        body: [
-          "Entered in the commercial register of the Canton of Zurich",
-          "Register number: CHE-000.000.000",
-        ],
-      },
-      {
-        heading: "Disclaimer",
-        body: [
-          "The contents of this website have been prepared with the greatest possible care. However, no guarantee can be given for the accuracy, completeness or topicality of the content.",
-        ],
-      },
+      { heading: "Commercial register", lines: REGISTER_LINES },
     ],
   },
   fr: {
-    intro:
-      "Les présentes mentions légales s'appliquent au contenu de ce site web. Les informations suivantes sont fournies afin de respecter les obligations légales d'identification.",
     sections: [
+      { heading: "Responsabilité globale", lines: ADDRESS_LINES },
       {
-        heading: "Éditeur",
-        body: [
-          "Deliza GmbH",
-          "Musterstrasse 1",
-          "8000 Zurich, Suisse",
-        ],
+        heading: "Personne autorisée à représenter",
+        lines: ["Direction : Judith et Mathew Zacharias"],
       },
-      {
-        heading: "Contact",
-        body: [
-          "Téléphone : +41 00 000 00 00",
-          "E-mail : info@deliza.com",
-        ],
-      },
-      {
-        heading: "Représentation légale",
-        body: ["Direction : [Nom de la direction]"],
-      },
-      {
-        heading: "Registre du commerce",
-        body: [
-          "Inscrit au registre du commerce du canton de Zurich",
-          "Numéro de registre : CHE-000.000.000",
-        ],
-      },
-      {
-        heading: "Limitation de responsabilité",
-        body: [
-          "Le contenu de ce site a été préparé avec le plus grand soin. Toutefois, aucune garantie ne peut être donnée quant à l'exactitude, l'exhaustivité ou l'actualité des informations.",
-        ],
-      },
+      { heading: "Registre du commerce", lines: REGISTER_LINES },
     ],
   },
   it: {
-    intro:
-      "Le presenti note legali si applicano ai contenuti di questo sito web. Le informazioni seguenti sono fornite al fine di adempiere agli obblighi di legge in materia di identificazione del fornitore.",
     sections: [
+      { heading: "Responsabilità complessiva", lines: ADDRESS_LINES },
       {
-        heading: "Fornitore",
-        body: [
-          "Deliza GmbH",
-          "Musterstrasse 1",
-          "8000 Zurigo, Svizzera",
-        ],
+        heading: "Persona autorizzata a rappresentare",
+        lines: ["Direzione: Judith e Mathew Zacharias"],
       },
-      {
-        heading: "Contatti",
-        body: [
-          "Telefono: +41 00 000 00 00",
-          "Email: info@deliza.com",
-        ],
-      },
-      {
-        heading: "Rappresentante legale",
-        body: ["Direzione: [Nome della direzione]"],
-      },
-      {
-        heading: "Registro di commercio",
-        body: [
-          "Iscritto nel registro di commercio del Canton Zurigo",
-          "Numero di registro: CHE-000.000.000",
-        ],
-      },
-      {
-        heading: "Limitazione di responsabilità",
-        body: [
-          "I contenuti di questo sito sono stati preparati con la massima cura. Tuttavia, non viene fornita alcuna garanzia in merito all'accuratezza, completezza o attualità delle informazioni.",
-        ],
-      },
+      { heading: "Registro di commercio", lines: REGISTER_LINES },
     ],
   },
 };
@@ -178,15 +79,15 @@ function LegalNoticeInner({ locale }: LegalNoticeInnerProps) {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-10">
-            <p className="disc mb--40">{content.intro}</p>
-            {content.sections.map((section) => (
-              <div key={section.heading} className="mb--40">
-                <h3 className="title">{section.heading}</h3>
-                {section.body.map((line, i) => (
-                  <p key={i} className="disc mb--10">
-                    {line}
-                  </p>
-                ))}
+            {content.sections.map((section, i) => (
+              <div key={i} className="mb--40">
+                <h3 className="title mt--30">{section.heading}</h3>
+                <address
+                  className="disc"
+                  style={{ fontStyle: "normal", whiteSpace: "pre-line" }}
+                >
+                  {section.lines.join("\n")}
+                </address>
               </div>
             ))}
           </div>

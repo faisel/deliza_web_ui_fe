@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import OffcanvasMenu from '@/app/home-1/OffcanvasMenu';
+import OffcanvasMenu from './OffcanvasMenu';
 import { useTranslation } from '@/i18n/useTranslation';
 import { navHref, type NavKey } from '@/i18n/routing';
 import { LanguageSwitcher } from '@/i18n/LanguageSwitcher';

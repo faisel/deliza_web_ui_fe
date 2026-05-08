@@ -34,15 +34,15 @@
 }
 
 .title {
-  font-family: var(--font-poppins), system-ui, -apple-system, "Segoe UI",
-    sans-serif;
-  font-weight: 300;
+  font-family: var(--font-montserrat), "Montserrat", system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  font-weight: 800;
   font-size: 360px;
 }
 
 .subtitle {
-  font-family: var(--font-poppins), system-ui, -apple-system, "Segoe UI",
-    sans-serif;
+  font-family: var(--font-montserrat), "Montserrat", system-ui, -apple-system,
+    "Segoe UI", sans-serif;
   font-weight: 300;
   font-size: 56px;
   fill: var(--deliza-banner-fg, #0a0a0a);
