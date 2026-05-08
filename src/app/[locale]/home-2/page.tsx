@@ -17,7 +17,6 @@ import DelizaCta from '../../components/DelizaCta'
 import DelizaNews from '../../components/DelizaNews'
 import DelizaTestimonials from '../../components/DelizaTestimonials'
 import Footer from '@/app/components/Footer'
-import RTL from './RTL'
 import BackToTop from './BackToTop'
 import PageIntro from '../../components/PageIntro'
 import PageFaq from '../../components/PageFaq'
@@ -59,7 +58,6 @@ export default async function HomePage({ params }: HomePageProps) {
         <PageFaq nav="home" className="home-section" />
 
         <Footer />
-        <RTL />
         <BackToTop />
       </>
     </>

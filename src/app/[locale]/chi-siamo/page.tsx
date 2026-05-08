@@ -1,6 +1,5 @@
 import React from 'react'
 import DelizaHeader from "@/app/components/DelizaHeader";
-import RTL from './RTL'
 import BackToTop from './BackToTop'
 import PartnerBreadcrumbTwo from './PartnerBreadcrumbTwo'
 import LargeImage from './LargeImage'
@@ -34,7 +33,6 @@ async function page({ params }: PageProps) {
             <PageFaq nav="about" />
             <CtaInner />
             <Footer />
-            <RTL />
             <BackToTop />
         </>
     )

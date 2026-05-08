@@ -2,7 +2,6 @@ import { makeNavMetadata } from "@/lib/page-metadata";
 import DelizaHeader from "@/app/components/DelizaHeader";
 import Brands from "./Brands";
 import Footer from "../../components/Footer";
-import RTL from "./RTL";
 import BackToTop from "./BackToTop";
 import ProjectTwo from "./ProjectTwo";
 import PartnerBreadcrumbTwo from "./PartnerBreadcrumbTwo";
@@ -32,7 +31,6 @@ export default async function ProdukteLeistungenPage({ params }: PageProps) {
       <Brands className="rts-section-gap" />
 
       <Footer />
-      <RTL />
       <BackToTop />
     </>
   );

@@ -5,7 +5,6 @@ import DelizaHeader from "@/app/components/DelizaHeader";
 import BrandInner from "./BrandInner";
 import CtaInner from "./CtaInner";
 import Footer from "../../../components/Footer";
-import RTL from "./RTL";
 import BackToTop from "./BackToTop";
 import news from "@/app/data/news";
 import { useTranslation } from "@/i18n/useTranslation";
@@ -91,7 +90,6 @@ export default function NewsDetailsClient() {
       <BrandInner className="rts-section-gap" />
       <CtaInner />
       <Footer />
-      <RTL />
       <BackToTop />
     </>
   );

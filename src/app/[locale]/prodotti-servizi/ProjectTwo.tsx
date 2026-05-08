@@ -113,12 +113,25 @@ function ProjectTwo({ className = "", id = "" }: ProjectTwoProps) {
                                 className="col-lg-4 col-md-6 rts-jump__item"
                             >
                                 <div className="single-project-style-three">
-                                    <Link href={card.href} className="thumbnail">
+                                    <Link
+                                        href={card.href}
+                                        className="thumbnail"
+                                        style={{
+                                            display: "block",
+                                            aspectRatio: "1910 / 1300",
+                                            overflow: "hidden",
+                                        }}
+                                    >
                                         <Image
                                             src={card.image.src}
                                             alt={card.image.alt}
                                             width={card.image.width}
                                             height={card.image.height}
+                                            style={{
+                                                width: "100%",
+                                                height: "100%",
+                                                objectFit: "cover",
+                                            }}
                                         />
                                     </Link>
                                     <div className="inner-content">

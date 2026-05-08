@@ -3,7 +3,6 @@ import PartnerBreadcrumbTwo from './PartnerBreadcrumbTwo'
 import Brands from './Brands'
 import CtaInner from './CtaInner'
 import Footer from '../../components/Footer'
-import RTL from './RTL'
 import BackToTop from './BackToTop'
 import PageIntro from './PageIntro'
 import PageFaq from './PageFaq'
@@ -31,7 +30,6 @@ export default async function InvestmentConsultingPage({ params }: PageProps) {
             <Brands />
             <CtaInner />
             <Footer />
-            <RTL />
             <BackToTop />
         </>
     )

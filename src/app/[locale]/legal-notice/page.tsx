@@ -3,7 +3,6 @@ import PartnerBreadcrumbTwo from "./PartnerBreadcrumbTwo";
 import Brands from "./Brands";
 import CtaInner from "./CtaInner";
 import Footer from "../../components/Footer";
-import RTL from "./RTL";
 import BackToTop from "./BackToTop";
 import LegalNoticeInner from "./LegalNoticeInner";
 import { isValidLocale, type Locale } from "@/i18n/config";
@@ -32,7 +31,6 @@ export default async function LegalNoticePage({ params }: PageProps) {
       <Brands className="rts-section-gapBottom" />
       <CtaInner />
       <Footer />
-      <RTL />
       <BackToTop />
     </>
   );

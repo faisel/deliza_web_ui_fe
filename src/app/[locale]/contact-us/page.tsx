@@ -5,7 +5,6 @@ import GoogleMaps from './GoogleMaps'
 import Brands from './Brands'
 import CtaInner from './CtaInner'
 import Footer from '../../components/Footer'
-import RTL from './RTL'
 import BackToTop from './BackToTop'
 import ContactMainTwo from './ContactMainTwo'
 import PageIntro from './PageIntro'
@@ -40,7 +39,6 @@ export default async function ContactUsPage({ params }: PageProps) {
                 <Brands className='rts-section-gap' />
                 <CtaInner />
                 <Footer />
-                <RTL />
                 <BackToTop />
             </>
         </>

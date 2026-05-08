@@ -18,7 +18,7 @@ interface PageFaqProps {
  * The same FAQ data is also emitted as FAQPage JSON-LD via PageSchema, so this
  * component is purely the user-visible companion.
  */
-export default function PageFaq({ nav, className = "rts-section-gapBottom", id }: PageFaqProps) {
+export default function PageFaq({ nav, className = "", id }: PageFaqProps) {
   const { messages } = useTranslation();
   const faq = messages.seo.pages[nav]?.faq;
   if (!faq || !faq.items?.length) return null;

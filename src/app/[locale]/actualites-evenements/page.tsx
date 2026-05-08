@@ -2,7 +2,6 @@ import DelizaHeader from "@/app/components/DelizaHeader";
 import Brands from "./Brands";
 import CtaInner from "./CtaInner";
 import Footer from "../../components/Footer";
-import RTL from "./RTL";
 import BackToTop from "./BackToTop";
 import NewsListInner from "./NewsListInner";
 import PartnerBreadcrumbTwo from "./PartnerBreadcrumbTwo";
@@ -33,7 +32,6 @@ export default async function NewsEventsPage({ params }: PageProps) {
       <Brands className="rts-section-gapBottom" />
       <CtaInner />
       <Footer />
-      <RTL />
       <BackToTop />
     </>
   );

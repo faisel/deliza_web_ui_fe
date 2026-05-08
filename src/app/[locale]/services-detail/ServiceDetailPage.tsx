@@ -1,6 +1,5 @@
 import React from "react";
 import DelizaHeader from "@/app/components/DelizaHeader";
-import RTL from "./RTL";
 import BackToTop from "./BackToTop";
 import Footer from "@/app/components/Footer";
 import { isValidLocale, defaultLocale } from "@/i18n/config";
@@ -32,7 +31,6 @@ function ServiceDetailPage({ serviceId, rawLocale }: Props) {
         images={images}
       />
       <Footer />
-      <RTL />
       <BackToTop />
     </>
   );

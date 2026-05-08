@@ -3,7 +3,6 @@ import PartnerBreadcrumbTwo from './PartnerBreadcrumbTwo'
 import Brands from './Brands'
 import CtaInner from './CtaInner'
 import Footer from '../../components/Footer'
-import RTL from './RTL'
 import BackToTop from './BackToTop'
 import CaseStudies from './CaseStudies'
 import PageIntro from './PageIntro'
@@ -28,12 +27,9 @@ export default async function BrandsPage({ params }: PageProps) {
             <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
             <PartnerBreadcrumbTwo nav="brands" />
             <PageIntro nav="brands" />
-            <CaseStudies />
-            <PageFaq nav="brands" />
             <Brands className='rts-section-gapBottom' />
-            <CtaInner />
+            <PageFaq nav="brands" />
             <Footer />
-            <RTL />
             <BackToTop />
         </>
     )
