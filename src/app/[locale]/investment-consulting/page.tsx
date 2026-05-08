@@ -28,7 +28,6 @@ export default async function InvestmentConsultingPage({ params }: PageProps) {
             <PageIntro nav="investment" />
             <PageFaq nav="investment" />
             <Brands />
-            <CtaInner />
             <Footer />
             <BackToTop />
         </>

@@ -7,6 +7,7 @@ import { SITE_URL } from "@/lib/site";
  * (linked from the footer) remain crawlable.
  */
 const DISALLOWED_TEMPLATE_PATHS = [
+  "/*/home/",
   "/*/home-1/",
   "/*/home-2/",
   "/*/home-3/",

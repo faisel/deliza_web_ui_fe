@@ -1,5 +1,5 @@
 import React from 'react'
-import BodyClass from '../home-2/BodyClassTwo'
+import BodyClass from '../home/components/BodyClassTwo'
 import Link from 'next/link'
 
 function page() {
