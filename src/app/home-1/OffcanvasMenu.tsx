@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useTranslation } from "@/i18n/useTranslation";
 import { navHref } from "@/i18n/routing";
 import type { Locale } from "@/i18n/config";
-import { mainNavKeys } from "./HeaderOne";
+import { mainNavKeys } from "@/app/components/DelizaHeader";
 
 interface OffcanvasMenuProps {
     isOpen: boolean;

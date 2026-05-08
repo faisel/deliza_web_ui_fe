@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import BreadCrumbOne from '../blog/BreadCrumbOne'
 import TeamDetailsInner from './TeamDetailsInner'
 import BrandInner from '../service/BrandInner'
@@ -11,7 +11,7 @@ import BackToTop from '../../home-1/BackToTop'
 function page() {
     return (
         <>
-            <HeaderOne logoSrc="/assets/images/logo/01.svg"/>
+            <DelizaHeader logoSrc="/assets/images/logo/01.svg"/>
             <BreadCrumbOne
                 bgTitle='Our Team'
                 title='Team Experts'

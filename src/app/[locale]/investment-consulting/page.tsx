@@ -1,4 +1,4 @@
-import HeaderOne from '@/app/home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import PartnerBreadcrumbTwo from './PartnerBreadcrumbTwo'
 import Brands from '@/app/components/Brands'
 import CtaInner from '../about/CtaInner'
@@ -24,7 +24,7 @@ export default async function InvestmentConsultingPage({ params }: PageProps) {
     return (
         <>
             <PageSchema nav="investment" locale={locale} />
-            <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+            <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
             <PartnerBreadcrumbTwo nav="investment" />
             <PageIntro nav="investment" />
             <PageFaq nav="investment" />

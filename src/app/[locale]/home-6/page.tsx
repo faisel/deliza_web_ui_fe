@@ -1,7 +1,7 @@
 import React from 'react'
 import BannerSix from './BannerSix'
 import BodyClass from '../home-2/BodyClassTwo'
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import AboutSix from './AboutSix'
 import CtaSix from './CtaSix'
 import BusinessGoalThree from './BusinessGoalThree'
@@ -22,7 +22,7 @@ function page() {
       <BodyClass className="primary-blue" />
 
       {/* Header with different logo */}
-      <HeaderOne
+      <DelizaHeader
         className="header-four"
         logoSrc="/assets/images/logo/05.svg"
       />

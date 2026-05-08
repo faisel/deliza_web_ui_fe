@@ -1,4 +1,4 @@
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import PartnerBreadcrumb from '../project-slider/PartnerBreadcrumb'
 import Brands from '../../components/Brands'
 import CtaInner from '../about/CtaInner'
@@ -22,7 +22,7 @@ async function page({ params }: PageProps) {
     return (
         <>
             <PageSchema nav="brands" locale={locale} />
-            <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+            <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
             <PartnerBreadcrumb nav="brands" />
             <PageIntro nav="brands" />
             <CaseStudies />

@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import RTL from '../../home-1/RTL'
 import BackToTop from '../../home-1/BackToTop'
 import PartnerBreadcrumbTwo from './PartnerBreadcrumbTwo'
@@ -26,7 +26,7 @@ async function page({ params }: PageProps) {
     return (
         <>
             <PageSchema nav="about" locale={locale} />
-            <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+            <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
             <PartnerBreadcrumbTwo nav="about" />
             <LargeImage />
             <PageIntro nav="about" />

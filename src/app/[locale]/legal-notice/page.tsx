@@ -1,5 +1,5 @@
-import HeaderOne from "@/app/home-1/HeaderOne";
-import BreadCrumbOne from "@/app/[locale]/blog/BreadCrumbOne";
+import DelizaHeader from "@/app/components/DelizaHeader";
+import PartnerBreadcrumbTwo from "./PartnerBreadcrumbTwo";
 import Brands from "@/app/components/Brands";
 import CtaInner from "@/app/[locale]/about/CtaInner";
 import Footer from "@/app/components/Footer";
@@ -12,27 +12,11 @@ interface PageProps {
   params: Promise<{ locale: string }>;
 }
 
-const breadcrumbCopy: Record<Locale, { bgTitle: string; title: string; description: string }> = {
-  de: {
-    bgTitle: "Impressum",
-    title: "Impressum",
-    description: "Angaben gemäß den gesetzlichen Vorschriften.",
-  },
-  en: {
-    bgTitle: "Legal Notice",
-    title: "Legal Notice",
-    description: "Information provided in accordance with legal requirements.",
-  },
-  fr: {
-    bgTitle: "Mentions légales",
-    title: "Mentions légales",
-    description: "Informations fournies conformément aux exigences légales.",
-  },
-  it: {
-    bgTitle: "Note legali",
-    title: "Note legali",
-    description: "Informazioni fornite in conformità con i requisiti di legge.",
-  },
+const breadcrumbCopy: Record<Locale, { title: string }> = {
+  de: { title: "Impressum" },
+  en: { title: "Legal Notice" },
+  fr: { title: "Mentions légales" },
+  it: { title: "Note legali" },
 };
 
 export default async function LegalNoticePage({ params }: PageProps) {
@@ -42,12 +26,8 @@ export default async function LegalNoticePage({ params }: PageProps) {
 
   return (
     <>
-      <HeaderOne logoSrc="/assets/images/logo/01.svg" />
-      <BreadCrumbOne
-        bgTitle={copy.bgTitle}
-        title={copy.title}
-        description={copy.description}
-      />
+      <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
+      <PartnerBreadcrumbTwo title={copy.title} />
       <LegalNoticeInner locale={validLocale} />
       <Brands className="rts-section-gapBottom" />
       <CtaInner />

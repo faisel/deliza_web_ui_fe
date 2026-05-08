@@ -1,7 +1,7 @@
 "use client";
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import HeaderOne from "@/app/home-1/HeaderOne";
+import DelizaHeader from "@/app/components/DelizaHeader";
 import posts from "../../../data/data-post.json";
 import React from "react";
 import BrandInner from "@/app/[locale]/service/BrandInner";
@@ -20,7 +20,7 @@ export default function BlogDetailsPageClient() {
   }
   return (
     <>
-      <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+      <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
       <>
         <div className="blog-details-banner-large-image"></div>
         <div className="blog-details-area-main-wrapper pt--80">

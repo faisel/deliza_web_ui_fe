@@ -1,5 +1,5 @@
 import BodyClass from '../home-2/BodyClassTwo'
-import HeaderOne from '@/app/home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import PartnerBreadcrumbTwo from './PartnerBreadcrumbTwo'
 import GoogleMaps from '@/app/components/GoogleMaps'
 import Brands from '@/app/components/Brands'
@@ -31,7 +31,7 @@ export default async function ContactUsPage({ params }: PageProps) {
             <BodyClass className="contact-page" />
             {/* Page content */}
             <>
-                <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+                <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
                 <PartnerBreadcrumbTwo nav="contact" />
                 <PageIntro nav="contact" />
                 <ContactMainTwo />

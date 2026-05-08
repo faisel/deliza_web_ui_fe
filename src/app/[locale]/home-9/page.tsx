@@ -1,6 +1,6 @@
 import React from 'react'
 import BodyClass from '../home-2/BodyClassTwo'
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import BannerNine from './BannerNine'
 import ServicesNine from './ServicesNine'
 import BrandNine from './BrandNine'
@@ -21,7 +21,7 @@ function page() {
         <BodyClass className="primary-sky" />
         {/* Page content */}
       <>
-        <HeaderOne 
+        <DelizaHeader 
         logoSrc="/assets/images/logo/04.svg"
         className='style-four top-transparent-header' />
       </>

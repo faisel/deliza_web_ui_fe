@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import PartnerBreadcrumbTwo from '../produkte-leistungen/PartnerBreadcrumbTwo'
 import ProjectTwo from '../home-3/ProjectTwo'
 import BrandInner from '../service/BrandInner'
@@ -12,7 +12,7 @@ import ProjectSix from '../home-6/ProjectSix'
 function page() {
     return (
         <>
-            <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+            <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
             <PartnerBreadcrumbTwo />
             <ProjectSix className='pt--120'/>
             <BrandInner className='rts-section-gapBottom' />

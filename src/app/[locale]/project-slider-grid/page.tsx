@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import PartnerBreadcrumb from '../project-slider/PartnerBreadcrumb'
 import BrandInner from '../service/BrandInner'
 import CtaInner from '../about/CtaInner'
@@ -11,7 +11,7 @@ import ProjectSeven from '../home-7/ProjectSeven'
 function page() {
     return (
         <>
-            <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+            <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
             <PartnerBreadcrumb />
             <ProjectSeven />
             <BrandInner className='rts-section-gapBottom' />

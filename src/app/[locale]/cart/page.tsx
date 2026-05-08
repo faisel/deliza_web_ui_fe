@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import CartBreadcrumb from './CartBreadcrumb'
 import CartMain from './CartMain'
 import BodyClass from '../home-2/BodyClassTwo'
@@ -13,7 +13,7 @@ function page() {
             {/* Page content */}
             <>
 
-                <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+                <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
                 <CartBreadcrumb />
                 <CartMain />
                 <FooterTen />

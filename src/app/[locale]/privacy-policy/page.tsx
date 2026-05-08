@@ -1,5 +1,5 @@
-import HeaderOne from "@/app/home-1/HeaderOne";
-import BreadCrumbOne from "@/app/[locale]/blog/BreadCrumbOne";
+import DelizaHeader from "@/app/components/DelizaHeader";
+import PartnerBreadcrumbTwo from "./PartnerBreadcrumbTwo";
 import Brands from "@/app/components/Brands";
 import CtaInner from "@/app/[locale]/about/CtaInner";
 import Footer from "@/app/components/Footer";
@@ -12,27 +12,11 @@ interface PageProps {
   params: Promise<{ locale: string }>;
 }
 
-const breadcrumbCopy: Record<Locale, { bgTitle: string; title: string; description: string }> = {
-  de: {
-    bgTitle: "Datenschutz",
-    title: "Datenschutz",
-    description: "Informationen zur Verarbeitung Ihrer personenbezogenen Daten.",
-  },
-  en: {
-    bgTitle: "Privacy Policy",
-    title: "Privacy Policy",
-    description: "Information about how we process your personal data.",
-  },
-  fr: {
-    bgTitle: "Politique de confidentialité",
-    title: "Politique de confidentialité",
-    description: "Informations sur le traitement de vos données personnelles.",
-  },
-  it: {
-    bgTitle: "Informativa sulla privacy",
-    title: "Informativa sulla privacy",
-    description: "Informazioni sul trattamento dei vostri dati personali.",
-  },
+const breadcrumbCopy: Record<Locale, { title: string }> = {
+  de: { title: "Datenschutz" },
+  en: { title: "Privacy Policy" },
+  fr: { title: "Politique de confidentialité" },
+  it: { title: "Informativa sulla privacy" },
 };
 
 export default async function PrivacyPolicyPage({ params }: PageProps) {
@@ -42,12 +26,8 @@ export default async function PrivacyPolicyPage({ params }: PageProps) {
 
   return (
     <>
-      <HeaderOne logoSrc="/assets/images/logo/01.svg" />
-      <BreadCrumbOne
-        bgTitle={copy.bgTitle}
-        title={copy.title}
-        description={copy.description}
-      />
+      <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
+      <PartnerBreadcrumbTwo title={copy.title} />
       <PrivacyPolicyInner locale={validLocale} />
       <Brands className="rts-section-gapBottom" />
       <CtaInner />

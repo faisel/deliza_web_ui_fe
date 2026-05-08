@@ -12,14 +12,14 @@ import BrandTwo from './BrandTwo'
 import HomeBlogThree from './HomeBlogThree'
 import FooterThree from './FooterThree'
 import CopyrightOne from '../home-2/CopyrightOne'
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import RTL from '../../home-1/RTL'
 import BackToTop from '../../home-1/BackToTop'
 
 function page() {
     return (
         <>
-            <HeaderOne logoSrc="/assets/images/logo/01.svg"/>
+            <DelizaHeader logoSrc="/assets/images/logo/01.svg"/>
             <BannerThree />
             <ServiceThree />
             <CtaThree />

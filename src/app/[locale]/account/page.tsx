@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import AccountBreadcrumb from './AccountBreadcrumb'
 import BodyClass from '../home-2/BodyClassTwo'
 import AccountInner from './AccountInner'
@@ -17,7 +17,7 @@ function page() {
 
             {/* Header with different logo */}
             <>
-                <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+                <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
                 <AccountBreadcrumb />
                 <AccountInner />
                 <BrandInner className='rts-section-gap'/>

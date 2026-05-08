@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import BannerTen from './BannerTen'
 import ServicesTen from './ServicesTen'
 import BrandFive from '../home-5/BrandFive'
@@ -16,7 +16,7 @@ function page() {
     return (
         <>
             <>
-                <HeaderOne
+                <DelizaHeader
                     className='style-four top-transparent-header'
                     logoSrc="/assets/images/logo/01.svg"
                 />

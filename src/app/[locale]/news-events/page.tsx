@@ -1,4 +1,4 @@
-import HeaderOne from "@/app/home-1/HeaderOne";
+import DelizaHeader from "@/app/components/DelizaHeader";
 import Brands from "@/app/components/Brands";
 import CtaInner from "@/app/[locale]/about/CtaInner";
 import Footer from "@/app/components/Footer";
@@ -25,7 +25,7 @@ export default async function NewsEventsPage({ params }: PageProps) {
   return (
     <>
       <PageSchema nav="news" locale={locale} />
-      <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+      <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
       <PartnerBreadcrumbTwo nav="news" />
       <PageIntro nav="news" />
       <NewsListInner />

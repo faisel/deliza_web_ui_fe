@@ -1,5 +1,5 @@
 import { makeNavMetadata } from "@/lib/page-metadata";
-import HeaderOne from "@/app/[locale]/produkte-leistungen/HeaderOne";
+import DelizaHeader from "@/app/components/DelizaHeader";
 import Brands from "@/app/[locale]/produkte-leistungen/Brands";
 import CtaInner from "@/app/[locale]/produkte-leistungen/CtaInner";
 import Footer from "@/app/components/Footer";
@@ -25,7 +25,7 @@ export default async function ProdukteLeistungenPage({ params }: PageProps) {
   return (
     <>
       <PageSchema nav="products" locale={locale} />
-      <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+      <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
       <PartnerBreadcrumbTwo nav="products" />
       <PageIntro nav="products" />
       <ProjectTwo className="pt--120" />

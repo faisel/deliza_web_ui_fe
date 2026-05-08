@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import Breadcrumb from './Breadcrumb'
 import CompanyHistory from './CompanyHistory'
 import TestimonialsSeven from '../home-7/TestimonialsSeven'
@@ -12,7 +12,7 @@ import BackToTop from '../../home-1/BackToTop'
 function page() {
     return (
         <>
-            <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+            <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
             <Breadcrumb />
             <CompanyHistory />
             <TestimonialsSeven />

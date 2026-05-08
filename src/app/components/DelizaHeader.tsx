@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import OffcanvasMenu from './OffcanvasMenu';
+import OffcanvasMenu from '@/app/home-1/OffcanvasMenu';
 import { useTranslation } from '@/i18n/useTranslation';
 import { navHref, type NavKey } from '@/i18n/routing';
 import { LanguageSwitcher } from '@/i18n/LanguageSwitcher';
@@ -17,7 +17,7 @@ export const mainNavKeys: NavKey[] = [
     "contact",
 ];
 
-interface HeaderOneProps {
+interface DelizaHeaderProps {
     className?: string;
     logoSrc?: string;
     logoAlt?: string;
@@ -26,9 +26,9 @@ interface HeaderOneProps {
 const DELIZA_LOGO_SRC = "/assets/images/logo/deliza_web_b.png";
 const DELIZA_LOGO_ALT = "Deliza";
 
-function HeaderOne({
+function DelizaHeader({
     className = "",
-}: HeaderOneProps) {
+}: DelizaHeaderProps) {
     const { locale, messages } = useTranslation();
     const [isSticky, setIsSticky] = useState(false);
     const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
@@ -121,4 +121,4 @@ function HeaderOne({
 }
 
 
-export default HeaderOne
+export default DelizaHeader

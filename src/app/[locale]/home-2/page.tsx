@@ -1,5 +1,5 @@
 import BodyClass from './BodyClassTwo'
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import BannerTwo from './BannerTwo'
 import AboutTen from './AboutTen'
 import ServicesTwo from './ServicesTwo'
@@ -16,7 +16,7 @@ import DelizaInvestments from '../../components/DelizaInvestments'
 import DelizaCta from '../../components/DelizaCta'
 import DelizaNews from '../../components/DelizaNews'
 import DelizaTestimonials from '../../components/DelizaTestimonials'
-import Footer from '../../components/Footer'
+import Footer from '@/app/components/Footer'
 import RTL from '../../home-1/RTL'
 import BackToTop from '../../home-1/BackToTop'
 import PageIntro from '../../components/PageIntro'
@@ -41,7 +41,7 @@ export default async function HomePage({ params }: HomePageProps) {
       {/* Page content */}
       <>
 
-        <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+        <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
 
         <DelizaBanner />
 

@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderOne from "@/app/home-1/HeaderOne";
+import DelizaHeader from "@/app/components/DelizaHeader";
 import RTL from "@/app/home-1/RTL";
 import BackToTop from "@/app/home-1/BackToTop";
 import Footer from "@/app/components/Footer";
@@ -24,7 +24,7 @@ function ServiceDetailPage({ serviceId, rawLocale }: Props) {
 
   return (
     <>
-      <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+      <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
       <PartnerBreadcrumbTwo title={content.heroTitle} image={images.banner} />
       <ServiceDetailMain
         serviceId={serviceId}

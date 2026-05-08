@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import MissionBreadcrumb from '../our-mission/MissionBreadcrumb'
 import PartnerBreadcrumb from '../project-slider/PartnerBreadcrumb'
 import BrandInner from '../service/BrandInner'
@@ -13,7 +13,7 @@ import TestimonialsEight from '../home-8/TestimonialsEight'
 function page() {
     return (
         <>
-            <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+            <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
             <PartnerBreadcrumb />
             <PartnerMain />
             <TestimonialsEight className='pt--120'/>

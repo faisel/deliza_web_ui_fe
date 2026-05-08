@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderOne from '../../home-1/HeaderOne'
+import DelizaHeader from "@/app/components/DelizaHeader";
 import PartnerBreadcrumbThree from '../project-details/PartnerBreadcrumbThree'
 import ProjectOne from '../../home-1/ProjectOne'
 import FooterTen from '../home-10/FooterTen'
@@ -10,7 +10,7 @@ import ProjectDetailsMainTwo from './ProjectDetailsMainTwo'
 function page() {
     return (
         <>
-            <HeaderOne logoSrc="/assets/images/logo/01.svg" />
+            <DelizaHeader logoSrc="/assets/images/logo/01.svg" />
             <PartnerBreadcrumbThree />
             <ProjectDetailsMainTwo />
             <ProjectOne />

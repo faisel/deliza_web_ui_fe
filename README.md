@@ -24,3 +24,4 @@ pkill -f "node"      # all node processes
 pkill -f "astro"     # astro dev server
 pkill -f "vite"      # vite dev server
 
+rm -rf .next && pnpm dev
